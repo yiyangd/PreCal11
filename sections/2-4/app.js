@@ -12,9 +12,8 @@
   let concepts = [];
   let sourceData;
   let topicObserver;
-  let language = 'zh';
-  try { language = new URLSearchParams(location.search).get('lang') || localStorage.getItem('precal11-section24-language') || 'zh'; } catch (_) {}
-  if (!['zh', 'en'].includes(language)) language = 'zh';
+  let language = 'en';
+  try { const requestedLanguage = new URLSearchParams(location.search).get('lang'); if (['zh', 'en'].includes(requestedLanguage)) language = requestedLanguage; } catch (_) {}
   const t = (zh, en) => language === 'en' ? en : zh;
   const localized = record => language === 'en' ? {...record, ...record.en} : record;
   function graphLabel(label) {

@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#174d53">
-  <meta name="description" content="Pre-Calculus 11 第 2.4 节：按知识点学习有理函数的渐近线、空洞与图像。Lecture 例题、练习和教材 Exercises 均附分步解析。">
-  <title>2.4 有理函数 · 学习笔记</title>
+  <meta name="description" content="Section 2.4: rational functions, asymptotes, holes and graphs. English and Chinese questions with step-by-step solutions.">
+  <title>2.4 Rational Functions · Study Notes</title>
   <link rel="stylesheet" href="styles.css">
   <script id="lesson-data" type="application/json">{
   "lecture": {
@@ -13077,40 +13077,40 @@
     }
   }
 }</script>
-<script src="app.js" defer></script>
+<script src="app.js?v=english-default" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">跳到学习内容</a>
+  <a class="skip-link" href="#main-content">Skip to lesson</a>
   <header class="topbar">
-    <a class="brand" href="../../index.html" aria-label="返回课程首页"><span class="brand-mark">f<span>(x)</span></span><span>Pre-Calculus 11 <small>学习笔记</small></span></a>
-    <div class="topbar-actions"><div class="language-switch" role="group" aria-label="页面语言"><button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="true">中文</button><button type="button" data-lang="en" lang="en" aria-pressed="false">English</button></div><span class="save-note">进度自动保存在此浏览器</span><button class="button button-quiet" id="print-button" type="button"><span aria-hidden="true">↗</span> 打印 / PDF</button></div>
+    <a class="brand" href="../../index.html" aria-label="Back to course home"><span class="brand-mark">f<span>(x)</span></span><span>Pre-Calculus 11 <small>Study notes</small></span></a>
+    <div class="topbar-actions"><div class="language-switch" role="group" aria-label="Page language"><button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button><button type="button" data-lang="en" lang="en" class="is-active" aria-pressed="true">English</button></div><span class="save-note">Progress saved in this browser</span><button class="button button-quiet" id="print-button" type="button"><span aria-hidden="true">↗</span> Print / PDF</button></div>
   </header>
   <div class="page-layout" id="top">
-    <aside class="sidebar" aria-label="本节目录">
+    <aside class="sidebar" aria-label="Lesson contents">
       <div class="sidebar-inner">
         <div class="chapter-label">CHAPTER 02</div>
-        <div class="sidebar-title">有理函数<span>Rational functions</span></div>
-        <div class="progress-box"><div><span>本节学习进度</span><strong id="progress-label">0 / 7</strong></div><progress id="lesson-progress" max="7" value="0" aria-label="本节学习进度"></progress></div>
-        <nav id="topic-nav" class="topic-nav" aria-label="知识点"></nav>
-        <a class="exercise-nav" href="#textbook-exercises"><span aria-hidden="true">▦</span> 教材 Exercises <span aria-hidden="true">↗</span></a>
-        <div class="sidebar-foot">每个知识点<br>方法 → 例题 → 练习 → 教材</div>
+        <div class="sidebar-title">Rational functions<span>Section 2.4</span></div>
+        <div class="progress-box"><div><span>Lesson progress</span><strong id="progress-label">0 / 7</strong></div><progress id="lesson-progress" max="7" value="0" aria-label="Lesson progress"></progress></div>
+        <nav id="topic-nav" class="topic-nav" aria-label="Concepts"></nav>
+        <a class="exercise-nav" href="#textbook-exercises"><span aria-hidden="true">▦</span> Textbook Exercises <span aria-hidden="true">↗</span></a>
+        <div class="sidebar-foot">For each concept<br>Method → Example → Practice → Textbook</div>
       </div>
     </aside>
     <main id="main-content" tabindex="-1">
-      <nav class="lesson-breadcrumb" aria-label="Breadcrumb"><a id="home-link" href="../../index.html">← 返回首页</a><span aria-hidden="true">/</span><span>2.4</span></nav>
+      <nav class="lesson-breadcrumb" aria-label="Breadcrumb"><a id="home-link" href="../../index.html">← Back to home</a><span aria-hidden="true">/</span><span>2.4</span></nav>
       <section class="hero" aria-labelledby="page-title">
-        <div class="hero-copy"><div class="eyebrow">SECTION 2.4 <span>LECTURE PART 1 + PART 2</span></div><h1 id="page-title">有理函数的<br><em>渐近线与空洞</em></h1><p>把解题过程拆成清楚的几步，<br class="desktop-break">再把每个知识点连到完整的函数图像。</p><div class="hero-meta"><span>Asymptotes & Holes</span><span>知识点 · 例题 · 练习</span></div></div>
-        <div class="hero-note"><span class="note-index">2.4</span><p>先看定义域<br>再找渐近线与空洞<br>最后连接图像</p><div class="note-line"></div><small>从 Part 1 到 Part 2</small></div>
+        <div class="hero-copy"><div class="eyebrow">SECTION 2.4 <span>LECTURE PART 1 + PART 2</span></div><h1 id="page-title">Rational functions:<br><em>asymptotes and holes</em></h1><p>Break each solution into clear steps,<br class="desktop-break">then connect the concepts to the complete graph.</p><div class="hero-meta"><span>Asymptotes & Holes</span><span>Concepts · Examples · Practice</span></div></div>
+        <div class="hero-note"><span class="note-index">2.4</span><p>Start with the domain<br>Find asymptotes and holes<br>Then sketch the graph</p><div class="note-line"></div><small>From Part 1 to Part 2</small></div>
       </section>
-      <div class="reading-toolbar"><p><span class="status-dot" aria-hidden="true"></span>例题显示解析，练习先自己尝试</p><div><button class="text-button" id="expand-all" type="button">展开全部解析</button><span class="toolbar-divider" aria-hidden="true"></span><button class="text-button" id="collapse-all" type="button">收起全部解析</button></div></div>
-      <div id="loading" class="loading" role="status">正在整理本节学习内容…</div>
+      <div class="reading-toolbar"><p><span class="status-dot" aria-hidden="true"></span>Examples explained; try practice questions first</p><div><button class="text-button" id="expand-all" type="button">Expand all solutions</button><span class="toolbar-divider" aria-hidden="true"></span><button class="text-button" id="collapse-all" type="button">Collapse all solutions</button></div></div>
+      <div id="loading" class="loading" role="status">Loading lesson content…</div>
       <div id="lesson-content"></div>
       <section id="textbook-exercises" class="exercise-section" aria-labelledby="exercise-title" hidden>
-        <div class="section-heading"><div><div class="eyebrow">TEXTBOOK · SECTION 2.4</div><h2 id="exercise-title">教材 Exercises</h2><p id="exercise-intro">按知识点找到对应练习，把方法用熟。</p></div><span class="count-pill" id="exercise-count"></span></div>
-        <div class="exercise-filters"><label for="exercise-topic"><span data-ui="filter-topic">知识点</span><select id="exercise-topic"><option value="all">全部知识点</option></select></label><label class="search-label" for="exercise-search"><span data-ui="filter-search">题号或关键词</span><input id="exercise-search" type="search" placeholder="例如：9、空洞、graph" autocomplete="off"></label><button class="button button-quiet" id="clear-filters" type="button">重置</button></div>
-        <div id="exercise-list"></div><p id="exercise-empty" class="empty-message" hidden>没有找到匹配的题目。换一个题号或知识点试试。</p>
+        <div class="section-heading"><div><div class="eyebrow">TEXTBOOK · SECTION 2.4</div><h2 id="exercise-title">Textbook Exercises</h2><p id="exercise-intro">Find exercises by concept and put the method into practice.</p></div><span class="count-pill" id="exercise-count"></span></div>
+        <div class="exercise-filters"><label for="exercise-topic"><span data-ui="filter-topic">Concept</span><select id="exercise-topic"><option value="all">All concepts</option></select></label><label class="search-label" for="exercise-search"><span data-ui="filter-search">Exercise number or keyword</span><input id="exercise-search" type="search" placeholder="e.g. 9, holes, graph" autocomplete="off"></label><button class="button button-quiet" id="clear-filters" type="button">Reset</button></div>
+        <div id="exercise-list"></div><p id="exercise-empty" class="empty-message" hidden>No matching exercises. Try another number, keyword or concept.</p>
       </section>
-      <footer class="page-footer"><span>Pre-Calculus 11 · Section 2.4</span><span id="source-note"></span><a href="#top">回到顶部 ↑</a></footer>
+      <footer class="page-footer"><span>Pre-Calculus 11 · Section 2.4</span><span id="source-note"></span><a href="#top">Back to top ↑</a></footer>
     </main>
   </div>
   <div id="announcement" class="sr-only" aria-live="polite"></div>

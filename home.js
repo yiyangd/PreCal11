@@ -2,10 +2,8 @@
   'use strict';
   const storageKey = 'precal11-section24-language';
   const isLanguage = value => value === 'zh' || value === 'en';
-  let storedLanguage;
-  try { storedLanguage = localStorage.getItem(storageKey); } catch (_) {}
   const requestedLanguage = new URLSearchParams(location.search).get('lang');
-  let language = isLanguage(requestedLanguage) ? requestedLanguage : isLanguage(storedLanguage) ? storedLanguage : 'zh';
+  let language = isLanguage(requestedLanguage) ? requestedLanguage : 'en';
 
   const lessonUrl = () => {
     const destination = new URL(location.protocol === 'file:' ? 'sections/2-4/index.html' : 'sections/2-4/', location.href);

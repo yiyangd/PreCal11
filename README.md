@@ -11,6 +11,7 @@ Section 2.4 / 第 2.4 节: [中文](https://yiyangd.github.io/PreCal11/sections/
 ## Features / 功能
 
 - Chinese / English menu switch; English content is based on the supplied textbook and lecture notes. / 菜单栏切换中英文，英文内容依据教材和讲义整理。
+- Pages open in English by default. Choose **中文** to switch, or use `?lang=zh`; selected language is carried in navigation links. / 默认英语；点击 **中文** 或使用 `?lang=zh` 可切换，页面导航会保留所选语言。
 - 7 concepts, 18 lecture examples and practice questions, and 137 textbook exercises with step-by-step explanations. / 7 个知识点、18 道讲义例题与练习，以及 137 道教材练习及分步解析。
 - Graphs, concept and exercise filters, browser-saved learning progress, and print / PDF support. / 图像、知识点与题号筛选、浏览器学习进度保存及打印功能。
 - Static HTML, CSS, and JavaScript; no installation or build required. / 纯静态网页，无需安装依赖或构建。
@@ -43,7 +44,7 @@ README.md              This guide / 使用说明
 
 When changing lesson content, update both `sections/2-4/data.json` and the JSON in the `lesson-data` script in `sections/2-4/index.html`. / 修改题目内容时，请同步更新第 2.4 节目录中的 `data.json` 和 `index.html` 内嵌 JSON。
 
-The lesson includes a **Back to home** link. Language choice and learning progress are retained. Previous homepage links to a concept or exercise are redirected to Section 2.4. / 学习页可返回首页，语言选择及学习进度保留；原首页上的知识点、题号链接会自动进入第 2.4 节。
+The lesson includes a **Back to home** link. Selected language is retained in navigation links and learning progress remains saved. A URL with no valid language parameter opens in English. Previous homepage links to a concept or exercise are redirected to Section 2.4. / 学习页可返回首页，页面导航保留所选语言，学习进度继续保存；无有效语言参数的网址默认英语。原首页上的知识点、题号链接会自动进入第 2.4 节。
 
 ## GitHub Pages / 发布网页
 
