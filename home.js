@@ -5,8 +5,8 @@
   const requestedLanguage = new URLSearchParams(location.search).get('lang');
   let language = isLanguage(requestedLanguage) ? requestedLanguage : 'en';
 
-  const lessonUrl = () => {
-    const destination = new URL(location.protocol === 'file:' ? 'sections/2-4/index.html' : 'sections/2-4/', location.href);
+  const lessonUrl = (section = '2-4') => {
+    const destination = new URL(location.protocol === 'file:' ? `sections/${section}/index.html` : `sections/${section}/`, location.href);
     destination.search = location.search;
     destination.searchParams.set('lang', language);
     return destination;
@@ -27,6 +27,8 @@
       contents: '课程目录', chapter: '第 2 章', chapterTitle: '多项式与有理函数',
       section: '第 2.4 节 · Part 1 + Part 2', lessonTitle: '有理函数：渐近线、空洞与图像',
       meta: '7 个知识点 · 18 道讲义题 · 教材 Exercises', open: '开始学习 2.4',
+      section25: '第 2.5 节 · 教材', lesson25Title: '多项式与有理不等式',
+      meta25: '8 个知识点 · 6 道例题 · 6 道配套练习 · 128 道节后习题', open25: '开始学习 2.5',
       footer: '中英文学习笔记', title: 'Pre-Calculus 11 · 学习主页',
       description: 'Pre-Calculus 11 中英文学习目录：知识点、讲义例题、练习与分步解析。',
       announcement: '已切换为中文。'
@@ -37,6 +39,8 @@
       contents: 'Study contents', chapter: 'CHAPTER 2', chapterTitle: 'Polynomial and Rational Functions',
       section: 'Section 2.4 · Part 1 + Part 2', lessonTitle: 'Rational functions: asymptotes, holes and graphs',
       meta: '7 concepts · 18 lecture questions · Textbook exercises', open: 'Study Section 2.4',
+      section25: 'Section 2.5 · Textbook', lesson25Title: 'Polynomial and rational inequalities',
+      meta25: '8 concepts · 6 examples · 6 practice problems · 128 exercises', open25: 'Study Section 2.5',
       footer: 'Bilingual study notes', title: 'Pre-Calculus 11 · Study home',
       description: 'Pre-Calculus 11 bilingual study contents: key concepts, lecture examples, practice, and step-by-step solutions.',
       announcement: 'Switched to English.'
@@ -54,7 +58,7 @@
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    document.getElementById('lesson-link').href = lessonUrl().href;
+    document.querySelectorAll('[data-section]').forEach(link => { link.href = lessonUrl(link.dataset.section).href; });
     const home = new URL(location.protocol === 'file:' ? 'index.html' : './', location.href);
     home.searchParams.set('lang', language);
     document.getElementById('home-link').href = home.href;
