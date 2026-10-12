@@ -1,10 +1,12 @@
-# Pre-Calculus 11 · Section 2.4
+# Pre-Calculus 11
 
-A bilingual study page for rational functions, asymptotes, holes, and graphs. / 有理函数、渐近线、空洞与图像的中英双语学习网页。
+A simple bilingual course homepage with a complete Section 2.4 study page for rational functions, asymptotes, holes, and graphs. / 简洁的中英双语课程首页，以及完整的第 2.4 节有理函数学习页。
 
 Repository / 仓库: [yiyangd/PreCal11](https://github.com/yiyangd/PreCal11)
 
-Expected site after GitHub Pages is enabled / 启用 GitHub Pages 后的预期网址: [Chinese / 中文](https://yiyangd.github.io/PreCal11/) · [English / 英文](https://yiyangd.github.io/PreCal11/?lang=en)
+Course homepage / 课程首页: [中文](https://yiyangd.github.io/PreCal11/?lang=zh) · [English](https://yiyangd.github.io/PreCal11/?lang=en)
+
+Section 2.4 / 第 2.4 节: [中文](https://yiyangd.github.io/PreCal11/sections/2-4/?lang=zh) · [English](https://yiyangd.github.io/PreCal11/sections/2-4/?lang=en)
 
 ## Features / 功能
 
@@ -15,7 +17,7 @@ Expected site after GitHub Pages is enabled / 启用 GitHub Pages 后的预期�
 
 ## Open locally / 本地打开
 
-Open `index.html` in a modern browser. The lesson data is embedded for local use. Click **English** or **中文** to switch languages. / 用浏览器直接打开 `index.html`，再点击 **English** 或 **中文**。
+Open `index.html` in a modern browser, choose **English** or **中文**, then open Section 2.4. The lesson data is embedded for local use. / 用浏览器直接打开 `index.html`，选择语言后进入第 2.4 节；课程页内嵌题目数据，支持离线使用。
 
 Optional local preview, run in this folder: / 如需本地预览，在本文件夹运行：
 
@@ -28,16 +30,20 @@ Then open [the local preview](http://127.0.0.1:8000/), or [English](http://127.0
 ## Files / 文件
 
 ```text
-index.html       Page and embedded lesson data / 网页及内嵌题目数据
-styles.css       Responsive and print styles / 页面及打印样式
-app.js           Language switch, solutions, filters, progress, graphs / 页面功能
-data.json       Same lesson data as embedded in index.html / 同步的题目数据
-assets/          Six textbook exercise figures / 六张教材练习图
-.nojekyll        Static GitHub Pages deployment / 静态部署标记
-README.md        This guide / 使用说明
+index.html             Course homepage / 课程首页
+home.css, home.js      Homepage layout and language switch / 首页样式与语言切换
+sections/2-4/
+  index.html           Lesson and embedded data / 学习页及内嵌题目数据
+  styles.css, app.js   Lesson layout and functions / 学习页样式与功能
+  data.json            Same data as embedded in lesson HTML / 同步的题目数据
+  assets/              Six textbook exercise figures / 六张教材练习图
+.nojekyll              Static GitHub Pages deployment / 静态部署标记
+README.md              This guide / 使用说明
 ```
 
-When changing lesson content, update both `data.json` and the JSON in the `lesson-data` script in `index.html`. / 修改题目内容时，请同时更新 `data.json` 和 `index.html` 中 `lesson-data` 的内嵌 JSON。
+When changing lesson content, update both `sections/2-4/data.json` and the JSON in the `lesson-data` script in `sections/2-4/index.html`. / 修改题目内容时，请同步更新第 2.4 节目录中的 `data.json` 和 `index.html` 内嵌 JSON。
+
+The lesson includes a **Back to home** link. Language choice and learning progress are retained. Previous homepage links to a concept or exercise are redirected to Section 2.4. / 学习页可返回首页，语言选择及学习进度保留；原首页上的知识点、题号链接会自动进入第 2.4 节。
 
 ## GitHub Pages / 发布网页
 

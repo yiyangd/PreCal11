@@ -56,7 +56,12 @@
       ['.reading-toolbar > p','<span class="status-dot" aria-hidden="true"></span>例题显示解析，练习先自己尝试','<span class="status-dot" aria-hidden="true"></span>Examples explained; try practice questions first']
     ];
     htmlEntries.forEach(([selector,zh,en]) => { const node=$(selector); if(node)node.innerHTML=t(zh,en); });
-    $('.brand').setAttribute('aria-label',t('2.4 学习笔记，返回顶部','Section 2.4 study notes, back to top'));
+    const homeUrl=new URL(location.protocol==='file:'?'../../index.html':'../../',location.href);
+    homeUrl.searchParams.set('lang',language);
+    $('.brand').href=homeUrl.href;
+    $('.brand').setAttribute('aria-label',t('返回课程首页','Back to course home'));
+    $('#home-link').href=homeUrl.href;
+    $('#home-link').textContent='← '+t('返回首页','Back to home');
     $('.sidebar').setAttribute('aria-label',t('本节目录','Lesson contents'));
     $('#topic-nav').setAttribute('aria-label',t('知识点','Concepts'));
     $('#lesson-progress').setAttribute('aria-label',t('本节学习进度','Lesson progress'));
