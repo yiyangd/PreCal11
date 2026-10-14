@@ -253,13 +253,20 @@
     const practices = questions.filter(item => conceptKeys(item).includes(topic.id) && item.type !== 'example');
     const exercises = associatedExercises(topic.id);
     const tag = topic.extension ? t('习题拓展','Exercise extension') : '';
-    return `<section class="topic" id="topic-${slug(topic.id)}" data-topic="${escape(topic.id)}" aria-labelledby="heading-${slug(topic.id)}"><div class="topic-header"><div class="topic-heading"><span class="topic-index" aria-hidden="true">${index + 1}</span><div><h2 id="heading-${slug(topic.id)}">${escape(topic.title)}</h2><span class="english-title">${escape(language === 'en' ? '' : topic.english || '')}${tag ? ` <span class="part-pill">${escape(tag)}</span>` : ''}</span></div></div><label class="completion"><input type="checkbox" data-complete="${escape(topic.id)}" ${completed.has(topic.id) ? 'checked' : ''}> ${t('已掌握','Mastered')}</label></div><div class="topic-body"><div class="concept-summary">${body(topic.summary)}${list(topic.method).length ? `<h3 class="method-label">${t('解题方法 · Step by step','Method · Step by step')}</h3>${stepList(topic.method, true)}` : ''}${list(topic.pitfalls).length ? `<div class="pitfalls"><strong>${t('容易漏掉','Watch out')}</strong>${list(topic.pitfalls).map(pitfall => `<p>${rich(pitfall)}</p>`).join('')}</div>` : ''}${topic.note ? `<p class="source-tag" style="white-space:normal;margin-top:14px">${rich(topic.note)}</p>` : ''}</div>${examples.length ? `<div class="questions-group"><div class="group-heading"><span class="group-icon" aria-hidden="true">E</span><h3>${t('教材例题','Textbook Example')}</h3><small>${t('跟着步骤理解方法','Follow the method')}</small></div>${examples.map(question => textbookQuestion(question, true)).join('')}</div>` : ''}${practices.length ? `<div class="questions-group practice-group"><div class="group-heading"><span class="group-icon" aria-hidden="true">P</span><h3>${t('教材配套练习','Practice Problem')}</h3><small>${t('先尝试，再展开解析','Try first, then check')}</small></div>${practices.map(question => textbookQuestion(question, false)).join('')}</div>` : ''}<div class="topic-exercises"><strong>${t('接着做教材 Exercises →','Next: textbook exercises →')}</strong><div class="exercise-links">${exercises.slice(0,16).map(exercise => `<a class="exercise-link" href="#exercise-${slug(exercise.number ?? exercise.id)}" data-exercise-link="${escape(exercise.number ?? exercise.id)}">${escape(exercise.number ?? exercise.label ?? exercise.id)}</a>`).join('')}${exercises.length > 16 ? `<button class="exercise-link exercise-link-more" type="button" data-topic-filter="${escape(topic.id)}">${t(`全部 ${exercises.length} 题 ↗`,`All ${exercises.length} exercises ↗`)}</button>` : ''}${!exercises.length ? `<a class="exercise-link" href="#textbook-exercises">${t('查看本节题库 ↗','Browse all exercises ↗')}</a>` : ''}</div></div></div></section>`;
+    return `<section class="topic" id="topic-${slug(topic.id)}" data-topic="${escape(topic.id)}" aria-labelledby="heading-${slug(topic.id)}"><div class="topic-header"><div class="topic-heading"><span class="topic-index" aria-hidden="true">${index + 1}</span><div><h2 id="heading-${slug(topic.id)}" tabindex="-1">${escape(topic.title)}</h2><span class="english-title">${escape(language === 'en' ? '' : topic.english || '')}${tag ? ` <span class="part-pill">${escape(tag)}</span>` : ''}</span></div></div><label class="completion"><input type="checkbox" data-complete="${escape(topic.id)}" ${completed.has(topic.id) ? 'checked' : ''}> ${t('已掌握','Mastered')}</label></div><div class="topic-body"><div class="concept-summary">${body(topic.summary)}${list(topic.method).length ? `<h3 class="method-label">${t('解题方法 · Step by step','Method · Step by step')}</h3>${stepList(topic.method, true)}` : ''}${list(topic.pitfalls).length ? `<div class="pitfalls"><strong>${t('容易漏掉','Watch out')}</strong>${list(topic.pitfalls).map(pitfall => `<p>${rich(pitfall)}</p>`).join('')}</div>` : ''}${topic.note ? `<p class="source-tag" style="white-space:normal;margin-top:14px">${rich(topic.note)}</p>` : ''}</div>${examples.length ? `<div class="questions-group"><div class="group-heading"><span class="group-icon" aria-hidden="true">E</span><h3>${t('教材例题','Textbook Example')}</h3><small>${t('跟着步骤理解方法','Follow the method')}</small></div>${examples.map(question => textbookQuestion(question, true)).join('')}</div>` : ''}${practices.length ? `<div class="questions-group practice-group"><div class="group-heading"><span class="group-icon" aria-hidden="true">P</span><h3>${t('教材配套练习','Practice Problem')}</h3><small>${t('先尝试，再展开解析','Try first, then check')}</small></div>${practices.map(question => textbookQuestion(question, false)).join('')}</div>` : ''}<div class="topic-exercises"><strong>${t('接着做教材 Exercises →','Next: textbook exercises →')}</strong><div class="exercise-links">${exercises.slice(0,16).map(exercise => `<a class="exercise-link" href="#exercise-${slug(exercise.number ?? exercise.id)}" data-exercise-link="${escape(exercise.number ?? exercise.id)}">${escape(exercise.number ?? exercise.label ?? exercise.id)}</a>`).join('')}${exercises.length > 16 ? `<button class="exercise-link exercise-link-more" type="button" data-topic-filter="${escape(topic.id)}">${t(`全部 ${exercises.length} 题 ↗`,`All ${exercises.length} exercises ↗`)}</button>` : ''}${!exercises.length ? `<a class="exercise-link" href="#textbook-exercises">${t('查看本节题库 ↗','Browse all exercises ↗')}</a>` : ''}</div></div></div></section>`;
+  }
+  function conceptReturnLinks(item) {
+    return conceptKeys(item).map(key => {
+      if (!topicNames.has(key)) return `<span>${escape(key)}</span>`;
+      const label = topicNames.get(key);
+      const description = t(`返回知识点：${label}`, `Back to concept: ${label}`);
+      return `<a class="concept-return" href="#topic-${slug(key)}" data-topic-return aria-label="${escape(description)}" title="${escape(description)}"><i class="concept-return-icon" aria-hidden="true">↶</i>${escape(label)}</a>`;
+    }).join('');
   }
   function exerciseCard(item) {
     const number = item.number ?? item.id;
-    const labels = conceptKeys(item).map(key => topicNames.get(key) || key);
     const source = item.printedPage != null ? t(`教材第 ${item.printedPage} 页`,`Textbook p. ${item.printedPage}`) : item.pdfPage != null ? t(`教材 PDF 第 ${item.pdfPage} 页`,`Textbook PDF p. ${item.pdfPage}`) : t('教材 Section 2.6','Textbook Section 2.6');
-    return `<article class="question-card exercise-card" id="exercise-${slug(number)}" data-exercise-number="${escape(number)}"><div class="question-meta"><span class="question-label">Exercise ${escape(number)}</span><span class="exercise-source">${escape(source)}</span></div><div class="exercise-topics">${labels.map(label => `<span>${escape(label)}</span>`).join('')}</div><div class="question-prompt">${body(item.prompt)}</div>${sourceFigure(item)}${solution(item)}${list(item.parts ?? item.subquestions).map(part => `<div class="exercise-part"><h4>${escape(part.label ?? part.part ?? '')}</h4>${body(part.prompt)}${part.expressionLatex ? `<div class="question-expression">${math(part.expressionLatex)}</div>` : ''}${solution(part)}</div>`).join('')}</article>`;
+    return `<article class="question-card exercise-card" id="exercise-${slug(number)}" data-exercise-number="${escape(number)}"><div class="question-meta"><span class="question-label">Exercise ${escape(number)}</span><span class="exercise-source">${escape(source)}</span></div><div class="exercise-topics">${conceptReturnLinks(item)}</div><div class="question-prompt">${body(item.prompt)}</div>${sourceFigure(item)}${solution(item)}${list(item.parts ?? item.subquestions).map(part => `<div class="exercise-part"><h4>${escape(part.label ?? part.part ?? '')}</h4>${body(part.prompt)}${part.expressionLatex ? `<div class="question-expression">${math(part.expressionLatex)}</div>` : ''}${solution(part)}</div>`).join('')}</article>`;
   }
   function drawGraphs(root = document) {
     $$('.graph-placeholder', root).forEach(placeholder => {
@@ -337,7 +344,22 @@
     drawGraphs(target);target.scrollIntoView({behavior:'smooth',block:'start'});target.classList.remove('highlight-target');requestAnimationFrame(()=>target.classList.add('highlight-target'));
   }
   function preparePrinting() { $$('.solution, .source-figure').forEach(detail=>detail.open=true);drawGraphs(); }
+  function focusTopicFromHash(scroll = false) {
+    if (!location.hash.startsWith('#topic-')) return;
+    const topic = document.getElementById(location.hash.slice(1));
+    if (!topic || !topic.matches('.topic')) return;
+    if (scroll) topic.scrollIntoView({behavior:'auto', block:'start'});
+    const heading = $('h2', topic);
+    if (heading) heading.focus({preventScroll:true});
+  }
   function installInteractions() {
+    window.addEventListener('hashchange', () => focusTopicFromHash(true));
+    document.addEventListener('click', event => {
+      const link = event.target.closest('[data-topic-return]');
+      if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      requestAnimationFrame(() => focusTopicFromHash(true));
+    });
+
     $$('[data-lang]').forEach(button=>button.addEventListener('click',()=>selectLanguage(button.dataset.lang)));
     $('#expand-all').addEventListener('click',()=>{$$('.solution').forEach(detail=>detail.open=true);drawGraphs();$('#announcement').textContent=t('已展开全部分步解析。','All step-by-step solutions expanded.');});
     $('#collapse-all').addEventListener('click',()=>{$$('.solution').forEach(detail=>detail.open=false);$('#announcement').textContent=t('已收起全部分步解析。','All step-by-step solutions collapsed.');});
@@ -356,6 +378,7 @@
     sourceData=data;
     renderLanguage();installInteractions();
     if(location.hash.startsWith('#exercise-'))jumpToExercise(location.hash.slice(10));
+    else if(location.hash.startsWith('#topic-'))requestAnimationFrame(() => focusTopicFromHash(true));
   }
   start().catch(error=>{const status=$('#loading');status.innerHTML=t('<strong>学习内容暂时无法载入。</strong><br>请刷新网页重试。','<strong>Lesson content could not be loaded.</strong><br>Please refresh and try again.');status.setAttribute('role','alert');console.error(error);});
 })();

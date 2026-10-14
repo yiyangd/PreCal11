@@ -43,3 +43,13 @@ html[lang="en"] .hero h1{font-size:39px;letter-spacing:-.035em}html[lang="en"] .
 @media print{.synthetic-division{break-inside:avoid}.division-scroll{overflow:visible}.division-table{width:100%}.division-table th,.division-table td{padding:5px}.division-table .formula{font-size:13px}}
 
 .unsupported-math{background:#fff0d2;color:#8b3e14;border-bottom:1px dotted currentColor}
+
+/* Exercise concept badges return to the matching lesson heading. */
+.exercise-topics>a.concept-return{display:inline-flex;min-height:28px;align-items:center;gap:4px;padding:3px 7px;border:1px solid #dce5d9;border-radius:4px;background:#f1f4ee;color:var(--teal);line-height:1.7}
+.concept-return-icon{font-style:normal;font-size:1.15em;line-height:1}
+.exercise-topics>a.concept-return:hover{background:#e4eee3;border-color:#96b19a;text-decoration:underline;text-underline-offset:3px}
+.exercise-topics>a.concept-return:focus-visible{outline:3px solid #80bcb4;outline-offset:3px}
+.topic h2:focus-visible{outline:3px solid #80bcb4;outline-offset:6px;border-radius:2px}
+.topic:target>.topic-header .topic-index{background:#d7e8de;box-shadow:0 0 0 2px #a5c3af}
+
+@media(max-width:600px){.exercise-topics>a.concept-return{min-height:32px;font-size:11px}}

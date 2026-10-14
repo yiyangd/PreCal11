@@ -18,6 +18,7 @@ Section 2.7 / 第 2.7 节: [中文](https://yiyangd.github.io/PreCal11/sections/
 
 - Chinese / English menu switch; English content is based on the supplied textbook and lecture notes. / 菜单栏切换中英文，英文内容依据教材和讲义整理。
 - Pages open in English by default. Choose **中文** to switch, or use `?lang=zh`; selected language is carried in navigation links. / 默认英语；点击 **中文** 或使用 `?lang=zh` 可切换，页面导航会保留所选语言。
+- Exercise concept labels include a return arrow and link back to their matching concept. Multiple concepts have separate links; returning preserves filters, expanded solutions and learning progress. / 习题知识点标签带返回箭头，可回到对应知识点；多知识点分别链接，返回时保留筛选、解析展开和学习进度。
 - Section 2.4: 7 concepts, 18 lecture examples and practice questions, and 137 textbook exercises with step-by-step explanations. / 第 2.4 节：7 个知识点、18 道讲义例题与练习，以及 137 道教材练习及分步解析。
 - Section 2.5: 8 concepts, all 6 textbook Examples, all 6 Practice Problems, and Exercises 1–128. Sign charts show interval signs and endpoint inclusion separately. / 第 2.5 节：8 个知识点、全部 6 道教材例题、6 道配套练习及节后习题 1–128。符号表分别显示区间符号和端点是否包含。
 - Section 2.6: 8 concepts, all 7 textbook Examples, all 7 Practice Problems, and Exercises 1–88. Synthetic division tables align every coefficient, product, quotient entry, and remainder. / 第 2.6 节：8 个知识点、全部 7 道教材例题、7 道配套练习及节后习题 1–88。合成除法表逐列展示系数、乘积、商与余数。
