@@ -1,6 +1,6 @@
 # Pre-Calculus 11
 
-A simple bilingual course homepage with Section 2.4 on rational functions, Section 2.5 on inequalities, and Section 2.6 on polynomial zeros. / 简洁的中英双语课程首页，包含第 2.4 节有理函数、第 2.5 节不等式和第 2.6 节多项式零点。
+A simple bilingual course homepage with Sections 2.4–2.7: rational functions, inequalities, polynomial zeros and variation. / 简洁的中英双语课程首页，包含第 2.4–2.7 节：有理函数、不等式、多项式零点与比例关系。
 
 Repository / 仓库: [yiyangd/PreCal11](https://github.com/yiyangd/PreCal11)
 
@@ -12,6 +12,8 @@ Section 2.5 / 第 2.5 节: [中文](https://yiyangd.github.io/PreCal11/sections/
 
 Section 2.6 / 第 2.6 节: [中文](https://yiyangd.github.io/PreCal11/sections/2-6/?lang=zh) · [English](https://yiyangd.github.io/PreCal11/sections/2-6/?lang=en)
 
+Section 2.7 / 第 2.7 节: [中文](https://yiyangd.github.io/PreCal11/sections/2-7/?lang=zh) · [English](https://yiyangd.github.io/PreCal11/sections/2-7/?lang=en)
+
 ## Features / 功能
 
 - Chinese / English menu switch; English content is based on the supplied textbook and lecture notes. / 菜单栏切换中英文，英文内容依据教材和讲义整理。
@@ -20,6 +22,7 @@ Section 2.6 / 第 2.6 节: [中文](https://yiyangd.github.io/PreCal11/sections/
 - Section 2.5: 8 concepts, all 6 textbook Examples, all 6 Practice Problems, and Exercises 1–128. Sign charts show interval signs and endpoint inclusion separately. / 第 2.5 节：8 个知识点、全部 6 道教材例题、6 道配套练习及节后习题 1–128。符号表分别显示区间符号和端点是否包含。
 - Section 2.6: 8 concepts, all 7 textbook Examples, all 7 Practice Problems, and Exercises 1–88. Synthetic division tables align every coefficient, product, quotient entry, and remainder. / 第 2.6 节：8 个知识点、全部 7 道教材例题、7 道配套练习及节后习题 1–88。合成除法表逐列展示系数、乘积、商与余数。
 - Graphs, concept and exercise filters, browser-saved learning progress, and print / PDF support. / 图像、知识点与题号筛选、浏览器学习进度保存及打印功能。
+- Section 2.7: 7 concepts, all 6 textbook Examples, all 6 Practice Problems, and Exercises 1–60 including every subpart. Direct/inverse function graphs and original source figures support the solutions. / 第 2.7 节：7 个知识点、全部 6 道教材例题、6 道配套练习及节后习题 1–60（含全部小问），配正反比例函数图像与教材原图。
 - Static HTML, CSS, and JavaScript; no installation or build required. / 纯静态网页，无需安装依赖或构建。
 
 ## Open locally / 本地打开
@@ -55,6 +58,11 @@ sections/2-6/
   data.json            Same data as embedded in lesson HTML / 同步的题目数据
   assets/              Original exercise graphs / 教材题目原图
 .nojekyll              Static GitHub Pages deployment / 静态部署标记
+sections/2-7/
+  index.html           Variation lesson and embedded data / 比例关系学习页及内嵌数据
+  styles.css, app.js   Lesson functions and variation graphs / 学习功能与比例函数图像
+  data.json            Same data as embedded in lesson HTML / 同步的题目数据
+  assets/              Original gravity, spring, pendulum and light figures / 教材原图
 README.md              This guide / 使用说明
 ```
 
@@ -81,6 +89,8 @@ After deployment, Pages displays the site URL. Add `?lang=en` for the English ve
 - The same textbook — Section 2.6 *Zeros of a Polynomial Function*, printed pp. 235–245 (PDF pp. 259–269). Exercises are on printed pp. 243–245 (PDF pp. 267–269). The page follows the textbook, including all subparts of the Cardano and Vieta exercises. / 同一教材第 2.6 节印刷页 235–245（PDF 页 259–269），习题位于印刷页 243–245（PDF 页 267–269），完整保留 Cardano 与 Vieta 题的各小问。
 
 Section 2.6 uses a negative test number for the standard synthetic-division lower-bound rule. The printed text's unrestricted “any k” omits this necessary restriction; the preparation audit records a counterexample. / 第 2.6 节的合成除法下界判据使用负数测试。教材“any k”漏写此必要限制，数据审核记录了反例。
+
+Section 2.7 *Variation* is based on printed pp. 246–255 (PDF pp. 270–279); exercises are on printed pp. 252–255 (PDF pp. 276–279). The preceding Getting Ready block and following chapter review are outside this section. Exercise 32 retains the printed labels (a), (b), (d). Exercise 39(b) follows the stated inverse-square model. Exercise 60 distinguishes the zero-speed limit of 144 cars from the maximum moving load of 143 cars. / 第 2.7 节依据印刷页 246–255（PDF 页 270–279），习题位于印刷页 252–255（PDF 页 276–279）；不混入前面的准备题或后面的章末复习。第 32 题保留原书 (a)、(b)、(d) 编号；第 39(b) 题使用题设反平方模型；第 60 题区分速度为零时的 144 节上限与仍能前进的最多 143 节。
 
 Question-specific source page numbers are retained in the lesson data. The original PDFs are not included in this repository. / 题目数据保留各题来源页码；仓库不包含原始 PDF。
 

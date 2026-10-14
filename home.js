@@ -31,6 +31,8 @@
       meta25: '8 个知识点 · 6 道例题 · 6 道配套练习 · 128 道节后习题', open25: '开始学习 2.5',
       section26: '第 2.6 节 · 教材', lesson26Title: '多项式函数的零点',
       meta26: '8 个知识点 · 7 道例题 · 7 道配套练习 · 88 道节后习题', open26: '开始学习 2.6',
+      section27: '第 2.7 节 · 教材', lesson27Title: '正比、反比与联合比例',
+      meta27: '7 个知识点 · 6 道例题 · 6 道配套练习 · 60 道节后习题', open27: '开始学习 2.7',
       footer: '中英文学习笔记', title: 'Pre-Calculus 11 · 学习主页',
       description: 'Pre-Calculus 11 中英文学习目录：知识点、讲义例题、练习与分步解析。',
       announcement: '已切换为中文。'
@@ -45,6 +47,8 @@
       meta25: '8 concepts · 6 examples · 6 practice problems · 128 exercises', open25: 'Study Section 2.5',
       section26: 'Section 2.6 · Textbook', lesson26Title: 'Zeros of a polynomial function',
       meta26: '8 concepts · 7 examples · 7 practice problems · 88 exercises', open26: 'Study Section 2.6',
+      section27: 'Section 2.7 · Textbook', lesson27Title: 'Direct, inverse and joint variation',
+      meta27: '7 concepts · 6 examples · 6 practice problems · 60 exercises', open27: 'Study Section 2.7',
       footer: 'Bilingual study notes', title: 'Pre-Calculus 11 · Study home',
       description: 'Pre-Calculus 11 bilingual study contents: key concepts, lecture examples, practice, and step-by-step solutions.',
       announcement: 'Switched to English.'
