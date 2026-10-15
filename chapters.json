@@ -302,6 +302,165 @@
           }
         }
       ]
+    },
+    {
+      "number": 5,
+      "title": "解析三角学",
+      "en": {
+        "title": "Analytic Trigonometry"
+      },
+      "sections": [
+        {
+          "slug": "5-1",
+          "section": "5.1",
+          "title": "三角恒等式",
+          "en": {
+            "title": "Trigonometric Identities"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 10,
+            "practice": 10,
+            "exercises": 130,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "5-2",
+          "section": "5.2",
+          "title": "和角与差角公式",
+          "en": {
+            "title": "Sum and Difference Formulas"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 12,
+            "practice": 12,
+            "exercises": 128,
+            "gettingReady": 12
+          }
+        },
+        {
+          "slug": "5-3",
+          "section": "5.3",
+          "title": "倍角与半角公式",
+          "en": {
+            "title": "Double-Angle and Half-Angle Formulas"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 7,
+            "practice": 7,
+            "exercises": 132,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "5-4",
+          "section": "5.4",
+          "title": "积化和差与和差化积公式",
+          "en": {
+            "title": "Product-to-Sum and Sum-to-Product Formulas"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 6,
+            "practice": 6,
+            "exercises": 88,
+            "gettingReady": 2
+          }
+        },
+        {
+          "slug": "5-5",
+          "section": "5.5",
+          "title": "三角方程 I",
+          "en": {
+            "title": "Trigonometric Equations I"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 9,
+            "practice": 9,
+            "exercises": 106,
+            "gettingReady": 26
+          }
+        },
+        {
+          "slug": "5-6",
+          "section": "5.6",
+          "title": "三角方程 II",
+          "en": {
+            "title": "Trigonometric Equations II"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 9,
+            "practice": 9,
+            "exercises": 96,
+            "gettingReady": 10
+          }
+        },
+        {
+          "slug": "5-key-ideas",
+          "section": "5",
+          "title": "知识要点与综合问答",
+          "en": {
+            "title": "Key Ideas At a Glance and Questions"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 6,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "5-review",
+          "section": "5",
+          "title": "第5章综合复习",
+          "en": {
+            "title": "Chapter 5 Review and Review Exercises"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 9,
+            "practice": 0,
+            "exercises": 71,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "5-test-a",
+          "section": "5",
+          "title": "第5章练习测试 A",
+          "en": {
+            "title": "Chapter 5 Practice Test A"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "5-cumulative",
+          "section": "5",
+          "title": "第1–5章累积复习",
+          "en": {
+            "title": "Cumulative Review Exercises: Chapters 1–5"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        }
+      ]
     }
   ]
 }

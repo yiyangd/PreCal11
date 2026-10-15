@@ -58,9 +58,11 @@
   translations.zh.jump2 = '第 2 章';
   translations.zh.jump3 = '第 3 章';
   translations.zh.jump4 = '第 4 章';
+  translations.zh.jump5 = '第 5 章';
   translations.en.jump2 = 'Chapter 2';
   translations.en.jump3 = 'Chapter 3';
   translations.en.jump4 = 'Chapter 4';
+  translations.en.jump5 = 'Chapter 5';
 
   const catalog = JSON.parse(document.getElementById('chapter-catalog')?.textContent || '{"chapters":[]}');
   const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -71,7 +73,7 @@
       ['examples', '道例题', 'examples'],
       ['practice', section.slug === '3-summary' ? '道知识问答' : '道配套练习', section.slug === '3-summary' ? 'key questions' : 'practice problems'],
       ['gettingReady', '道前置复习', 'Getting Ready'],
-      ['exercises', section.slug === '4-key-ideas' ? '道知识问答' : '道习题', section.slug === '4-key-ideas' ? 'key questions' : 'exercises']
+      ['exercises', section.slug.endsWith('-key-ideas') ? '道知识问答' : '道习题', section.slug.endsWith('-key-ideas') ? 'key questions' : 'exercises']
     ];
     return labels.filter(([key]) => counts[key]).map(([key, zh, en]) => `${counts[key]} ${t(zh, en)}`).join(' · ');
   };
@@ -90,9 +92,9 @@
         return `<article class="lesson-card compact-card" aria-labelledby="${titleId}"><div class="section-number${regular ? '' : ' section-word'}" aria-hidden="true">${escape(badge)}</div><div class="lesson-content"><p class="lesson-label">${escape(label)}</p><h4 id="${titleId}">${escape(title)}</h4><p class="lesson-meta">${escape(countLabel(section))}</p><a class="lesson-link" data-section="${escape(section.slug)}" href="${escape(lessonUrl(section.slug).href)}"><span>${escape(regular ? t(`开始学习 ${section.section}`,`Study ${section.section}`) : t('打开复习','Open review'))}</span><span aria-hidden="true">→</span></a></div></article>`;
       }).join('');
       const number = chapter.number;
-      const sourcePath = number === 3 ? 'sections/3-test-b/' : 'chapters/4/test-b-unavailable.html';
+      const sourcePath = number === 3 ? 'sections/3-test-b/' : `chapters/${number}/test-b-unavailable.html`;
       const sourceLink = `<a data-language-path="${sourcePath}" href="${escape(languageUrl(sourcePath).href)}">${t('测试 B：所给 PDF 不含原题','Practice Test B: source unavailable in the supplied PDF')}</a>`;
-      const auditLink = number === 4 ? `<a data-language-path="chapters/4/audit.html" href="${escape(languageUrl('chapters/4/audit.html').href)}">${t('覆盖与来源说明','Coverage and source notes')}</a><span aria-hidden="true"> · </span>` : '';
+      const auditLink = number >= 4 ? `<a data-language-path="chapters/${number}/audit.html" href="${escape(languageUrl(`chapters/${number}/audit.html`).href)}">${t('覆盖与来源说明','Coverage and source notes')}</a><span aria-hidden="true"> · </span>` : '';
       return `<section class="chapter-group" aria-labelledby="chapter-${number}-title"><div class="chapter-heading" id="chapter-${number}"><p class="chapter-label">${t(`第 ${number} 章`,`CHAPTER ${number}`)}</p><h3 id="chapter-${number}-title">${escape(language === 'en' ? chapter.en.title : chapter.title)}</h3></div><div class="chapter-lessons">${cards}</div><p class="chapter-source-note">${auditLink}${sourceLink}</p></section>`;
     }).join('');
   };

@@ -108,3 +108,9 @@ Section 2.7 *Variation* is based on printed pp. 246–255 (PDF pp. 270–279); e
 Question-specific source page numbers are retained in the lesson data. The original PDFs are not included in this repository. / 题目数据保留各题来源页码；仓库不包含原始 PDF。
 
 Exercise 137: the original GeoGebra applet and exact formula were not verified during preparation. Its solution is explicitly marked as a supplementary model, `F(x)=(x-a)/[(x-b)(x-c)]`, and must be checked against the original applet for the original exercise. / 第 137 题：原 GeoGebra 互动内容及准确公式尚未核实。页面明确将 `F(x)=(x-a)/[(x-b)(x-c)]` 标为补充模型，原题仍需对照原互动内容核实。
+
+## Chapter 5 / 第5章
+
+Sections 5.1–5.6, Key Ideas and Questions, 9 worked review examples, all 71 Review Exercises, 20 Practice Test A problems, and 20 Cumulative Review problems (Chapters 1–5) are included: 978 parent problems (62 examples, 53 practice problems, 797 exercises/key questions, and 66 Getting Ready). Every explicitly labeled subpart is retained. / 第5章包含六节、知识问答、9道复习例题、71道复习题、20道测试A及20道累积复习，共978道大题，保留全部显式小问。
+
+[Chapter 5 entry](sections/5-1/) · [第5章中文入口](sections/5-1/?lang=zh) · [Coverage and source corrections / 覆盖与来源修订](chapters/5/audit.html) · [Practice Test B source unavailable / 测试B缺源说明](chapters/5/test-b-unavailable.html). Test B original questions are eText-only and were not reconstructed from manual answers. / 测试B原题仅在eText中，未以手册答案反推。

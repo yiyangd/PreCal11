@@ -1,0 +1,816 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch5-local",
+    "title": "第5章：解析三角学",
+    "en": {
+      "title": "Chapter 5: Analytic Trigonometry"
+    }
+  },
+  "lesson": {
+    "id": "5-test-a",
+    "section": "5",
+    "title": "第5章练习测试 A",
+    "en": {
+      "title": "Chapter 5 Practice Test A"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        556
+      ],
+      "printedPages": [
+        532
+      ]
+    },
+    "concepts": [
+      {
+        "id": "identities",
+        "title": "恒等式与共同定义域",
+        "summary": "逐项变形必须对原式有定义的值成立。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\sin^2x+\\cos^2x=1$，$1+\\tan^2x=\\sec^2x$，$1+\\cot^2x=\\csc^2x$。$\\tan x=\\sin x/\\cos x$，$\\cot x=\\cos x/\\sin x$；$\\csc x=1/\\sin x$，$\\sec x=1/\\cos x$。正弦、正切、余切、余割为奇函数，余弦、正割为偶函数。先列分母限制，再从一边推到另一边。一个共同定义域内的反例即可否定恒等式。"
+          }
+        ],
+        "pitfalls": [
+          "$\\sqrt{a^2}=|a|$，不是恒为 $a$。"
+        ],
+        "en": {
+          "title": "Identities and the common domain",
+          "summary": "Each transformation must hold wherever the original expressions are defined.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\sin^2x+\\cos^2x=1$, $1+\\tan^2x=\\sec^2x$, $1+\\cot^2x=\\csc^2x$. Also $\\tan x=\\sin x/\\cos x$, $\\cot x=\\cos x/\\sin x$, $\\csc x=1/\\sin x$, $\\sec x=1/\\cos x$. Sine, tangent, cotangent, and cosecant are odd; cosine and secant are even. State denominator restrictions, then transform one side into the other. One counterexample in the common domain disproves an identity."
+            }
+          ],
+          "pitfalls": [
+            "$\\sqrt{a^2}=|a|$, which need not equal $a$."
+          ]
+        }
+      },
+      {
+        "id": "formulas",
+        "title": "和差、倍角、半角与和积",
+        "summary": "按角的结构选择公式，并检查符号与分母。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\sin(u\\pm v)=\\sin u\\cos v\\pm\\cos u\\sin v$；$\\cos(u\\pm v)=\\cos u\\cos v\\mp\\sin u\\sin v$；$\\tan(u\\pm v)=(\\tan u\\pm\\tan v)/(1\\mp\\tan u\\tan v)$，正切公式要求原式各项有定义。$\\sin2x=2\\sin x\\cos x$；$\\cos2x=1-2\\sin^2x=2\\cos^2x-1$；$\\tan2x=2\\tan x/(1-\\tan^2x)$。$\\sin(x/2)=\\pm\\sqrt{(1-\\cos x)/2}$，$\\cos(x/2)=\\pm\\sqrt{(1+\\cos x)/2}$，符号由 $x/2$ 的象限决定。$\\sin^2x=(1-\\cos2x)/2$、$\\cos^2x=(1+\\cos2x)/2$。积化和差与和差化积可把多角表达式因式分解。"
+          },
+          {
+            "title": "积化和差与和差化积",
+            "body": "$\\cos u\\cos v=\\tfrac12[\\cos(u-v)+\\cos(u+v)]$；$\\sin u\\sin v=\\tfrac12[\\cos(u-v)-\\cos(u+v)]$；$\\sin u\\cos v=\\tfrac12[\\sin(u+v)+\\sin(u-v)]$；$\\cos u\\sin v=\\tfrac12[\\sin(u+v)-\\sin(u-v)]$。$\\sin u\\pm\\sin v=2\\sin((u\\pm v)/2)\\cos((u\\mp v)/2)$；$\\cos u+\\cos v=2\\cos((u+v)/2)\\cos((u-v)/2)$；$\\cos u-\\cos v=-2\\sin((u+v)/2)\\sin((u-v)/2)$。这些公式对所有实角成立。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Sum, difference, multiple-angle, and product formulas",
+          "summary": "Choose a formula from the angle structure and check signs and denominators.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\sin(u\\pm v)=\\sin u\\cos v\\pm\\cos u\\sin v$; $\\cos(u\\pm v)=\\cos u\\cos v\\mp\\sin u\\sin v$; $\\tan(u\\pm v)=(\\tan u\\pm\\tan v)/(1\\mp\\tan u\\tan v)$ where all original terms exist. $\\sin2x=2\\sin x\\cos x$, $\\cos2x=1-2\\sin^2x=2\\cos^2x-1$, and $\\tan2x=2\\tan x/(1-\\tan^2x)$. The signs in $\\sin(x/2)=\\pm\\sqrt{(1-\\cos x)/2}$ and $\\cos(x/2)=\\pm\\sqrt{(1+\\cos x)/2}$ depend on the quadrant of $x/2$. Use $\\sin^2x=(1-\\cos2x)/2$ and $\\cos^2x=(1+\\cos2x)/2$ to reduce powers. Product-to-sum and sum-to-product formulas factor expressions with several angles."
+            },
+            {
+              "title": "Product-to-sum and sum-to-product",
+              "body": "$\\cos u\\cos v=\\tfrac12[\\cos(u-v)+\\cos(u+v)]$; $\\sin u\\sin v=\\tfrac12[\\cos(u-v)-\\cos(u+v)]$; $\\sin u\\cos v=\\tfrac12[\\sin(u+v)+\\sin(u-v)]$; $\\cos u\\sin v=\\tfrac12[\\sin(u+v)-\\sin(u-v)]$. Also $\\sin u\\pm\\sin v=2\\sin((u\\pm v)/2)\\cos((u\\mp v)/2)$; $\\cos u+\\cos v=2\\cos((u+v)/2)\\cos((u-v)/2)$; $\\cos u-\\cos v=-2\\sin((u+v)/2)\\sin((u-v)/2)$. These formulas hold for all real angles."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equations",
+        "title": "三角方程与区间筛选",
+        "summary": "先求完整角族，再对原变量筛选和检验。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\sin t=\\sin\\alpha$ 给 $t=\\alpha+2k\\pi$ 或 $t=\\pi-\\alpha+2k\\pi$；$\\cos t=\\cos\\alpha$ 给 $t=\\pm\\alpha+2k\\pi$；$\\tan t=\\tan\\alpha$ 给 $t=\\alpha+k\\pi$，$k\\in\\mathbb Z$。令 $t=bx+c$ 时，解完整方程后除以 $b\\ne0$；$b=0$ 时直接判断常数等式。因式分解时不约去可能为零的因子；平方后代回原式排除增根。弧度与度数分别用 $2\\pi$ 与 $360^\\circ$ 的周期。"
+          }
+        ],
+        "pitfalls": [
+          "$\\arcsin$ 值域 $[-\\pi/2,\\pi/2]$；$\\arccos$ 值域 $[0,\\pi]$；$\\arctan$ 值域 $(-\\pi/2,\\pi/2)$。"
+        ],
+        "en": {
+          "title": "Trigonometric equations and interval filtering",
+          "summary": "Find complete angle families, then filter and check the original variable.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\sin t=\\sin\\alpha$ gives $t=\\alpha+2k\\pi$ or $t=\\pi-\\alpha+2k\\pi$; $\\cos t=\\cos\\alpha$ gives $t=\\pm\\alpha+2k\\pi$; $\\tan t=\\tan\\alpha$ gives $t=\\alpha+k\\pi$, $k\\in\\mathbb Z$. For $t=bx+c$, solve for $t$ and divide by $b\\ne0$; if $b=0$, test the constant equality directly. Do not cancel a factor that could vanish. Substitute after squaring to remove extraneous roots. Use periods $2\\pi$ in radians and $360^\\circ$ in degrees."
+            }
+          ],
+          "pitfalls": [
+            "The principal ranges are $[-\\pi/2,\\pi/2]$ for $\\arcsin$, $[0,\\pi]$ for $\\arccos$, and $(-\\pi/2,\\pi/2)$ for $\\arctan$."
+          ]
+        }
+      },
+      {
+        "id": "models",
+        "title": "图像与应用模型",
+        "summary": "振幅、相移、周期和情境定义域共同确定答案。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$a\\sin x+b\\cos x=R\\sin(x+\\phi)$，$R=\\sqrt{a^2+b^2}>0$，用 $\\cos\\phi=a/R$、$\\sin\\phi=b/R$ 选正确象限。若 $a=b=0$，函数恒零。模型只取物理有效的时间或角。画图标出函数、周期、关键点和渐近线。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Graphs and applications",
+          "summary": "Amplitude, phase, period, and the physical domain determine the answer.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$a\\sin x+b\\cos x=R\\sin(x+\\phi)$, $R=\\sqrt{a^2+b^2}>0$, with $\\cos\\phi=a/R$ and $\\sin\\phi=b/R$ selecting the quadrant. If $a=b=0$, the function is identically zero. Restrict models to physically valid times and angles. Label the function, period, key points, and asymptotes in a graph."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "gettingReady": [],
+    "kind": "chapter-end"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "已知 $\\sin\\theta=3/5$ 且 $\\cos\\theta<0$，求 $\\tan\\theta$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\cos\\theta=-\\sqrt{1-9/25}=-4/5$；角在第二象限。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\tan\\theta=(3/5)/(-4/5)=-3/4$。"
+          }
+        ],
+        "answer": "$-3/4$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Assuming that $\\sin\\theta=3/5$ and $\\cos\\theta<0$, find $\\tan\\theta$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos\\theta=-\\sqrt{1-9/25}=-4/5$; the angle is in QII."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\tan\\theta=(3/5)/(-4/5)=-3/4$."
+            }
+          ],
+          "answer": "$-3/4$."
+        },
+        "number": 1
+      },
+      {
+        "prompt": "已知 $\\tan x=2/3$ 且 $\\csc x<0$，求 $\\cos x$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\sin x<0$ 且正切为正，故余弦也为负，角在第三象限。$\\sec^2x=1+4/9=13/9$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sec x=-\\sqrt{13}/3$，故 $\\cos x=-3/\\sqrt{13}=-3\\sqrt{13}/13$。"
+          }
+        ],
+        "answer": "$-3\\sqrt{13}/13$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Assuming that $\\tan x=2/3$ and $\\csc x<0$, find $\\cos x$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Sine is negative and tangent is positive, so cosine is negative: QIII. $\\sec^2x=1+4/9=13/9$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sec x=-\\sqrt{13}/3$, so $\\cos x=-3/\\sqrt{13}=-3\\sqrt{13}/13$."
+            }
+          ],
+          "answer": "$-3\\sqrt{13}/13$."
+        },
+        "number": 2
+      },
+      {
+        "prompt": "验证恒等式：$\\dfrac{1-\\sin^2x}{\\sin^2x}=\\cot^2x$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "定义域",
+            "body": "先保留原式定义域：$\\sin x\\ne0$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "从左侧逐步变形：$\\frac{1-\\sin^2x}{\\sin^2x}=\\frac{\\cos^2x}{\\sin^2x}=\\cot^2x$。"
+          },
+          {
+            "title": "结论",
+            "body": "已得到右侧；以上运算对原式两侧均有定义的全部值成立。"
+          }
+        ],
+        "answer": "在原式共同定义域上恒等式成立。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Verify the identity: $\\dfrac{1-\\sin^2x}{\\sin^2x}=\\cot^2x$.",
+          "steps": [
+            {
+              "title": "Domain",
+              "body": "Keep the original domain: $\\sin x\\ne0$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Transform the left side: $\\frac{1-\\sin^2x}{\\sin^2x}=\\frac{\\cos^2x}{\\sin^2x}=\\cot^2x$."
+            },
+            {
+              "title": "Conclusion",
+              "body": "This is the right side. Each step holds throughout the common domain of the original two sides."
+            }
+          ],
+          "answer": "The identity holds on its original common domain."
+        },
+        "number": 3
+      },
+      {
+        "prompt": "验证恒等式：$2\\sin x\\cos x=(\\sin x+\\cos x+1)(\\sin x+\\cos x-1)$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "定义域",
+            "body": "先保留原式定义域：$x\\in\\mathbb R$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "从左侧逐步变形：$2\\sin x\\cos x=(\\sin^2x+\\cos^2x+2\\sin x\\cos x)-1=(\\sin x+\\cos x)^2-1=(\\sin x+\\cos x+1)(\\sin x+\\cos x-1)$。"
+          },
+          {
+            "title": "结论",
+            "body": "已得到右侧；以上运算对原式两侧均有定义的全部值成立。"
+          }
+        ],
+        "answer": "在原式共同定义域上恒等式成立。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Verify the identity: $2\\sin x\\cos x=(\\sin x+\\cos x+1)(\\sin x+\\cos x-1)$.",
+          "steps": [
+            {
+              "title": "Domain",
+              "body": "Keep the original domain: $x\\in\\mathbb R$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Transform the left side: $2\\sin x\\cos x=(\\sin^2x+\\cos^2x+2\\sin x\\cos x)-1=(\\sin x+\\cos x)^2-1=(\\sin x+\\cos x+1)(\\sin x+\\cos x-1)$."
+            },
+            {
+              "title": "Conclusion",
+              "body": "This is the right side. Each step holds throughout the common domain of the original two sides."
+            }
+          ],
+          "answer": "The identity holds on its original common domain."
+        },
+        "number": 4
+      },
+      {
+        "prompt": "验证恒等式：$\\sin x\\sin(\\pi/2-x)=\\dfrac{\\sin2x}{2}$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "定义域",
+            "body": "先保留原式定义域：$x\\in\\mathbb R$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "从左侧逐步变形：$\\sin x\\sin(\\pi/2-x)=\\sin x\\cos x=\\frac12\\sin2x$。"
+          },
+          {
+            "title": "结论",
+            "body": "已得到右侧；以上运算对原式两侧均有定义的全部值成立。"
+          }
+        ],
+        "answer": "在原式共同定义域上恒等式成立。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Verify the identity: $\\sin x\\sin(\\pi/2-x)=\\dfrac{\\sin2x}{2}$.",
+          "steps": [
+            {
+              "title": "Domain",
+              "body": "Keep the original domain: $x\\in\\mathbb R$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Transform the left side: $\\sin x\\sin(\\pi/2-x)=\\sin x\\cos x=\\frac12\\sin2x$."
+            },
+            {
+              "title": "Conclusion",
+              "body": "This is the right side. Each step holds throughout the common domain of the original two sides."
+            }
+          ],
+          "answer": "The identity holds on its original common domain."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "验证恒等式：$\\dfrac{\\sin2x}{2(\\cos x+\\sin x)}=\\dfrac{\\sin x}{1+\\tan x}$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "定义域",
+            "body": "先保留原式定义域：$\\cos x\\ne0,\\ \\cos x+\\sin x\\ne0$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "从左侧逐步变形：$\\frac{\\sin2x}{2(\\cos x+\\sin x)}=\\frac{\\sin x\\cos x}{\\cos x+\\sin x}=\\frac{\\sin x}{1+\\sin x/\\cos x}=\\frac{\\sin x}{1+\\tan x}$。"
+          },
+          {
+            "title": "结论",
+            "body": "已得到右侧；以上运算对原式两侧均有定义的全部值成立。"
+          }
+        ],
+        "answer": "在原式共同定义域上恒等式成立。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Verify the identity: $\\dfrac{\\sin2x}{2(\\cos x+\\sin x)}=\\dfrac{\\sin x}{1+\\tan x}$.",
+          "steps": [
+            {
+              "title": "Domain",
+              "body": "Keep the original domain: $\\cos x\\ne0,\\ \\cos x+\\sin x\\ne0$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Transform the left side: $\\frac{\\sin2x}{2(\\cos x+\\sin x)}=\\frac{\\sin x\\cos x}{\\cos x+\\sin x}=\\frac{\\sin x}{1+\\sin x/\\cos x}=\\frac{\\sin x}{1+\\tan x}$."
+            },
+            {
+              "title": "Conclusion",
+              "body": "This is the right side. Each step holds throughout the common domain of the original two sides."
+            }
+          ],
+          "answer": "The identity holds on its original common domain."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "验证恒等式：$\\dfrac{\\sin2x+\\sin4x}{\\cos2x+\\cos4x}=\\tan3x$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "定义域",
+            "body": "先保留原式定义域：$\\cos3x\\cos x\\ne0$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "从左侧逐步变形：$\\frac{\\sin2x+\\sin4x}{\\cos2x+\\cos4x}=\\frac{2\\sin3x\\cos x}{2\\cos3x\\cos x}=\\tan3x$。"
+          },
+          {
+            "title": "结论",
+            "body": "已得到右侧；以上运算对原式两侧均有定义的全部值成立。"
+          }
+        ],
+        "answer": "在原式共同定义域上恒等式成立。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Verify the identity: $\\dfrac{\\sin2x+\\sin4x}{\\cos2x+\\cos4x}=\\tan3x$.",
+          "steps": [
+            {
+              "title": "Domain",
+              "body": "Keep the original domain: $\\cos3x\\cos x\\ne0$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Transform the left side: $\\frac{\\sin2x+\\sin4x}{\\cos2x+\\cos4x}=\\frac{2\\sin3x\\cos x}{2\\cos3x\\cos x}=\\tan3x$."
+            },
+            {
+              "title": "Conclusion",
+              "body": "This is the right side. Each step holds throughout the common domain of the original two sides."
+            }
+          ],
+          "answer": "The identity holds on its original common domain."
+        },
+        "number": 7
+      },
+      {
+        "prompt": "验证恒等式：$\\cos(x+y)\\cos(x-y)=\\cos^2x+\\cos^2y-1$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "定义域",
+            "body": "先保留原式定义域：$x,y\\in\\mathbb R$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "从左侧逐步变形：$\\cos(x+y)\\cos(x-y)=\\cos^2x\\cos^2y-\\sin^2x\\sin^2y=\\cos^2x\\cos^2y-(1-\\cos^2x)(1-\\cos^2y)=\\cos^2x+\\cos^2y-1$。"
+          },
+          {
+            "title": "结论",
+            "body": "已得到右侧；以上运算对原式两侧均有定义的全部值成立。"
+          }
+        ],
+        "answer": "在原式共同定义域上恒等式成立。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Verify the identity: $\\cos(x+y)\\cos(x-y)=\\cos^2x+\\cos^2y-1$.",
+          "steps": [
+            {
+              "title": "Domain",
+              "body": "Keep the original domain: $x,y\\in\\mathbb R$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Transform the left side: $\\cos(x+y)\\cos(x-y)=\\cos^2x\\cos^2y-\\sin^2x\\sin^2y=\\cos^2x\\cos^2y-(1-\\cos^2x)(1-\\cos^2y)=\\cos^2x+\\cos^2y-1$."
+            },
+            {
+              "title": "Conclusion",
+              "body": "This is the right side. Each step holds throughout the common domain of the original two sides."
+            }
+          ],
+          "answer": "The identity holds on its original common domain."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "求方程 $\\tan(-x)=1$ 的全部解。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "利用奇函数性质得 $\\tan x=-1$；参考角为 $\\pi/4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$x=-\\pi/4+k\\pi$，$k\\in\\mathbb Z$；这些角余弦非零，代回 $\\tan(-x)=1$。"
+          }
+        ],
+        "answer": "$x=-\\pi/4+k\\pi,\\ k\\in\\mathbb Z$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find all solutions of $\\tan(-x)=1$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Oddness gives $\\tan x=-1$; the reference angle is $\\pi/4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$x=-\\pi/4+k\\pi$, $k\\in\\mathbb Z$. Their cosine is nonzero and substitution gives $\\tan(-x)=1$."
+            }
+          ],
+          "answer": "$x=-\\pi/4+k\\pi,\\ k\\in\\mathbb Z$."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "求方程 $\\sin4x=1/2$ 的全部解。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$4x=\\pi/6+2k\\pi$ 或 $4x=5\\pi/6+2k\\pi$，$k\\in\\mathbb Z$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "两族都除以4，得 $x=\\pi/24+k\\pi/2$ 或 $x=5\\pi/24+k\\pi/2$；代入即得正弦为 $1/2$。"
+          }
+        ],
+        "answer": "$x=\\pi/24+k\\pi/2$ 或 $5\\pi/24+k\\pi/2$，$k\\in\\mathbb Z$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find all solutions of $\\sin4x=1/2$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$4x=\\pi/6+2k\\pi$ or $4x=5\\pi/6+2k\\pi$, $k\\in\\mathbb Z$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Divide both families by 4: $x=\\pi/24+k\\pi/2$ or $x=5\\pi/24+k\\pi/2$. Substitution gives sine $1/2$."
+            }
+          ],
+          "answer": "$x=\\pi/24+k\\pi/2$ or $5\\pi/24+k\\pi/2$, $k\\in\\mathbb Z$."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "在 $[0,2\\pi)$ 内求 $\\cos(x/3)=\\sqrt2/2$ 的全部解。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$x/3=\\pm\\pi/4+2k\\pi$，故 $x=\\pm3\\pi/4+6k\\pi$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "只保留 $0\\le x<2\\pi$，得到 $x=3\\pi/4$。检查 $\\cos(\\pi/4)=\\sqrt2/2$。"
+          }
+        ],
+        "answer": "$\\{3\\pi/4\\}$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find all solutions of $\\cos(x/3)=\\sqrt2/2$ in $[0,2\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$x/3=\\pm\\pi/4+2k\\pi$, hence $x=\\pm3\\pi/4+6k\\pi$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Filtering to $0\\le x<2\\pi$ leaves $x=3\\pi/4$. Check $\\cos(\\pi/4)=\\sqrt2/2$."
+            }
+          ],
+          "answer": "$\\{3\\pi/4\\}$."
+        },
+        "number": 11
+      },
+      {
+        "prompt": "在 $[0,2\\pi)$ 内求 $\\sin2x+\\cos x=0$ 的全部解。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$2\\sin x\\cos x+\\cos x=\\cos x(2\\sin x+1)=0$，不约去 $\\cos x$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\cos x=0$ 给 $\\pi/2,3\\pi/2$；$\\sin x=-1/2$ 给 $7\\pi/6,11\\pi/6$。四值均满足原式及区间。"
+          }
+        ],
+        "answer": "$\\{\\pi/2,7\\pi/6,3\\pi/2,11\\pi/6\\}$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find all solutions of $\\sin2x+\\cos x=0$ in $[0,2\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$2\\sin x\\cos x+\\cos x=\\cos x(2\\sin x+1)=0$. Do not cancel $\\cos x$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos x=0$ gives $\\pi/2,3\\pi/2$; $\\sin x=-1/2$ gives $7\\pi/6,11\\pi/6$. All four satisfy the original equation and interval."
+            }
+          ],
+          "answer": "$\\{\\pi/2,7\\pi/6,3\\pi/2,11\\pi/6\\}$."
+        },
+        "number": 12
+      },
+      {
+        "prompt": "求精确值：$\\sin56^\\circ+\\cos146^\\circ$。",
+        "concept": "formulas",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "用和差公式：$\\sin56^\\circ+\\cos(90^\\circ+56^\\circ)=\\sin56^\\circ-\\sin56^\\circ=0$。"
+          }
+        ],
+        "answer": "$0$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find the exact value of $\\sin56^\\circ+\\cos146^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the sum/difference formula: $\\sin56^\\circ+\\cos(90^\\circ+56^\\circ)=\\sin56^\\circ-\\sin56^\\circ=0$."
+            }
+          ],
+          "answer": "$0$."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "求精确值：$\\cos48^\\circ\\cos12^\\circ-\\sin48^\\circ\\sin12^\\circ$。",
+        "concept": "formulas",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "用和差公式：$\\cos(48^\\circ+12^\\circ)=\\cos60^\\circ=1/2$。"
+          }
+        ],
+        "answer": "$1/2$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find the exact value of $\\cos48^\\circ\\cos12^\\circ-\\sin48^\\circ\\sin12^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the sum/difference formula: $\\cos(48^\\circ+12^\\circ)=\\cos60^\\circ=1/2$."
+            }
+          ],
+          "answer": "$1/2$."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "求精确值：$\\sin(5\\pi/12)$。",
+        "concept": "formulas",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "用和差公式：$\\sin(\\pi/4+\\pi/6)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}+\\frac{\\sqrt2}{2}\\frac12=\\frac{\\sqrt6+\\sqrt2}{4}$。"
+          }
+        ],
+        "answer": "$\\dfrac{\\sqrt6+\\sqrt2}{4}$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Find the exact value of $\\sin(5\\pi/12)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the sum/difference formula: $\\sin(\\pi/4+\\pi/6)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}+\\frac{\\sqrt2}{2}\\frac12=\\frac{\\sqrt6+\\sqrt2}{4}$."
+            }
+          ],
+          "answer": "$\\dfrac{\\sqrt6+\\sqrt2}{4}$."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "若 $\\sin\\theta=4/5$，求 $\\cos2\\theta$ 的精确值。",
+        "concept": "formulas",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\cos2\\theta=1-2\\sin^2\\theta=1-2(16/25)=-7/25$；无需知道 $\\cos\\theta$ 的符号。"
+          }
+        ],
+        "answer": "$-7/25$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "If $\\sin\\theta=4/5$, find the exact value of $\\cos2\\theta$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos2\\theta=1-2\\sin^2\\theta=1-2(16/25)=-7/25$. The sign of $\\cos\\theta$ is unnecessary."
+            }
+          ],
+          "answer": "$-7/25$."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "若 $\\tan\\theta=3/4$，求 $\\sin2\\theta$ 的精确值。",
+        "concept": "formulas",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\sin2\\theta=\\dfrac{2\\tan\\theta}{1+\\tan^2\\theta}=\\dfrac{2(3/4)}{1+9/16}=24/25$；两种可能象限给相同结果。"
+          }
+        ],
+        "answer": "$24/25$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "If $\\tan\\theta=3/4$, find the exact value of $\\sin2\\theta$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin2\\theta=\\dfrac{2\\tan\\theta}{1+\\tan^2\\theta}=\\dfrac{2(3/4)}{1+9/16}=24/25$. Both possible quadrants give this result."
+            }
+          ],
+          "answer": "$24/25$."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "判断 $y=\\cos(\\pi/2-x)+\\tan x$ 是奇函数、偶函数还是都不是。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "余函数公式给 $f(x)=\\sin x+\\tan x$，定义域排除 $x=\\pi/2+k\\pi$，关于0对称。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$f(-x)=-\\sin x-\\tan x=-f(x)$，所以为奇函数。"
+          }
+        ],
+        "answer": "奇函数。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Determine whether $y=\\cos(\\pi/2-x)+\\tan x$ is odd, even, or neither.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The cofunction identity gives $f(x)=\\sin x+\\tan x$, with domain excluding $x=\\pi/2+k\\pi$, symmetric about 0."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$f(-x)=-\\sin x-\\tan x=-f(x)$, so the function is odd."
+            }
+          ],
+          "answer": "Odd."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "判断 $\\sin x+\\sin y=\\sin(x+y)$ 是否为恒等式。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "取 $x=y=\\pi/2$，左侧 $1+1=2$，右侧 $\\sin\\pi=0$。两侧都定义，值不等。"
+          }
+        ],
+        "answer": "不是恒等式。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "Determine whether $\\sin x+\\sin y=\\sin(x+y)$ is an identity.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Let $x=y=\\pi/2$. The left side is 2 and the right side is $\\sin\\pi=0$. Both exist and are unequal."
+            }
+          ],
+          "answer": "It is not an identity."
+        },
+        "number": 19
+      },
+      {
+        "prompt": "高尔夫球以初速度 $v_0=128\\ \\mathrm{ft/sec}$、仰角 $\\theta$（度）从水平球道击出，射程（英尺）为 $v_0^2\\sin2\\theta/32$。射程512英尺时求 $\\theta$。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$128^2\\sin2\\theta/32=512$ 化为 $512\\sin2\\theta=512$，故 $\\sin2\\theta=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "物理仰角 $0^\\circ<\\theta<90^\\circ$，所以 $0^\\circ<2\\theta<180^\\circ$，唯一角 $2\\theta=90^\\circ$，$\\theta=45^\\circ$。代回得512英尺。"
+          }
+        ],
+        "answer": "$45^\\circ$。",
+        "pdfPage": 556,
+        "printedPage": 532,
+        "en": {
+          "prompt": "A golf ball is hit on a level fairway with initial velocity $v_0=128\\ \\mathrm{ft/sec}$ at an initial angle $\\theta$ (in degrees). Its range in feet is $v_0^2\\sin2\\theta/32$. Find the value(s) of $\\theta$ if the range is 512 feet.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$128^2\\sin2\\theta/32=512$ becomes $512\\sin2\\theta=512$, hence $\\sin2\\theta=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The physical launch angle is $0^\\circ<\\theta<90^\\circ$, so $0^\\circ<2\\theta<180^\\circ$. Thus $2\\theta=90^\\circ$ and $\\theta=45^\\circ$. Substitution gives 512 feet."
+            }
+          ],
+          "answer": "$45^\\circ$."
+        },
+        "number": 20
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedGettingReady": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true
+  }
+}
