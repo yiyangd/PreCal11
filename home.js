@@ -55,6 +55,53 @@
     }
   };
 
+  translations.zh.jump2 = '第 2 章';
+  translations.zh.jump3 = '第 3 章';
+  translations.zh.jump4 = '第 4 章';
+  translations.en.jump2 = 'Chapter 2';
+  translations.en.jump3 = 'Chapter 3';
+  translations.en.jump4 = 'Chapter 4';
+
+  const catalog = JSON.parse(document.getElementById('chapter-catalog')?.textContent || '{"chapters":[]}');
+  const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const t = (zh, en) => language === 'zh' ? zh : en;
+  const countLabel = section => {
+    const counts = section.counts;
+    const labels = [
+      ['examples', '道例题', 'examples'],
+      ['practice', section.slug === '3-summary' ? '道知识问答' : '道配套练习', section.slug === '3-summary' ? 'key questions' : 'practice problems'],
+      ['gettingReady', '道前置复习', 'Getting Ready'],
+      ['exercises', section.slug === '4-key-ideas' ? '道知识问答' : '道习题', section.slug === '4-key-ideas' ? 'key questions' : 'exercises']
+    ];
+    return labels.filter(([key]) => counts[key]).map(([key, zh, en]) => `${counts[key]} ${t(zh, en)}`).join(' · ');
+  };
+  const renderChapters = () => {
+    const container = document.getElementById('added-chapters');
+    if (!container) return;
+    container.innerHTML = catalog.chapters.map(chapter => {
+      const cards = chapter.sections.map(section => {
+        const regular = /^\d-\d$/.test(section.slug);
+        const kind = section.slug.slice(2);
+        const badges = {summary:t('要点','Key ideas'),'key-ideas':t('要点','Key ideas'),review:t('复习','Review'),'test-a':t('测试 A','Test A'),cumulative:t('累积复习','Cumulative')};
+        const badge = regular ? section.section : badges[kind];
+        const title = language === 'en' ? section.en.title : section.title;
+        const label = regular ? t(`第 ${section.section} 节 · 教材`,`Section ${section.section} · Textbook`) : t('章末复习 · 教材','Chapter review · Textbook');
+        const titleId = `lesson-${section.slug}-title`;
+        return `<article class="lesson-card compact-card" aria-labelledby="${titleId}"><div class="section-number${regular ? '' : ' section-word'}" aria-hidden="true">${escape(badge)}</div><div class="lesson-content"><p class="lesson-label">${escape(label)}</p><h4 id="${titleId}">${escape(title)}</h4><p class="lesson-meta">${escape(countLabel(section))}</p><a class="lesson-link" data-section="${escape(section.slug)}" href="${escape(lessonUrl(section.slug).href)}"><span>${escape(regular ? t(`开始学习 ${section.section}`,`Study ${section.section}`) : t('打开复习','Open review'))}</span><span aria-hidden="true">→</span></a></div></article>`;
+      }).join('');
+      const number = chapter.number;
+      const sourcePath = number === 3 ? 'sections/3-test-b/' : 'chapters/4/test-b-unavailable.html';
+      const sourceLink = `<a data-language-path="${sourcePath}" href="${escape(languageUrl(sourcePath).href)}">${t('测试 B：所给 PDF 不含原题','Practice Test B: source unavailable in the supplied PDF')}</a>`;
+      const auditLink = number === 4 ? `<a data-language-path="chapters/4/audit.html" href="${escape(languageUrl('chapters/4/audit.html').href)}">${t('覆盖与来源说明','Coverage and source notes')}</a><span aria-hidden="true"> · </span>` : '';
+      return `<section class="chapter-group" aria-labelledby="chapter-${number}-title"><div class="chapter-heading" id="chapter-${number}"><p class="chapter-label">${t(`第 ${number} 章`,`CHAPTER ${number}`)}</p><h3 id="chapter-${number}-title">${escape(language === 'en' ? chapter.en.title : chapter.title)}</h3></div><div class="chapter-lessons">${cards}</div><p class="chapter-source-note">${auditLink}${sourceLink}</p></section>`;
+    }).join('');
+  };
+  const languageUrl = path => {
+    const destination = new URL(location.protocol === 'file:' && path.endsWith('/') ? `${path}index.html` : path, location.href);
+    destination.searchParams.set('lang', language);
+    return destination;
+  };
+
   const render = () => {
     const text = translations[language];
     document.documentElement.lang = language === 'en' ? 'en' : 'zh-Hans';
@@ -66,6 +113,8 @@
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     });
+    document.getElementById('chapter-shortcuts')?.setAttribute('aria-label', t('章节导航', 'Chapters'));
+    renderChapters();
     document.querySelectorAll('[data-section]').forEach(link => { link.href = lessonUrl(link.dataset.section).href; });
     const home = new URL(location.protocol === 'file:' ? 'index.html' : './', location.href);
     home.searchParams.set('lang', language);

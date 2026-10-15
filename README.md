@@ -1,6 +1,6 @@
 # Pre-Calculus 11
 
-A simple bilingual course homepage with Sections 2.4–2.7: rational functions, inequalities, polynomial zeros and variation. / 简洁的中英双语课程首页，包含第 2.4–2.7 节：有理函数、不等式、多项式零点与比例关系。
+A bilingual course website with Sections 2.4–2.7, Chapter 3 (Exponential and Logarithmic Functions), and Chapter 4 (Trigonometric Functions). / 中英双语课程网站，包含第 2.4–2.7 节、第 3 章指数与对数函数、第 4 章三角函数。
 
 Repository / 仓库: [yiyangd/PreCal11](https://github.com/yiyangd/PreCal11)
 
@@ -25,6 +25,18 @@ Section 2.7 / 第 2.7 节: [中文](https://yiyangd.github.io/PreCal11/sections/
 - Graphs, concept and exercise filters, browser-saved learning progress, and print / PDF support. / 图像、知识点与题号筛选、浏览器学习进度保存及打印功能。
 - Section 2.7: 7 concepts, all 6 textbook Examples, all 6 Practice Problems, and Exercises 1–60 including every subpart. Direct/inverse function graphs and original source figures support the solutions. / 第 2.7 节：7 个知识点、全部 6 道教材例题、6 道配套练习及节后习题 1–60（含全部小问），配正反比例函数图像与教材原图。
 - Static HTML, CSS, and JavaScript; no installation or build required. / 纯静态网页，无需安装依赖或构建。
+
+## Chapters 3 and 4 / 第 3、4 章
+
+The course home lists every reviewed section and chapter review page in both languages. Existing Section 2.4–2.7 URLs remain unchanged. / 中英文首页列出各节及章末复习；第 2.4–2.7 节地址保持不变。
+
+- Chapter 3: Sections 3.1–3.5, Key Ideas and Worked Review, Review Exercises, Practice Test A, and Cumulative Review (Chapters 1–3): 991 numbered learning records, including Getting Ready. / 第 3 章：3.1–3.5、知识要点与复习例题、章末复习、测试 A 和第 1–3 章累积复习，共 991 条编号学习记录（含前置复习）。
+- Chapter 4: Sections 4.1–4.6, Key Ideas and Questions, Review, Practice Test A, and Cumulative Review (Chapters 1–4): 1,054 parent problems, including Getting Ready. / 第 4 章：4.1–4.6、知识问答、章末复习、测试 A 和第 1–4 章累积复习，共 1,054 道大题（含前置复习）。
+- Both chapters preserve their independent browser progress keys, full bilingual steps, original figures, and exercise-to-concept navigation. Chapter-specific tools, including the Chapter 4 birthday calculator, remain available. / 两章保留独立学习进度、完整双语步骤、原题附图与习题返回知识点功能，以及第 4 章生日计算器等专用工具。
+- Practice Test B questions are eText-only and absent from the supplied PDF. Source notices are available for [Chapter 3](sections/3-test-b/) and [Chapter 4](chapters/4/test-b-unavailable.html); these are not completed tests. External GeoGebra applets have not been tested. / 所给 PDF 不含仅在 eText 提供的测试 B 原题；网站保留两章缺源说明，不将其计为已完成测试。外部 GeoGebra 互动未实测。
+- [Chapter 4 coverage and source corrections](chapters/4/audit.html) / [第 4 章覆盖与来源修订](chapters/4/audit.html?lang=zh).
+
+New public directories are `sections/3-*`, `sections/4-*`, and `chapters/4/` (source notices). `chapters.json` matches the homepage's embedded chapter catalog. The private `chapter-work` source, audit files, textbook PDF, and solution manual are not published. / 新增公共目录为 `sections/3-*`、`sections/4-*` 和来源说明 `chapters/4/`。`chapters.json` 与首页内嵌目录一致；制作来源、私有审核文件、教材 PDF 及解答手册不进入公开仓库。
 
 ## Open locally / 本地打开
 

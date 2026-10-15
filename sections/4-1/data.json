@@ -1,0 +1,5554 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch4-local",
+    "title": "第4章：三角函数",
+    "en": {
+      "title": "Chapter 4: Trigonometric Functions"
+    }
+  },
+  "lesson": {
+    "id": "4-1",
+    "section": "4.1",
+    "title": "角及其度量",
+    "description": "角、弧度、弧长、扇形面积与转动速度。",
+    "en": {
+      "title": "Angles and Their Measure",
+      "description": "Angles, radians, arc length, sector area, and rotation speed."
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition — Section 4.1",
+      "kind": "pdf",
+      "printedPages": [
+        356,
+        369
+      ],
+      "pdfPages": [
+        380,
+        393
+      ]
+    },
+    "concepts": [
+      {
+        "id": "angles",
+        "title": "角与标准位置",
+        "summary": "正角逆时针，负角顺时针。标准位置的顶点在原点，始边在正$x$轴。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "正角逆时针，负角顺时针。标准位置的顶点在原点，始边在正$x$轴。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Angles and standard position",
+          "summary": "Positive angles rotate counterclockwise and negative angles clockwise. In standard position the vertex is the origin and the initial side is the positive $x$-axis.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Positive angles rotate counterclockwise and negative angles clockwise. In standard position the vertex is the origin and the initial side is the positive $x$-axis."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "units",
+        "title": "度、分秒和弧度",
+        "summary": "$1^\\circ=60\\prime=3600\\prime\\prime$；$180^\\circ=\\pi$弧度。度乘$\\pi/180$得弧度；弧度乘$180/\\pi$得度。只在最后舍入。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$1^\\circ=60\\prime=3600\\prime\\prime$；$180^\\circ=\\pi$弧度。度乘$\\pi/180$得弧度；弧度乘$180/\\pi$得度。只在最后舍入。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Degrees, DMS, and radians",
+          "summary": "$1^\\circ=60\\prime=3600\\prime\\prime$; $180^\\circ=\\pi$ radians. Multiply degrees by $\\pi/180$ for radians, or radians by $180/\\pi$ for degrees. Round only at the end.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$1^\\circ=60\\prime=3600\\prime\\prime$; $180^\\circ=\\pi$ radians. Multiply degrees by $\\pi/180$ for radians, or radians by $180/\\pi$ for degrees. Round only at the end."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "coterminal",
+        "title": "同终边角",
+        "summary": "同终边角相差整数周：$\\theta+2n\\pi$或$\\theta+n360^\\circ$，$n\\in\\mathbb Z$。加减整周使角落在指定区间。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "同终边角相差整数周：$\\theta+2n\\pi$或$\\theta+n360^\\circ$，$n\\in\\mathbb Z$。加减整周使角落在指定区间。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Coterminal angles",
+          "summary": "Coterminal angles differ by whole revolutions: $\\theta+2n\\pi$ or $\\theta+n360^\\circ$, $n\\in\\mathbb Z$. Add or subtract turns to reach the requested interval.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Coterminal angles differ by whole revolutions: $\\theta+2n\\pi$ or $\\theta+n360^\\circ$, $n\\in\\mathbb Z$. Add or subtract turns to reach the requested interval."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "complements",
+        "title": "余角与补角",
+        "summary": "互余的两个正角和为$90^\\circ$；互补的两个正角和为$180^\\circ$。分别计算$90^\\circ-\\theta$和$180^\\circ-\\theta$并检查正角条件。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "互余的两个正角和为$90^\\circ$；互补的两个正角和为$180^\\circ$。分别计算$90^\\circ-\\theta$和$180^\\circ-\\theta$并检查正角条件。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Complements and supplements",
+          "summary": "Two positive angles are complementary if they sum to $90^\\circ$, or supplementary if they sum to $180^\\circ$. Compute $90^\\circ-\\theta$ and $180^\\circ-\\theta$ and check positivity.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Two positive angles are complementary if they sum to $90^\\circ$, or supplementary if they sum to $180^\\circ$. Compute $90^\\circ-\\theta$ and $180^\\circ-\\theta$ and check positivity."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "arc",
+        "title": "弧长与经线距离",
+        "summary": "$\\theta=s/r$，$s=r\\theta$。$\\theta$必须用弧度；同经线城市的圆心角等于纬度差。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\theta=s/r$，$s=r\\theta$。$\\theta$必须用弧度；同经线城市的圆心角等于纬度差。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Arc length and meridian distance",
+          "summary": "$\\theta=s/r$ and $s=r\\theta$, where $\\theta$ must be in radians. For cities on one meridian, use the latitude difference as the central angle.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\theta=s/r$ and $s=r\\theta$, where $\\theta$ must be in radians. For cities on one meridian, use the latitude difference as the central angle."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "sector",
+        "title": "扇形面积",
+        "summary": "$A=\\frac12r^2\\theta$，其中$\\theta$为弧度。直径除以2得半径，多个不重叠扇形的面积可以相加。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$A=\\frac12r^2\\theta$，其中$\\theta$为弧度。直径除以2得半径，多个不重叠扇形的面积可以相加。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Sector area",
+          "summary": "$A=\\frac12r^2\\theta$, with $\\theta$ in radians. Halve a diameter to find the radius; add the areas of nonoverlapping sectors.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$A=\\frac12r^2\\theta$, with $\\theta$ in radians. Halve a diameter to find the radius; add the areas of nonoverlapping sectors."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "speed",
+        "title": "线速度与角速度",
+        "summary": "$v=s/t$，$\\omega=\\theta/t$，$v=r\\omega$。每周为$2\\pi$弧度，先统一长度与时间单位。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$v=s/t$，$\\omega=\\theta/t$，$v=r\\omega$。每周为$2\\pi$弧度，先统一长度与时间单位。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Linear and angular speed",
+          "summary": "$v=s/t$, $\\omega=\\theta/t$, and $v=r\\omega$. Each revolution is $2\\pi$ radians; unify length and time units first.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$v=s/t$, $\\omega=\\theta/t$, and $v=r\\omega$. Each revolution is $2\\pi$ radians; unify length and time units first."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "把角画在标准位置：(a)$60^\\circ$；(b)$135^\\circ$；(c)$-240^\\circ$；(d)$405^\\circ$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "(a) 画有向角",
+            "body": "从正$x$轴逆时针旋转$60^\\circ$。$60=0\\cdot360+60$，终边位于第I象限，与$60^\\circ$同终边。"
+          },
+          {
+            "title": "(b) 画有向角",
+            "body": "从正$x$轴逆时针旋转$135^\\circ$。$135=0\\cdot360+135$，终边位于第II象限，与$135^\\circ$同终边。"
+          },
+          {
+            "title": "(c) 画有向角",
+            "body": "从正$x$轴顺时针旋转$240^\\circ$。$-240=-1\\cdot360+120$，终边位于第II象限，与$120^\\circ$同终边。"
+          },
+          {
+            "title": "(d) 画有向角",
+            "body": "从正$x$轴逆时针旋转$405^\\circ$。$405=1\\cdot360+45$，终边位于第I象限，与$45^\\circ$同终边。"
+          }
+        ],
+        "answer": "(a) 终边$60^\\circ$，第I象限；(b) 终边$135^\\circ$，第II象限；(c) 终边$120^\\circ$，第II象限；(d) 终边$45^\\circ$，第I象限",
+        "printedPage": 358,
+        "pdfPage": 382,
+        "en": {
+          "prompt": "Draw each angle in standard position: (a)$60^\\circ$; (b)$135^\\circ$; (c)$-240^\\circ$; (d)$405^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Draw the directed angle",
+              "body": "Rotate counterclockwise by $60^\\circ$ from the positive $x$-axis. Since $60=0\\cdot360+60$, the terminal ray is in Quadrant I, coterminal with $60^\\circ$."
+            },
+            {
+              "title": "(b) Draw the directed angle",
+              "body": "Rotate counterclockwise by $135^\\circ$ from the positive $x$-axis. Since $135=0\\cdot360+135$, the terminal ray is in Quadrant II, coterminal with $135^\\circ$."
+            },
+            {
+              "title": "(c) Draw the directed angle",
+              "body": "Rotate clockwise by $240^\\circ$ from the positive $x$-axis. Since $-240=-1\\cdot360+120$, the terminal ray is in Quadrant II, coterminal with $120^\\circ$."
+            },
+            {
+              "title": "(d) Draw the directed angle",
+              "body": "Rotate counterclockwise by $405^\\circ$ from the positive $x$-axis. Since $405=1\\cdot360+45$, the terminal ray is in Quadrant I, coterminal with $45^\\circ$."
+            }
+          ],
+          "answer": "(a) Terminal ray $60^\\circ$, Quadrant I; (b) Terminal ray $135^\\circ$, Quadrant II; (c) Terminal ray $120^\\circ$, Quadrant II; (d) Terminal ray $45^\\circ$, Quadrant I",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/4-1-example-1.png"
+      },
+      {
+        "prompt": "(a)将$24^\\circ8\\prime15\\prime\\prime$换成十进制度数，保留两位小数；(b)将$67.526^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a) 分秒换算成度",
+            "body": "$24^\\circ8\\prime15\\prime\\prime=\\left(24+\\frac{8}{60}+\\frac{15}{3600}\\right)^\\circ=24.13750000^\\circ$。"
+          },
+          {
+            "title": "(a) 舍入",
+            "body": "保留两位小数：$24.14^\\circ$。"
+          },
+          {
+            "title": "(b) 分离整数度与分钟",
+            "body": "$67.526^\\circ=67^\\circ+0.526^\\circ$，小数度乘60得到$31.56\\prime$。"
+          },
+          {
+            "title": "(b) 换成秒并舍入",
+            "body": "保留$31\\prime$；小数分再乘60，得$33.6\\prime\\prime$，最终为$67^\\circ31\\prime34\\prime\\prime$。"
+          }
+        ],
+        "answer": "(a) $24.14^\\circ$；(b) $67^\\circ31\\prime34\\prime\\prime$",
+        "printedPage": 359,
+        "pdfPage": 383,
+        "en": {
+          "prompt": "(a) Convert $24^\\circ8\\prime15\\prime\\prime$ to decimal degrees, rounded to two decimal places. (b) Convert $67.526^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "(a) Convert minutes and seconds to degrees",
+              "body": "$24^\\circ8\\prime15\\prime\\prime=\\left(24+\\frac{8}{60}+\\frac{15}{3600}\\right)^\\circ=24.13750000^\\circ$."
+            },
+            {
+              "title": "(a) Round",
+              "body": "Round to two decimal places: $24.14^\\circ$."
+            },
+            {
+              "title": "(b) Separate degrees and minutes",
+              "body": "$67.526^\\circ=67^\\circ+0.526^\\circ$. Multiply the fractional degree by 60 to obtain $31.56\\prime$."
+            },
+            {
+              "title": "(b) Convert the fractional minute to seconds",
+              "body": "Keep $31\\prime$; multiply the fractional minute by 60 to get $33.6\\prime\\prime$. Rounding gives $67^\\circ31\\prime34\\prime\\prime$."
+            }
+          ],
+          "answer": "(a) $24.14^\\circ$; (b) $67^\\circ31\\prime34\\prime\\prime$",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "将角度换成弧度：(a)$30^\\circ$；(b)$90^\\circ$；(c)$-225^\\circ$；(d)$55^\\circ$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a) 建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "(a) 代入并计算",
+            "body": "$30(\\pi/180)=\\frac{\\pi}{6}$ rad。"
+          },
+          {
+            "title": "(b) 建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "(b) 代入并计算",
+            "body": "$90(\\pi/180)=\\frac{\\pi}{2}$ rad。"
+          },
+          {
+            "title": "(c) 建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "(c) 代入并计算",
+            "body": "$-225(\\pi/180)=- \\frac{5 \\pi}{4}$ rad。"
+          },
+          {
+            "title": "(d) 建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "(d) 代入并计算",
+            "body": "$55(\\pi/180)=\\frac{11 \\pi}{36}$ rad。"
+          }
+        ],
+        "answer": "(a) $\\frac{\\pi}{6}$ rad；(b) $\\frac{\\pi}{2}$ rad；(c) $- \\frac{5 \\pi}{4}$ rad；(d) $\\frac{11 \\pi}{36}$ rad",
+        "printedPage": 361,
+        "pdfPage": 385,
+        "en": {
+          "prompt": "Convert each angle from degrees to radians: (a)$30^\\circ$; (b)$90^\\circ$; (c)$-225^\\circ$; (d)$55^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "(a) Substitute and calculate",
+              "body": "$30(\\pi/180)=\\frac{\\pi}{6}$ rad."
+            },
+            {
+              "title": "(b) Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "(b) Substitute and calculate",
+              "body": "$90(\\pi/180)=\\frac{\\pi}{2}$ rad."
+            },
+            {
+              "title": "(c) Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "(c) Substitute and calculate",
+              "body": "$-225(\\pi/180)=- \\frac{5 \\pi}{4}$ rad."
+            },
+            {
+              "title": "(d) Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "(d) Substitute and calculate",
+              "body": "$55(\\pi/180)=\\frac{11 \\pi}{36}$ rad."
+            }
+          ],
+          "answer": "(a) $\\frac{\\pi}{6}$ rad; (b) $\\frac{\\pi}{2}$ rad; (c) $- \\frac{5 \\pi}{4}$ rad; (d) $\\frac{11 \\pi}{36}$ rad",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "将弧度换成度：(a)$\\pi/3$；(b)$-3\\pi/4$；(c)$1$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a) 建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "(a) 代入并计算",
+            "body": "$\\frac{\\pi}{3}(180/\\pi)=60$ degrees。"
+          },
+          {
+            "title": "(b) 建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "(b) 代入并计算",
+            "body": "$- \\frac{3 \\pi}{4}(180/\\pi)=-135$ degrees。"
+          },
+          {
+            "title": "(c) 建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "(c) 代入并计算",
+            "body": "$1(180/\\pi)=\\frac{180}{\\pi}$ degrees。"
+          }
+        ],
+        "answer": "(a) $60$ degrees；(b) $-135$ degrees；(c) $\\frac{180}{\\pi}$ degrees",
+        "printedPage": 361,
+        "pdfPage": 385,
+        "en": {
+          "prompt": "Convert each angle in radians to degrees: (a)$\\pi/3$; (b)$-3\\pi/4$; (c)$1$.",
+          "steps": [
+            {
+              "title": "(a) Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "(a) Substitute and calculate",
+              "body": "$\\frac{\\pi}{3}(180/\\pi)=60$ degrees."
+            },
+            {
+              "title": "(b) Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "(b) Substitute and calculate",
+              "body": "$- \\frac{3 \\pi}{4}(180/\\pi)=-135$ degrees."
+            },
+            {
+              "title": "(c) Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "(c) Substitute and calculate",
+              "body": "$1(180/\\pi)=\\frac{180}{\\pi}$ degrees."
+            }
+          ],
+          "answer": "(a) $60$ degrees; (b) $-135$ degrees; (c) $\\frac{180}{\\pi}$ degrees",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求与(a)$19\\pi/4$、(b)$-17\\pi/6$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a) 加减整周",
+            "body": "$\\frac{19 \\pi}{4}-(2)(2 \\pi)=\\frac{3 \\pi}{4}$。"
+          },
+          {
+            "title": "(a) 检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          },
+          {
+            "title": "(b) 加减整周",
+            "body": "$- \\frac{17 \\pi}{6}-(-2)(2 \\pi)=\\frac{7 \\pi}{6}$。"
+          },
+          {
+            "title": "(b) 检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "(a) $\\frac{3 \\pi}{4}$；(b) $\\frac{7 \\pi}{6}$",
+        "printedPage": 362,
+        "pdfPage": 386,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with (a)$19\\pi/4$; (b)$-17\\pi/6$.",
+          "steps": [
+            {
+              "title": "(a) Add or subtract complete turns",
+              "body": "$\\frac{19 \\pi}{4}-(2)(2 \\pi)=\\frac{3 \\pi}{4}$."
+            },
+            {
+              "title": "(a) Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            },
+            {
+              "title": "(b) Add or subtract complete turns",
+              "body": "$- \\frac{17 \\pi}{6}-(-2)(2 \\pi)=\\frac{7 \\pi}{6}$."
+            },
+            {
+              "title": "(b) Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "(a) $\\frac{3 \\pi}{4}$; (b) $\\frac{7 \\pi}{6}$",
+          "label": "Example 5"
+        },
+        "id": "example-5",
+        "type": "example",
+        "label": "例题 5",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "求(a)$73^\\circ$、(b)$110^\\circ$的余角和补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "(a) 余角条件",
+            "body": "$90-73=17>0$，故余角为$17^\\circ$。"
+          },
+          {
+            "title": "(a) 补角条件",
+            "body": "$180-73=107>0$，故补角为$107^\\circ$。"
+          },
+          {
+            "title": "(b) 余角条件",
+            "body": "$110^\\circ$不满足$0<\\theta<90^\\circ$，没有余角。"
+          },
+          {
+            "title": "(b) 补角条件",
+            "body": "$180-110=70>0$，故补角为$70^\\circ$。"
+          }
+        ],
+        "answer": "(a) 余角：$17^\\circ$；补角：$107^\\circ$；(b) 余角：无；补角：$70^\\circ$",
+        "printedPage": 363,
+        "pdfPage": 387,
+        "en": {
+          "prompt": "Find the complement and supplement of (a)$73^\\circ$; (b)$110^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "(a) Complement condition",
+              "body": "$90-73=17>0$, so the complement is $17^\\circ$."
+            },
+            {
+              "title": "(a) Supplement condition",
+              "body": "$180-73=107>0$, so the supplement is $107^\\circ$."
+            },
+            {
+              "title": "(b) Complement condition",
+              "body": "$110^\\circ$ does not satisfy $0<\\theta<90^\\circ$, so no complement exists."
+            },
+            {
+              "title": "(b) Supplement condition",
+              "body": "$180-110=70>0$, so the supplement is $70^\\circ$."
+            }
+          ],
+          "answer": "(a) Complement: $17^\\circ$; supplement: $107^\\circ$; (b) Complement: none; supplement: $70^\\circ$",
+          "label": "Example 6"
+        },
+        "id": "example-6",
+        "type": "example",
+        "label": "例题 6",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "半径18英寸的圆，求$210^\\circ$圆心角所截的弧长。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$18(210\\pi/180)=21 \\pi$ in。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$21 \\pi$ in $\\approx 65.97$ in。"
+          }
+        ],
+        "answer": "$21 \\pi$ in $\\approx 65.97$ in",
+        "printedPage": 364,
+        "pdfPage": 388,
+        "en": {
+          "prompt": "A circle has radius 18 inches. Find the arc length intercepted by a central angle of $210^\\circ$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$18(210\\pi/180)=21 \\pi$ in."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $21 \\pi$ in $\\approx 65.97$ in."
+            }
+          ],
+          "answer": "$21 \\pi$ in $\\approx 65.97$ in",
+          "label": "Example 7"
+        },
+        "id": "example-7",
+        "type": "example",
+        "label": "例题 7"
+      },
+      {
+        "prompt": "Billings在Grand Junction正北方，纬度分别为$45^\\circ48\\prime$N和$39^\\circ7\\prime$N。取地球半径3960英里，求距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "求纬度差",
+            "body": "两城市在同一经线上，圆心角为$45^\\circ48\\prime-39^\\circ7\\prime=6^\\circ41\\prime$。"
+          },
+          {
+            "title": "精确换成弧度",
+            "body": "$\\theta=(\\frac{401}{60})\\pi/180=\\frac{401 \\pi}{10800}$。"
+          },
+          {
+            "title": "计算经线弧长",
+            "body": "$s=3960\\theta=\\frac{4411 \\pi}{30}\\approx461.92$英里，约$462$英里。"
+          },
+          {
+            "title": "教材舍入注",
+            "body": "教材先将弧度舍入为$0.117$，给出约463英里。保留精确纬度差到最后，结果约462英里。"
+          }
+        ],
+        "answer": "$\\frac{4411 \\pi}{30}\\approx461.92$英里",
+        "printedPage": 364,
+        "pdfPage": 388,
+        "en": {
+          "prompt": "Billings, Montana, is due north of Grand Junction, Colorado. Find the distance using latitudes $45^\\circ48\\prime$N and $39^\\circ7\\prime$N and Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Find the latitude difference",
+              "body": "The cities lie on one meridian, so their central angle is $45^\\circ48\\prime-39^\\circ7\\prime=6^\\circ41\\prime$."
+            },
+            {
+              "title": "Convert exactly to radians",
+              "body": "$\\theta=(\\frac{401}{60})\\pi/180=\\frac{401 \\pi}{10800}$."
+            },
+            {
+              "title": "Compute the meridian arc length",
+              "body": "$s=3960\\theta=\\frac{4411 \\pi}{30}\\approx461.92$ miles, about $462$ miles."
+            },
+            {
+              "title": "Textbook rounding note",
+              "body": "The textbook rounds the angle early to $0.117$ radian, giving about 463 miles. Keeping the exact latitude difference until the end gives about 462 miles."
+            }
+          ],
+          "answer": "$\\frac{4411 \\pi}{30}\\approx461.92$ miles",
+          "label": "Example 8"
+        },
+        "id": "example-8",
+        "type": "example",
+        "label": "例题 8"
+      },
+      {
+        "prompt": "吃掉直径18英寸披萨的$30^\\circ$扇形一片，吃了多少平方英寸？精确到整数平方英寸。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "直径18英寸，所以半径9英寸。使用$A=\\frac12r^2\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac12(9)^2(30\\pi/180)=\\frac{27 \\pi}{4}$ square inches。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{27 \\pi}{4}$ square inches $\\approx 21$ square inches。"
+          }
+        ],
+        "answer": "$\\frac{27 \\pi}{4}$ square inches $\\approx 21$ square inches",
+        "printedPage": 365,
+        "pdfPage": 389,
+        "en": {
+          "prompt": "How many square inches of pizza have you eaten, rounded to the nearest square inch, if you eat a $30^\\circ$ sector of an 18-inch-diameter pizza?",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "The diameter is 18 inches, so the radius is 9 inches. Use $A=\\frac12r^2\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac12(9)^2(30\\pi/180)=\\frac{27 \\pi}{4}$ square inches."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{27 \\pi}{4}$ square inches $\\approx 21$ square inches."
+            }
+          ],
+          "answer": "$\\frac{27 \\pi}{4}$ square inches $\\approx 21$ square inches",
+          "label": "Example 9"
+        },
+        "id": "example-9",
+        "type": "example",
+        "label": "例题 9"
+      },
+      {
+        "prompt": "半径12英寸的齿轮每分钟15转。求角速度与齿尖的线速度。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "转数换弧度",
+            "body": "$\\omega=15(2\\pi)=30 \\pi$弧度/分钟。"
+          },
+          {
+            "title": "计算线速度",
+            "body": "$v=r\\omega=12(30 \\pi)=360 \\pi\\approx1130.97$英寸/分钟。"
+          }
+        ],
+        "answer": "$\\omega=30 \\pi$弧度/分钟；$v=360 \\pi$英寸/分钟",
+        "printedPage": 366,
+        "pdfPage": 390,
+        "en": {
+          "prompt": "A gear of radius 12 inches rotates at 15 revolutions/min. Find the angular speed and linear speed of a tip of its teeth.",
+          "steps": [
+            {
+              "title": "Convert revolutions to radians",
+              "body": "$\\omega=15(2\\pi)=30 \\pi$ radians/min."
+            },
+            {
+              "title": "Compute linear speed",
+              "body": "$v=r\\omega=12(30 \\pi)=360 \\pi\\approx1130.97$ inches/min."
+            }
+          ],
+          "answer": "$\\omega=30 \\pi$ radians/min; $v=360 \\pi$ inches/min",
+          "label": "Example 10"
+        },
+        "id": "example-10",
+        "type": "example",
+        "label": "例题 10"
+      },
+      {
+        "prompt": "画出标准位置的$225^\\circ$角。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴逆时针旋转$225^\\circ$。$225=0\\cdot360+225$，终边位于第III象限，与$225^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$225^\\circ$，第III象限",
+        "printedPage": 358,
+        "pdfPage": 382,
+        "en": {
+          "prompt": "Draw a $225^\\circ$ angle in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate counterclockwise by $225^\\circ$ from the positive $x$-axis. Since $225=0\\cdot360+225$, the terminal ray is in Quadrant III, coterminal with $225^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $225^\\circ$, Quadrant III",
+          "label": "Practice Problem 1"
+        },
+        "id": "practice-1",
+        "type": "practice",
+        "label": "配套练习 1",
+        "solutionImage": "assets/4-1-practice-1.png"
+      },
+      {
+        "prompt": "(a)将$13^\\circ9\\prime22\\prime\\prime$换成十进制度数，保留两位小数；(b)将$41.275^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a) 分秒换算成度",
+            "body": "$13^\\circ9\\prime22\\prime\\prime=\\left(13+\\frac{9}{60}+\\frac{22}{3600}\\right)^\\circ=13.15611111^\\circ$。"
+          },
+          {
+            "title": "(a) 舍入",
+            "body": "保留两位小数：$13.16^\\circ$。"
+          },
+          {
+            "title": "(b) 分离整数度与分钟",
+            "body": "$41.275^\\circ=41^\\circ+0.275^\\circ$，小数度乘60得到$16.5\\prime$。"
+          },
+          {
+            "title": "(b) 换成秒并舍入",
+            "body": "保留$16\\prime$；小数分再乘60，得$30\\prime\\prime$，最终为$41^\\circ16\\prime30\\prime\\prime$。"
+          }
+        ],
+        "answer": "(a) $13.16^\\circ$；(b) $41^\\circ16\\prime30\\prime\\prime$",
+        "printedPage": 359,
+        "pdfPage": 383,
+        "en": {
+          "prompt": "(a) Convert $13^\\circ9\\prime22\\prime\\prime$ to decimal degrees, rounded to two decimal places. (b) Convert $41.275^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "(a) Convert minutes and seconds to degrees",
+              "body": "$13^\\circ9\\prime22\\prime\\prime=\\left(13+\\frac{9}{60}+\\frac{22}{3600}\\right)^\\circ=13.15611111^\\circ$."
+            },
+            {
+              "title": "(a) Round",
+              "body": "Round to two decimal places: $13.16^\\circ$."
+            },
+            {
+              "title": "(b) Separate degrees and minutes",
+              "body": "$41.275^\\circ=41^\\circ+0.275^\\circ$. Multiply the fractional degree by 60 to obtain $16.5\\prime$."
+            },
+            {
+              "title": "(b) Convert the fractional minute to seconds",
+              "body": "Keep $16\\prime$; multiply the fractional minute by 60 to get $30\\prime\\prime$. Rounding gives $41^\\circ16\\prime30\\prime\\prime$."
+            }
+          ],
+          "answer": "(a) $13.16^\\circ$; (b) $41^\\circ16\\prime30\\prime\\prime$",
+          "label": "Practice Problem 2"
+        },
+        "id": "practice-2",
+        "type": "practice",
+        "label": "配套练习 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "将$-45^\\circ$换成弧度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-45(\\pi/180)=- \\frac{\\pi}{4}$ rad。"
+          }
+        ],
+        "answer": "$- \\frac{\\pi}{4}$ rad",
+        "printedPage": 361,
+        "pdfPage": 385,
+        "en": {
+          "prompt": "Convert $-45^\\circ$ to radians.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-45(\\pi/180)=- \\frac{\\pi}{4}$ rad."
+            }
+          ],
+          "answer": "$- \\frac{\\pi}{4}$ rad",
+          "label": "Practice Problem 3"
+        },
+        "id": "practice-3",
+        "type": "practice",
+        "label": "配套练习 3"
+      },
+      {
+        "prompt": "将$3\\pi/2$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac{3 \\pi}{2}(180/\\pi)=270$ degrees。"
+          }
+        ],
+        "answer": "$270$ degrees",
+        "printedPage": 362,
+        "pdfPage": 386,
+        "en": {
+          "prompt": "Convert $3\\pi/2$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac{3 \\pi}{2}(180/\\pi)=270$ degrees."
+            }
+          ],
+          "answer": "$270$ degrees",
+          "label": "Practice Problem 4"
+        },
+        "id": "practice-4",
+        "type": "practice",
+        "label": "配套练习 4"
+      },
+      {
+        "prompt": "求与(a)$1230^\\circ$、(b)$-1560^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a) 加减整周",
+            "body": "$1230-(3)(360)=150^\\circ$。"
+          },
+          {
+            "title": "(a) 检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          },
+          {
+            "title": "(b) 加减整周",
+            "body": "$-1560-(-5)(360)=240^\\circ$。"
+          },
+          {
+            "title": "(b) 检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "(a) $150^\\circ$；(b) $240^\\circ$",
+        "printedPage": 363,
+        "pdfPage": 387,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with (a)$1230^\\circ$; (b)$-1560^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Add or subtract complete turns",
+              "body": "$1230-(3)(360)=150^\\circ$."
+            },
+            {
+              "title": "(a) Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            },
+            {
+              "title": "(b) Add or subtract complete turns",
+              "body": "$-1560-(-5)(360)=240^\\circ$."
+            },
+            {
+              "title": "(b) Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "(a) $150^\\circ$; (b) $240^\\circ$",
+          "label": "Practice Problem 5"
+        },
+        "id": "practice-5",
+        "type": "practice",
+        "label": "配套练习 5",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "求$67^\\circ$的余角与补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$90-67=23>0$，故余角为$23^\\circ$。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$180-67=113>0$，故补角为$113^\\circ$。"
+          }
+        ],
+        "answer": "余角：$23^\\circ$；补角：$113^\\circ$",
+        "printedPage": 363,
+        "pdfPage": 387,
+        "en": {
+          "prompt": "Find the complement and supplement of $67^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$90-67=23>0$, so the complement is $23^\\circ$."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$180-67=113>0$, so the supplement is $113^\\circ$."
+            }
+          ],
+          "answer": "Complement: $23^\\circ$; supplement: $113^\\circ$",
+          "label": "Practice Problem 6"
+        },
+        "id": "practice-6",
+        "type": "practice",
+        "label": "配套练习 6"
+      },
+      {
+        "prompt": "半径2米的圆，求$225^\\circ$圆心角所截的弧长。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$2(225\\pi/180)=\\frac{5 \\pi}{2}$ m。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{5 \\pi}{2}$ m $\\approx 7.85$ m。"
+          }
+        ],
+        "answer": "$\\frac{5 \\pi}{2}$ m $\\approx 7.85$ m",
+        "printedPage": 364,
+        "pdfPage": 388,
+        "en": {
+          "prompt": "A circle has radius 2 meters. Find the arc length intercepted by a central angle of $225^\\circ$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$2(225\\pi/180)=\\frac{5 \\pi}{2}$ m."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{5 \\pi}{2}$ m $\\approx 7.85$ m."
+            }
+          ],
+          "answer": "$\\frac{5 \\pi}{2}$ m $\\approx 7.85$ m",
+          "label": "Practice Problem 7"
+        },
+        "id": "practice-7",
+        "type": "practice",
+        "label": "配套练习 7"
+      },
+      {
+        "prompt": "Chicago在Pensacola正北方，纬度分别为$41^\\circ51\\prime$N和$30^\\circ25\\prime$N。取地球半径3960英里，求距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "求纬度差",
+            "body": "两城市在同一经线上，圆心角为$41^\\circ51\\prime-30^\\circ25\\prime=11^\\circ26\\prime$。"
+          },
+          {
+            "title": "精确换成弧度",
+            "body": "$\\theta=(\\frac{343}{30})\\pi/180=\\frac{343 \\pi}{5400}$。"
+          },
+          {
+            "title": "计算经线弧长",
+            "body": "$s=3960\\theta=\\frac{3773 \\pi}{15}\\approx790.22$英里，约$790$英里。"
+          }
+        ],
+        "answer": "$\\frac{3773 \\pi}{15}\\approx790.22$英里",
+        "printedPage": 364,
+        "pdfPage": 388,
+        "en": {
+          "prompt": "Chicago, Illinois, is due north of Pensacola, Florida. Find the distance using latitudes $41^\\circ51\\prime$N and $30^\\circ25\\prime$N and Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Find the latitude difference",
+              "body": "The cities lie on one meridian, so their central angle is $41^\\circ51\\prime-30^\\circ25\\prime=11^\\circ26\\prime$."
+            },
+            {
+              "title": "Convert exactly to radians",
+              "body": "$\\theta=(\\frac{343}{30})\\pi/180=\\frac{343 \\pi}{5400}$."
+            },
+            {
+              "title": "Compute the meridian arc length",
+              "body": "$s=3960\\theta=\\frac{3773 \\pi}{15}\\approx790.22$ miles, about $790$ miles."
+            }
+          ],
+          "answer": "$\\frac{3773 \\pi}{15}\\approx790.22$ miles",
+          "label": "Practice Problem 8"
+        },
+        "id": "practice-8",
+        "type": "practice",
+        "label": "配套练习 8"
+      },
+      {
+        "prompt": "求半径10英寸、圆心角$60^\\circ$的扇形面积，保留两位小数。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$A=\\frac12r^2\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac12(10)^2(60\\pi/180)=\\frac{50 \\pi}{3}$ square inches。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{50 \\pi}{3}$ square inches $\\approx 52.36$ square inches。"
+          }
+        ],
+        "answer": "$\\frac{50 \\pi}{3}$ square inches $\\approx 52.36$ square inches",
+        "printedPage": 365,
+        "pdfPage": 389,
+        "en": {
+          "prompt": "Find the area of a sector of radius 10 inches formed by angle $60^\\circ$. Round to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $A=\\frac12r^2\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac12(10)^2(60\\pi/180)=\\frac{50 \\pi}{3}$ square inches."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{50 \\pi}{3}$ square inches $\\approx 52.36$ square inches."
+            }
+          ],
+          "answer": "$\\frac{50 \\pi}{3}$ square inches $\\approx 52.36$ square inches",
+          "label": "Practice Problem 9"
+        },
+        "id": "practice-9",
+        "type": "practice",
+        "label": "配套练习 9"
+      },
+      {
+        "prompt": "重复例10，但齿轮半径10英寸、每分钟18转。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "转数换弧度",
+            "body": "$\\omega=18(2\\pi)=36 \\pi$弧度/分钟。"
+          },
+          {
+            "title": "计算线速度",
+            "body": "$v=r\\omega=10(36 \\pi)=360 \\pi\\approx1130.97$英寸/分钟。"
+          }
+        ],
+        "answer": "$\\omega=36 \\pi$弧度/分钟；$v=360 \\pi$英寸/分钟",
+        "printedPage": 366,
+        "pdfPage": 390,
+        "en": {
+          "prompt": "Repeat Example 10 for radius 10 inches and 18 revolutions/min.",
+          "steps": [
+            {
+              "title": "Convert revolutions to radians",
+              "body": "$\\omega=18(2\\pi)=36 \\pi$ radians/min."
+            },
+            {
+              "title": "Compute linear speed",
+              "body": "$v=r\\omega=10(36 \\pi)=360 \\pi\\approx1130.97$ inches/min."
+            }
+          ],
+          "answer": "$\\omega=36 \\pi$ radians/min; $v=360 \\pi$ inches/min",
+          "label": "Practice Problem 10"
+        },
+        "id": "practice-10",
+        "type": "practice",
+        "label": "配套练习 10"
+      }
+    ],
+    "gettingReady": [
+      {
+        "prompt": "若$\\pi d=180x$且$x=\\pi/4$，求$d$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "代入解方程",
+            "body": "$\\pi d=180(\\pi/4)=45\\pi\\Rightarrow d=45$。"
+          }
+        ],
+        "answer": "$45$",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "If $\\pi d=180x$ and $x=\\pi/4$, find $d$.",
+          "steps": [
+            {
+              "title": "Substitute and solve",
+              "body": "$\\pi d=180(\\pi/4)=45\\pi\\Rightarrow d=45$."
+            }
+          ],
+          "answer": "$45$"
+        },
+        "number": "GR1"
+      },
+      {
+        "prompt": "若$\\pi d=180x$且$x=\\pi/3$，求$d$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "代入解方程",
+            "body": "$\\pi d=180(\\pi/3)=60\\pi\\Rightarrow d=60$。"
+          }
+        ],
+        "answer": "$60$",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "If $\\pi d=180x$ and $x=\\pi/3$, find $d$.",
+          "steps": [
+            {
+              "title": "Substitute and solve",
+              "body": "$\\pi d=180(\\pi/3)=60\\pi\\Rightarrow d=60$."
+            }
+          ],
+          "answer": "$60$"
+        },
+        "number": "GR2"
+      },
+      {
+        "prompt": "若$\\pi d=180x$且$d=30$，求$x$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "代入解方程",
+            "body": "$x=30\\pi/180=\\pi/6$。"
+          }
+        ],
+        "answer": "$\\pi/6$",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "If $\\pi d=180x$ and $d=30$, find $x$.",
+          "steps": [
+            {
+              "title": "Substitute and solve",
+              "body": "$x=30\\pi/180=\\pi/6$."
+            }
+          ],
+          "answer": "$\\pi/6$"
+        },
+        "number": "GR3"
+      },
+      {
+        "prompt": "若$\\pi d=180x$且$d=90$，求$x$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "代入解方程",
+            "body": "$x=90\\pi/180=\\pi/2$。"
+          }
+        ],
+        "answer": "$\\pi/2$",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "If $\\pi d=180x$ and $d=90$, find $x$.",
+          "steps": [
+            {
+              "title": "Substitute and solve",
+              "body": "$x=90\\pi/180=\\pi/2$."
+            }
+          ],
+          "answer": "$\\pi/2$"
+        },
+        "number": "GR4"
+      },
+      {
+        "prompt": "指出点$(-1/2,\\sqrt3/2)$所在象限。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "检查坐标符号",
+            "body": "$x$为负，$y$为正，故在第II象限。"
+          }
+        ],
+        "answer": "第II象限",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "State the quadrant containing $(-1/2,\\sqrt3/2)$.",
+          "steps": [
+            {
+              "title": "Check signs",
+              "body": "$x$ is negative and $y$ is positive, so the point is in Quadrant II."
+            }
+          ],
+          "answer": "Quadrant II"
+        },
+        "number": "GR5"
+      },
+      {
+        "prompt": "指出点$(1/2,-\\sqrt3/2)$所在象限。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "检查坐标符号",
+            "body": "$x$为正，$y$为负，故在第IV象限。"
+          }
+        ],
+        "answer": "第IV象限",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "State the quadrant containing $(1/2,-\\sqrt3/2)$.",
+          "steps": [
+            {
+              "title": "Check signs",
+              "body": "$x$ is positive and $y$ is negative, so the point is in Quadrant IV."
+            }
+          ],
+          "answer": "Quadrant IV"
+        },
+        "number": "GR6"
+      },
+      {
+        "prompt": "指出点$(1/2,\\sqrt3/2)$所在象限。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "检查坐标符号",
+            "body": "$x$为正，$y$为正，故在第I象限。"
+          }
+        ],
+        "answer": "第I象限",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "State the quadrant containing $(1/2,\\sqrt3/2)$.",
+          "steps": [
+            {
+              "title": "Check signs",
+              "body": "$x$ is positive and $y$ is positive, so the point is in Quadrant I."
+            }
+          ],
+          "answer": "Quadrant I"
+        },
+        "number": "GR7"
+      },
+      {
+        "prompt": "指出点$(-1/2,-\\sqrt3/2)$所在象限。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "检查坐标符号",
+            "body": "$x$为负，$y$为负，故在第III象限。"
+          }
+        ],
+        "answer": "第III象限",
+        "printedPage": 356,
+        "pdfPage": 380,
+        "en": {
+          "prompt": "State the quadrant containing $(-1/2,-\\sqrt3/2)$.",
+          "steps": [
+            {
+              "title": "Check signs",
+              "body": "$x$ is negative and $y$ is negative, so the point is in Quadrant III."
+            }
+          ],
+          "answer": "Quadrant III"
+        },
+        "number": "GR8"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "负角由始边沿____方向旋转形成。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "负角是顺时针旋转。"
+          }
+        ],
+        "answer": "顺时针",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "A negative angle is formed by rotating the initial side in a(n) ____ direction.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "A negative angle uses clockwise rotation."
+            }
+          ],
+          "answer": "clockwise"
+        },
+        "number": 1
+      },
+      {
+        "prompt": "标准位置的角顶点在原点，始边沿____。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "由标准位置的定义得此结论。"
+          }
+        ],
+        "answer": "正$x$轴",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "An angle is in standard position if its vertex is the origin and its initial side lies on the ____.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "This follows from the definition of standard position."
+            }
+          ],
+          "answer": "positive $x$-axis"
+        },
+        "number": 2
+      },
+      {
+        "prompt": "始边、终边相同的两个角称为____角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "整周旋转不改变终边。"
+          }
+        ],
+        "answer": "同终边",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Two angles with the same initial and terminal sides are ____ angles.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "Complete turns do not change the terminal side."
+            }
+          ],
+          "answer": "coterminal"
+        },
+        "number": 3
+      },
+      {
+        "prompt": "将角度换成弧度时乘以____。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "$180^\\circ=\\pi$弧度，故$1^\\circ=\\pi/180$弧度。"
+          }
+        ],
+        "answer": "$\\pi/180^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "To convert degrees to radians, multiply degrees by ____.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "$180^\\circ=\\pi$ radians, so $1^\\circ=\\pi/180$ radians."
+            }
+          ],
+          "answer": "$\\pi/180^\\circ$"
+        },
+        "number": 4
+      },
+      {
+        "prompt": "判断：1弧度小于1度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "$1$弧度$=180^\\circ/\\pi\\approx57.30^\\circ>1^\\circ$。"
+          }
+        ],
+        "answer": "错误",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "True or False: One radian is smaller than one degree.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "$1$ radian $=180^\\circ/\\pi\\approx57.30^\\circ>1^\\circ$."
+            }
+          ],
+          "answer": "False"
+        },
+        "number": 5
+      },
+      {
+        "prompt": "判断：半径1米的圆周长约6.28米。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "$C=2\\pi r=2\\pi(1)\\approx6.28$米。"
+          }
+        ],
+        "answer": "正确",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "True or False: A circle of radius 1 meter has circumference approximately 6.28 meters.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "$C=2\\pi r=2\\pi(1)\\approx6.28$ meters."
+            }
+          ],
+          "answer": "True"
+        },
+        "number": 6
+      },
+      {
+        "prompt": "判断：每个锐角都有余角和补角。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "若$0<\\theta<90^\\circ$，则$90^\\circ-\\theta>0$且$180^\\circ-\\theta>0$。"
+          }
+        ],
+        "answer": "正确",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "True or False: Every acute angle has a complement and a supplement.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "If $0<\\theta<90^\\circ$, both $90^\\circ-\\theta$ and $180^\\circ-\\theta$ are positive."
+            }
+          ],
+          "answer": "True"
+        },
+        "number": 7
+      },
+      {
+        "prompt": "判断：若$r=5$ ft、$\\theta=30^\\circ$，则$s=5\\cdot30=150$ ft。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "按定义核对",
+            "body": "公式需要弧度。$30^\\circ=\\pi/6$，所以$s=5(\\pi/6)=5\\pi/6$ ft。"
+          }
+        ],
+        "answer": "错误",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "True or False: If $r=5$ ft and $\\theta=30^\\circ$, then $s=5\\cdot30=150$ ft.",
+          "steps": [
+            {
+              "title": "Check the definition",
+              "body": "The formula requires radians. Since $30^\\circ=\\pi/6$, $s=5(\\pi/6)=5\\pi/6$ ft."
+            }
+          ],
+          "answer": "False"
+        },
+        "number": 8
+      },
+      {
+        "prompt": "画出标准位置的角$30^\\circ$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴逆时针旋转$30^\\circ$。$30=0\\cdot360+30$，终边位于第I象限，与$30^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$30^\\circ$，第I象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $30^\\circ$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate counterclockwise by $30^\\circ$ from the positive $x$-axis. Since $30=0\\cdot360+30$, the terminal ray is in Quadrant I, coterminal with $30^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $30^\\circ$, Quadrant I"
+        },
+        "number": 9,
+        "solutionImage": "assets/4-1-exercise-9.png"
+      },
+      {
+        "prompt": "画出标准位置的角$150^\\circ$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴逆时针旋转$150^\\circ$。$150=0\\cdot360+150$，终边位于第II象限，与$150^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$150^\\circ$，第II象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $150^\\circ$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate counterclockwise by $150^\\circ$ from the positive $x$-axis. Since $150=0\\cdot360+150$, the terminal ray is in Quadrant II, coterminal with $150^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $150^\\circ$, Quadrant II"
+        },
+        "number": 10,
+        "solutionImage": "assets/4-1-exercise-10.png"
+      },
+      {
+        "prompt": "画出标准位置的角$-120^\\circ$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴顺时针旋转$120^\\circ$。$-120=-1\\cdot360+240$，终边位于第III象限，与$240^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$240^\\circ$，第III象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $-120^\\circ$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate clockwise by $120^\\circ$ from the positive $x$-axis. Since $-120=-1\\cdot360+240$, the terminal ray is in Quadrant III, coterminal with $240^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $240^\\circ$, Quadrant III"
+        },
+        "number": 11,
+        "solutionImage": "assets/4-1-exercise-11.png"
+      },
+      {
+        "prompt": "画出标准位置的角$-330^\\circ$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴顺时针旋转$330^\\circ$。$-330=-1\\cdot360+30$，终边位于第I象限，与$30^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$30^\\circ$，第I象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $-330^\\circ$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate clockwise by $330^\\circ$ from the positive $x$-axis. Since $-330=-1\\cdot360+30$, the terminal ray is in Quadrant I, coterminal with $30^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $30^\\circ$, Quadrant I"
+        },
+        "number": 12,
+        "solutionImage": "assets/4-1-exercise-12.png"
+      },
+      {
+        "prompt": "画出标准位置的角$5\\pi/3$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴逆时针旋转$300^\\circ$。$300=0\\cdot360+300$，终边位于第IV象限，与$300^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$300^\\circ$，第IV象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $5\\pi/3$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate counterclockwise by $300^\\circ$ from the positive $x$-axis. Since $300=0\\cdot360+300$, the terminal ray is in Quadrant IV, coterminal with $300^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $300^\\circ$, Quadrant IV"
+        },
+        "number": 13,
+        "solutionImage": "assets/4-1-exercise-13.png"
+      },
+      {
+        "prompt": "画出标准位置的角$11\\pi/6$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴逆时针旋转$330^\\circ$。$330=0\\cdot360+330$，终边位于第IV象限，与$330^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$330^\\circ$，第IV象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $11\\pi/6$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate counterclockwise by $330^\\circ$ from the positive $x$-axis. Since $330=0\\cdot360+330$, the terminal ray is in Quadrant IV, coterminal with $330^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $330^\\circ$, Quadrant IV"
+        },
+        "number": 14,
+        "solutionImage": "assets/4-1-exercise-14.png"
+      },
+      {
+        "prompt": "画出标准位置的角$-4\\pi/3$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴顺时针旋转$240^\\circ$。$-240=-1\\cdot360+120$，终边位于第II象限，与$120^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$120^\\circ$，第II象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $-4\\pi/3$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate clockwise by $240^\\circ$ from the positive $x$-axis. Since $-240=-1\\cdot360+120$, the terminal ray is in Quadrant II, coterminal with $120^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $120^\\circ$, Quadrant II"
+        },
+        "number": 15,
+        "solutionImage": "assets/4-1-exercise-15.png"
+      },
+      {
+        "prompt": "画出标准位置的角$-13\\pi/4$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "画有向角",
+            "body": "从正$x$轴顺时针旋转$585^\\circ$。$-585=-2\\cdot360+135$，终边位于第II象限，与$135^\\circ$同终边。"
+          }
+        ],
+        "answer": "终边$135^\\circ$，第II象限",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Draw $-13\\pi/4$ in standard position.",
+          "steps": [
+            {
+              "title": "Draw the directed angle",
+              "body": "Rotate clockwise by $585^\\circ$ from the positive $x$-axis. Since $-585=-2\\cdot360+135$, the terminal ray is in Quadrant II, coterminal with $135^\\circ$."
+            }
+          ],
+          "answer": "Terminal ray $135^\\circ$, Quadrant II"
+        },
+        "number": 16,
+        "solutionImage": "assets/4-1-exercise-16.png"
+      },
+      {
+        "prompt": "将$70^\\circ45\\prime$换成十进制度数，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分秒换算成度",
+            "body": "$70^\\circ45\\prime=\\left(70+\\frac{45}{60}+\\frac{0}{3600}\\right)^\\circ=70.75000000^\\circ$。"
+          },
+          {
+            "title": "舍入",
+            "body": "保留两位小数：$70.75^\\circ$。"
+          }
+        ],
+        "answer": "$70.75^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $70^\\circ45\\prime$ to decimal degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Convert minutes and seconds to degrees",
+              "body": "$70^\\circ45\\prime=\\left(70+\\frac{45}{60}+\\frac{0}{3600}\\right)^\\circ=70.75000000^\\circ$."
+            },
+            {
+              "title": "Round",
+              "body": "Round to two decimal places: $70.75^\\circ$."
+            }
+          ],
+          "answer": "$70.75^\\circ$"
+        },
+        "number": 17
+      },
+      {
+        "prompt": "将$38^\\circ38\\prime$换成十进制度数，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分秒换算成度",
+            "body": "$38^\\circ38\\prime=\\left(38+\\frac{38}{60}+\\frac{0}{3600}\\right)^\\circ=38.63333333^\\circ$。"
+          },
+          {
+            "title": "舍入",
+            "body": "保留两位小数：$38.63^\\circ$。"
+          }
+        ],
+        "answer": "$38.63^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $38^\\circ38\\prime$ to decimal degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Convert minutes and seconds to degrees",
+              "body": "$38^\\circ38\\prime=\\left(38+\\frac{38}{60}+\\frac{0}{3600}\\right)^\\circ=38.63333333^\\circ$."
+            },
+            {
+              "title": "Round",
+              "body": "Round to two decimal places: $38.63^\\circ$."
+            }
+          ],
+          "answer": "$38.63^\\circ$"
+        },
+        "number": 18
+      },
+      {
+        "prompt": "将$23^\\circ42\\prime30\\prime\\prime$换成十进制度数，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分秒换算成度",
+            "body": "$23^\\circ42\\prime30\\prime\\prime=\\left(23+\\frac{42}{60}+\\frac{30}{3600}\\right)^\\circ=23.70833333^\\circ$。"
+          },
+          {
+            "title": "舍入",
+            "body": "保留两位小数：$23.71^\\circ$。"
+          }
+        ],
+        "answer": "$23.71^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $23^\\circ42\\prime30\\prime\\prime$ to decimal degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Convert minutes and seconds to degrees",
+              "body": "$23^\\circ42\\prime30\\prime\\prime=\\left(23+\\frac{42}{60}+\\frac{30}{3600}\\right)^\\circ=23.70833333^\\circ$."
+            },
+            {
+              "title": "Round",
+              "body": "Round to two decimal places: $23.71^\\circ$."
+            }
+          ],
+          "answer": "$23.71^\\circ$"
+        },
+        "number": 19
+      },
+      {
+        "prompt": "将$45^\\circ50\\prime50\\prime\\prime$换成十进制度数，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分秒换算成度",
+            "body": "$45^\\circ50\\prime50\\prime\\prime=\\left(45+\\frac{50}{60}+\\frac{50}{3600}\\right)^\\circ=45.84722222^\\circ$。"
+          },
+          {
+            "title": "舍入",
+            "body": "保留两位小数：$45.85^\\circ$。"
+          }
+        ],
+        "answer": "$45.85^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $45^\\circ50\\prime50\\prime\\prime$ to decimal degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Convert minutes and seconds to degrees",
+              "body": "$45^\\circ50\\prime50\\prime\\prime=\\left(45+\\frac{50}{60}+\\frac{50}{3600}\\right)^\\circ=45.84722222^\\circ$."
+            },
+            {
+              "title": "Round",
+              "body": "Round to two decimal places: $45.85^\\circ$."
+            }
+          ],
+          "answer": "$45.85^\\circ$"
+        },
+        "number": 20
+      },
+      {
+        "prompt": "将$-15^\\circ42\\prime57\\prime\\prime$换成十进制度数，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分秒换算成度",
+            "body": "$-15^\\circ42\\prime57\\prime\\prime=-\\left(15+\\frac{42}{60}+\\frac{57}{3600}\\right)^\\circ=-15.71583333^\\circ$。"
+          },
+          {
+            "title": "舍入",
+            "body": "保留两位小数：$-15.72^\\circ$。"
+          }
+        ],
+        "answer": "$-15.72^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-15^\\circ42\\prime57\\prime\\prime$ to decimal degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Convert minutes and seconds to degrees",
+              "body": "$-15^\\circ42\\prime57\\prime\\prime=-\\left(15+\\frac{42}{60}+\\frac{57}{3600}\\right)^\\circ=-15.71583333^\\circ$."
+            },
+            {
+              "title": "Round",
+              "body": "Round to two decimal places: $-15.72^\\circ$."
+            }
+          ],
+          "answer": "$-15.72^\\circ$"
+        },
+        "number": 21
+      },
+      {
+        "prompt": "将$-70^\\circ18\\prime13\\prime\\prime$换成十进制度数，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分秒换算成度",
+            "body": "$-70^\\circ18\\prime13\\prime\\prime=-\\left(70+\\frac{18}{60}+\\frac{13}{3600}\\right)^\\circ=-70.30361111^\\circ$。"
+          },
+          {
+            "title": "舍入",
+            "body": "保留两位小数：$-70.30^\\circ$。"
+          }
+        ],
+        "answer": "$-70.30^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-70^\\circ18\\prime13\\prime\\prime$ to decimal degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Convert minutes and seconds to degrees",
+              "body": "$-70^\\circ18\\prime13\\prime\\prime=-\\left(70+\\frac{18}{60}+\\frac{13}{3600}\\right)^\\circ=-70.30361111^\\circ$."
+            },
+            {
+              "title": "Round",
+              "body": "Round to two decimal places: $-70.30^\\circ$."
+            }
+          ],
+          "answer": "$-70.30^\\circ$"
+        },
+        "number": 22
+      },
+      {
+        "prompt": "将$27.32^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分离整数度与分钟",
+            "body": "$27.32^\\circ=27^\\circ+0.32^\\circ$，小数度乘60得到$19.2\\prime$。"
+          },
+          {
+            "title": "换成秒并舍入",
+            "body": "保留$19\\prime$；小数分再乘60，得$12\\prime\\prime$，最终为$27^\\circ19\\prime12\\prime\\prime$。"
+          }
+        ],
+        "answer": "$27^\\circ19\\prime12\\prime\\prime$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $27.32^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "Separate degrees and minutes",
+              "body": "$27.32^\\circ=27^\\circ+0.32^\\circ$. Multiply the fractional degree by 60 to obtain $19.2\\prime$."
+            },
+            {
+              "title": "Convert the fractional minute to seconds",
+              "body": "Keep $19\\prime$; multiply the fractional minute by 60 to get $12\\prime\\prime$. Rounding gives $27^\\circ19\\prime12\\prime\\prime$."
+            }
+          ],
+          "answer": "$27^\\circ19\\prime12\\prime\\prime$"
+        },
+        "number": 23
+      },
+      {
+        "prompt": "将$120.64^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分离整数度与分钟",
+            "body": "$120.64^\\circ=120^\\circ+0.64^\\circ$，小数度乘60得到$38.4\\prime$。"
+          },
+          {
+            "title": "换成秒并舍入",
+            "body": "保留$38\\prime$；小数分再乘60，得$24\\prime\\prime$，最终为$120^\\circ38\\prime24\\prime\\prime$。"
+          }
+        ],
+        "answer": "$120^\\circ38\\prime24\\prime\\prime$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $120.64^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "Separate degrees and minutes",
+              "body": "$120.64^\\circ=120^\\circ+0.64^\\circ$. Multiply the fractional degree by 60 to obtain $38.4\\prime$."
+            },
+            {
+              "title": "Convert the fractional minute to seconds",
+              "body": "Keep $38\\prime$; multiply the fractional minute by 60 to get $24\\prime\\prime$. Rounding gives $120^\\circ38\\prime24\\prime\\prime$."
+            }
+          ],
+          "answer": "$120^\\circ38\\prime24\\prime\\prime$"
+        },
+        "number": 24
+      },
+      {
+        "prompt": "将$13.347^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分离整数度与分钟",
+            "body": "$13.347^\\circ=13^\\circ+0.347^\\circ$，小数度乘60得到$20.82\\prime$。"
+          },
+          {
+            "title": "换成秒并舍入",
+            "body": "保留$20\\prime$；小数分再乘60，得$49.2\\prime\\prime$，最终为$13^\\circ20\\prime49\\prime\\prime$。"
+          }
+        ],
+        "answer": "$13^\\circ20\\prime49\\prime\\prime$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $13.347^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "Separate degrees and minutes",
+              "body": "$13.347^\\circ=13^\\circ+0.347^\\circ$. Multiply the fractional degree by 60 to obtain $20.82\\prime$."
+            },
+            {
+              "title": "Convert the fractional minute to seconds",
+              "body": "Keep $20\\prime$; multiply the fractional minute by 60 to get $49.2\\prime\\prime$. Rounding gives $13^\\circ20\\prime49\\prime\\prime$."
+            }
+          ],
+          "answer": "$13^\\circ20\\prime49\\prime\\prime$"
+        },
+        "number": 25
+      },
+      {
+        "prompt": "将$110.433^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分离整数度与分钟",
+            "body": "$110.433^\\circ=110^\\circ+0.433^\\circ$，小数度乘60得到$25.98\\prime$。"
+          },
+          {
+            "title": "换成秒并舍入",
+            "body": "保留$25\\prime$；小数分再乘60，得$58.8\\prime\\prime$，最终为$110^\\circ25\\prime59\\prime\\prime$。"
+          }
+        ],
+        "answer": "$110^\\circ25\\prime59\\prime\\prime$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $110.433^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "Separate degrees and minutes",
+              "body": "$110.433^\\circ=110^\\circ+0.433^\\circ$. Multiply the fractional degree by 60 to obtain $25.98\\prime$."
+            },
+            {
+              "title": "Convert the fractional minute to seconds",
+              "body": "Keep $25\\prime$; multiply the fractional minute by 60 to get $58.8\\prime\\prime$. Rounding gives $110^\\circ25\\prime59\\prime\\prime$."
+            }
+          ],
+          "answer": "$110^\\circ25\\prime59\\prime\\prime$"
+        },
+        "number": 26
+      },
+      {
+        "prompt": "将$19.0511^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分离整数度与分钟",
+            "body": "$19.0511^\\circ=19^\\circ+0.0511^\\circ$，小数度乘60得到$3.066\\prime$。"
+          },
+          {
+            "title": "换成秒并舍入",
+            "body": "保留$3\\prime$；小数分再乘60，得$3.96\\prime\\prime$，最终为$19^\\circ3\\prime4\\prime\\prime$。"
+          }
+        ],
+        "answer": "$19^\\circ3\\prime4\\prime\\prime$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $19.0511^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "Separate degrees and minutes",
+              "body": "$19.0511^\\circ=19^\\circ+0.0511^\\circ$. Multiply the fractional degree by 60 to obtain $3.066\\prime$."
+            },
+            {
+              "title": "Convert the fractional minute to seconds",
+              "body": "Keep $3\\prime$; multiply the fractional minute by 60 to get $3.96\\prime\\prime$. Rounding gives $19^\\circ3\\prime4\\prime\\prime$."
+            }
+          ],
+          "answer": "$19^\\circ3\\prime4\\prime\\prime$"
+        },
+        "number": 27
+      },
+      {
+        "prompt": "将$82.7272^\\circ$换成DMS，精确到秒。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "分离整数度与分钟",
+            "body": "$82.7272^\\circ=82^\\circ+0.7272^\\circ$，小数度乘60得到$43.632\\prime$。"
+          },
+          {
+            "title": "换成秒并舍入",
+            "body": "保留$43\\prime$；小数分再乘60，得$37.92\\prime\\prime$，最终为$82^\\circ43\\prime38\\prime\\prime$。"
+          }
+        ],
+        "answer": "$82^\\circ43\\prime38\\prime\\prime$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $82.7272^\\circ$ to DMS, rounded to the nearest second.",
+          "steps": [
+            {
+              "title": "Separate degrees and minutes",
+              "body": "$82.7272^\\circ=82^\\circ+0.7272^\\circ$. Multiply the fractional degree by 60 to obtain $43.632\\prime$."
+            },
+            {
+              "title": "Convert the fractional minute to seconds",
+              "body": "Keep $43\\prime$; multiply the fractional minute by 60 to get $37.92\\prime\\prime$. Rounding gives $82^\\circ43\\prime38\\prime\\prime$."
+            }
+          ],
+          "answer": "$82^\\circ43\\prime38\\prime\\prime$"
+        },
+        "number": 28
+      },
+      {
+        "prompt": "将$20^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$20(\\pi/180)=\\frac{\\pi}{9}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{\\pi}{9}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $20^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$20(\\pi/180)=\\frac{\\pi}{9}$ rad."
+            }
+          ],
+          "answer": "$\\frac{\\pi}{9}$ rad"
+        },
+        "number": 29
+      },
+      {
+        "prompt": "将$40^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$40(\\pi/180)=\\frac{2 \\pi}{9}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{2 \\pi}{9}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $40^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$40(\\pi/180)=\\frac{2 \\pi}{9}$ rad."
+            }
+          ],
+          "answer": "$\\frac{2 \\pi}{9}$ rad"
+        },
+        "number": 30
+      },
+      {
+        "prompt": "将$-180^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-180(\\pi/180)=- \\pi$ rad。"
+          }
+        ],
+        "answer": "$- \\pi$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-180^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-180(\\pi/180)=- \\pi$ rad."
+            }
+          ],
+          "answer": "$- \\pi$ rad"
+        },
+        "number": 31
+      },
+      {
+        "prompt": "将$-210^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-210(\\pi/180)=- \\frac{7 \\pi}{6}$ rad。"
+          }
+        ],
+        "answer": "$- \\frac{7 \\pi}{6}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-210^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-210(\\pi/180)=- \\frac{7 \\pi}{6}$ rad."
+            }
+          ],
+          "answer": "$- \\frac{7 \\pi}{6}$ rad"
+        },
+        "number": 32
+      },
+      {
+        "prompt": "将$315^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$315(\\pi/180)=\\frac{7 \\pi}{4}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{7 \\pi}{4}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $315^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$315(\\pi/180)=\\frac{7 \\pi}{4}$ rad."
+            }
+          ],
+          "answer": "$\\frac{7 \\pi}{4}$ rad"
+        },
+        "number": 33
+      },
+      {
+        "prompt": "将$330^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$330(\\pi/180)=\\frac{11 \\pi}{6}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{11 \\pi}{6}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $330^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$330(\\pi/180)=\\frac{11 \\pi}{6}$ rad."
+            }
+          ],
+          "answer": "$\\frac{11 \\pi}{6}$ rad"
+        },
+        "number": 34
+      },
+      {
+        "prompt": "将$-510^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-510(\\pi/180)=- \\frac{17 \\pi}{6}$ rad。"
+          }
+        ],
+        "answer": "$- \\frac{17 \\pi}{6}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-510^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-510(\\pi/180)=- \\frac{17 \\pi}{6}$ rad."
+            }
+          ],
+          "answer": "$- \\frac{17 \\pi}{6}$ rad"
+        },
+        "number": 35
+      },
+      {
+        "prompt": "将$-420^\\circ$换成弧度，以$\\pi$的倍数表示。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-420(\\pi/180)=- \\frac{7 \\pi}{3}$ rad。"
+          }
+        ],
+        "answer": "$- \\frac{7 \\pi}{3}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-420^\\circ$ to radians. Express the answer as a multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-420(\\pi/180)=- \\frac{7 \\pi}{3}$ rad."
+            }
+          ],
+          "answer": "$- \\frac{7 \\pi}{3}$ rad"
+        },
+        "number": 36
+      },
+      {
+        "prompt": "将$\\frac{\\pi}{12}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac{\\pi}{12}(180/\\pi)=15$ degrees。"
+          }
+        ],
+        "answer": "$15$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $\\frac{\\pi}{12}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac{\\pi}{12}(180/\\pi)=15$ degrees."
+            }
+          ],
+          "answer": "$15$ degrees"
+        },
+        "number": 37
+      },
+      {
+        "prompt": "将$\\frac{3 \\pi}{8}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac{3 \\pi}{8}(180/\\pi)=\\frac{135}{2}$ degrees。"
+          }
+        ],
+        "answer": "$\\frac{135}{2}$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $\\frac{3 \\pi}{8}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac{3 \\pi}{8}(180/\\pi)=\\frac{135}{2}$ degrees."
+            }
+          ],
+          "answer": "$\\frac{135}{2}$ degrees"
+        },
+        "number": 38
+      },
+      {
+        "prompt": "将$- \\frac{5 \\pi}{9}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$- \\frac{5 \\pi}{9}(180/\\pi)=-100$ degrees。"
+          }
+        ],
+        "answer": "$-100$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $- \\frac{5 \\pi}{9}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$- \\frac{5 \\pi}{9}(180/\\pi)=-100$ degrees."
+            }
+          ],
+          "answer": "$-100$ degrees"
+        },
+        "number": 39
+      },
+      {
+        "prompt": "将$- \\frac{3 \\pi}{10}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$- \\frac{3 \\pi}{10}(180/\\pi)=-54$ degrees。"
+          }
+        ],
+        "answer": "$-54$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $- \\frac{3 \\pi}{10}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$- \\frac{3 \\pi}{10}(180/\\pi)=-54$ degrees."
+            }
+          ],
+          "answer": "$-54$ degrees"
+        },
+        "number": 40
+      },
+      {
+        "prompt": "将$\\frac{5 \\pi}{3}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac{5 \\pi}{3}(180/\\pi)=300$ degrees。"
+          }
+        ],
+        "answer": "$300$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $\\frac{5 \\pi}{3}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac{5 \\pi}{3}(180/\\pi)=300$ degrees."
+            }
+          ],
+          "answer": "$300$ degrees"
+        },
+        "number": 41
+      },
+      {
+        "prompt": "将$\\frac{11 \\pi}{6}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac{11 \\pi}{6}(180/\\pi)=330$ degrees。"
+          }
+        ],
+        "answer": "$330$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $\\frac{11 \\pi}{6}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac{11 \\pi}{6}(180/\\pi)=330$ degrees."
+            }
+          ],
+          "answer": "$330$ degrees"
+        },
+        "number": 42
+      },
+      {
+        "prompt": "将$- \\frac{11 \\pi}{4}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$- \\frac{11 \\pi}{4}(180/\\pi)=-495$ degrees。"
+          }
+        ],
+        "answer": "$-495$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $- \\frac{11 \\pi}{4}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$- \\frac{11 \\pi}{4}(180/\\pi)=-495$ degrees."
+            }
+          ],
+          "answer": "$-495$ degrees"
+        },
+        "number": 43
+      },
+      {
+        "prompt": "将$- \\frac{7 \\pi}{3}$弧度换成度。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$- \\frac{7 \\pi}{3}(180/\\pi)=-420$ degrees。"
+          }
+        ],
+        "answer": "$-420$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $- \\frac{7 \\pi}{3}$ radians to degrees.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$- \\frac{7 \\pi}{3}(180/\\pi)=-420$ degrees."
+            }
+          ],
+          "answer": "$-420$ degrees"
+        },
+        "number": 44
+      },
+      {
+        "prompt": "将$12^\\circ$换成弧度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$12(\\pi/180)=\\frac{\\pi}{15}$ rad。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{\\pi}{15}$ rad $\\approx 0.21$ rad。"
+          }
+        ],
+        "answer": "$\\frac{\\pi}{15}$ rad $\\approx 0.21$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $12^\\circ$ to radians, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$12(\\pi/180)=\\frac{\\pi}{15}$ rad."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{\\pi}{15}$ rad $\\approx 0.21$ rad."
+            }
+          ],
+          "answer": "$\\frac{\\pi}{15}$ rad $\\approx 0.21$ rad"
+        },
+        "number": 45
+      },
+      {
+        "prompt": "将$127^\\circ$换成弧度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$127(\\pi/180)=\\frac{127 \\pi}{180}$ rad。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{127 \\pi}{180}$ rad $\\approx 2.22$ rad。"
+          }
+        ],
+        "answer": "$\\frac{127 \\pi}{180}$ rad $\\approx 2.22$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $127^\\circ$ to radians, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$127(\\pi/180)=\\frac{127 \\pi}{180}$ rad."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{127 \\pi}{180}$ rad $\\approx 2.22$ rad."
+            }
+          ],
+          "answer": "$\\frac{127 \\pi}{180}$ rad $\\approx 2.22$ rad"
+        },
+        "number": 46
+      },
+      {
+        "prompt": "将$-84^\\circ$换成弧度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-84(\\pi/180)=- \\frac{7 \\pi}{15}$ rad。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$- \\frac{7 \\pi}{15}$ rad $\\approx -1.47$ rad。"
+          }
+        ],
+        "answer": "$- \\frac{7 \\pi}{15}$ rad $\\approx -1.47$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-84^\\circ$ to radians, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-84(\\pi/180)=- \\frac{7 \\pi}{15}$ rad."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $- \\frac{7 \\pi}{15}$ rad $\\approx -1.47$ rad."
+            }
+          ],
+          "answer": "$- \\frac{7 \\pi}{15}$ rad $\\approx -1.47$ rad"
+        },
+        "number": 47
+      },
+      {
+        "prompt": "将$-175^\\circ$换成弧度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm rad}=\\theta(\\pi/180)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-175(\\pi/180)=- \\frac{35 \\pi}{36}$ rad。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$- \\frac{35 \\pi}{36}$ rad $\\approx -3.05$ rad。"
+          }
+        ],
+        "answer": "$- \\frac{35 \\pi}{36}$ rad $\\approx -3.05$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-175^\\circ$ to radians, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm rad}=\\theta(\\pi/180)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-175(\\pi/180)=- \\frac{35 \\pi}{36}$ rad."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $- \\frac{35 \\pi}{36}$ rad $\\approx -3.05$ rad."
+            }
+          ],
+          "answer": "$- \\frac{35 \\pi}{36}$ rad $\\approx -3.05$ rad"
+        },
+        "number": 48
+      },
+      {
+        "prompt": "将$0.94$弧度换成度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$0.94(180/\\pi)=\\frac{169.2}{\\pi}$ degrees。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{169.2}{\\pi}$ degrees $\\approx 53.86$ degrees。"
+          }
+        ],
+        "answer": "$\\frac{169.2}{\\pi}$ degrees $\\approx 53.86$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $0.94$ radians to degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$0.94(180/\\pi)=\\frac{169.2}{\\pi}$ degrees."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{169.2}{\\pi}$ degrees $\\approx 53.86$ degrees."
+            }
+          ],
+          "answer": "$\\frac{169.2}{\\pi}$ degrees $\\approx 53.86$ degrees"
+        },
+        "number": 49
+      },
+      {
+        "prompt": "将$5$弧度换成度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$5(180/\\pi)=\\frac{900}{\\pi}$ degrees。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{900}{\\pi}$ degrees $\\approx 286.48$ degrees。"
+          }
+        ],
+        "answer": "$\\frac{900}{\\pi}$ degrees $\\approx 286.48$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $5$ radians to degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$5(180/\\pi)=\\frac{900}{\\pi}$ degrees."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{900}{\\pi}$ degrees $\\approx 286.48$ degrees."
+            }
+          ],
+          "answer": "$\\frac{900}{\\pi}$ degrees $\\approx 286.48$ degrees"
+        },
+        "number": 50
+      },
+      {
+        "prompt": "将$-8.21$弧度换成度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-8.21(180/\\pi)=- \\frac{1477.8}{\\pi}$ degrees。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$- \\frac{1477.8}{\\pi}$ degrees $\\approx -470.40$ degrees。"
+          }
+        ],
+        "answer": "$- \\frac{1477.8}{\\pi}$ degrees $\\approx -470.40$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-8.21$ radians to degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-8.21(180/\\pi)=- \\frac{1477.8}{\\pi}$ degrees."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $- \\frac{1477.8}{\\pi}$ degrees $\\approx -470.40$ degrees."
+            }
+          ],
+          "answer": "$- \\frac{1477.8}{\\pi}$ degrees $\\approx -470.40$ degrees"
+        },
+        "number": 51
+      },
+      {
+        "prompt": "将$-6.28$弧度换成度，保留两位小数。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta_{\\rm deg}=\\theta(180/\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$-6.28(180/\\pi)=- \\frac{1130.4}{\\pi}$ degrees。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$- \\frac{1130.4}{\\pi}$ degrees $\\approx -359.82$ degrees。"
+          }
+        ],
+        "answer": "$- \\frac{1130.4}{\\pi}$ degrees $\\approx -359.82$ degrees",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Convert $-6.28$ radians to degrees, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta_{\\rm deg}=\\theta(180/\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$-6.28(180/\\pi)=- \\frac{1130.4}{\\pi}$ degrees."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $- \\frac{1130.4}{\\pi}$ degrees $\\approx -359.82$ degrees."
+            }
+          ],
+          "answer": "$- \\frac{1130.4}{\\pi}$ degrees $\\approx -359.82$ degrees"
+        },
+        "number": 52
+      },
+      {
+        "prompt": "求与$- \\frac{\\pi}{4}$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$- \\frac{\\pi}{4}-(-1)(2 \\pi)=\\frac{7 \\pi}{4}$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$\\frac{7 \\pi}{4}$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with $- \\frac{\\pi}{4}$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$- \\frac{\\pi}{4}-(-1)(2 \\pi)=\\frac{7 \\pi}{4}$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$\\frac{7 \\pi}{4}$"
+        },
+        "number": 53
+      },
+      {
+        "prompt": "求与$- \\frac{2 \\pi}{3}$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$- \\frac{2 \\pi}{3}-(-1)(2 \\pi)=\\frac{4 \\pi}{3}$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$\\frac{4 \\pi}{3}$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with $- \\frac{2 \\pi}{3}$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$- \\frac{2 \\pi}{3}-(-1)(2 \\pi)=\\frac{4 \\pi}{3}$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$\\frac{4 \\pi}{3}$"
+        },
+        "number": 54
+      },
+      {
+        "prompt": "求与$- \\frac{7 \\pi}{4}$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$- \\frac{7 \\pi}{4}-(-1)(2 \\pi)=\\frac{\\pi}{4}$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$\\frac{\\pi}{4}$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with $- \\frac{7 \\pi}{4}$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$- \\frac{7 \\pi}{4}-(-1)(2 \\pi)=\\frac{\\pi}{4}$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$\\frac{\\pi}{4}$"
+        },
+        "number": 55
+      },
+      {
+        "prompt": "求与$- \\frac{5 \\pi}{3}$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$- \\frac{5 \\pi}{3}-(-1)(2 \\pi)=\\frac{\\pi}{3}$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$\\frac{\\pi}{3}$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with $- \\frac{5 \\pi}{3}$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$- \\frac{5 \\pi}{3}-(-1)(2 \\pi)=\\frac{\\pi}{3}$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$\\frac{\\pi}{3}$"
+        },
+        "number": 56
+      },
+      {
+        "prompt": "求与$\\frac{16 \\pi}{3}$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$\\frac{16 \\pi}{3}-(2)(2 \\pi)=\\frac{4 \\pi}{3}$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$\\frac{4 \\pi}{3}$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with $\\frac{16 \\pi}{3}$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$\\frac{16 \\pi}{3}-(2)(2 \\pi)=\\frac{4 \\pi}{3}$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$\\frac{4 \\pi}{3}$"
+        },
+        "number": 57
+      },
+      {
+        "prompt": "求与$\\frac{23 \\pi}{6}$同终边且在$0$和$2\\pi$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$\\frac{23 \\pi}{6}-(1)(2 \\pi)=\\frac{11 \\pi}{6}$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,2\\pi)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$\\frac{11 \\pi}{6}$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0$ and $2\\pi$ radians coterminal with $\\frac{23 \\pi}{6}$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$\\frac{23 \\pi}{6}-(1)(2 \\pi)=\\frac{11 \\pi}{6}$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,2\\pi)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$\\frac{11 \\pi}{6}$"
+        },
+        "number": 58
+      },
+      {
+        "prompt": "求与$-65^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$-65-(-1)(360)=295^\\circ$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$295^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with $-65^\\circ$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$-65-(-1)(360)=295^\\circ$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$295^\\circ$"
+        },
+        "number": 59
+      },
+      {
+        "prompt": "求与$-120^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$-120-(-1)(360)=240^\\circ$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$240^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with $-120^\\circ$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$-120-(-1)(360)=240^\\circ$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$240^\\circ$"
+        },
+        "number": 60
+      },
+      {
+        "prompt": "求与$-200^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$-200-(-1)(360)=160^\\circ$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$160^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with $-200^\\circ$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$-200-(-1)(360)=160^\\circ$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$160^\\circ$"
+        },
+        "number": 61
+      },
+      {
+        "prompt": "求与$-280^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$-280-(-1)(360)=80^\\circ$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$80^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with $-280^\\circ$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$-280-(-1)(360)=80^\\circ$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$80^\\circ$"
+        },
+        "number": 62
+      },
+      {
+        "prompt": "求与$700^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$700-(1)(360)=340^\\circ$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$340^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with $700^\\circ$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$700-(1)(360)=340^\\circ$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$340^\\circ$"
+        },
+        "number": 63
+      },
+      {
+        "prompt": "求与$1270^\\circ$同终边且在$0^\\circ$和$360^\\circ$之间的角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "加减整周",
+            "body": "$1270-(3)(360)=190^\\circ$。"
+          },
+          {
+            "title": "检查区间",
+            "body": "结果位于$[0,360)$中；差为整周，故同终边。"
+          }
+        ],
+        "answer": "$190^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the angle between $0^\\circ$ and $360^\\circ$ coterminal with $1270^\\circ$.",
+          "steps": [
+            {
+              "title": "Add or subtract complete turns",
+              "body": "$1270-(3)(360)=190^\\circ$."
+            },
+            {
+              "title": "Check the interval",
+              "body": "The result lies in $[0,360)$ and differs by complete revolutions, so it is coterminal."
+            }
+          ],
+          "answer": "$190^\\circ$"
+        },
+        "number": 64
+      },
+      {
+        "prompt": "求$47^\\circ$的余角、补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$90-47=43>0$，故余角为$43^\\circ$。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$180-47=133>0$，故补角为$133^\\circ$。"
+          }
+        ],
+        "answer": "余角：$43^\\circ$；补角：$133^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the complement and supplement of $47^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$90-47=43>0$, so the complement is $43^\\circ$."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$180-47=133>0$, so the supplement is $133^\\circ$."
+            }
+          ],
+          "answer": "Complement: $43^\\circ$; supplement: $133^\\circ$"
+        },
+        "number": 65
+      },
+      {
+        "prompt": "求$75^\\circ$的余角、补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$90-75=15>0$，故余角为$15^\\circ$。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$180-75=105>0$，故补角为$105^\\circ$。"
+          }
+        ],
+        "answer": "余角：$15^\\circ$；补角：$105^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the complement and supplement of $75^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$90-75=15>0$, so the complement is $15^\\circ$."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$180-75=105>0$, so the supplement is $105^\\circ$."
+            }
+          ],
+          "answer": "Complement: $15^\\circ$; supplement: $105^\\circ$"
+        },
+        "number": 66
+      },
+      {
+        "prompt": "求$120^\\circ$的余角、补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$120^\\circ$不满足$0<\\theta<90^\\circ$，没有余角。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$180-120=60>0$，故补角为$60^\\circ$。"
+          }
+        ],
+        "answer": "余角：无；补角：$60^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the complement and supplement of $120^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$120^\\circ$ does not satisfy $0<\\theta<90^\\circ$, so no complement exists."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$180-120=60>0$, so the supplement is $60^\\circ$."
+            }
+          ],
+          "answer": "Complement: none; supplement: $60^\\circ$"
+        },
+        "number": 67
+      },
+      {
+        "prompt": "求$160^\\circ$的余角、补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$160^\\circ$不满足$0<\\theta<90^\\circ$，没有余角。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$180-160=20>0$，故补角为$20^\\circ$。"
+          }
+        ],
+        "answer": "余角：无；补角：$20^\\circ$",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the complement and supplement of $160^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$160^\\circ$ does not satisfy $0<\\theta<90^\\circ$, so no complement exists."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$180-160=20>0$, so the supplement is $20^\\circ$."
+            }
+          ],
+          "answer": "Complement: none; supplement: $20^\\circ$"
+        },
+        "number": 68
+      },
+      {
+        "prompt": "求$210^\\circ$的余角、补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$210^\\circ$不满足$0<\\theta<90^\\circ$，没有余角。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$210^\\circ$不满足$0<\\theta<180^\\circ$，没有补角。"
+          }
+        ],
+        "answer": "余角：无；补角：无",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the complement and supplement of $210^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$210^\\circ$ does not satisfy $0<\\theta<90^\\circ$, so no complement exists."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$210^\\circ$ does not satisfy $0<\\theta<180^\\circ$, so no supplement exists."
+            }
+          ],
+          "answer": "Complement: none; supplement: none"
+        },
+        "number": 69
+      },
+      {
+        "prompt": "求$-50^\\circ$的余角、补角；若不存在则解释。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "余角条件",
+            "body": "$-50^\\circ$不满足$0<\\theta<90^\\circ$，没有余角。"
+          },
+          {
+            "title": "补角条件",
+            "body": "$-50^\\circ$不满足$0<\\theta<180^\\circ$，没有补角。"
+          }
+        ],
+        "answer": "余角：无；补角：无",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the complement and supplement of $-50^\\circ$, or explain why either does not exist.",
+          "steps": [
+            {
+              "title": "Complement condition",
+              "body": "$-50^\\circ$ does not satisfy $0<\\theta<90^\\circ$, so no complement exists."
+            },
+            {
+              "title": "Supplement condition",
+              "body": "$-50^\\circ$ does not satisfy $0<\\theta<180^\\circ$, so no supplement exists."
+            }
+          ],
+          "answer": "Complement: none; supplement: none"
+        },
+        "number": 70
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=25\\text{ in},s=7\\text{ in},\\theta=?$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$\\theta=s/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$7/25=\\frac{7}{25}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{7}{25}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=25\\text{ in},s=7\\text{ in},\\theta=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $\\theta=s/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$7/25=\\frac{7}{25}$ rad."
+            }
+          ],
+          "answer": "$\\frac{7}{25}$ rad"
+        },
+        "number": 71
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=5\\text{ ft},s=6\\text{ ft},\\theta=?$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$\\theta=s/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$6/5=\\frac{6}{5}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{6}{5}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=5\\text{ ft},s=6\\text{ ft},\\theta=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $\\theta=s/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$6/5=\\frac{6}{5}$ rad."
+            }
+          ],
+          "answer": "$\\frac{6}{5}$ rad"
+        },
+        "number": 72
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=10.5\\text{ cm},s=22\\text{ cm},\\theta=?$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$\\theta=s/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$22/10.5=\\frac{44}{21}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{44}{21}$ rad",
+        "printedPage": 367,
+        "pdfPage": 391,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=10.5\\text{ cm},s=22\\text{ cm},\\theta=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $\\theta=s/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$22/10.5=\\frac{44}{21}$ rad."
+            }
+          ],
+          "answer": "$\\frac{44}{21}$ rad"
+        },
+        "number": 73
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=60\\text{ m},s=120\\text{ m},\\theta=?$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$\\theta=s/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$120/60=2$ rad。"
+          }
+        ],
+        "answer": "$2$ rad",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=60\\text{ m},s=120\\text{ m},\\theta=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $\\theta=s/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$120/60=2$ rad."
+            }
+          ],
+          "answer": "$2$ rad"
+        },
+        "number": 74
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=3\\text{ m},\\theta=25^\\circ,s=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$3(25\\pi/180)=\\frac{5 \\pi}{12}$ m。"
+          }
+        ],
+        "answer": "$\\frac{5 \\pi}{12}$ m",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=3\\text{ m},\\theta=25^\\circ,s=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$3(25\\pi/180)=\\frac{5 \\pi}{12}$ m."
+            }
+          ],
+          "answer": "$\\frac{5 \\pi}{12}$ m"
+        },
+        "number": 75
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=0.7\\text{ m},\\theta=357^\\circ,s=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$0.7(357\\pi/180)=\\frac{833 \\pi}{600}$ m。"
+          }
+        ],
+        "answer": "$\\frac{833 \\pi}{600}$ m",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=0.7\\text{ m},\\theta=357^\\circ,s=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$0.7(357\\pi/180)=\\frac{833 \\pi}{600}$ m."
+            }
+          ],
+          "answer": "$\\frac{833 \\pi}{600}$ m"
+        },
+        "number": 76
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=6.5\\text{ m},\\theta=12\\text{ rad},s=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$6.5(12)=78$ m。"
+          }
+        ],
+        "answer": "$78$ m",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=6.5\\text{ m},\\theta=12\\text{ rad},s=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$6.5(12)=78$ m."
+            }
+          ],
+          "answer": "$78$ m"
+        },
+        "number": 77
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=6\\text{ m},\\theta=\\pi/6,s=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$6(\\pi/6)=\\pi$ m。"
+          }
+        ],
+        "answer": "$\\pi$ m",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=6\\text{ m},\\theta=\\pi/6,s=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$6(\\pi/6)=\\pi$ m."
+            }
+          ],
+          "answer": "$\\pi$ m"
+        },
+        "number": 78
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$\\theta=1/2\\text{ rad},s=3\\text{ cm},r=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$r=s/\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$3/(1/2)=6$ cm。"
+          }
+        ],
+        "answer": "$6$ cm",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $\\theta=1/2\\text{ rad},s=3\\text{ cm},r=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $r=s/\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$3/(1/2)=6$ cm."
+            }
+          ],
+          "answer": "$6$ cm"
+        },
+        "number": 79
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$\\theta=1/5\\text{ rad},s=2\\text{ ft},r=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$r=s/\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$2/(1/5)=10$ ft。"
+          }
+        ],
+        "answer": "$10$ ft",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $\\theta=1/5\\text{ rad},s=2\\text{ ft},r=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $r=s/\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$2/(1/5)=10$ ft."
+            }
+          ],
+          "answer": "$10$ ft"
+        },
+        "number": 80
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$\\theta=30^\\circ,s=3\\pi/2\\text{ m},r=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$r=s/\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(3\\pi/2)/(30\\pi/180)=9$ m。"
+          }
+        ],
+        "answer": "$9$ m",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $\\theta=30^\\circ,s=3\\pi/2\\text{ m},r=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $r=s/\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(3\\pi/2)/(30\\pi/180)=9$ m."
+            }
+          ],
+          "answer": "$9$ m"
+        },
+        "number": 81
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$\\theta=120^\\circ,s=20\\text{ in},r=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$r=s/\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$20/(120\\pi/180)=\\frac{30}{\\pi}$ in。"
+          }
+        ],
+        "answer": "$\\frac{30}{\\pi}$ in",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $\\theta=120^\\circ,s=20\\text{ in},r=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $r=s/\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$20/(120\\pi/180)=\\frac{30}{\\pi}$ in."
+            }
+          ],
+          "answer": "$\\frac{30}{\\pi}$ in"
+        },
+        "number": 82
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=10\\text{ in},\\theta=4\\text{ rad},A=?$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$A=\\frac12r^2\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac12(10)^2(4)=200$ square inches。"
+          }
+        ],
+        "answer": "$200$ square inches",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=10\\text{ in},\\theta=4\\text{ rad},A=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $A=\\frac12r^2\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac12(10)^2(4)=200$ square inches."
+            }
+          ],
+          "answer": "$200$ square inches"
+        },
+        "number": 83
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=1.5\\text{ ft},\\theta=60^\\circ,A=?$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$A=\\frac12r^2\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac12(1.5)^2(60\\pi/180)=\\frac{3 \\pi}{8}$ square feet。"
+          }
+        ],
+        "answer": "$\\frac{3 \\pi}{8}$ square feet",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=1.5\\text{ ft},\\theta=60^\\circ,A=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $A=\\frac12r^2\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac12(1.5)^2(60\\pi/180)=\\frac{3 \\pi}{8}$ square feet."
+            }
+          ],
+          "answer": "$\\frac{3 \\pi}{8}$ square feet"
+        },
+        "number": 84
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$A=20\\text{ ft}^2,\\theta=60^\\circ,r=?$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$r=\\sqrt{2A/\\theta}$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\sqrt{40/(60\\pi/180)}=\\frac{2 \\sqrt{30}}{\\sqrt{\\pi}}$ ft。"
+          }
+        ],
+        "answer": "$\\frac{2 \\sqrt{30}}{\\sqrt{\\pi}}$ ft",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $A=20\\text{ ft}^2,\\theta=60^\\circ,r=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $r=\\sqrt{2A/\\theta}$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\sqrt{40/(60\\pi/180)}=\\frac{2 \\sqrt{30}}{\\sqrt{\\pi}}$ ft."
+            }
+          ],
+          "answer": "$\\frac{2 \\sqrt{30}}{\\sqrt{\\pi}}$ ft"
+        },
+        "number": 85
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$A=60\\text{ m}^2,\\theta=2\\text{ rad},r=?$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$r=\\sqrt{2A/\\theta}$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\sqrt{120/2}=2 \\sqrt{15}$ m。"
+          }
+        ],
+        "answer": "$2 \\sqrt{15}$ m",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $A=60\\text{ m}^2,\\theta=2\\text{ rad},r=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $r=\\sqrt{2A/\\theta}$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\sqrt{120/2}=2 \\sqrt{15}$ m."
+            }
+          ],
+          "answer": "$2 \\sqrt{15}$ m"
+        },
+        "number": 86
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=6\\text{ m},\\omega=10\\text{ rad/min},v=?$。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$v=r\\omega$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$6(10)=60$ m/min。"
+          }
+        ],
+        "answer": "$60$ m/min",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=6\\text{ m},\\omega=10\\text{ rad/min},v=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $v=r\\omega$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$6(10)=60$ m/min."
+            }
+          ],
+          "answer": "$60$ m/min"
+        },
+        "number": 87
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$r=3.2\\text{ ft},\\omega=5\\text{ rad/sec},v=?$。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$v=r\\omega$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$3.2(5)=16$ ft/sec。"
+          }
+        ],
+        "answer": "$16$ ft/sec",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $r=3.2\\text{ ft},\\omega=5\\text{ rad/sec},v=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $v=r\\omega$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$3.2(5)=16$ ft/sec."
+            }
+          ],
+          "answer": "$16$ ft/sec"
+        },
+        "number": 88
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$v=20\\text{ ft/sec},r=10\\text{ ft},\\omega=?$。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$\\omega=v/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$20/10=2$ rad/sec。"
+          }
+        ],
+        "answer": "$2$ rad/sec",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $v=20\\text{ ft/sec},r=10\\text{ ft},\\omega=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $\\omega=v/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$20/10=2$ rad/sec."
+            }
+          ],
+          "answer": "$2$ rad/sec"
+        },
+        "number": 89
+      },
+      {
+        "prompt": "求缺少的量，给精确值：$v=10\\text{ m/min},r=6\\text{ m},\\omega=?$。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "如角以度给出，先乘$\\pi/180$；长度单位一致。使用$\\omega=v/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$10/6=\\frac{5}{3}$ rad/min。"
+          }
+        ],
+        "answer": "$\\frac{5}{3}$ rad/min",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the missing quantity and give an exact answer: $v=10\\text{ m/min},r=6\\text{ m},\\omega=?$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "If the angle is in degrees, first multiply by $\\pi/180$. Keep length units consistent. Use $\\omega=v/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$10/6=\\frac{5}{3}$ rad/min."
+            }
+          ],
+          "answer": "$\\frac{5}{3}$ rad/min"
+        },
+        "number": 90
+      },
+      {
+        "prompt": "汽车被推动，轮子转了四分之三周。轮胎半径15英寸，汽车移动多少英寸？",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$15(\\frac34\\cdot2\\pi)=\\frac{45 \\pi}{2}$ in。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{45 \\pi}{2}$ in $\\approx 70.69$ in。"
+          }
+        ],
+        "answer": "$\\frac{45 \\pi}{2}$ in $\\approx 70.69$ in",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "An automobile is pushed so its wheels turn three-quarters of a revolution. If its tires have radius 15 inches, how many inches does the car move?",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$15(\\frac34\\cdot2\\pi)=\\frac{45 \\pi}{2}$ in."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{45 \\pi}{2}$ in $\\approx 70.69$ in."
+            }
+          ],
+          "answer": "$\\frac{45 \\pi}{2}$ in $\\approx 70.69$ in"
+        },
+        "number": 91
+      },
+      {
+        "prompt": "1海里是赤道上$1\\prime$圆心角所截的弧长。取地球半径3960英里，将1海里换成普通英里。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$3960(\\frac1{60})(\\frac\\pi{180})=\\frac{11 \\pi}{30}$ mi。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{11 \\pi}{30}$ mi $\\approx 1.1519$ mi。"
+          }
+        ],
+        "answer": "$\\frac{11 \\pi}{30}$ mi $\\approx 1.1519$ mi",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A nautical mile is the equatorial arc intercepted by a central angle of $1\\prime$. Using Earth radius 3960 miles, express 1 nautical mile in statute miles.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$3960(\\frac1{60})(\\frac\\pi{180})=\\frac{11 \\pi}{30}$ mi."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{11 \\pi}{30}$ mi $\\approx 1.1519$ mi."
+            }
+          ],
+          "answer": "$\\frac{11 \\pi}{30}$ mi $\\approx 1.1519$ mi"
+        },
+        "number": 92
+      },
+      {
+        "prompt": "求时钟4:00时两指针较小夹角的弧度数，写成$\\pi$的有理数倍。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta=\\frac{\\text{hour gaps}}{12}(2\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac4{12}(2\\pi)=\\frac{2 \\pi}{3}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{2 \\pi}{3}$ rad",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the radian measure of the smaller central angle made by clock hands at 4:00, as a rational multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta=\\frac{\\text{hour gaps}}{12}(2\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac4{12}(2\\pi)=\\frac{2 \\pi}{3}$ rad."
+            }
+          ],
+          "answer": "$\\frac{2 \\pi}{3}$ rad"
+        },
+        "number": 93
+      },
+      {
+        "prompt": "求时钟7:00时两指针较大夹角的弧度数，写成$\\pi$的有理数倍。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta=\\frac{\\text{hour gaps}}{12}(2\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$\\frac7{12}(2\\pi)=\\frac{7 \\pi}{6}$ rad。"
+          }
+        ],
+        "answer": "$\\frac{7 \\pi}{6}$ rad",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Find the radian measure of the larger central angle made by clock hands at 7:00, as a rational multiple of $\\pi$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta=\\frac{\\text{hour gaps}}{12}(2\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$\\frac7{12}(2\\pi)=\\frac{7 \\pi}{6}$ rad."
+            }
+          ],
+          "answer": "$\\frac{7 \\pi}{6}$ rad"
+        },
+        "number": 94
+      },
+      {
+        "prompt": "一片披萨两边夹角为$25^\\circ$，外侧饼皮弧长4英寸。原披萨直径多少英寸？精确到英寸。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$d=2s/\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$2(4)/(25\\pi/180)=\\frac{288}{5 \\pi}$ in。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{288}{5 \\pi}$ in $\\approx 18$ in。"
+          }
+        ],
+        "answer": "$\\frac{288}{5 \\pi}$ in $\\approx 18$ in",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A pizza slice has angle $25^\\circ$ and outer crust arc length 4 inches. Find the original pizza diameter, rounded to the nearest inch.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $d=2s/\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$2(4)/(25\\pi/180)=\\frac{288}{5 \\pi}$ in."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{288}{5 \\pi}$ in $\\approx 18$ in."
+            }
+          ],
+          "answer": "$\\frac{288}{5 \\pi}$ in $\\approx 18$ in"
+        },
+        "number": 95
+      },
+      {
+        "prompt": "5英尺长摆锤摆过$30^\\circ$，尖端移动多远？保留两位小数。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$5(30\\pi/180)=\\frac{5 \\pi}{6}$ ft。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{5 \\pi}{6}$ ft $\\approx 2.62$ ft。"
+          }
+        ],
+        "answer": "$\\frac{5 \\pi}{6}$ ft $\\approx 2.62$ ft",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "How far does the tip of a 5-foot pendulum travel as it swings through $30^\\circ$? Round to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$5(30\\pi/180)=\\frac{5 \\pi}{6}$ ft."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{5 \\pi}{6}$ ft $\\approx 2.62$ ft."
+            }
+          ],
+          "answer": "$\\frac{5 \\pi}{6}$ ft $\\approx 2.62$ ft"
+        },
+        "number": 96
+      },
+      {
+        "prompt": "鲨鱼由绕过半径4英寸滑轮的绳索悬起，还需上升6英寸才能完全离地。滑轮必须逆时针转多少度？精确到度。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$\\theta=s/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$6/4=\\frac{3}{2}$ rad。"
+          },
+          {
+            "title": "换算成度",
+            "body": "$1.5(180/\\pi)\\approx85.9437^\\circ$，取整为$86^\\circ$，逆时针。"
+          }
+        ],
+        "answer": "$86^\\circ$（逆时针）",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A shark is suspended from a wire wound around a pulley of radius 4 inches. It must rise 6 more inches to clear the ground. Through how many degrees must the pulley rotate counterclockwise? Round to the nearest degree.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $\\theta=s/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$6/4=\\frac{3}{2}$ rad."
+            },
+            {
+              "title": "Convert to degrees",
+              "body": "$1.5(180/\\pi)\\approx85.9437^\\circ$, rounding to $86^\\circ$ counterclockwise."
+            }
+          ],
+          "answer": "$86^\\circ$ counterclockwise"
+        },
+        "number": 97
+      },
+      {
+        "prompt": "摄像头旋转$120^\\circ$。求距摄像头40英尺处视野的弧宽，精确到英尺。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$s=r\\theta$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$40(120\\pi/180)=\\frac{80 \\pi}{3}$ ft。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{80 \\pi}{3}$ ft $\\approx 84$ ft。"
+          }
+        ],
+        "answer": "$\\frac{80 \\pi}{3}$ ft $\\approx 84$ ft",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A security camera rotates through $120^\\circ$. Find its field-of-view arc width 40 feet from the camera, rounded to the nearest foot.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $s=r\\theta$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$40(120\\pi/180)=\\frac{80 \\pi}{3}$ ft."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{80 \\pi}{3}$ ft $\\approx 84$ ft."
+            }
+          ],
+          "answer": "$\\frac{80 \\pi}{3}$ ft $\\approx 84$ ft"
+        },
+        "number": 98
+      },
+      {
+        "prompt": "两滑轮由皮带连接，皮带和轮缘共有线速度600英寸/分钟。小轮半径2英寸，大轮半径5英寸。(a)求大轮角速度；(b)求小轮角速度。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "(a) 建立公式",
+            "body": "使用$\\omega=v/r$。"
+          },
+          {
+            "title": "(a) 代入并计算",
+            "body": "$600/5=120$ rad/min。"
+          },
+          {
+            "title": "(b) 建立公式",
+            "body": "使用$\\omega=v/r$。"
+          },
+          {
+            "title": "(b) 代入并计算",
+            "body": "$600/2=300$ rad/min。"
+          }
+        ],
+        "answer": "(a) $120$ rad/min；(b) $300$ rad/min",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "Two pulleys are connected by a belt; the belt and pulley rims share linear speed 600 inches/min. The smaller radius is 2 inches and the larger radius 5 inches. (a) Find the angular speed of the larger pulley. (b) Find that of the smaller pulley.",
+          "steps": [
+            {
+              "title": "(a) Set up the formula",
+              "body": "Use $\\omega=v/r$."
+            },
+            {
+              "title": "(a) Substitute and calculate",
+              "body": "$600/5=120$ rad/min."
+            },
+            {
+              "title": "(b) Set up the formula",
+              "body": "Use $\\omega=v/r$."
+            },
+            {
+              "title": "(b) Substitute and calculate",
+              "body": "$600/2=300$ rad/min."
+            }
+          ],
+          "answer": "(a) $120$ rad/min; (b) $300$ rad/min"
+        },
+        "number": 99,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "维也纳摩天轮直径约61米，每转一周用90秒。(a)求角速度；(b)求线速度（米/秒）。均保留两位小数。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "(a) 建立公式",
+            "body": "使用$\\omega=\\theta/t$。"
+          },
+          {
+            "title": "(a) 代入并计算",
+            "body": "$2\\pi/90=\\frac{\\pi}{45}$ rad/sec。"
+          },
+          {
+            "title": "(a) 最后舍入",
+            "body": "最后舍入，得$\\frac{\\pi}{45}$ rad/sec $\\approx 0.07$ rad/sec。"
+          },
+          {
+            "title": "(b) 建立公式",
+            "body": "使用$v=r\\omega$。"
+          },
+          {
+            "title": "(b) 代入并计算",
+            "body": "$30.5(2\\pi/90)=\\frac{61 \\pi}{90}$ m/sec。"
+          },
+          {
+            "title": "(b) 最后舍入",
+            "body": "最后舍入，得$\\frac{61 \\pi}{90}$ m/sec $\\approx 2.13$ m/sec。"
+          }
+        ],
+        "answer": "(a) $\\frac{\\pi}{45}$ rad/sec $\\approx 0.07$ rad/sec；(b) $\\frac{61 \\pi}{90}$ m/sec $\\approx 2.13$ m/sec",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A Ferris wheel in Vienna has diameter about 61 meters and takes 90 seconds per revolution. (a) Find its angular speed. (b) Find its linear speed in meters/sec. Round both answers to two decimal places.",
+          "steps": [
+            {
+              "title": "(a) Set up the formula",
+              "body": "Use $\\omega=\\theta/t$."
+            },
+            {
+              "title": "(a) Substitute and calculate",
+              "body": "$2\\pi/90=\\frac{\\pi}{45}$ rad/sec."
+            },
+            {
+              "title": "(a) Round at the end",
+              "body": "Rounding only at the end gives $\\frac{\\pi}{45}$ rad/sec $\\approx 0.07$ rad/sec."
+            },
+            {
+              "title": "(b) Set up the formula",
+              "body": "Use $v=r\\omega$."
+            },
+            {
+              "title": "(b) Substitute and calculate",
+              "body": "$30.5(2\\pi/90)=\\frac{61 \\pi}{90}$ m/sec."
+            },
+            {
+              "title": "(b) Round at the end",
+              "body": "Rounding only at the end gives $\\frac{61 \\pi}{90}$ m/sec $\\approx 2.13$ m/sec."
+            }
+          ],
+          "answer": "(a) $\\frac{\\pi}{45}$ rad/sec $\\approx 0.07$ rad/sec; (b) $\\frac{61 \\pi}{90}$ m/sec $\\approx 2.13$ m/sec"
+        },
+        "number": 100,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "自行车轮直径24英寸，车速25英里/小时。求轮子的角速度，保留两位小数。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "轮半径为12英寸；25 mph等于440 in/sec。使用$\\omega=v/r$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(25\\cdot5280\\cdot12/3600)/12=\\frac{110}{3}$ rad/sec。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$\\frac{110}{3}$ rad/sec $\\approx 36.67$ rad/sec。"
+          },
+          {
+            "title": "等价单位",
+            "body": "这也等于132000弧度/小时。"
+          }
+        ],
+        "answer": "$\\frac{110}{3}$ rad/sec $\\approx 36.67$ rad/sec",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A bicycle has 24-inch-diameter wheels and travels at 25 miles/hour. Find the angular speed of the wheels, rounded to two decimal places.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "The wheel radius is 12 inches; 25 mph equals 440 in/sec. Use $\\omega=v/r$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(25\\cdot5280\\cdot12/3600)/12=\\frac{110}{3}$ rad/sec."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $\\frac{110}{3}$ rad/sec $\\approx 36.67$ rad/sec."
+            },
+            {
+              "title": "Equivalent units",
+              "body": "This also equals 132000 radians/hour."
+            }
+          ],
+          "answer": "$\\frac{110}{3}$ rad/sec $\\approx 36.67$ rad/sec"
+        },
+        "number": 101
+      },
+      {
+        "prompt": "自行车轮直径30英寸，角速度11弧度/秒。求车速（英寸/秒）。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$v=r\\omega$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(30/2)(11)=165$ in/sec。"
+          }
+        ],
+        "answer": "$165$ in/sec",
+        "printedPage": 368,
+        "pdfPage": 392,
+        "en": {
+          "prompt": "A bicycle wheel has diameter 30 inches and angular speed 11 radians/sec. Find the bicycle speed in inches/sec.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $v=r\\omega$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(30/2)(11)=165$ in/sec."
+            }
+          ],
+          "answer": "$165$ in/sec"
+        },
+        "number": 102
+      },
+      {
+        "prompt": "圆形硬盘直径3.75英寸，每分钟7200转。求边缘一点的线速度（英寸/分钟）。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$v=r\\omega$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(3.75/2)(7200\\cdot2\\pi)=27000 \\pi$ in/min。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$27000 \\pi$ in/min $\\approx 84823.00$ in/min。"
+          }
+        ],
+        "answer": "$27000 \\pi$ in/min $\\approx 84823.00$ in/min",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "A circular hard disk has diameter 3.75 inches and rotates at 7200 revolutions/min. Find the linear speed of a point on its edge, in inches/min.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $v=r\\omega$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(3.75/2)(7200\\cdot2\\pi)=27000 \\pi$ in/min."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $27000 \\pi$ in/min $\\approx 84823.00$ in/min."
+            }
+          ],
+          "answer": "$27000 \\pi$ in/min $\\approx 84823.00$ in/min"
+        },
+        "number": 103
+      },
+      {
+        "prompt": "地球绕南北极轴24小时转一周。取地球半径3960英里，求赤道一处的线速度（英里/小时）。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$v=2\\pi r/t$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$2\\pi(3960)/24=330 \\pi$ mi/hour。"
+          },
+          {
+            "title": "最后舍入",
+            "body": "最后舍入，得$330 \\pi$ mi/hour $\\approx 1036.73$ mi/hour。"
+          }
+        ],
+        "answer": "$330 \\pi$ mi/hour $\\approx 1036.73$ mi/hour",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Earth rotates once every 24 hours about its polar axis. Using radius 3960 miles, find the linear speed of a point on the equator in miles/hour.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $v=2\\pi r/t$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$2\\pi(3960)/24=330 \\pi$ mi/hour."
+            },
+            {
+              "title": "Round at the end",
+              "body": "Rounding only at the end gives $330 \\pi$ mi/hour $\\approx 1036.73$ mi/hour."
+            }
+          ],
+          "answer": "$330 \\pi$ mi/hour $\\approx 1036.73$ mi/hour"
+        },
+        "number": 104
+      },
+      {
+        "prompt": "Indianapolis（$39^\\circ44\\prime$N）在Montgomery（$32^\\circ23\\prime$N）正北方。取地球半径3960英里，求两城市距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "求纬度差",
+            "body": "两城市在同一经线上，圆心角为$39^\\circ44\\prime-32^\\circ23\\prime=7^\\circ21\\prime$。"
+          },
+          {
+            "title": "精确换成弧度",
+            "body": "$\\theta=(\\frac{147}{20})\\pi/180=\\frac{49 \\pi}{1200}$。"
+          },
+          {
+            "title": "计算经线弧长",
+            "body": "$s=3960\\theta=\\frac{1617 \\pi}{10}\\approx508.00$英里，约$508$英里。"
+          }
+        ],
+        "answer": "$\\frac{1617 \\pi}{10}\\approx508.00$英里",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Indianapolis ($39^\\circ44\\prime$N) is due north of Montgomery ($32^\\circ23\\prime$N). Find the distance using Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Find the latitude difference",
+              "body": "The cities lie on one meridian, so their central angle is $39^\\circ44\\prime-32^\\circ23\\prime=7^\\circ21\\prime$."
+            },
+            {
+              "title": "Convert exactly to radians",
+              "body": "$\\theta=(\\frac{147}{20})\\pi/180=\\frac{49 \\pi}{1200}$."
+            },
+            {
+              "title": "Compute the meridian arc length",
+              "body": "$s=3960\\theta=\\frac{1617 \\pi}{10}\\approx508.00$ miles, about $508$ miles."
+            }
+          ],
+          "answer": "$\\frac{1617 \\pi}{10}\\approx508.00$ miles"
+        },
+        "number": 105
+      },
+      {
+        "prompt": "Pittsburgh（$40^\\circ30\\prime$N）在Charleston（$32^\\circ54\\prime$N）正北方。取地球半径3960英里，求两城市距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "求纬度差",
+            "body": "两城市在同一经线上，圆心角为$40^\\circ30\\prime-32^\\circ54\\prime=7^\\circ36\\prime$。"
+          },
+          {
+            "title": "精确换成弧度",
+            "body": "$\\theta=(\\frac{38}{5})\\pi/180=\\frac{19 \\pi}{450}$。"
+          },
+          {
+            "title": "计算经线弧长",
+            "body": "$s=3960\\theta=\\frac{836 \\pi}{5}\\approx525.27$英里，约$525$英里。"
+          }
+        ],
+        "answer": "$\\frac{836 \\pi}{5}\\approx525.27$英里",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Pittsburgh ($40^\\circ30\\prime$N) is due north of Charleston ($32^\\circ54\\prime$N). Find the distance using Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Find the latitude difference",
+              "body": "The cities lie on one meridian, so their central angle is $40^\\circ30\\prime-32^\\circ54\\prime=7^\\circ36\\prime$."
+            },
+            {
+              "title": "Convert exactly to radians",
+              "body": "$\\theta=(\\frac{38}{5})\\pi/180=\\frac{19 \\pi}{450}$."
+            },
+            {
+              "title": "Compute the meridian arc length",
+              "body": "$s=3960\\theta=\\frac{836 \\pi}{5}\\approx525.27$ miles, about $525$ miles."
+            }
+          ],
+          "answer": "$\\frac{836 \\pi}{5}\\approx525.27$ miles"
+        },
+        "number": 106
+      },
+      {
+        "prompt": "Amsterdam（$52^\\circ23\\prime$N）在Lyon（$45^\\circ42\\prime$N）正北方。取地球半径3960英里，求两城市距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "求纬度差",
+            "body": "两城市在同一经线上，圆心角为$52^\\circ23\\prime-45^\\circ42\\prime=6^\\circ41\\prime$。"
+          },
+          {
+            "title": "精确换成弧度",
+            "body": "$\\theta=(\\frac{401}{60})\\pi/180=\\frac{401 \\pi}{10800}$。"
+          },
+          {
+            "title": "计算经线弧长",
+            "body": "$s=3960\\theta=\\frac{4411 \\pi}{30}\\approx461.92$英里，约$462$英里。"
+          }
+        ],
+        "answer": "$\\frac{4411 \\pi}{30}\\approx461.92$英里",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Amsterdam ($52^\\circ23\\prime$N) is due north of Lyon ($45^\\circ42\\prime$N). Find the distance using Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Find the latitude difference",
+              "body": "The cities lie on one meridian, so their central angle is $52^\\circ23\\prime-45^\\circ42\\prime=6^\\circ41\\prime$."
+            },
+            {
+              "title": "Convert exactly to radians",
+              "body": "$\\theta=(\\frac{401}{60})\\pi/180=\\frac{401 \\pi}{10800}$."
+            },
+            {
+              "title": "Compute the meridian arc length",
+              "body": "$s=3960\\theta=\\frac{4411 \\pi}{30}\\approx461.92$ miles, about $462$ miles."
+            }
+          ],
+          "answer": "$\\frac{4411 \\pi}{30}\\approx461.92$ miles"
+        },
+        "number": 107
+      },
+      {
+        "prompt": "Adana（$36^\\circ59\\prime$N）在Jerusalem（$31^\\circ47\\prime$N）正北方。取地球半径3960英里，求两城市距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "求纬度差",
+            "body": "两城市在同一经线上，圆心角为$36^\\circ59\\prime-31^\\circ47\\prime=5^\\circ12\\prime$。"
+          },
+          {
+            "title": "精确换成弧度",
+            "body": "$\\theta=(\\frac{26}{5})\\pi/180=\\frac{13 \\pi}{450}$。"
+          },
+          {
+            "title": "计算经线弧长",
+            "body": "$s=3960\\theta=\\frac{572 \\pi}{5}\\approx359.40$英里，约$359$英里。"
+          }
+        ],
+        "answer": "$\\frac{572 \\pi}{5}\\approx359.40$英里",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Adana ($36^\\circ59\\prime$N) is due north of Jerusalem ($31^\\circ47\\prime$N). Find the distance using Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Find the latitude difference",
+              "body": "The cities lie on one meridian, so their central angle is $36^\\circ59\\prime-31^\\circ47\\prime=5^\\circ12\\prime$."
+            },
+            {
+              "title": "Convert exactly to radians",
+              "body": "$\\theta=(\\frac{26}{5})\\pi/180=\\frac{13 \\pi}{450}$."
+            },
+            {
+              "title": "Compute the meridian arc length",
+              "body": "$s=3960\\theta=\\frac{572 \\pi}{5}\\approx359.40$ miles, about $359$ miles."
+            }
+          ],
+          "answer": "$\\frac{572 \\pi}{5}\\approx359.40$ miles"
+        },
+        "number": 108
+      },
+      {
+        "prompt": "Miles City在Boulder正北方440英里。取地球半径3960英里，求纬度差。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "经线弧长关系",
+            "body": "$\\theta=s/r=440/3960=\\frac{1}{9}$弧度。"
+          },
+          {
+            "title": "换成度",
+            "body": "$\\Delta\\phi=\\frac{1}{9}(180/\\pi)=\\frac{20}{\\pi}\\approx6.3662^\\circ$。"
+          }
+        ],
+        "answer": "$6.3662^\\circ$",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Miles City is 440 miles due north of Boulder. Find the latitude difference using Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Use the meridian arc relation",
+              "body": "$\\theta=s/r=440/3960=\\frac{1}{9}$ radians."
+            },
+            {
+              "title": "Convert to degrees",
+              "body": "$\\Delta\\phi=\\frac{1}{9}(180/\\pi)=\\frac{20}{\\pi}\\approx6.3662^\\circ$."
+            }
+          ],
+          "answer": "$6.3662^\\circ$"
+        },
+        "number": 109
+      },
+      {
+        "prompt": "Lincoln在Dallas正北方554英里。取地球半径3960英里，求纬度差。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "经线弧长关系",
+            "body": "$\\theta=s/r=554/3960=\\frac{277}{1980}$弧度。"
+          },
+          {
+            "title": "换成度",
+            "body": "$\\Delta\\phi=\\frac{277}{1980}(180/\\pi)=\\frac{277}{11 \\pi}\\approx8.0156^\\circ$。"
+          }
+        ],
+        "answer": "$8.0156^\\circ$",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Lincoln is 554 miles due north of Dallas. Find the latitude difference using Earth radius 3960 miles.",
+          "steps": [
+            {
+              "title": "Use the meridian arc relation",
+              "body": "$\\theta=s/r=554/3960=\\frac{277}{1980}$ radians."
+            },
+            {
+              "title": "Convert to degrees",
+              "body": "$\\Delta\\phi=\\frac{277}{1980}(180/\\pi)=\\frac{277}{11 \\pi}\\approx8.0156^\\circ$."
+            }
+          ],
+          "answer": "$8.0156^\\circ$"
+        },
+        "number": 110
+      },
+      {
+        "prompt": "环形跑道内周长352米、外周长396米，求跑道宽度。使用$\\pi\\approx22/7$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$w=(C_o-C_i)/(2\\pi)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(396-352)/(2(22/7))=7$ m。"
+          }
+        ],
+        "answer": "$7$ m",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "A ring-shaped racetrack has inner circumference 352 meters and outer circumference 396 meters. Find its width. Use $\\pi\\approx22/7$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $w=(C_o-C_i)/(2\\pi)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(396-352)/(2(22/7))=7$ m."
+            }
+          ],
+          "answer": "$7$ m"
+        },
+        "number": 111
+      },
+      {
+        "prompt": "车轮直径84厘米，行驶792米需转多少完整周？使用$\\pi\\approx22/7$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$N=d_{\\rm total}/(\\pi D)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(792(100))/((22/7)84)=300$ revolutions。"
+          }
+        ],
+        "answer": "$300$ revolutions",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "A wheel has diameter 84 centimeters. How many complete revolutions cover 792 meters? Use $\\pi\\approx22/7$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $N=d_{\\rm total}/(\\pi D)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(792(100))/((22/7)84)=300$ revolutions."
+            }
+          ],
+          "answer": "$300$ revolutions"
+        },
+        "number": 112
+      },
+      {
+        "prompt": "轮胎直径140厘米。以66千米/小时行驶需每分钟转多少周？使用$\\pi\\approx22/7$。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$N=v/(\\pi D)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(66(100000)/60)/((22/7)140)=250$ rev/min。"
+          }
+        ],
+        "answer": "$250$ rev/min",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "A tire has diameter 140 centimeters. How many revolutions per minute achieve 66 kilometers/hour? Use $\\pi\\approx22/7$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $N=v/(\\pi D)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(66(100000)/60)/((22/7)140)=250$ rev/min."
+            }
+          ],
+          "answer": "$250$ rev/min"
+        },
+        "number": 113
+      },
+      {
+        "prompt": "汽车两支不重叠雨刷，每支长14英寸并扫过$110^\\circ$。求一次清扫总面积。使用$\\pi\\approx22/7$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$A=2(\\frac12r^2\\theta)$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$2(\\frac12)(14)^2(110/180)(22/7)=\\frac{3388}{9}$ square inches。"
+          }
+        ],
+        "answer": "$\\frac{3388}{9}$ square inches",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "A car has two nonoverlapping wipers, each 14 inches long and sweeping $110^\\circ$. Find the total area cleaned per sweep. Use $\\pi\\approx22/7$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $A=2(\\frac12r^2\\theta)$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$2(\\frac12)(14)^2(110/180)(22/7)=\\frac{3388}{9}$ square inches."
+            }
+          ],
+          "answer": "$\\frac{3388}{9}$ square inches"
+        },
+        "number": 114
+      },
+      {
+        "prompt": "伞面材料是直径3英尺的圆，有8根等间隔伞骨。求相邻伞骨间的面积。使用$\\pi\\approx22/7$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "建立公式",
+            "body": "使用$A=\\pi r^2/8$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "$(22/7)(3/2)^2/8=\\frac{99}{112}$ square feet。"
+          }
+        ],
+        "answer": "$\\frac{99}{112}$ square feet",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "An umbrella top is a circle of diameter 3 feet with eight equally spaced ribs. Find the area between consecutive ribs. Use $\\pi\\approx22/7$.",
+          "steps": [
+            {
+              "title": "Set up the formula",
+              "body": "Use $A=\\pi r^2/8$."
+            },
+            {
+              "title": "Substitute and calculate",
+              "body": "$(22/7)(3/2)^2/8=\\frac{99}{112}$ square feet."
+            }
+          ],
+          "answer": "$\\frac{99}{112}$ square feet"
+        },
+        "number": 115
+      },
+      {
+        "prompt": "从半径7厘米的圆纸片中剪去圆心角$\\pi/4$的扇形，将边OA、OB接合成圆锥杯。求体积；用$\\pi\\approx22/7$。提示：$V=\\frac13\\pi R^2h$。",
+        "concept": "sector",
+        "steps": [
+          {
+            "title": "求底面半径",
+            "body": "剪去$\\pi/4$，保留角$7\\pi/4$。剩余弧成为锥底周长：$2\\pi R=7(7\\pi/4)$，故$R=49/8$ cm。"
+          },
+          {
+            "title": "勾股定理求高",
+            "body": "$h=\\sqrt{7^2-(49/8)^2}=7\\sqrt{15}/8$ cm。"
+          },
+          {
+            "title": "计算体积",
+            "body": "$V=\\frac13\\pi R^2h\\approx\\frac13(22/7)(49/8)^2(7\\sqrt{15}/8)=\\frac{26411 \\sqrt{15}}{768}\\approx133.19$ cm$^3$。"
+          }
+        ],
+        "answer": "$\\frac{26411 \\sqrt{15}}{768}\\approx133.19$ cm$^3$",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "A conical cup is made from a circular sheet of radius 7 cm by cutting out a sector of angle $\\pi/4$ and joining edges OA and OB. Find its volume using $\\pi\\approx22/7$. Hint: $V=\\frac13\\pi R^2h$.",
+          "steps": [
+            {
+              "title": "Find the base radius",
+              "body": "Removing $\\pi/4$ leaves angle $7\\pi/4$. The remaining arc is the base circumference: $2\\pi R=7(7\\pi/4)$, so $R=49/8$ cm."
+            },
+            {
+              "title": "Find height by the Pythagorean theorem",
+              "body": "$h=\\sqrt{7^2-(49/8)^2}=7\\sqrt{15}/8$ cm."
+            },
+            {
+              "title": "Compute the volume",
+              "body": "$V=\\frac13\\pi R^2h\\approx\\frac13(22/7)(49/8)^2(7\\sqrt{15}/8)=\\frac{26411 \\sqrt{15}}{768}\\approx133.19$ cm$^3$."
+            }
+          ],
+          "answer": "$\\frac{26411 \\sqrt{15}}{768}\\approx133.19$ cm$^3$"
+        },
+        "number": 116
+      },
+      {
+        "prompt": "将弧度数$\\pi,3\\pi/2,3,4$从小到大排列。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "比较大小",
+            "body": "$\\pi\\approx3.14159$，$3\\pi/2\\approx4.71239$，故$3<\\pi<4<3\\pi/2$。"
+          }
+        ],
+        "answer": "$3<\\pi<4<3\\pi/2$",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Arrange $\\pi,3\\pi/2,3,4$ from smallest to largest.",
+          "steps": [
+            {
+              "title": "Compare the real numbers",
+              "body": "$\\pi\\approx3.14159$ and $3\\pi/2\\approx4.71239$, so $3<\\pi<4<3\\pi/2$."
+            }
+          ],
+          "answer": "$3<\\pi<4<3\\pi/2$"
+        },
+        "number": 117
+      },
+      {
+        "prompt": "纬度$30^\\circ40\\prime13\\prime\\prime$与$40^\\circ30\\prime13\\prime\\prime$的纬线中，哪条半径较小？",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "比较纬度",
+            "body": "$40^\\circ30\\prime13\\prime\\prime>30^\\circ40\\prime13\\prime\\prime$；更大的北纬更靠近北极。"
+          },
+          {
+            "title": "判断截圆半径",
+            "body": "离赤道越远的纬线圆越小。因此第二条纬线半径较小。"
+          }
+        ],
+        "answer": "$40^\\circ30\\prime13\\prime\\prime$纬线",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Which line of latitude has smaller radius: $30^\\circ40\\prime13\\prime\\prime$ or $40^\\circ30\\prime13\\prime\\prime$?",
+          "steps": [
+            {
+              "title": "Compare latitudes",
+              "body": "$40^\\circ30\\prime13\\prime\\prime>30^\\circ40\\prime13\\prime\\prime$; the larger northern latitude is closer to the North Pole."
+            },
+            {
+              "title": "Compare the parallel-circle radii",
+              "body": "A parallel circle farther from the equator has smaller radius. Therefore the second line has smaller radius."
+            }
+          ],
+          "answer": "The line at $40^\\circ30\\prime13\\prime\\prime$"
+        },
+        "number": 118
+      },
+      {
+        "prompt": "设正圆心角$\\theta<\\pi/2$在半径$r$圆上截取弧长$s$。证明截取弧长$\\pi r/2-s$的圆心角与$\\theta$互余。",
+        "concept": "complements",
+        "steps": [
+          {
+            "title": "从弧长求角",
+            "body": "由$s=r\\theta$，新角$\\alpha=(\\pi r/2-s)/r=\\pi/2-s/r=\\pi/2-\\theta$。"
+          },
+          {
+            "title": "核对定义",
+            "body": "因$0<\\theta<\\pi/2$，故$\\alpha>0$且$\\alpha+\\theta=\\pi/2$，所以互余。"
+          }
+        ],
+        "answer": "$\\alpha=\\pi/2-\\theta$；互余",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Let a positive central angle $\\theta<\\pi/2$ in a circle of radius $r$ intercept arc $s$. Show that the central angle intercepting arc $\\pi r/2-s$ is complementary to $\\theta$.",
+          "steps": [
+            {
+              "title": "Convert arc length to angle",
+              "body": "From $s=r\\theta$, the new angle is $\\alpha=(\\pi r/2-s)/r=\\pi/2-s/r=\\pi/2-\\theta$."
+            },
+            {
+              "title": "Check the definition",
+              "body": "Since $0<\\theta<\\pi/2$, $\\alpha>0$ and $\\alpha+\\theta=\\pi/2$, so the two angles are complementary."
+            }
+          ],
+          "answer": "$\\alpha=\\pi/2-\\theta$; complementary"
+        },
+        "number": 119
+      },
+      {
+        "prompt": "Eratosthenes知道Syene在Alexandria正南方约500英里。夏至正午Syene的竖直杆无影，而Alexandria的阳光与竖直杆成$7^\\circ12\\prime$角；两地阳光近似平行。解释如何利用Alexandria影长估算地球周长。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "由影长得角度",
+            "body": "杆高$h$、影长$L$构成直角三角形，可量得光线与杆夹角$\\theta$（等价于$\\tan\\theta=L/h$）。本题为$7^\\circ12\\prime=7.2^\\circ$。"
+          },
+          {
+            "title": "利用平行光线",
+            "body": "竖直方向沿地球半径，平行光线使两城市间圆心角等于$7.2^\\circ$。故500英里占全周$7.2/360=1/50$。"
+          },
+          {
+            "title": "按比例求周长",
+            "body": "$500/C=7.2/360$，所以$C=500(360/7.2)=25000$英里。"
+          }
+        ],
+        "answer": "周长约25000英里",
+        "printedPage": 369,
+        "pdfPage": 393,
+        "en": {
+          "prompt": "Eratosthenes knew Syene was about 500 miles due south of Alexandria. At noon on the summer solstice a vertical rod cast no shadow in Syene, but sunlight made angle $7^\\circ12\\prime$ with a vertical rod in Alexandria; sunlight rays were effectively parallel. Explain how measuring the Alexandria shadow estimates Earth circumference.",
+          "steps": [
+            {
+              "title": "Determine the angle from the shadow",
+              "body": "A rod of height $h$ and shadow length $L$ forms a right triangle that determines the sunlight angle $\\theta$ (equivalently $\\tan\\theta=L/h$). Here $7^\\circ12\\prime=7.2^\\circ$."
+            },
+            {
+              "title": "Use parallel sunlight",
+              "body": "Local vertical directions follow Earth radii. Parallel sunlight makes the central angle between the cities $7.2^\\circ$. Thus 500 miles is $7.2/360=1/50$ of the circumference."
+            },
+            {
+              "title": "Scale to a full circumference",
+              "body": "$500/C=7.2/360$, so $C=500(360/7.2)=25000$ miles."
+            }
+          ],
+          "answer": "Circumference approximately 25000 miles"
+        },
+        "number": 120
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4",
+      "example-5",
+      "example-6",
+      "example-7",
+      "example-8",
+      "example-9",
+      "example-10"
+    ],
+    "expectedPractice": [
+      "practice-1",
+      "practice-2",
+      "practice-3",
+      "practice-4",
+      "practice-5",
+      "practice-6",
+      "practice-7",
+      "practice-8",
+      "practice-9",
+      "practice-10"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "expectedSubparts": {
+      "example-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "example-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-5": [
+        "a",
+        "b"
+      ],
+      "example-6": [
+        "a",
+        "b"
+      ],
+      "practice-2": [
+        "a",
+        "b"
+      ],
+      "practice-5": [
+        "a",
+        "b"
+      ],
+      "exercise-99": [
+        "a",
+        "b"
+      ],
+      "exercise-100": [
+        "a",
+        "b"
+      ]
+    },
+    "source": {
+      "printedPages": [
+        356,
+        369
+      ],
+      "pdfPages": [
+        380,
+        393
+      ]
+    },
+    "gettingReady": {
+      "ids": [
+        "GR1",
+        "GR2",
+        "GR3",
+        "GR4",
+        "GR5",
+        "GR6",
+        "GR7",
+        "GR8"
+      ],
+      "printedPage": 356,
+      "pdfPage": 380,
+      "note": "Incoming preparation at start of section, kept separate from main section exercise sequence."
+    },
+    "inventoryStatus": "Independently counted from original section pages before solution generation",
+    "expectedGettingReady": [
+      "GR1",
+      "GR2",
+      "GR3",
+      "GR4",
+      "GR5",
+      "GR6",
+      "GR7",
+      "GR8"
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent inventory preceded solutions. Symbolic angle and geometry computations checked; original textbook premature rounding in Example 8 corrected; manual Practice 10 linear-speed unit errors corrected.",
+    "finalReview": "Chapter-local author review and independent mathematical/source cross-review completed. See delivered audit records for exact evidence and source limitations."
+  }
+}

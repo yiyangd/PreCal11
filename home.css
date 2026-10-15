@@ -30,3 +30,19 @@ footer{max-width:840px;margin:0 auto;padding:22px 0;border-top:1px solid var(--l
 @media(max-width:680px){.topbar{padding:14px 22px}.welcome h1{font-size:38px}main{padding:43px 22px 57px}.welcome{padding-bottom:31px}.contents{padding-top:27px}.lesson-card{padding:23px;grid-template-columns:76px minmax(0,1fr);gap:21px}.section-number{height:76px;font-size:34px}.lesson-content h4{font-size:22px}.lesson-meta{font-size:11px}footer{margin:0 22px;padding:20px 0}}
 @media(max-width:480px){.topbar{padding:13px 16px;gap:9px;min-height:69px}.brand{font-size:12px;gap:8px}.brand-mark{flex-basis:36px;height:36px;font-size:23px}.brand small{font-size:9px}.language-switch{padding:2px;gap:0}.language-switch button{padding:6px 7px;font-size:11px}main{padding:37px 19px 45px;min-height:calc(100vh - 141px)}.welcome h1{font-size:34px}.intro{font-size:13px;margin-top:14px}.welcome{padding-bottom:28px}.contents>h2{font-size:19px}.chapter-heading{margin-top:23px}.chapter-heading h3{font-size:15px}.lesson-card{display:block;padding:22px}.section-number{display:inline-flex;align-items:center;justify-content:center;width:58px;height:53px;font-size:28px;margin-bottom:19px}.lesson-content h4{font-size:23px}.lesson-meta{font-size:11px}.lesson-link{margin-top:21px}footer{margin:0 19px;font-size:9px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.chapter-shortcuts{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.chapter-shortcuts a{display:inline-flex;align-items:center;min-height:40px;padding:5px 14px;border:1px solid var(--line);border-radius:7px;font-size:12px;color:var(--teal-dark);background:#f2f5ed}
+.chapter-shortcuts a:hover{border-color:var(--teal);background:#e7eee5}
+.chapter-heading{scroll-margin-top:24px}
+.chapter-group{margin-top:46px;padding-top:4px;border-top:1px solid var(--line)}
+.chapter-lessons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.chapter-lessons .lesson-card{grid-template-columns:58px minmax(0,1fr);gap:16px;padding:22px;align-items:start}
+.chapter-lessons .lesson-card+.lesson-card{margin-top:0}
+.chapter-lessons .section-number{height:58px;width:58px;font-size:27px}
+.chapter-lessons .section-word{font-family:inherit;font-size:10px;letter-spacing:0;text-align:center;padding:4px;overflow-wrap:anywhere}
+.chapter-lessons .lesson-content h4{font-size:18px;line-height:1.5}
+.chapter-lessons .lesson-meta{font-size:11px;margin-top:10px}
+.chapter-lessons .lesson-link{margin-top:17px;font-size:12px;padding:8px 12px;gap:13px}
+.chapter-source-note{font-size:12px;color:var(--muted);line-height:1.9;margin-top:17px}
+.chapter-source-note a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:680px){.chapter-lessons{grid-template-columns:1fr}.chapter-group{margin-top:35px}.chapter-lessons .lesson-card{display:grid}.chapter-lessons .section-number{margin-bottom:0}.chapter-lessons .lesson-content h4{font-size:20px}}

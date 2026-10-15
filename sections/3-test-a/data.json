@@ -1,0 +1,694 @@
+{
+  "course": {
+    "id": "precal11-chapter-3",
+    "title": "第3章：指数与对数函数",
+    "en": {
+      "title": "Chapter 3: Exponential and Logarithmic Functions"
+    }
+  },
+  "lesson": {
+    "id": "3-test-a",
+    "section": "3.A",
+    "title": "第3章练习测试A",
+    "en": {
+      "title": "Chapter 3 Practice Test A",
+      "description": "All source questions and subparts, with bilingual worked solutions and source locations."
+    },
+    "description": "全部原题及小问，附双语分步解析和来源定位。",
+    "source": {
+      "kind": "pdf",
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "pdfPages": [
+        377,
+        378
+      ],
+      "printedPages": [
+        353,
+        354
+      ]
+    },
+    "concepts": [
+      {
+        "id": "algebra",
+        "title": "代数、图像与定义域",
+        "summary": "保留原表达式的定义域，图像以关键点、渐近线与变换核实。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "逐步变形，核对解、限制和端点。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Algebra, graphs and domains",
+          "summary": "Retain the original domain and verify graphs with key points, asymptotes and transformations.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Transform step by step, checking solutions, restrictions and endpoints."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "logexp",
+        "title": "指数与对数",
+        "summary": "对数真数为正，底数$a>0,a\\ne1$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "改写同底数、取对数、用乘积商幂法则，最后代入原式。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Exponentials and logarithms",
+          "summary": "Logarithm arguments are positive and bases satisfy $a>0,a\\ne1$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use equal bases, take logarithms, apply product/quotient/power rules, then check the original equation."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "model",
+        "title": "应用模型",
+        "summary": "复利、指数衰减和对数尺度要求正确单位及现实范围。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "列出模型，代入已知量，再解未知量。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Application models",
+          "summary": "Interest, exponential decay and logarithmic scales require correct units and realistic domains.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Write the model, substitute known quantities, then solve for the unknown."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "解方程：$5^{-x}=125$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$125=5^3$，$-x=3$，$x=-3$。"
+          }
+        ],
+        "answer": "$125=5^3$，$-x=3$，$x=-3$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Solve: $5^{-x}=125$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$125=5^3$, $-x=3$, $x=-3$."
+            }
+          ],
+          "answer": "$125=5^3$, $-x=3$, $x=-3$."
+        },
+        "number": 1
+      },
+      {
+        "prompt": "解方程：$\\log_2x=5$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$x=2^5=32>0$。"
+          }
+        ],
+        "answer": "$x=2^5=32>0$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Solve: $\\log_2x=5$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$x=2^5=32>0$."
+            }
+          ],
+          "answer": "$x=2^5=32>0$."
+        },
+        "number": 2
+      },
+      {
+        "prompt": "求$y=-e^x+1$的值域及图像渐近线。",
+        "concept": "algebra",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$e^x>0$，所以$1-e^x<1$，且可取得任意小于1的值。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "$x\\to-\\infty$时$e^x\\to0^+$，$y\\to1^-$。"
+          }
+        ],
+        "answer": "值域$(-\\infty,1)$；水平渐近线$y=1$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "State the range and asymptote of $y=-e^x+1$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$e^x>0$, so $1-e^x<1$ and every value below 1 occurs."
+            },
+            {
+              "title": "Work and check",
+              "body": "As $x\\to-\\infty$, $e^x\\to0^+$ and $y\\to1^-$."
+            }
+          ],
+          "answer": "Range $(-\\infty,1)$; horizontal asymptote $y=1$."
+        },
+        "number": 3
+      },
+      {
+        "prompt": "计算$\\log_2(1/8)$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$1/8=2^{-3}$，所以$\\log_2(1/8)=-3$。"
+          }
+        ],
+        "answer": "$1/8=2^{-3}$，所以$\\log_2(1/8)=-3$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Evaluate $\\log_2(1/8)$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$1/8=2^{-3}$, so $\\log_2(1/8)=-3$."
+            }
+          ],
+          "answer": "$1/8=2^{-3}$, so $\\log_2(1/8)=-3$."
+        },
+        "number": 4
+      },
+      {
+        "prompt": "解方程：$(1/4)^{2-x}=4$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$4=4^{x-2}$，$x-2=1$，$x=3$。"
+          }
+        ],
+        "answer": "$4=4^{x-2}$，$x-2=1$，$x=3$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Solve: $(1/4)^{2-x}=4$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$4=4^{x-2}$, $x-2=1$, $x=3$."
+            }
+          ],
+          "answer": "$4=4^{x-2}$, $x-2=1$, $x=3$."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "不用计算器求$\\log0.001$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$0.001=10^{-3}$，$\\log10^{-3}=-3$。"
+          }
+        ],
+        "answer": "$0.001=10^{-3}$，$\\log10^{-3}=-3$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Evaluate $\\log0.001$ without a calculator.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$0.001=10^{-3}$, so $\\log10^{-3}=-3$."
+            }
+          ],
+          "answer": "$0.001=10^{-3}$, so $\\log10^{-3}=-3$."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "合并$\\ln3+5\\ln x$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$x>0$；$5\\ln x=\\ln x^5$，再用乘积法则得到$\\ln(3x^5)$。"
+          }
+        ],
+        "answer": "$x>0$；$5\\ln x=\\ln x^5$，再用乘积法则得到$\\ln(3x^5)$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Condense $\\ln3+5\\ln x$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$x>0$; $5\\ln x=\\ln x^5$, then the product rule gives $\\ln(3x^5)$."
+            }
+          ],
+          "answer": "$x>0$; $5\\ln x=\\ln x^5$, then the product rule gives $\\ln(3x^5)$."
+        },
+        "number": 7
+      },
+      {
+        "prompt": "解方程：$2^{x+1}=5$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$(x+1)\\ln2=\\ln5$，$x=\\ln5/\\ln2-1\\approx1.32193$。"
+          }
+        ],
+        "answer": "$(x+1)\\ln2=\\ln5$，$x=\\ln5/\\ln2-1\\approx1.32193$。",
+        "pdfPage": 377,
+        "printedPage": 353,
+        "en": {
+          "prompt": "Solve: $2^{x+1}=5$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$(x+1)\\ln2=\\ln5$, $x=\\ln5/\\ln2-1\\approx1.32193$."
+            }
+          ],
+          "answer": "$(x+1)\\ln2=\\ln5$, $x=\\ln5/\\ln2-1\\approx1.32193$."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "解方程：$e^{2x}+e^x-6=0$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "令$u=e^x>0$，$u^2+u-6=(u+3)(u-2)=0$。舍去$u=-3$，$e^x=2$，$x=\\ln2$。"
+          }
+        ],
+        "answer": "令$u=e^x>0$，$u^2+u-6=(u+3)(u-2)=0$。舍去$u=-3$，$e^x=2$，$x=\\ln2$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Solve: $e^{2x}+e^x-6=0$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "Let $u=e^x>0$. Then $u^2+u-6=(u+3)(u-2)=0$. Reject $u=-3$; $e^x=2$, $x=\\ln2$."
+            }
+          ],
+          "answer": "Let $u=e^x>0$. Then $u^2+u-6=(u+3)(u-2)=0$. Reject $u=-3$; $e^x=2$, $x=\\ln2$."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "展开$\\ln[2x^3/(x+1)^5]$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "原真数为正时$x<-1$或$x>0$。商与幂法则给出$\\ln2+3\\ln|x|-5\\ln|x+1|$。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "若教材默认变量为正，可写$\\ln2+3\\ln x-5\\ln(x+1)$；绝对值形式保留原全部定义域。"
+          }
+        ],
+        "answer": "若教材默认变量为正，可写$\\ln2+3\\ln x-5\\ln(x+1)$；绝对值形式保留原全部定义域。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Expand $\\ln[2x^3/(x+1)^5]$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "The original argument is positive for $x<-1$ or $x>0$. Quotient and power rules give $\\ln2+3\\ln|x|-5\\ln|x+1|$."
+            },
+            {
+              "title": "Work and check",
+              "body": "For positive variables, write $\\ln2+3\\ln x-5\\ln(x+1)$; the absolute-value form retains the full original domain."
+            }
+          ],
+          "answer": "For positive variables, write $\\ln2+3\\ln x-5\\ln(x+1)$; the absolute-value form retains the full original domain."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "计算$\\ln e^{-5}$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "用反函数性质$\\ln e^u=u$，得到$-5$。"
+          }
+        ],
+        "answer": "用反函数性质$\\ln e^u=u$，得到$-5$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Evaluate $\\ln e^{-5}$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "By $\\ln e^u=u$, the value is $-5$."
+            }
+          ],
+          "answer": "By $\\ln e^u=u$, the value is $-5$."
+        },
+        "number": 11
+      },
+      {
+        "prompt": "将$y=\\ln x$上移3、右移1，写图像方程。",
+        "concept": "algebra",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "右移1把$x$替换为$x-1$；上移3加3：$y=\\ln(x-1)+3$，$x>1$。"
+          }
+        ],
+        "answer": "右移1把$x$替换为$x-1$；上移3加3：$y=\\ln(x-1)+3$，$x>1$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Give the equation obtained by shifting $y=\\ln x$ up 3 and right 1.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "Replace $x$ by $x-1$ for the right shift, then add 3: $y=\\ln(x-1)+3$, $x>1$."
+            }
+          ],
+          "answer": "Replace $x$ by $x-1$ for the right shift, then add 3: $y=\\ln(x-1)+3$, $x>1$."
+        },
+        "number": 12
+      },
+      {
+        "prompt": "画$y=3^{x-1}+2$。",
+        "concept": "algebra",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "将$3^x$右移1、上移2。关键点$(0,7/3),(1,3),(2,5)$。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "定义域$\\mathbb R$，值域$(2,\\infty)$，水平渐近线$y=2$，无横截距。"
+          }
+        ],
+        "answer": "定义域$\\mathbb R$，值域$(2,\\infty)$，水平渐近线$y=2$，无横截距。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Sketch $y=3^{x-1}+2$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "Shift $3^x$ right 1 and up 2. Key points are $(0,7/3),(1,3),(2,5)$."
+            },
+            {
+              "title": "Work and check",
+              "body": "Domain $\\mathbb R$, range $(2,\\infty)$, horizontal asymptote $y=2$, no x-intercept."
+            }
+          ],
+          "answer": "Domain $\\mathbb R$, range $(2,\\infty)$, horizontal asymptote $y=2$, no x-intercept."
+        },
+        "number": 13,
+        "solutionImage": "assets/3-test-a-13-graph.png",
+        "solutionImageSize": [
+          700,
+          470
+        ]
+      },
+      {
+        "prompt": "求$f(x)=\\ln(-x)+4$定义域。",
+        "concept": "algebra",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "要求$-x>0$，所以$x<0$；加4不改变定义域。"
+          }
+        ],
+        "answer": "$(-\\infty,0)$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "State the domain of $f(x)=\\ln(-x)+4$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "Require $-x>0$, so $x<0$; adding 4 does not alter the domain."
+            }
+          ],
+          "answer": "$(-\\infty,0)$."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "合并$3\\ln x+\\ln(x^3+2)-\\tfrac12\\ln(3x^2+2)$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "原式要求$x>0$。幂法则给$\\ln x^3$与$\\ln\\sqrt{3x^2+2}$。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "合并为$\\ln[x^3(x^3+2)/\\sqrt{3x^2+2}]$。"
+          }
+        ],
+        "answer": "合并为$\\ln[x^3(x^3+2)/\\sqrt{3x^2+2}]$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Condense $3\\ln x+\\ln(x^3+2)-\\tfrac12\\ln(3x^2+2)$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "The original requires $x>0$. The power rule gives $\\ln x^3$ and $\\ln\\sqrt{3x^2+2}$."
+            },
+            {
+              "title": "Work and check",
+              "body": "Combine to get $\\ln[x^3(x^3+2)/\\sqrt{3x^2+2}]$."
+            }
+          ],
+          "answer": "Combine to get $\\ln[x^3(x^3+2)/\\sqrt{3x^2+2}]$."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "解方程：$\\log x=\\log6-\\log(x-1)$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$x>1$；$x=6/(x-1)$，$x^2-x-6=(x-3)(x+2)=0$。仅$x=3$满足定义域。"
+          }
+        ],
+        "answer": "$x>1$；$x=6/(x-1)$，$x^2-x-6=(x-3)(x+2)=0$。仅$x=3$满足定义域。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Solve: $\\log x=\\log6-\\log(x-1)$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$x>1$; $x=6/(x-1)$, $x^2-x-6=(x-3)(x+2)=0$. Only $x=3$ is in the domain."
+            }
+          ],
+          "answer": "$x>1$; $x=6/(x-1)$, $x^2-x-6=(x-3)(x+2)=0$. Only $x=3$ is in the domain."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "解方程：$\\log_x9=2$。",
+        "concept": "logexp",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$x>0,x\\ne1$；$x^2=9$给出$x=\\pm3$，只取正底数$x=3$。"
+          }
+        ],
+        "answer": "$x>0,x\\ne1$；$x^2=9$给出$x=\\pm3$，只取正底数$x=3$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Solve: $\\log_x9=2$.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$x>0,x\\ne1$; $x^2=9$ gives $x=\\pm3$, but only positive base $x=3$ is valid."
+            }
+          ],
+          "answer": "$x>0,x\\ne1$; $x^2=9$ gives $x=\\pm3$, but only positive base $x=3$ is valid."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "15000美元按年利率7%、每季度复利，写$t$年后的金额公式。",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$P=15000,r=.07,n=4$，代入$A=P(1+r/n)^{nt}$。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "$A(t)=15000(1.0175)^{4t}$，$t\\ge0$。"
+          }
+        ],
+        "answer": "$A(t)=15000(1.0175)^{4t}$，$t\\ge0$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Suppose USD 15000 is invested at7% yearly, compounded quarterly. Write the formula for the amount after $t$years.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$P=15000,r=.07,n=4$; substitute in $A=P(1+r/n)^{nt}$."
+            },
+            {
+              "title": "Work and check",
+              "body": "$A(t)=15000(1.0175)^{4t}$, $t\\ge0$."
+            }
+          ],
+          "answer": "$A(t)=15000(1.0175)^{4t}$, $t\\ge0$."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "600g放射性物质剩余$y=600e^{-0.173t}$，$t$年。何时剩300g？",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$300=600e^{-.173t}$，所以$1/2=e^{-.173t}$。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "$t=\\ln2/.173\\approx4.00663$年。"
+          }
+        ],
+        "answer": "$t=\\ln2/.173\\approx4.00663$年。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "$y=600e^{-0.173t}$ models a 600 g radioactive substance, $t$years. When is 300 g present?",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$300=600e^{-.173t}$, so $1/2=e^{-.173t}$."
+            },
+            {
+              "title": "Work and check",
+              "body": "$t=\\ln2/.173\\approx4.00663$years."
+            }
+          ],
+          "answer": "$t=\\ln2/.173\\approx4.00663$years."
+        },
+        "number": 19
+      },
+      {
+        "prompt": "比较摩洛哥1960地震5.8级与尼加拉瓜1972地震6.2级的强度。",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$I_N/I_M=10^{6.2-5.8}=10^{.4}\\approx2.51189$。"
+          },
+          {
+            "title": "推导与核对",
+            "body": "尼加拉瓜约为摩洛哥的$2.51189$倍；反比约$0.398107$。"
+          }
+        ],
+        "answer": "尼加拉瓜约为摩洛哥的$2.51189$倍；反比约$0.398107$。",
+        "pdfPage": 378,
+        "printedPage": 354,
+        "en": {
+          "prompt": "Compare the intensity of the 1960 Morocco earthquake of magnitude 5.8 with the 1972 Nicaragua earthquake of magnitude 6.2.",
+          "steps": [
+            {
+              "title": "Work and check",
+              "body": "$I_N/I_M=10^{6.2-5.8}=10^{.4}\\approx2.51189$."
+            },
+            {
+              "title": "Work and check",
+              "body": "Nicaragua is about $2.51189$times Morocco; the reverse ratio is $0.398107$."
+            }
+          ],
+          "answer": "Nicaragua is about $2.51189$times Morocco; the reverse ratio is $0.398107$."
+        },
+        "number": 20
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "expectedSubparts": {},
+    "sourceInventory": {
+      "pdfPages": [
+        377,
+        378
+      ],
+      "printedPages": [
+        353,
+        354
+      ],
+      "method": "Counted from rendered original pages before solution authoring",
+      "notes": [
+        "Practice TestA1–20; TestB appears only in eText per textbook contents, not supplied local PDF."
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original-source inventory and solution mathematics reviewed; external applets remain untested where explicitly noted. Review flags do not assert external applet availability."
+  }
+}

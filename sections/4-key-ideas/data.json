@@ -1,0 +1,445 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch4-local",
+    "title": "第4章：三角函数",
+    "en": {
+      "title": "Chapter 4: Trigonometric Functions"
+    }
+  },
+  "lesson": {
+    "id": "4-key-ideas",
+    "section": "4",
+    "title": "知识要点与综合问答",
+    "en": {
+      "title": "Key Ideas At a Glance and Questions"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        474,
+        475
+      ],
+      "printedPages": [
+        450,
+        451
+      ]
+    },
+    "concepts": [
+      {
+        "id": "angles",
+        "title": "角度、弧长与扇形",
+        "summary": "弧度连接角、弧长与面积。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\theta=s/r$，$s=r\\theta$，$A=r^2\\theta/2$，计算前把度换成弧度。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Angles, arcs, and sectors",
+          "summary": "Radians connect angles, arc length, and sector area.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\theta=s/r$, $s=r\\theta$, $A=r^2\\theta/2$; convert degrees to radians first."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "values",
+        "title": "精确三角函数值",
+        "summary": "单位圆坐标、象限符号与勾股恒等式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先确定象限和参考角，再用坐标定义及倒数求全部值。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Exact trigonometric values",
+          "summary": "Use unit-circle coordinates, quadrant signs, and Pythagorean identities.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Locate the quadrant and reference angle; use coordinate definitions and reciprocals."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "graphs",
+        "title": "图像和三角函数模型",
+        "summary": "振幅、周期、相移、中线和渐近线描述图像。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "写成 $af(b(x-c))+d$ 并代入关键点。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Graphs and trigonometric models",
+          "summary": "Amplitude, period, phase, midline, and asymptotes describe a graph.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Write $af(b(x-c))+d$ and calculate key points."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "inverse",
+        "title": "反三角函数与主值",
+        "summary": "先检查定义域，再选择规定主值区间。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\arcsin:[-1,1]\\to[-\\pi/2,\\pi/2]$；$\\arccos:[-1,1]\\to[0,\\pi]$；$\\arctan:\\mathbb R\\to(-\\pi/2,\\pi/2)$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Inverse trigonometric functions and principal values",
+          "summary": "Check the domain, then select the prescribed principal range.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\arcsin:[-1,1]\\to[-\\pi/2,\\pi/2]$, $\\arccos:[-1,1]\\to[0,\\pi]$, $\\arctan:\\mathbb R\\to(-\\pi/2,\\pi/2)$."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "gettingReady": [],
+    "kind": "chapter-end"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "K1：将所给正弦型图像写成 $y=a\\sin[b(x-c)]+d$，其中 $a>0,b>0$，并取最小的 $|c|$。",
+        "concept": "graphs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从图中最大值1、最小值-5得 $a=(1-(-5))/2=3$、$d=(1+(-5))/2=-2$。相邻最大点 $-\\pi/2,7\\pi/2$ 相差 $4\\pi$，所以 $b=1/2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "根据该函数形式选基准相位，得 $c=- \\frac{3 \\pi}{2}$。所有等价相移相差 $4\\pi$，此值的绝对值最小。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入最大点 $x=-\\pi/2$ 得1，代入最小点 $x=3\\pi/2$ 得-5，核对方程 $y=3\\sin[\\tfrac12(x-(- \\frac{3 \\pi}{2}))]-2$。"
+          }
+        ],
+        "answer": "$y=3\\sin[\\tfrac12(x-(- \\frac{3 \\pi}{2}))]-2$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K1. Write an equation $y=a\\sin[b(x-c)]+d$ for the given sinusoidal graph, with $a>0,b>0$ and the smallest possible $|c|$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The extrema 1 and -5 give $a=(1-(-5))/2=3$ and $d=(1+(-5))/2=-2$. Adjacent maxima $-\\pi/2,7\\pi/2$ are $4\\pi$ apart, so $b=1/2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Match the standard phase for the requested form to obtain $c=- \\frac{3 \\pi}{2}$. Equivalent shifts differ by $4\\pi$, and this representative has the smallest magnitude."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitution gives 1 at the maximum $x=-\\pi/2$ and -5 at the minimum $x=3\\pi/2$, verifying $y=3\\sin[\\tfrac12(x-(- \\frac{3 \\pi}{2}))]-2$."
+            }
+          ],
+          "answer": "$y=3\\sin[\\tfrac12(x-(- \\frac{3 \\pi}{2}))]-2$"
+        },
+        "number": 1,
+        "sourceImage": "assets/key-ideas-graph.png"
+      },
+      {
+        "prompt": "K2：将所给正弦型图像写成 $y=-a\\sin[b(x-c)]+d$，其中 $a>0,b>0$，并取最小的 $|c|$。",
+        "concept": "graphs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从图中最大值1、最小值-5得 $a=(1-(-5))/2=3$、$d=(1+(-5))/2=-2$。相邻最大点 $-\\pi/2,7\\pi/2$ 相差 $4\\pi$，所以 $b=1/2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "根据该函数形式选基准相位，得 $c=\\frac{\\pi}{2}$。所有等价相移相差 $4\\pi$，此值的绝对值最小。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入最大点 $x=-\\pi/2$ 得1，代入最小点 $x=3\\pi/2$ 得-5，核对方程 $y=-3\\sin[\\tfrac12(x-(\\frac{\\pi}{2}))]-2$。"
+          }
+        ],
+        "answer": "$y=-3\\sin[\\tfrac12(x-(\\frac{\\pi}{2}))]-2$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K2. Write an equation $y=-a\\sin[b(x-c)]+d$ for the given sinusoidal graph, with $a>0,b>0$ and the smallest possible $|c|$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The extrema 1 and -5 give $a=(1-(-5))/2=3$ and $d=(1+(-5))/2=-2$. Adjacent maxima $-\\pi/2,7\\pi/2$ are $4\\pi$ apart, so $b=1/2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Match the standard phase for the requested form to obtain $c=\\frac{\\pi}{2}$. Equivalent shifts differ by $4\\pi$, and this representative has the smallest magnitude."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitution gives 1 at the maximum $x=-\\pi/2$ and -5 at the minimum $x=3\\pi/2$, verifying $y=-3\\sin[\\tfrac12(x-(\\frac{\\pi}{2}))]-2$."
+            }
+          ],
+          "answer": "$y=-3\\sin[\\tfrac12(x-(\\frac{\\pi}{2}))]-2$"
+        },
+        "number": 2,
+        "sourceImage": "assets/key-ideas-graph.png"
+      },
+      {
+        "prompt": "K3：将所给正弦型图像写成 $y=a\\cos[b(x-c)]+d$，其中 $a>0,b>0$，并取最小的 $|c|$。",
+        "concept": "graphs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从图中最大值1、最小值-5得 $a=(1-(-5))/2=3$、$d=(1+(-5))/2=-2$。相邻最大点 $-\\pi/2,7\\pi/2$ 相差 $4\\pi$，所以 $b=1/2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "根据该函数形式选基准相位，得 $c=- \\frac{\\pi}{2}$。所有等价相移相差 $4\\pi$，此值的绝对值最小。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入最大点 $x=-\\pi/2$ 得1，代入最小点 $x=3\\pi/2$ 得-5，核对方程 $y=3\\cos[\\tfrac12(x-(- \\frac{\\pi}{2}))]-2$。"
+          }
+        ],
+        "answer": "$y=3\\cos[\\tfrac12(x-(- \\frac{\\pi}{2}))]-2$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K3. Write an equation $y=a\\cos[b(x-c)]+d$ for the given sinusoidal graph, with $a>0,b>0$ and the smallest possible $|c|$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The extrema 1 and -5 give $a=(1-(-5))/2=3$ and $d=(1+(-5))/2=-2$. Adjacent maxima $-\\pi/2,7\\pi/2$ are $4\\pi$ apart, so $b=1/2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Match the standard phase for the requested form to obtain $c=- \\frac{\\pi}{2}$. Equivalent shifts differ by $4\\pi$, and this representative has the smallest magnitude."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitution gives 1 at the maximum $x=-\\pi/2$ and -5 at the minimum $x=3\\pi/2$, verifying $y=3\\cos[\\tfrac12(x-(- \\frac{\\pi}{2}))]-2$."
+            }
+          ],
+          "answer": "$y=3\\cos[\\tfrac12(x-(- \\frac{\\pi}{2}))]-2$"
+        },
+        "number": 3,
+        "sourceImage": "assets/key-ideas-graph.png"
+      },
+      {
+        "prompt": "K4：将所给正弦型图像写成 $y=-a\\cos[b(x-c)]+d$，其中 $a>0,b>0$，并取最小的 $|c|$。",
+        "concept": "graphs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从图中最大值1、最小值-5得 $a=(1-(-5))/2=3$、$d=(1+(-5))/2=-2$。相邻最大点 $-\\pi/2,7\\pi/2$ 相差 $4\\pi$，所以 $b=1/2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "根据该函数形式选基准相位，得 $c=\\frac{3 \\pi}{2}$。所有等价相移相差 $4\\pi$，此值的绝对值最小。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入最大点 $x=-\\pi/2$ 得1，代入最小点 $x=3\\pi/2$ 得-5，核对方程 $y=-3\\cos[\\tfrac12(x-(\\frac{3 \\pi}{2}))]-2$。"
+          }
+        ],
+        "answer": "$y=-3\\cos[\\tfrac12(x-(\\frac{3 \\pi}{2}))]-2$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K4. Write an equation $y=-a\\cos[b(x-c)]+d$ for the given sinusoidal graph, with $a>0,b>0$ and the smallest possible $|c|$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The extrema 1 and -5 give $a=(1-(-5))/2=3$ and $d=(1+(-5))/2=-2$. Adjacent maxima $-\\pi/2,7\\pi/2$ are $4\\pi$ apart, so $b=1/2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Match the standard phase for the requested form to obtain $c=\\frac{3 \\pi}{2}$. Equivalent shifts differ by $4\\pi$, and this representative has the smallest magnitude."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitution gives 1 at the maximum $x=-\\pi/2$ and -5 at the minimum $x=3\\pi/2$, verifying $y=-3\\cos[\\tfrac12(x-(\\frac{3 \\pi}{2}))]-2$."
+            }
+          ],
+          "answer": "$y=-3\\cos[\\tfrac12(x-(\\frac{3 \\pi}{2}))]-2$"
+        },
+        "number": 4,
+        "sourceImage": "assets/key-ideas-graph.png"
+      },
+      {
+        "prompt": "K5：利用教材近似值 $\\sin137^\\circ=0.682$，以度为单位求 $\\sin^{-1}(0.682)$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\sin137^\\circ=\\sin43^\\circ$；反正弦选择 $[-90^\\circ,90^\\circ]$，故为 $43^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "所给三角函数值经过舍入，角度答案据教材给定关系作近似理解。"
+          }
+        ],
+        "answer": "约 $43^\\circ$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K5. Use the given rounded value $\\sin137^\\circ=0.682$ to evaluate $\\sin^{-1}(0.682)$ in degrees.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin137^\\circ=\\sin43^\\circ$; arcsine selects $[-90^\\circ,90^\\circ]$, giving $43^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The given trigonometric value is rounded, so interpret the resulting angle as an approximation based on that source relationship."
+            }
+          ],
+          "answer": "Approximately $43^\\circ$"
+        },
+        "number": 5
+      },
+      {
+        "prompt": "K6：利用教材近似值 $\\sin137^\\circ=0.682$，以度为单位求 $\\sin^{-1}(-0.682)$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "用反正弦奇性，由 $\\sin^{-1}(0.682)\\approx43^\\circ$ 得 $-43^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "所给三角函数值经过舍入，角度答案据教材给定关系作近似理解。"
+          }
+        ],
+        "answer": "约 $-43^\\circ$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K6. Use the given rounded value $\\sin137^\\circ=0.682$ to evaluate $\\sin^{-1}(-0.682)$ in degrees.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Arcsine is odd; since $\\sin^{-1}(0.682)\\approx43^\\circ$, the negative input gives $-43^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The given trigonometric value is rounded, so interpret the resulting angle as an approximation based on that source relationship."
+            }
+          ],
+          "answer": "Approximately $-43^\\circ$"
+        },
+        "number": 6
+      },
+      {
+        "prompt": "K7：利用教材近似值 $\\cos(-68^\\circ)=0.3746$，以度为单位求 $\\cos^{-1}(0.3746)$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "余弦为偶函数，$\\cos(-68^\\circ)=\\cos68^\\circ$；68度在 $[0^\\circ,180^\\circ]$ 内。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "所给三角函数值经过舍入，角度答案据教材给定关系作近似理解。"
+          }
+        ],
+        "answer": "约 $68^\\circ$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K7. Use the given rounded value $\\cos(-68^\\circ)=0.3746$ to evaluate $\\cos^{-1}(0.3746)$ in degrees.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Cosine is even: $\\cos(-68^\\circ)=\\cos68^\\circ$; 68 degrees lies in $[0^\\circ,180^\\circ]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The given trigonometric value is rounded, so interpret the resulting angle as an approximation based on that source relationship."
+            }
+          ],
+          "answer": "Approximately $68^\\circ$"
+        },
+        "number": 7
+      },
+      {
+        "prompt": "K8：利用教材近似值 $\\cos(-68^\\circ)=0.3746$，以度为单位求 $\\cos^{-1}(-0.3746)$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "利用 $\\cos(180^\\circ-68^\\circ)=-\\cos68^\\circ$，取主值112度。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "所给三角函数值经过舍入，角度答案据教材给定关系作近似理解。"
+          }
+        ],
+        "answer": "约 $112^\\circ$",
+        "pdfPage": 475,
+        "printedPage": 451,
+        "en": {
+          "prompt": "K8. Use the given rounded value $\\cos(-68^\\circ)=0.3746$ to evaluate $\\cos^{-1}(-0.3746)$ in degrees.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use $\\cos(180^\\circ-68^\\circ)=-\\cos68^\\circ$ to select the principal value 112 degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The given trigonometric value is rounded, so interpret the resulting angle as an approximation based on that source relationship."
+            }
+          ],
+          "answer": "Approximately $112^\\circ$"
+        },
+        "number": 8
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "expectedSubparts": {},
+    "expectedGettingReady": []
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "notes": "All eight K questions independently inventoried from print p451. The graph extrema and period, rather than approximate plotted zeros, determine the equations.",
+    "independentReview": "Independent original-page and mathematical cross-review recorded in chapter audit folder; source discrepancies explicitly discussed.",
+    "finalReview": "Chapter-local author review and independent mathematical/source cross-review completed. See delivered audit records for exact evidence and source limitations."
+  }
+}
