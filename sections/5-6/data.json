@@ -192,8 +192,10 @@
               "body": "Choose $\\cos\\phi=A/R$ and $\\sin\\phi=B/R$, with the correct quadrant, then solve the basic equation."
             }
           ],
-          "pitfalls": []
-        }
+          "pitfalls": [],
+          "note": "This topic is drawn from the reduction and factoring extensions in section Exercises 84–85 and 89–92; there is no separate worked example in the section text."
+        },
+        "note": "本知识点来自节后习题84–85及89–92的合成与因式分解拓展；正文没有独立对应例题。"
       }
     ],
     "questions": [

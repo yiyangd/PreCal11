@@ -181,8 +181,10 @@
               "body": "Record nonzero denominators and parameter conditions, then derive and check endpoints or equality cases."
             }
           ],
-          "pitfalls": []
-        }
+          "pitfalls": [],
+          "note": "This topic is drawn from the applications and extensions in section Exercises 97–100, 122–124, and 126–130; there is no separate worked example in the section text."
+        },
+        "note": "本知识点来自节后习题97–100、122–124及126–130的应用和拓展；正文没有独立对应例题。"
       }
     ],
     "questions": [

@@ -146,8 +146,10 @@
               "body": "Determine the principal-value quadrant, then use a right triangle and a double- or half-angle formula. For inverse compositions also check the outer principal range."
             }
           ],
-          "pitfalls": []
-        }
+          "pitfalls": [],
+          "note": "This topic extends inverse trigonometric functions through section Exercises 103–120, using the principal ranges from Section 4.6; there is no corresponding worked example in the section text."
+        },
+        "note": "本知识点来自节后习题103–120的反三角函数拓展，结合第4.6节的主值范围；正文没有对应例题。"
       },
       {
         "id": "models",
