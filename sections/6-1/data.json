@@ -1,0 +1,4538 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch6-local",
+    "title": "第6章：三角函数的应用",
+    "en": {
+      "title": "Chapter 6: Applications of Trigonometric Functions"
+    }
+  },
+  "lesson": {
+    "id": "6-1",
+    "section": "6.1",
+    "title": "直角三角形三角学",
+    "en": {
+      "title": "Right-Triangle Trigonometry"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        559,
+        571
+      ],
+      "printedPages": [
+        535,
+        547
+      ]
+    },
+    "concepts": [
+      {
+        "id": "ratios",
+        "title": "直角三角形的六个三角比",
+        "summary": "对锐角，用对边、邻边和斜边表示六个三角函数。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先用勾股定理求正边长，再写 $\\sin=o/h,\\cos=a/h,\\tan=o/a$ 及倒数，并有理化分母。"
+          }
+        ],
+        "pitfalls": [
+          "边的名称取决于所选锐角；比值不决定三角形大小。"
+        ],
+        "en": {
+          "title": "Six trigonometric ratios",
+          "summary": "For an acute angle, express the six functions with opposite, adjacent and hypotenuse length s.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "First find positive length s with the Pythagorean Theorem; then use $\\sin=o/h,\\cos=a/h,\\tan=o/a$ and reciprocals, rationalizing denominators."
+            }
+          ],
+          "pitfalls": [
+            "Opposite and adjacent depend on the chosen acute angle; ratios do not determine scale."
+          ]
+        }
+      },
+      {
+        "id": "cofunctions",
+        "title": "余函数与余角",
+        "summary": "直角三角形的两个锐角互余。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\sin\\theta=\\cos(90^\\circ-\\theta)$，$\\tan\\theta=\\cot(90^\\circ-\\theta)$，$\\sec\\theta=\\csc(90^\\circ-\\theta)$；弧度用 $\\pi/2$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Cofunctions and complements",
+          "summary": "The two acute angle s of a right triangle are complementary.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $\\sin\\theta=\\cos(90^\\circ-\\theta)$, $\\tan\\theta=\\cot(90^\\circ-\\theta)$, $\\sec\\theta=\\csc(90^\\circ-\\theta)$; use $\\pi/2$ in radians."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "solve",
+        "title": "解直角三角形",
+        "summary": "至少给一边和一个锐角，或给两边，才能唯一确定直角三角形。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "令 $C=90^\\circ$、$c$ 为斜边。使用三角比、勾股定理及 $A+B=90^\\circ$，计算器用度数模式，最后再舍入。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Solve right triangle s",
+          "summary": "A side and an acute angle, or two side s, determine a right triangle.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Let $C=90^\\circ$ and let $c$ be the hypotenuse. Use trigonometric ratios, the Pythagorean Theorem and $A+B=90^\\circ$; set the calculator to degrees and round at the end."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "applications",
+        "title": "仰角、俯角与距离",
+        "summary": "把实际量连成直角三角形，并统一长度单位。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先区分水平距离与视线斜距。仰角或俯角从水平线量起；补上观察点高度。多个观察点先写共享高度方程。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Elevation, depression and distance",
+          "summary": "Model real measurements with right triangle s and consistent units.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Distinguish horizontal distance from line-of-sight distance. Measure elevation or depression from a horizontal; include observer height and equate shared heights for multiple viewpoints."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "geometry",
+        "title": "面积、圆与证明（习题拓展）",
+        "summary": "本知识点来自 Exercises79–86；正文没有独立对应例题。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用高 $h=d/(\\cot\\alpha+\\cot\\beta)$、$K=bh/2$；圆弓形面积等于扇形面积减三角形面积；证明保留正锐角条件。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Areas, circles and proofs (exercise extension)",
+          "summary": "This concept comes from Exercises 79–86; the text has no separate worked example.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $h=d/(\\cot\\alpha+\\cot\\beta)$ and $K=bh/2$. A circular segment is sector area minus triangle area; retain positive acute-angle hypotheses in proofs."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=3,\\ a_{adj}=\\sqrt{7},\\ h=4$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{3}{4},\\quad \\cos\\theta=\\frac{\\sqrt{7}}{4},\\quad \\tan\\theta=\\frac{3 \\sqrt{7}}{7},\\quad \\csc\\theta=\\frac{4}{3},\\quad \\sec\\theta=\\frac{4 \\sqrt{7}}{7},\\quad \\cot\\theta=\\frac{\\sqrt{7}}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{3}{4},\\quad \\cos\\theta=\\frac{\\sqrt{7}}{4},\\quad \\tan\\theta=\\frac{3 \\sqrt{7}}{7},\\quad \\csc\\theta=\\frac{4}{3},\\quad \\sec\\theta=\\frac{4 \\sqrt{7}}{7},\\quad \\cot\\theta=\\frac{\\sqrt{7}}{3}$",
+        "pdfPage": 561,
+        "printedPage": 537,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=3,\\ a_{adj}=\\sqrt{7},\\ h=4$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{3}{4},\\quad \\cos\\theta=\\frac{\\sqrt{7}}{4},\\quad \\tan\\theta=\\frac{3 \\sqrt{7}}{7},\\quad \\csc\\theta=\\frac{4}{3},\\quad \\sec\\theta=\\frac{4 \\sqrt{7}}{7},\\quad \\cot\\theta=\\frac{\\sqrt{7}}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{3}{4},\\quad \\cos\\theta=\\frac{\\sqrt{7}}{4},\\quad \\tan\\theta=\\frac{3 \\sqrt{7}}{7},\\quad \\csc\\theta=\\frac{4}{3},\\quad \\sec\\theta=\\frac{4 \\sqrt{7}}{7},\\quad \\cot\\theta=\\frac{\\sqrt{7}}{3}$",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "sourceImage": "assets/6-1-example-1.png"
+      },
+      {
+        "prompt": "在直角三角形中，锐角 $\\theta$ 的对边长为4，斜边长为5。求六个三角函数的精确值。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=4,\\ a_{adj}=3,\\ h=5$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{4}{5},\\quad \\cos\\theta=\\frac{3}{5},\\quad \\tan\\theta=\\frac{4}{3},\\quad \\csc\\theta=\\frac{5}{4},\\quad \\sec\\theta=\\frac{5}{3},\\quad \\cot\\theta=\\frac{3}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{4}{5},\\quad \\cos\\theta=\\frac{3}{5},\\quad \\tan\\theta=\\frac{4}{3},\\quad \\csc\\theta=\\frac{5}{4},\\quad \\sec\\theta=\\frac{5}{3},\\quad \\cot\\theta=\\frac{3}{4}$",
+        "pdfPage": 561,
+        "printedPage": 537,
+        "en": {
+          "prompt": "Find the exact values of the six trigonometric functions of the acute angle $\\theta$ in a right triangle, assuming that the length of the side opposite $\\theta$ is 4 and the length of the hypotenuse is 5.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=4,\\ a_{adj}=3,\\ h=5$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{4}{5},\\quad \\cos\\theta=\\frac{3}{5},\\quad \\tan\\theta=\\frac{4}{3},\\quad \\csc\\theta=\\frac{5}{4},\\quad \\sec\\theta=\\frac{5}{3},\\quad \\cot\\theta=\\frac{3}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{4}{5},\\quad \\cos\\theta=\\frac{3}{5},\\quad \\tan\\theta=\\frac{4}{3},\\quad \\csc\\theta=\\frac{5}{4},\\quad \\sec\\theta=\\frac{5}{3},\\quad \\cot\\theta=\\frac{3}{4}$",
+          "label": "Practice Problem 1"
+        },
+        "id": "practice-1",
+        "type": "practice",
+        "label": "配套练习 1"
+      },
+      {
+        "prompt": "已知 $\\theta$ 是直角三角形的一个角，$\\sin\\theta=2/5$，求另外五个三角函数值。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=2,\\ a_{adj}=\\sqrt{21},\\ h=5$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\cos\\theta=\\frac{\\sqrt{21}}{5},\\quad \\tan\\theta=\\frac{2 \\sqrt{21}}{21},\\quad \\csc\\theta=\\frac{5}{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{21}}{21},\\quad \\cot\\theta=\\frac{\\sqrt{21}}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\cos\\theta=\\frac{\\sqrt{21}}{5},\\quad \\tan\\theta=\\frac{2 \\sqrt{21}}{21},\\quad \\csc\\theta=\\frac{5}{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{21}}{21},\\quad \\cot\\theta=\\frac{\\sqrt{21}}{2}$",
+        "pdfPage": 561,
+        "printedPage": 537,
+        "en": {
+          "prompt": "Find the other five trigonometric function values of $\\theta$, given that $\\theta$ is an angle of a right triangle with $\\sin\\theta=2/5$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=2,\\ a_{adj}=\\sqrt{21},\\ h=5$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\cos\\theta=\\frac{\\sqrt{21}}{5},\\quad \\tan\\theta=\\frac{2 \\sqrt{21}}{21},\\quad \\csc\\theta=\\frac{5}{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{21}}{21},\\quad \\cot\\theta=\\frac{\\sqrt{21}}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\cos\\theta=\\frac{\\sqrt{21}}{5},\\quad \\tan\\theta=\\frac{2 \\sqrt{21}}{21},\\quad \\csc\\theta=\\frac{5}{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{21}}{21},\\quad \\cot\\theta=\\frac{\\sqrt{21}}{2}$",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2"
+      },
+      {
+        "prompt": "已知 $\\theta$ 是直角三角形的一个角，$\\cos\\theta=1/3$，求另外五个三角函数值。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=2 \\sqrt{2},\\ a_{adj}=1,\\ h=3$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=2 \\sqrt{2},\\quad \\csc\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\sec\\theta=3,\\quad \\cot\\theta=\\frac{\\sqrt{2}}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=2 \\sqrt{2},\\quad \\csc\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\sec\\theta=3,\\quad \\cot\\theta=\\frac{\\sqrt{2}}{4}$",
+        "pdfPage": 562,
+        "printedPage": 538,
+        "en": {
+          "prompt": "Find the other five trigonometric function values of $\\theta$ given that $\\theta$ is an angle of a right triangle with $\\cos\\theta=1/3$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=2 \\sqrt{2},\\ a_{adj}=1,\\ h=3$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=2 \\sqrt{2},\\quad \\csc\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\sec\\theta=3,\\quad \\cot\\theta=\\frac{\\sqrt{2}}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=2 \\sqrt{2},\\quad \\csc\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\sec\\theta=3,\\quad \\cot\\theta=\\frac{\\sqrt{2}}{4}$",
+          "label": "Practice Problem 2"
+        },
+        "id": "practice-2",
+        "type": "practice",
+        "label": "配套练习 2"
+      },
+      {
+        "prompt": "(a) 已知 $\\cot68^\\circ\\approx0.4040$，求 $\\tan22^\\circ$。(b) 已知 $\\cos72^\\circ\\approx0.3090$，求 $\\sin18^\\circ$。(c) 已知 $\\sec(\\pi/12)=\\sqrt6-\\sqrt2$，求 $\\csc(5\\pi/12)$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) $22^\\circ=90^\\circ-68^\\circ$。由余函数恒等式，$\\tan22^\\circ=\\cot68^\\circ\\approx0.4040$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) $18^\\circ=90^\\circ-72^\\circ$。由余函数恒等式，$\\sin18^\\circ=\\cos72^\\circ\\approx0.3090$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(c) $5\\pi/12=\\pi/2-\\pi/12$。由余函数恒等式，$\\csc(5\\pi/12)=\\sec(\\pi/12)=\\sqrt6-\\sqrt2$。"
+          }
+        ],
+        "answer": "(a) $\\tan22^\\circ=\\cot68^\\circ\\approx0.4040$；(b) $\\sin18^\\circ=\\cos72^\\circ\\approx0.3090$；(c) $\\csc(5\\pi/12)=\\sec(\\pi/12)=\\sqrt6-\\sqrt2$",
+        "pdfPage": 563,
+        "printedPage": 539,
+        "en": {
+          "prompt": "(a) Given $\\cot68^\\circ\\approx0.4040$, find $\\tan22^\\circ$. (b) Given $\\cos72^\\circ\\approx0.3090$, find $\\sin18^\\circ$. (c) Given $\\sec(\\pi/12)=\\sqrt6-\\sqrt2$, find $\\csc(5\\pi/12)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) $22^\\circ=90^\\circ-68^\\circ$. By the cofunction identity, $\\tan22^\\circ=\\cot68^\\circ\\approx0.4040$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) $18^\\circ=90^\\circ-72^\\circ$. By the cofunction identity, $\\sin18^\\circ=\\cos72^\\circ\\approx0.3090$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(c) $5\\pi/12=\\pi/2-\\pi/12$. By the cofunction identity, $\\csc(5\\pi/12)=\\sec(\\pi/12)=\\sqrt6-\\sqrt2$."
+            }
+          ],
+          "answer": "(a) $\\tan22^\\circ=\\cot68^\\circ\\approx0.4040$；(b) $\\sin18^\\circ=\\cos72^\\circ\\approx0.3090$；(c) $\\csc(5\\pi/12)=\\sec(\\pi/12)=\\sqrt6-\\sqrt2$",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "(a) 已知 $\\csc21^\\circ\\approx2.7904$，求 $\\sec69^\\circ$。(b) 已知 $\\tan75^\\circ\\approx3.7321$，求 $\\cot15^\\circ$。(c) 已知 $\\sin(3\\pi/8)=\\sqrt{2+\\sqrt2}/2$，求 $\\cos(\\pi/8)$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) $69^\\circ=90^\\circ-21^\\circ$。由余函数恒等式，$\\sec69^\\circ=\\csc21^\\circ\\approx2.7904$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) $15^\\circ=90^\\circ-75^\\circ$。由余函数恒等式，$\\cot15^\\circ=\\tan75^\\circ\\approx3.7321$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(c) $\\pi/8=\\pi/2-3\\pi/8$。由余函数恒等式，$\\cos(\\pi/8)=\\sin(3\\pi/8)=\\sqrt{2+\\sqrt2}/2$。"
+          }
+        ],
+        "answer": "(a) $\\sec69^\\circ=\\csc21^\\circ\\approx2.7904$；(b) $\\cot15^\\circ=\\tan75^\\circ\\approx3.7321$；(c) $\\cos(\\pi/8)=\\sin(3\\pi/8)=\\sqrt{2+\\sqrt2}/2$",
+        "pdfPage": 563,
+        "printedPage": 539,
+        "en": {
+          "prompt": "(a) Given $\\csc21^\\circ\\approx2.7904$, find $\\sec69^\\circ$. (b) Given $\\tan75^\\circ\\approx3.7321$, find $\\cot15^\\circ$. (c) Given $\\sin(3\\pi/8)=\\sqrt{2+\\sqrt2}/2$, find $\\cos(\\pi/8)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) $69^\\circ=90^\\circ-21^\\circ$. By the cofunction identity, $\\sec69^\\circ=\\csc21^\\circ\\approx2.7904$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) $15^\\circ=90^\\circ-75^\\circ$. By the cofunction identity, $\\cot15^\\circ=\\tan75^\\circ\\approx3.7321$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(c) $\\pi/8=\\pi/2-3\\pi/8$. By the cofunction identity, $\\cos(\\pi/8)=\\sin(3\\pi/8)=\\sqrt{2+\\sqrt2}/2$."
+            }
+          ],
+          "answer": "(a) $\\sec69^\\circ=\\csc21^\\circ\\approx2.7904$；(b) $\\cot15^\\circ=\\tan75^\\circ\\approx3.7321$；(c) $\\cos(\\pi/8)=\\sin(3\\pi/8)=\\sqrt{2+\\sqrt2}/2$",
+          "label": "Practice Problem 3"
+        },
+        "id": "practice-3",
+        "type": "practice",
+        "label": "配套练习 3",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$A=23^\\circ, c=5.8$。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-23^\\circ=67.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=5.8\\sin 23.000000^\\circ=2.266241,\\quad b=5.8\\cos 23.000000^\\circ=5.338928$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx23.0^\\circ,\\ B\\approx67.0^\\circ,\\ C=90^\\circ;\\ a\\approx2.3,\\ b\\approx5.3,\\ c\\approx5.8$",
+        "pdfPage": 564,
+        "printedPage": 540,
+        "en": {
+          "prompt": "Solve right triangle $ABC$ if $A=23^\\circ, c=5.8$ ($C=90^\\circ$).",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-23^\\circ=67.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=5.8\\sin 23.000000^\\circ=2.266241,\\quad b=5.8\\cos 23.000000^\\circ=5.338928$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx23.0^\\circ,\\ B\\approx67.0^\\circ,\\ C=90^\\circ;\\ a\\approx2.3,\\ b\\approx5.3,\\ c\\approx5.8$",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4"
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$c=25.8, A=56^\\circ$。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-56^\\circ=34.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=25.8\\sin 56.000000^\\circ=21.389169,\\quad b=25.8\\cos 56.000000^\\circ=14.427177$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx56.0^\\circ,\\ B\\approx34.0^\\circ,\\ C=90^\\circ;\\ a\\approx21.4,\\ b\\approx14.4,\\ c\\approx25.8$",
+        "pdfPage": 564,
+        "printedPage": 540,
+        "en": {
+          "prompt": "Solve right triangle $ABC$ if $c=25.8, A=56^\\circ$ ($C=90^\\circ$).",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-56^\\circ=34.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=25.8\\sin 56.000000^\\circ=21.389169,\\quad b=25.8\\cos 56.000000^\\circ=14.427177$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx56.0^\\circ,\\ B\\approx34.0^\\circ,\\ C=90^\\circ;\\ a\\approx21.4,\\ b\\approx14.4,\\ c\\approx25.8$",
+          "label": "Practice Problem 4"
+        },
+        "id": "practice-4",
+        "type": "practice",
+        "label": "配套练习 4"
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$a=9.5, b=3.4$。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理给出 $c=\\sqrt{9.5^2+3.4^2}\\approx 10.090094$，取正根，因为边长为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(9.500000/3.400000)\\approx70.307979^\\circ$，$B=90^\\circ-A\\approx19.692021^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx70.3^\\circ,\\ B\\approx19.7^\\circ,\\ C=90^\\circ;\\ a\\approx9.5,\\ b\\approx3.4,\\ c\\approx10.1$",
+        "pdfPage": 564,
+        "printedPage": 540,
+        "en": {
+          "prompt": "Solve right triangle $ABC$ if $a=9.5, b=3.4$ ($C=90^\\circ$).",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Pythagorean Theorem gives $c=\\sqrt{9.5^2+3.4^2}\\approx 10.090094$; take the positive root because length s are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(9.500000/3.400000)\\approx70.307979^\\circ$, and $B=90^\\circ-A\\approx19.692021^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx70.3^\\circ,\\ B\\approx19.7^\\circ,\\ C=90^\\circ;\\ a\\approx9.5,\\ b\\approx3.4,\\ c\\approx10.1$",
+          "label": "Example 5"
+        },
+        "id": "example-5",
+        "type": "example",
+        "label": "例题 5"
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$b=24.5, c=36.9$。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理给出 $a=\\sqrt{36.9^2-24.5^2}\\approx 27.592753$，取正根，因为边长为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(27.592753/24.500000)\\approx48.397669^\\circ$，$B=90^\\circ-A\\approx41.602331^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx48.4^\\circ,\\ B\\approx41.6^\\circ,\\ C=90^\\circ;\\ a\\approx27.6,\\ b\\approx24.5,\\ c\\approx36.9$",
+        "pdfPage": 564,
+        "printedPage": 540,
+        "en": {
+          "prompt": "Solve right triangle $ABC$ if $b=24.5, c=36.9$ ($C=90^\\circ$).",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Pythagorean Theorem gives $a=\\sqrt{36.9^2-24.5^2}\\approx 27.592753$; take the positive root because length s are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(27.592753/24.500000)\\approx48.397669^\\circ$, and $B=90^\\circ-A\\approx41.602331^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx48.4^\\circ,\\ B\\approx41.6^\\circ,\\ C=90^\\circ;\\ a\\approx27.6,\\ b\\approx24.5,\\ c\\approx36.9$",
+          "label": "Practice Problem 5"
+        },
+        "id": "practice-5",
+        "type": "practice",
+        "label": "配套练习 5"
+      },
+      {
+        "prompt": "夜间农夫用探照灯竖直照射云上的一点。从灯的水平距离150英尺处仰望该点，仰角为68.2°。求云的高度。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan68.2^\\circ=h/150,\\ h=150\\tan68.2^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $375.026754$；按要求舍入为 $375$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$375$ ft",
+        "pdfPage": 565,
+        "printedPage": 541,
+        "en": {
+          "prompt": "To determine the height of a cloud at night, a farmer shines a spotlight straight upward to a spot on the cloud. The angle of elevation to this spot from a point 150 feet horizontally from the spotlight is 68.2°. Find the height of the cloud.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan68.2^\\circ=h/150,\\ h=150\\tan68.2^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $375.026754$; round as requested to $375$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$375$ ft",
+          "label": "Example 6"
+        },
+        "id": "example-6",
+        "type": "example",
+        "label": "例题 6",
+        "sourceImage": "assets/6-1-example-6.png"
+      },
+      {
+        "prompt": "灯塔顶部观景台高425英尺。从观景台看海上船的俯角为4.2°。船距观景台正下方海平面上的一点多少英里？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan4.2^\\circ=425/d,\\ d=425/\\tan4.2^\\circ\\text{ ft};\\ d_{mi}=d/5280$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $1.096098$；按要求舍入为 $1.10$ mi。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$1.10$ mi",
+        "pdfPage": 565,
+        "printedPage": 541,
+        "en": {
+          "prompt": "From an observation deck 425 feet high on the top of a lighthouse, the angle of depression to a ship at sea is 4.2°. How many miles is the ship from a point at sea level directly below the observation deck?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan4.2^\\circ=425/d,\\ d=425/\\tan4.2^\\circ\\text{ ft};\\ d_{mi}=d/5280$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $1.096098$; round as requested to $1.10$ mi."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$1.10$ mi",
+          "label": "Practice Problem 6"
+        },
+        "id": "practice-6",
+        "type": "practice",
+        "label": "配套练习 6"
+      },
+      {
+        "prompt": "测量员所在地点海拔8720英尺，该地点与乞力马扎罗山顶的距离为4.9941英里，仰角23.75°。求该山大致海拔。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=4.9941\\sin23.75^\\circ\\text{ mi},\\ H=8720+5280(4.9941\\sin23.75^\\circ)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $19339.966247$；按要求舍入为 $19340$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$19340$ ft",
+        "pdfPage": 565,
+        "printedPage": 541,
+        "en": {
+          "prompt": "A surveyor uses a nearby location at altitude 8720 feet to measure Mount Kilimanjaro. The distance between that location and the peak is 4.9941 miles, and the angle of elevation is 23.75°. Find the approximate height of Mount Kilimanjaro.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=4.9941\\sin23.75^\\circ\\text{ mi},\\ H=8720+5280(4.9941\\sin23.75^\\circ)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $19339.966247$; round as requested to $19340$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$19340$ ft",
+          "label": "Example 7"
+        },
+        "id": "example-7",
+        "type": "example",
+        "label": "例题 7",
+        "sourceImage": "assets/6-1-example-7.png"
+      },
+      {
+        "prompt": "德纳里山附近地点海拔12,870英尺，至山顶距离3.3387英里，仰角25°。求德纳里山大致海拔。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$H=12870+5280(3.3387\\sin25^\\circ)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $20320.056718$；按要求舍入为 $20320$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$20320$ ft",
+        "pdfPage": 566,
+        "printedPage": 542,
+        "en": {
+          "prompt": "The height of a nearby location to Denali, Alaska, is 12,870 feet, its distance to Denali peak is 3.3387 miles, and the angle of elevation is 25°. What is the approximate height of Denali?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $H=12870+5280(3.3387\\sin25^\\circ)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $20320.056718$; round as requested to $20320$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$20320$ ft",
+          "label": "Practice Problem 7"
+        },
+        "id": "practice-7",
+        "type": "practice",
+        "label": "配套练习 7"
+      },
+      {
+        "prompt": "测量员从河岸A正对河对岸B观测，然后沿岸上游走200英尺至C。由C到B的视线与河岸成58°。求河宽，精确到英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$w/200=\\tan58^\\circ,\\ w=200\\tan58^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $320.066906$；按要求舍入为 $320$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$320$ ft",
+        "pdfPage": 566,
+        "printedPage": 542,
+        "en": {
+          "prompt": "A surveyor sights straight across a river from point A to point B on the opposite side. She walks 200 feet upstream to C. The line of sight from C to B makes an angle 58° with the riverbank. Find the width of the river to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $w/200=\\tan58^\\circ,\\ w=200\\tan58^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $320.066906$; round as requested to $320$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$320$ ft",
+          "label": "Example 8"
+        },
+        "id": "example-8",
+        "type": "example",
+        "label": "例题 8",
+        "sourceImage": "assets/6-1-example-8.png"
+      },
+      {
+        "prompt": "两楼屋顶边缘平行。从第一屋顶一点找到另一屋顶正对点，再沿第一屋顶走25英尺第二次观测；第二视线与屋顶边缘成60°。两楼相距多少英尺？取最近整数。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$w=25\\tan60^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $43.301270$；按要求舍入为 $43$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$43$ ft",
+        "pdfPage": 566,
+        "printedPage": 542,
+        "en": {
+          "prompt": "From a point on one of two parallel rooftop side s of two buildings, identify a point directly opposite on the other rooftop. From a second point 25 feet from the first along the rooftop edge, a second sighting gives an angle 60° with the rooftop. How far apart are the buildings? Round to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $w=25\\tan60^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $43.301270$; round as requested to $43$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$43$ ft",
+          "label": "Practice Problem 8"
+        },
+        "id": "practice-8",
+        "type": "practice",
+        "label": "配套练习 8"
+      },
+      {
+        "prompt": "摄像机安装在距珠宝柜台中心40英尺处，柜台长30英尺。摄像机应转过多少度才能扫描整个柜台？取最近整数。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan(\\theta/2)=15/40,\\ \\theta=2\\tan^{-1}(15/40)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $41.112090$；按要求舍入为 $41$ degrees。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$41$ degrees",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "A security camera is installed 40 feet away from the center of a jewelry counter 30 feet long. Through what angle, to the nearest degree, should it rotate to scan the entire counter?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan(\\theta/2)=15/40,\\ \\theta=2\\tan^{-1}(15/40)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $41.112090$; round as requested to $41$ degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$41$ degrees",
+          "label": "Example 9"
+        },
+        "id": "example-9",
+        "type": "example",
+        "label": "例题 9",
+        "sourceImage": "assets/6-1-example-9.png"
+      },
+      {
+        "prompt": "重做例9，柜台长25英尺，摄像机距柜台中心15英尺。求扫描整个柜台的转角。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan(\\theta/2)=12.5/15,\\ \\theta=2\\tan^{-1}(12.5/15)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $79.611142$；按要求舍入为 $80$ degrees。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$80$ degrees",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "Rework Example 9 for a counter 25 feet long and a camera set 15 feet from the center of the counter.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan(\\theta/2)=12.5/15,\\ \\theta=2\\tan^{-1}(12.5/15)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $79.611142$; round as requested to $80$ degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$80$ degrees",
+          "label": "Practice Problem 9"
+        },
+        "id": "practice-9",
+        "type": "practice",
+        "label": "配套练习 9"
+      }
+    ],
+    "gettingReady": [
+      {
+        "prompt": "给定 $A=\\frac{1}{2},B=\\frac{\\sqrt{3}}{2}$，求 $A/B$，并有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$A/B=(\\frac{1}{2})/(\\frac{\\sqrt{3}}{2})=\\frac{\\sqrt{3}}{3}$。"
+          }
+        ],
+        "answer": "$\\frac{\\sqrt{3}}{3}$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "Find $A/B$ for $A=\\frac{1}{2},B=\\frac{\\sqrt{3}}{2}$. Then rationalize the denominator.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$A/B=(\\frac{1}{2})/(\\frac{\\sqrt{3}}{2})=\\frac{\\sqrt{3}}{3}$."
+            }
+          ],
+          "answer": "$\\frac{\\sqrt{3}}{3}$"
+        },
+        "number": "GR1"
+      },
+      {
+        "prompt": "给定 $A=\\sqrt3/2,\\ B=\\sqrt{3/2}$，求 $A/B$，并有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$A/B=(\\frac{\\sqrt{3}}{2})/(\\frac{\\sqrt{6}}{2})=\\frac{\\sqrt{2}}{2}$。"
+          }
+        ],
+        "answer": "$\\frac{\\sqrt{2}}{2}$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "Find $A/B$ for $A=\\sqrt3/2,\\ B=\\sqrt{3/2}$. Then rationalize the denominator of the quotient.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$A/B=(\\frac{\\sqrt{3}}{2})/(\\frac{\\sqrt{6}}{2})=\\frac{\\sqrt{2}}{2}$."
+            }
+          ],
+          "answer": "$\\frac{\\sqrt{2}}{2}$"
+        },
+        "number": "GR2"
+      },
+      {
+        "prompt": "图中 $C=90^\\circ$。给定 $a=5, b=12$，用勾股定理求第三边。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入 $a^2+b^2=c^2$，移项后取正平方根，得 $c=13$。"
+          }
+        ],
+        "answer": "$c=13$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "In right triangle $ABC$ shown, $C=90^\\circ$. Given $a=5, b=12$, use the Pythagorean Theorem to find the third side.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $a^2+b^2=c^2$, isolate the missing square and take the positive square root: $c=13$."
+            }
+          ],
+          "answer": "$c=13$"
+        },
+        "number": "GR3"
+      },
+      {
+        "prompt": "图中 $C=90^\\circ$。给定 $a=12, c=20$，用勾股定理求第三边。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入 $a^2+b^2=c^2$，移项后取正平方根，得 $b=16$。"
+          }
+        ],
+        "answer": "$b=16$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "In right triangle $ABC$ shown, $C=90^\\circ$. Given $a=12, c=20$, use the Pythagorean Theorem to find the third side.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $a^2+b^2=c^2$, isolate the missing square and take the positive square root: $b=16$."
+            }
+          ],
+          "answer": "$b=16$"
+        },
+        "number": "GR4"
+      },
+      {
+        "prompt": "图中 $C=90^\\circ$。给定 $b=6, c=10$，用勾股定理求第三边。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入 $a^2+b^2=c^2$，移项后取正平方根，得 $a=8$。"
+          }
+        ],
+        "answer": "$a=8$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "In right triangle $ABC$ shown, $C=90^\\circ$. Given $b=6, c=10$, use the Pythagorean Theorem to find the third side.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $a^2+b^2=c^2$, isolate the missing square and take the positive square root: $a=8$."
+            }
+          ],
+          "answer": "$a=8$"
+        },
+        "number": "GR5"
+      },
+      {
+        "prompt": "图中 $C=90^\\circ$。给定 $a=20, b=21$，用勾股定理求第三边。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入 $a^2+b^2=c^2$，移项后取正平方根，得 $c=29$。"
+          }
+        ],
+        "answer": "$c=29$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "In right triangle $ABC$ shown, $C=90^\\circ$. Given $a=20, b=21$, use the Pythagorean Theorem to find the third side.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $a^2+b^2=c^2$, isolate the missing square and take the positive square root: $c=29$."
+            }
+          ],
+          "answer": "$c=29$"
+        },
+        "number": "GR6"
+      },
+      {
+        "prompt": "图中 $C=90^\\circ$。给定 $b=3, c=6$，用勾股定理求第三边。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入 $a^2+b^2=c^2$，移项后取正平方根，得 $a=3 \\sqrt{3}$。"
+          }
+        ],
+        "answer": "$a=3 \\sqrt{3}$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "In right triangle $ABC$ shown, $C=90^\\circ$. Given $b=3, c=6$, use the Pythagorean Theorem to find the third side.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $a^2+b^2=c^2$, isolate the missing square and take the positive square root: $a=3 \\sqrt{3}$."
+            }
+          ],
+          "answer": "$a=3 \\sqrt{3}$"
+        },
+        "number": "GR7"
+      },
+      {
+        "prompt": "图中 $C=90^\\circ$。给定 $a=5, b=10$，用勾股定理求第三边。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入 $a^2+b^2=c^2$，移项后取正平方根，得 $c=5 \\sqrt{5}$。"
+          }
+        ],
+        "answer": "$c=5 \\sqrt{5}$",
+        "pdfPage": 559,
+        "printedPage": 535,
+        "en": {
+          "prompt": "In right triangle $ABC$ shown, $C=90^\\circ$. Given $a=5, b=10$, use the Pythagorean Theorem to find the third side.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $a^2+b^2=c^2$, isolate the missing square and take the positive square root: $c=5 \\sqrt{5}$."
+            }
+          ],
+          "answer": "$c=5 \\sqrt{5}$"
+        },
+        "number": "GR8"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "若 $\\theta$ 为直角三角形锐角，$\\sin\\theta=\\text{对边}/\\text{斜边}$，则余弦和正切的比值分别是什么？",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由六个三角比的定义直接写出。"
+          }
+        ],
+        "answer": "cos=邻边/斜边；tan=对边/邻边。",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "If $\\theta$ is an acute angle in a right triangle, $\\sin\\theta=\\text{Opposite}/\\text{Hypotenuse}$, $\\cos\\theta=\\underline{\\qquad}$, $\\tan\\theta=\\underline{\\qquad}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Apply the definitions of the trigonometric ratios."
+            }
+          ],
+          "answer": "cos=Adjacent/Hypotenuse; tan=Opposite/Adjacent."
+        },
+        "number": 1
+      },
+      {
+        "prompt": "直角三角形两个锐角的和是多少？",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "三角形内角和180°减去直角90°。"
+          }
+        ],
+        "answer": "$90^\\circ$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "The sum of the two acute angle s in a right triangle is ____.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Subtract the right angle 90° from the triangle angle sum 180°."
+            }
+          ],
+          "answer": "$90^\\circ$"
+        },
+        "number": 2
+      },
+      {
+        "prompt": "若锐角 $\\theta$ 用度数表示，且 $\\cos\\theta=0.7$，求 $\\sin(90^\\circ-\\theta)$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "余函数恒等式给出 $\\sin(90^\\circ-\\theta)=\\cos\\theta=0.7$。"
+          }
+        ],
+        "answer": "$0.7$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "If $\\theta$ is an acute angle (measured in degrees) in a right triangle and $\\cos\\theta=0.7$, then $\\sin(90^\\circ-\\theta)=$ ____.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The cofunction identity gives $\\sin(90^\\circ-\\theta)=\\cos\\theta=0.7$."
+            }
+          ],
+          "answer": "$0.7$"
+        },
+        "number": 3
+      },
+      {
+        "prompt": "向下观察时，视线与水平线所成锐角称为什么？",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "按俯角定义。"
+          }
+        ],
+        "answer": "俯角",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "When looking down, the acute angle between the line of sight and the horizontal is called the ____.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Apply the definition of angle of depression."
+            }
+          ],
+          "answer": "Angle of depression"
+        },
+        "number": 4
+      },
+      {
+        "prompt": "判断：若锐角 $\\theta$ 满足 $\\tan\\theta=2/5$，则对边长为2。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "此比值只确定相似形。例如对边4、邻边10也满足2/5，对边不一定为2。"
+          }
+        ],
+        "answer": "错。",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "True or False. If $\\theta$ is an acute angle in a right triangle and $\\tan\\theta=2/5$, then the length of the leg opposite $\\theta$ is 2.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The ratio determines only similarity. Opposite 4 and adjacent 10 also give 2/5, so the opposite leg need not be 2."
+            }
+          ],
+          "answer": "False."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "判断：直角三角形中 $\\theta$ 的邻边是 $90^\\circ-\\theta$ 的对边。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "两个锐角互余，同一直角边对一个锐角为邻边，对另一个为对边。"
+          }
+        ],
+        "answer": "对。",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "True or False. The leg adjacent to angle $\\theta$ in a right triangle is the leg opposite the angle $90^\\circ-\\theta$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The acute angle s are complementary; the adjacent leg for one is opposite the other."
+            }
+          ],
+          "answer": "True."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "判断：若直角三角形一条直角边长为1，则斜边一定大于1。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "另一条直角边x>0，因此斜边 $\\sqrt{1+x^2}>1$。"
+          }
+        ],
+        "answer": "对。",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "True or False. The length of the hypotenuse of a right triangle having a leg of length 1 must be greater than 1.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The other leg has length $x>0$, so the hypotenuse $\\sqrt{1+x^2}>1$."
+            }
+          ],
+          "answer": "True."
+        },
+        "number": 7
+      },
+      {
+        "prompt": "判断：给定两个锐角即可解直角三角形。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "角度只能确定形状；将所有边乘同一个正数仍有相同角度，所以缺少尺度。"
+          }
+        ],
+        "answer": "错。",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "True or False. We can solve a right triangle if the two acute angle s are given.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Angles determine shape only; scaling all side s by any positive factor preserves them, leaving the scale unknown."
+            }
+          ],
+          "answer": "False."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与核验",
+            "body": "原图邻边为11、对边为2、斜边为 $5\\sqrt5$；勾股检验 $11^2+2^2=125=(5\\sqrt5)^2$。"
+          },
+          {
+            "title": "计算与核验",
+            "body": "$\\sin\\theta=2/(5\\sqrt5)=2\\sqrt5/25$，$\\cos\\theta=11/(5\\sqrt5)=11\\sqrt5/25$，$\\tan\\theta=2/11$。"
+          },
+          {
+            "title": "计算与核验",
+            "body": "取倒数：$\\csc\\theta=5\\sqrt5/2$，$\\sec\\theta=5\\sqrt5/11$，$\\cot\\theta=11/2$。正弦、余弦均在0与1之间且平方和1。"
+          }
+        ],
+        "answer": "$\\sin\\theta=2\\sqrt5/25,\\ \\cos\\theta=11\\sqrt5/25,\\ \\tan\\theta=2/11,\\ \\csc\\theta=5\\sqrt5/2,\\ \\sec\\theta=5\\sqrt5/11,\\ \\cot\\theta=11/2$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and verify",
+              "body": "The original figure has adjacent leg 11, opposite leg 2 and hypotenuse $5\\sqrt5$. Check $11^2+2^2=125=(5\\sqrt5)^2$."
+            },
+            {
+              "title": "Calculate and verify",
+              "body": "$\\sin\\theta=2/(5\\sqrt5)=2\\sqrt5/25$, $\\cos\\theta=11/(5\\sqrt5)=11\\sqrt5/25$, $\\tan\\theta=2/11$."
+            },
+            {
+              "title": "Calculate and verify",
+              "body": "Take reciprocals: $\\csc\\theta=5\\sqrt5/2$, $\\sec\\theta=5\\sqrt5/11$, $\\cot\\theta=11/2$. Sine and cosine lie between 0 and 1 and their squared sum is 1."
+            }
+          ],
+          "answer": "$\\sin\\theta=2\\sqrt5/25,\\ \\cos\\theta=11\\sqrt5/25,\\ \\tan\\theta=2/11,\\ \\csc\\theta=5\\sqrt5/2,\\ \\sec\\theta=5\\sqrt5/11,\\ \\cot\\theta=11/2$"
+        },
+        "number": 9,
+        "sourceImage": "assets/6-1-exercise-9.png"
+      },
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=7,\\ a_{adj}=7,\\ h=7 \\sqrt{2}$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{\\sqrt{2}}{2},\\quad \\cos\\theta=\\frac{\\sqrt{2}}{2},\\quad \\tan\\theta=1,\\quad \\csc\\theta=\\sqrt{2},\\quad \\sec\\theta=\\sqrt{2},\\quad \\cot\\theta=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{\\sqrt{2}}{2},\\quad \\cos\\theta=\\frac{\\sqrt{2}}{2},\\quad \\tan\\theta=1,\\quad \\csc\\theta=\\sqrt{2},\\quad \\sec\\theta=\\sqrt{2},\\quad \\cot\\theta=1$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=7,\\ a_{adj}=7,\\ h=7 \\sqrt{2}$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{\\sqrt{2}}{2},\\quad \\cos\\theta=\\frac{\\sqrt{2}}{2},\\quad \\tan\\theta=1,\\quad \\csc\\theta=\\sqrt{2},\\quad \\sec\\theta=\\sqrt{2},\\quad \\cot\\theta=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{\\sqrt{2}}{2},\\quad \\cos\\theta=\\frac{\\sqrt{2}}{2},\\quad \\tan\\theta=1,\\quad \\csc\\theta=\\sqrt{2},\\quad \\sec\\theta=\\sqrt{2},\\quad \\cot\\theta=1$"
+        },
+        "number": 10,
+        "sourceImage": "assets/6-1-exercise-10.png"
+      },
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=6,\\ a_{adj}=8,\\ h=10$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{3}{5},\\quad \\cos\\theta=\\frac{4}{5},\\quad \\tan\\theta=\\frac{3}{4},\\quad \\csc\\theta=\\frac{5}{3},\\quad \\sec\\theta=\\frac{5}{4},\\quad \\cot\\theta=\\frac{4}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{3}{5},\\quad \\cos\\theta=\\frac{4}{5},\\quad \\tan\\theta=\\frac{3}{4},\\quad \\csc\\theta=\\frac{5}{3},\\quad \\sec\\theta=\\frac{5}{4},\\quad \\cot\\theta=\\frac{4}{3}$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=6,\\ a_{adj}=8,\\ h=10$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{3}{5},\\quad \\cos\\theta=\\frac{4}{5},\\quad \\tan\\theta=\\frac{3}{4},\\quad \\csc\\theta=\\frac{5}{3},\\quad \\sec\\theta=\\frac{5}{4},\\quad \\cot\\theta=\\frac{4}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{3}{5},\\quad \\cos\\theta=\\frac{4}{5},\\quad \\tan\\theta=\\frac{3}{4},\\quad \\csc\\theta=\\frac{5}{3},\\quad \\sec\\theta=\\frac{5}{4},\\quad \\cot\\theta=\\frac{4}{3}$"
+        },
+        "number": 11,
+        "sourceImage": "assets/6-1-exercise-11.png"
+      },
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=8,\\ a_{adj}=15,\\ h=17$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{8}{17},\\quad \\cos\\theta=\\frac{15}{17},\\quad \\tan\\theta=\\frac{8}{15},\\quad \\csc\\theta=\\frac{17}{8},\\quad \\sec\\theta=\\frac{17}{15},\\quad \\cot\\theta=\\frac{15}{8}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{8}{17},\\quad \\cos\\theta=\\frac{15}{17},\\quad \\tan\\theta=\\frac{8}{15},\\quad \\csc\\theta=\\frac{17}{8},\\quad \\sec\\theta=\\frac{17}{15},\\quad \\cot\\theta=\\frac{15}{8}$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=8,\\ a_{adj}=15,\\ h=17$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{8}{17},\\quad \\cos\\theta=\\frac{15}{17},\\quad \\tan\\theta=\\frac{8}{15},\\quad \\csc\\theta=\\frac{17}{8},\\quad \\sec\\theta=\\frac{17}{15},\\quad \\cot\\theta=\\frac{15}{8}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{8}{17},\\quad \\cos\\theta=\\frac{15}{17},\\quad \\tan\\theta=\\frac{8}{15},\\quad \\csc\\theta=\\frac{17}{8},\\quad \\sec\\theta=\\frac{17}{15},\\quad \\cot\\theta=\\frac{15}{8}$"
+        },
+        "number": 12,
+        "sourceImage": "assets/6-1-exercise-12.png"
+      },
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=1,\\ a_{adj}=7,\\ h=5 \\sqrt{2}$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{\\sqrt{2}}{10},\\quad \\cos\\theta=\\frac{7 \\sqrt{2}}{10},\\quad \\tan\\theta=\\frac{1}{7},\\quad \\csc\\theta=5 \\sqrt{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{2}}{7},\\quad \\cot\\theta=7$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{\\sqrt{2}}{10},\\quad \\cos\\theta=\\frac{7 \\sqrt{2}}{10},\\quad \\tan\\theta=\\frac{1}{7},\\quad \\csc\\theta=5 \\sqrt{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{2}}{7},\\quad \\cot\\theta=7$",
+        "pdfPage": 567,
+        "printedPage": 543,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=1,\\ a_{adj}=7,\\ h=5 \\sqrt{2}$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{\\sqrt{2}}{10},\\quad \\cos\\theta=\\frac{7 \\sqrt{2}}{10},\\quad \\tan\\theta=\\frac{1}{7},\\quad \\csc\\theta=5 \\sqrt{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{2}}{7},\\quad \\cot\\theta=7$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{\\sqrt{2}}{10},\\quad \\cos\\theta=\\frac{7 \\sqrt{2}}{10},\\quad \\tan\\theta=\\frac{1}{7},\\quad \\csc\\theta=5 \\sqrt{2},\\quad \\sec\\theta=\\frac{5 \\sqrt{2}}{7},\\quad \\cot\\theta=7$"
+        },
+        "number": 13,
+        "sourceImage": "assets/6-1-exercise-13.png"
+      },
+      {
+        "prompt": "求图中角 $\\theta$ 的六个三角函数精确值；必要时分母有理化。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先辨认对边、邻边、斜边：$o=4,\\ a_{adj}=8 \\sqrt{2},\\ h=12$；由 $o^2+a_{adj}^2=h^2$ 求缺边，取正根。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "代入 $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$，另三个取倒数并有理化分母：$\\sin\\theta=\\frac{1}{3},\\quad \\cos\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=\\frac{\\sqrt{2}}{4},\\quad \\csc\\theta=3,\\quad \\sec\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\cot\\theta=2 \\sqrt{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验 $\\sin^2\\theta+\\cos^2\\theta=1$，三组倒数的乘积均为1；所有比值为正。"
+          }
+        ],
+        "answer": "$\\sin\\theta=\\frac{1}{3},\\quad \\cos\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=\\frac{\\sqrt{2}}{4},\\quad \\csc\\theta=3,\\quad \\sec\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\cot\\theta=2 \\sqrt{2}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Find the exact values for the six trigonometric functions of the angle $\\theta$ in the figure. Rationalize the denominator where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Identify the opposite leg, adjacent leg and hypotenuse: $o=4,\\ a_{adj}=8 \\sqrt{2},\\ h=12$; find a missing side using $o^2+a_{adj}^2=h^2$ and take its positive root."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute into $\\sin\\theta=o/h,\\cos\\theta=a_{adj}/h,\\tan\\theta=o/a_{adj}$; take reciprocals for the other functions and rationalize denominators: $\\sin\\theta=\\frac{1}{3},\\quad \\cos\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=\\frac{\\sqrt{2}}{4},\\quad \\csc\\theta=3,\\quad \\sec\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\cot\\theta=2 \\sqrt{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check $\\sin^2\\theta+\\cos^2\\theta=1$ and that each reciprocal pair has product 1; every ratio is positive."
+            }
+          ],
+          "answer": "$\\sin\\theta=\\frac{1}{3},\\quad \\cos\\theta=\\frac{2 \\sqrt{2}}{3},\\quad \\tan\\theta=\\frac{\\sqrt{2}}{4},\\quad \\csc\\theta=3,\\quad \\sec\\theta=\\frac{3 \\sqrt{2}}{4},\\quad \\cot\\theta=2 \\sqrt{2}$"
+        },
+        "number": 14,
+        "sourceImage": "assets/6-1-exercise-14.png"
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\cos\\theta=\\frac{2}{3}$。求 (a) $\\sin\\theta$；(b) $\\tan\\theta$。必要时有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{\\sqrt{5}}{3},\\ \\cos\\theta=\\frac{2}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{\\sqrt{5}}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\tan\\theta=\\frac{\\sqrt{5}}{2}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{\\sqrt{5}}{3}$; (b) $\\tan\\theta=\\frac{\\sqrt{5}}{2}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{2}{3}$ as the given value of $\\cos\\theta$ to find (a) $\\sin\\theta$ and (b) $\\tan\\theta$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{\\sqrt{5}}{3},\\ \\cos\\theta=\\frac{2}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{\\sqrt{5}}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\tan\\theta=\\frac{\\sqrt{5}}{2}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{\\sqrt{5}}{3}$; (b) $\\tan\\theta=\\frac{\\sqrt{5}}{2}$"
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\sin\\theta=\\frac{3}{4}$。求 (a) $\\cos\\theta$；(b) $\\tan\\theta$。必要时有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{3}{4},\\ \\cos\\theta=\\frac{\\sqrt{7}}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{\\sqrt{7}}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\tan\\theta=\\frac{3 \\sqrt{7}}{7}$。"
+          }
+        ],
+        "answer": "(a) $\\cos\\theta=\\frac{\\sqrt{7}}{4}$; (b) $\\tan\\theta=\\frac{3 \\sqrt{7}}{7}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{3}{4}$ as the given value of $\\sin\\theta$ to find (a) $\\cos\\theta$ and (b) $\\tan\\theta$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{3}{4},\\ \\cos\\theta=\\frac{\\sqrt{7}}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{\\sqrt{7}}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\tan\\theta=\\frac{3 \\sqrt{7}}{7}$."
+            }
+          ],
+          "answer": "(a) $\\cos\\theta=\\frac{\\sqrt{7}}{4}$; (b) $\\tan\\theta=\\frac{3 \\sqrt{7}}{7}$"
+        },
+        "number": 16,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\tan\\theta=\\frac{5}{3}$。求 (a) $\\sin\\theta$；(b) $\\cos\\theta$。必要时有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{5 \\sqrt{34}}{34},\\ \\cos\\theta=\\frac{3 \\sqrt{34}}{34}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{5 \\sqrt{34}}{34}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{3 \\sqrt{34}}{34}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{5 \\sqrt{34}}{34}$; (b) $\\cos\\theta=\\frac{3 \\sqrt{34}}{34}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{5}{3}$ as the given value of $\\tan\\theta$ to find (a) $\\sin\\theta$ and (b) $\\cos\\theta$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{5 \\sqrt{34}}{34},\\ \\cos\\theta=\\frac{3 \\sqrt{34}}{34}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{5 \\sqrt{34}}{34}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{3 \\sqrt{34}}{34}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{5 \\sqrt{34}}{34}$; (b) $\\cos\\theta=\\frac{3 \\sqrt{34}}{34}$"
+        },
+        "number": 17,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\cot\\theta=\\frac{6}{11}$。求 (a) $\\sin\\theta$；(b) $\\cos\\theta$。必要时有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{11 \\sqrt{157}}{157},\\ \\cos\\theta=\\frac{6 \\sqrt{157}}{157}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{11 \\sqrt{157}}{157}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{6 \\sqrt{157}}{157}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{11 \\sqrt{157}}{157}$; (b) $\\cos\\theta=\\frac{6 \\sqrt{157}}{157}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{6}{11}$ as the given value of $\\cot\\theta$ to find (a) $\\sin\\theta$ and (b) $\\cos\\theta$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{11 \\sqrt{157}}{157},\\ \\cos\\theta=\\frac{6 \\sqrt{157}}{157}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{11 \\sqrt{157}}{157}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{6 \\sqrt{157}}{157}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{11 \\sqrt{157}}{157}$; (b) $\\cos\\theta=\\frac{6 \\sqrt{157}}{157}$"
+        },
+        "number": 18,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\sec\\theta=\\frac{13}{12}$。求 (a) $\\sin\\theta$；(b) $\\tan\\theta$。必要时有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{5}{13},\\ \\cos\\theta=\\frac{12}{13}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{5}{13}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\tan\\theta=\\frac{5}{12}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{5}{13}$; (b) $\\tan\\theta=\\frac{5}{12}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{13}{12}$ as the given value of $\\sec\\theta$ to find (a) $\\sin\\theta$ and (b) $\\tan\\theta$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{5}{13},\\ \\cos\\theta=\\frac{12}{13}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{5}{13}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\tan\\theta=\\frac{5}{12}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{5}{13}$; (b) $\\tan\\theta=\\frac{5}{12}$"
+        },
+        "number": 19,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\csc\\theta=4$。求 (a) $\\cos\\theta$；(b) $\\tan\\theta$。必要时有理化分母。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{1}{4},\\ \\cos\\theta=\\frac{\\sqrt{15}}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{\\sqrt{15}}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\tan\\theta=\\frac{\\sqrt{15}}{15}$。"
+          }
+        ],
+        "answer": "(a) $\\cos\\theta=\\frac{\\sqrt{15}}{4}$; (b) $\\tan\\theta=\\frac{\\sqrt{15}}{15}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $4$ as the given value of $\\csc\\theta$ to find (a) $\\cos\\theta$ and (b) $\\tan\\theta$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{1}{4},\\ \\cos\\theta=\\frac{\\sqrt{15}}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{\\sqrt{15}}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\tan\\theta=\\frac{\\sqrt{15}}{15}$."
+            }
+          ],
+          "answer": "(a) $\\cos\\theta=\\frac{\\sqrt{15}}{4}$; (b) $\\tan\\theta=\\frac{\\sqrt{15}}{15}$"
+        },
+        "number": 20,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\sin\\theta=\\frac{1}{3}$。求 (a) $\\cos\\theta$；(b) $\\cot(90^\\circ-\\theta)$。必要时有理化分母。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{1}{3},\\ \\cos\\theta=\\frac{2 \\sqrt{2}}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{2 \\sqrt{2}}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{2}}{4}$。"
+          }
+        ],
+        "answer": "(a) $\\cos\\theta=\\frac{2 \\sqrt{2}}{3}$; (b) $\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{2}}{4}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{1}{3}$ as the given value of $\\sin\\theta$ to find (a) $\\cos\\theta$ and (b) $\\cot(90^\\circ-\\theta)$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{1}{3},\\ \\cos\\theta=\\frac{2 \\sqrt{2}}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{2 \\sqrt{2}}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{2}}{4}$."
+            }
+          ],
+          "answer": "(a) $\\cos\\theta=\\frac{2 \\sqrt{2}}{3}$; (b) $\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{2}}{4}$"
+        },
+        "number": 21,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\cos\\theta=\\frac{1}{2}$。求 (a) $\\sin\\theta$；(b) $\\tan(90^\\circ-\\theta)$。必要时有理化分母。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{\\sqrt{3}}{2},\\ \\cos\\theta=\\frac{1}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{\\sqrt{3}}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\tan(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{\\sqrt{3}}{2}$; (b) $\\tan(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{1}{2}$ as the given value of $\\cos\\theta$ to find (a) $\\sin\\theta$ and (b) $\\tan(90^\\circ-\\theta)$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{\\sqrt{3}}{2},\\ \\cos\\theta=\\frac{1}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{\\sqrt{3}}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\tan(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{\\sqrt{3}}{2}$; (b) $\\tan(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$"
+        },
+        "number": 22,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\sec\\theta=\\frac{5}{4}$。求 (a) $\\sin\\theta$；(b) $\\tan(90^\\circ-\\theta)$。必要时有理化分母。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{3}{5},\\ \\cos\\theta=\\frac{4}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{3}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\tan(90^\\circ-\\theta)=\\frac{4}{3}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{3}{5}$; (b) $\\tan(90^\\circ-\\theta)=\\frac{4}{3}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{5}{4}$ as the given value of $\\sec\\theta$ to find (a) $\\sin\\theta$ and (b) $\\tan(90^\\circ-\\theta)$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{3}{5},\\ \\cos\\theta=\\frac{4}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{3}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\tan(90^\\circ-\\theta)=\\frac{4}{3}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{3}{5}$; (b) $\\tan(90^\\circ-\\theta)=\\frac{4}{3}$"
+        },
+        "number": 23,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\csc\\theta=2$。求 (a) $\\cos\\theta$；(b) $\\cot(90^\\circ-\\theta)$。必要时有理化分母。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{1}{2},\\ \\cos\\theta=\\frac{\\sqrt{3}}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{\\sqrt{3}}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$。"
+          }
+        ],
+        "answer": "(a) $\\cos\\theta=\\frac{\\sqrt{3}}{2}$; (b) $\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $2$ as the given value of $\\csc\\theta$ to find (a) $\\cos\\theta$ and (b) $\\cot(90^\\circ-\\theta)$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{1}{2},\\ \\cos\\theta=\\frac{\\sqrt{3}}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{\\sqrt{3}}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$."
+            }
+          ],
+          "answer": "(a) $\\cos\\theta=\\frac{\\sqrt{3}}{2}$; (b) $\\cot(90^\\circ-\\theta)=\\frac{\\sqrt{3}}{3}$"
+        },
+        "number": 24,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\tan\\theta=\\frac{1}{2}$。求 (a) $\\sin\\theta$；(b) $\\csc(90^\\circ-\\theta)$。必要时有理化分母。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{\\sqrt{5}}{5},\\ \\cos\\theta=\\frac{2 \\sqrt{5}}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\sin\\theta=\\frac{\\sqrt{5}}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\csc(90^\\circ-\\theta)=\\frac{\\sqrt{5}}{2}$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta=\\frac{\\sqrt{5}}{5}$; (b) $\\csc(90^\\circ-\\theta)=\\frac{\\sqrt{5}}{2}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{1}{2}$ as the given value of $\\tan\\theta$ to find (a) $\\sin\\theta$ and (b) $\\csc(90^\\circ-\\theta)$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{\\sqrt{5}}{5},\\ \\cos\\theta=\\frac{2 \\sqrt{5}}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\sin\\theta=\\frac{\\sqrt{5}}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\csc(90^\\circ-\\theta)=\\frac{\\sqrt{5}}{2}$."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta=\\frac{\\sqrt{5}}{5}$; (b) $\\csc(90^\\circ-\\theta)=\\frac{\\sqrt{5}}{2}$"
+        },
+        "number": 25,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "锐角 $\\theta$ 满足 $\\cot\\theta=\\frac{3}{4}$。求 (a) $\\cos\\theta$；(b) $\\sec(90^\\circ-\\theta)$。必要时有理化分母。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因 $\\theta$ 为锐角，正弦、余弦均正。由给定比值和 $\\sin^2\\theta+\\cos^2\\theta=1$ 得 $\\sin\\theta=\\frac{4}{5},\\ \\cos\\theta=\\frac{3}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(a) 用商、倒数或余函数恒等式：$\\cos\\theta=\\frac{3}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 用商、倒数或余函数恒等式：$\\sec(90^\\circ-\\theta)=\\frac{5}{4}$。"
+          }
+        ],
+        "answer": "(a) $\\cos\\theta=\\frac{3}{5}$; (b) $\\sec(90^\\circ-\\theta)=\\frac{5}{4}$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Use $\\frac{3}{4}$ as the given value of $\\cot\\theta$ to find (a) $\\cos\\theta$ and (b) $\\sec(90^\\circ-\\theta)$. Rationalize denominators where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Because $\\theta$ is acute, sine and cosine are positive. The given ratio and $\\sin^2\\theta+\\cos^2\\theta=1$ give $\\sin\\theta=\\frac{4}{5},\\ \\cos\\theta=\\frac{3}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Apply a quotient, reciprocal or cofunction identity: $\\cos\\theta=\\frac{3}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) Apply a quotient, reciprocal or cofunction identity: $\\sec(90^\\circ-\\theta)=\\frac{5}{4}$."
+            }
+          ],
+          "answer": "(a) $\\cos\\theta=\\frac{3}{5}$; (b) $\\sec(90^\\circ-\\theta)=\\frac{5}{4}$"
+        },
+        "number": 26,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "已知 $\\sin58^\\circ\\approx0.8480$，求 $\\cos32^\\circ$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因为 $32^\\circ=90^\\circ-58^\\circ$，余函数恒等式给出 $\\cos32^\\circ=\\sin58^\\circ\\approx0.8480$。"
+          }
+        ],
+        "answer": "$\\cos32^\\circ=\\sin58^\\circ\\approx0.8480$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Given $\\sin58^\\circ\\approx0.8480$, find $\\cos32^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Since $32^\\circ=90^\\circ-58^\\circ$, the cofunction identity gives $\\cos32^\\circ=\\sin58^\\circ\\approx0.8480$."
+            }
+          ],
+          "answer": "$\\cos32^\\circ=\\sin58^\\circ\\approx0.8480$"
+        },
+        "number": 27
+      },
+      {
+        "prompt": "已知 $\\cot37^\\circ\\approx0.7986$，求 $\\sin53^\\circ$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与核验",
+            "body": "原题印为 $\\cot37^\\circ\\approx0.7986$，但独立计算 $\\cot37^\\circ\\approx1.3270$，所以给定的近似值有印误。"
+          },
+          {
+            "title": "计算与核验",
+            "body": "由于 $53^\\circ=90^\\circ-37^\\circ$，正确余函数恒等式是 $\\sin53^\\circ=\\cos37^\\circ$，而不是余切。由原角独立求值 $\\sin53^\\circ\\approx0.79863551$。"
+          }
+        ],
+        "answer": "原题的余切近似有误；$\\sin53^\\circ=\\cos37^\\circ\\approx0.7986$。",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Given $\\cot37^\\circ\\approx0.7986$, find $\\sin53^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and verify",
+              "body": "The printed premise is $\\cot37^\\circ\\approx0.7986$, but independently $\\cot37^\\circ\\approx1.3270$, so the given approximation is a printing error."
+            },
+            {
+              "title": "Calculate and verify",
+              "body": "Since $53^\\circ=90^\\circ-37^\\circ$, the correct cofunction identity is $\\sin53^\\circ=\\cos37^\\circ$, not cotangent. Independently evaluating the stated angle gives $\\sin53^\\circ\\approx0.79863551$."
+            }
+          ],
+          "answer": "The given cotangent approximation is erroneous; $\\sin53^\\circ=\\cos37^\\circ\\approx0.7986$."
+        },
+        "number": 28
+      },
+      {
+        "prompt": "已知 $\\tan27^\\circ\\approx0.5095$，求 $\\cot63^\\circ$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因为 $63^\\circ=90^\\circ-27^\\circ$，余函数恒等式给出 $\\cot63^\\circ=\\tan27^\\circ\\approx0.5095$。"
+          }
+        ],
+        "answer": "$\\cot63^\\circ=\\tan27^\\circ\\approx0.5095$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Given $\\tan27^\\circ\\approx0.5095$, find $\\cot63^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Since $63^\\circ=90^\\circ-27^\\circ$, the cofunction identity gives $\\cot63^\\circ=\\tan27^\\circ\\approx0.5095$."
+            }
+          ],
+          "answer": "$\\cot63^\\circ=\\tan27^\\circ\\approx0.5095$"
+        },
+        "number": 29
+      },
+      {
+        "prompt": "已知 $\\cot49^\\circ\\approx0.8693$，求 $\\tan41^\\circ$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因为 $41^\\circ=90^\\circ-49^\\circ$，余函数恒等式给出 $\\tan41^\\circ=\\cot49^\\circ\\approx0.8693$。"
+          }
+        ],
+        "answer": "$\\tan41^\\circ=\\cot49^\\circ\\approx0.8693$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Given $\\cot49^\\circ\\approx0.8693$, find $\\tan41^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Since $41^\\circ=90^\\circ-49^\\circ$, the cofunction identity gives $\\tan41^\\circ=\\cot49^\\circ\\approx0.8693$."
+            }
+          ],
+          "answer": "$\\tan41^\\circ=\\cot49^\\circ\\approx0.8693$"
+        },
+        "number": 30
+      },
+      {
+        "prompt": "已知 $\\sec65^\\circ\\approx2.3662$，求 $\\csc25^\\circ$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因为 $25^\\circ=90^\\circ-65^\\circ$，余函数恒等式给出 $\\csc25^\\circ=\\sec65^\\circ\\approx2.3662$。"
+          }
+        ],
+        "answer": "$\\csc25^\\circ=\\sec65^\\circ\\approx2.3662$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Given $\\sec65^\\circ\\approx2.3662$, find $\\csc25^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Since $25^\\circ=90^\\circ-65^\\circ$, the cofunction identity gives $\\csc25^\\circ=\\sec65^\\circ\\approx2.3662$."
+            }
+          ],
+          "answer": "$\\csc25^\\circ=\\sec65^\\circ\\approx2.3662$"
+        },
+        "number": 31
+      },
+      {
+        "prompt": "已知 $\\csc78^\\circ\\approx1.0223$，求 $\\sec12^\\circ$。",
+        "concept": "cofunctions",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "因为 $12^\\circ=90^\\circ-78^\\circ$，余函数恒等式给出 $\\sec12^\\circ=\\csc78^\\circ\\approx1.0223$。"
+          }
+        ],
+        "answer": "$\\sec12^\\circ=\\csc78^\\circ\\approx1.0223$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Given $\\csc78^\\circ\\approx1.0223$, find $\\sec12^\\circ$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Since $12^\\circ=90^\\circ-78^\\circ$, the cofunction identity gives $\\sec12^\\circ=\\csc78^\\circ\\approx1.0223$."
+            }
+          ],
+          "answer": "$\\sec12^\\circ=\\csc78^\\circ\\approx1.0223$"
+        },
+        "number": 32
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$A=50^\\circ, c=9.2$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-50^\\circ=40.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=9.2\\sin 50.000000^\\circ=7.047609,\\quad b=9.2\\cos 50.000000^\\circ=5.913646$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx50.0^\\circ,\\ B\\approx40.0^\\circ,\\ C=90^\\circ;\\ a\\approx7.0,\\ b\\approx5.9,\\ c\\approx9.2$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $A=50^\\circ, c=9.2$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-50^\\circ=40.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=9.2\\sin 50.000000^\\circ=7.047609,\\quad b=9.2\\cos 50.000000^\\circ=5.913646$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx50.0^\\circ,\\ B\\approx40.0^\\circ,\\ C=90^\\circ;\\ a\\approx7.0,\\ b\\approx5.9,\\ c\\approx9.2$"
+        },
+        "number": 33
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$B=28^\\circ, c=10.5$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $A=90^\\circ-28^\\circ=62.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=10.5\\sin 62.000000^\\circ=9.270950,\\quad b=10.5\\cos 62.000000^\\circ=4.929451$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx62.0^\\circ,\\ B\\approx28.0^\\circ,\\ C=90^\\circ;\\ a\\approx9.3,\\ b\\approx4.9,\\ c\\approx10.5$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $B=28^\\circ, c=10.5$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $A=90^\\circ-28^\\circ=62.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=10.5\\sin 62.000000^\\circ=9.270950,\\quad b=10.5\\cos 62.000000^\\circ=4.929451$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx62.0^\\circ,\\ B\\approx28.0^\\circ,\\ C=90^\\circ;\\ a\\approx9.3,\\ b\\approx4.9,\\ c\\approx10.5$"
+        },
+        "number": 34
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$A=36^\\circ, a=12.0$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-36^\\circ=54.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$b=12.0/\\tan 36.000000^\\circ=16.516583,\\quad c=12.0/\\sin 36.000000^\\circ=20.415619$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx36.0^\\circ,\\ B\\approx54.0^\\circ,\\ C=90^\\circ;\\ a\\approx12.0,\\ b\\approx16.5,\\ c\\approx20.4$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $A=36^\\circ, a=12.0$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-36^\\circ=54.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $b=12.0/\\tan 36.000000^\\circ=16.516583,\\quad c=12.0/\\sin 36.000000^\\circ=20.415619$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx36.0^\\circ,\\ B\\approx54.0^\\circ,\\ C=90^\\circ;\\ a\\approx12.0,\\ b\\approx16.5,\\ c\\approx20.4$"
+        },
+        "number": 35
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$B=74^\\circ, b=6.3$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $A=90^\\circ-74^\\circ=16.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=6.3\\tan 16.000000^\\circ=1.806496,\\quad c=6.3/\\cos 16.000000^\\circ=6.553886$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx16.0^\\circ,\\ B\\approx74.0^\\circ,\\ C=90^\\circ;\\ a\\approx1.8,\\ b\\approx6.3,\\ c\\approx6.6$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $B=74^\\circ, b=6.3$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $A=90^\\circ-74^\\circ=16.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=6.3\\tan 16.000000^\\circ=1.806496,\\quad c=6.3/\\cos 16.000000^\\circ=6.553886$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx16.0^\\circ,\\ B\\approx74.0^\\circ,\\ C=90^\\circ;\\ a\\approx1.8,\\ b\\approx6.3,\\ c\\approx6.6$"
+        },
+        "number": 36
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$a=12.5, b=6.2$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理给出 $c=\\sqrt{12.5^2+6.2^2}\\approx 13.953136$，取正根，因为边长为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(12.500000/6.200000)\\approx63.618589^\\circ$，$B=90^\\circ-A\\approx26.381411^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx63.6^\\circ,\\ B\\approx26.4^\\circ,\\ C=90^\\circ;\\ a\\approx12.5,\\ b\\approx6.2,\\ c\\approx14.0$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $a=12.5, b=6.2$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Pythagorean Theorem gives $c=\\sqrt{12.5^2+6.2^2}\\approx 13.953136$; take the positive root because length s are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(12.500000/6.200000)\\approx63.618589^\\circ$, and $B=90^\\circ-A\\approx26.381411^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx63.6^\\circ,\\ B\\approx26.4^\\circ,\\ C=90^\\circ;\\ a\\approx12.5,\\ b\\approx6.2,\\ c\\approx14.0$"
+        },
+        "number": 37
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$a=4.3, b=8.1$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理给出 $c=\\sqrt{4.3^2+8.1^2}\\approx 9.170605$，取正根，因为边长为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(4.300000/8.100000)\\approx27.962232^\\circ$，$B=90^\\circ-A\\approx62.037768^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx28.0^\\circ,\\ B\\approx62.0^\\circ,\\ C=90^\\circ;\\ a\\approx4.3,\\ b\\approx8.1,\\ c\\approx9.2$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $a=4.3, b=8.1$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Pythagorean Theorem gives $c=\\sqrt{4.3^2+8.1^2}\\approx 9.170605$; take the positive root because length s are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(4.300000/8.100000)\\approx27.962232^\\circ$, and $B=90^\\circ-A\\approx62.037768^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx28.0^\\circ,\\ B\\approx62.0^\\circ,\\ C=90^\\circ;\\ a\\approx4.3,\\ b\\approx8.1,\\ c\\approx9.2$"
+        },
+        "number": 38
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$b=9.4, c=14.5$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理给出 $a=\\sqrt{14.5^2-9.4^2}\\approx 11.040380$，取正根，因为边长为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(11.040380/9.400000)\\approx49.588265^\\circ$，$B=90^\\circ-A\\approx40.411735^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx49.6^\\circ,\\ B\\approx40.4^\\circ,\\ C=90^\\circ;\\ a\\approx11.0,\\ b\\approx9.4,\\ c\\approx14.5$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $b=9.4, c=14.5$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Pythagorean Theorem gives $a=\\sqrt{14.5^2-9.4^2}\\approx 11.040380$; take the positive root because length s are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(11.040380/9.400000)\\approx49.588265^\\circ$, and $B=90^\\circ-A\\approx40.411735^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx49.6^\\circ,\\ B\\approx40.4^\\circ,\\ C=90^\\circ;\\ a\\approx11.0,\\ b\\approx9.4,\\ c\\approx14.5$"
+        },
+        "number": 39
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ$，$a=6.2, c=18.7$。必要时取最近的十分位。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理给出 $b=\\sqrt{18.7^2-6.2^2}\\approx 17.642279$，取正根，因为边长为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(6.200000/17.642279)\\approx19.362930^\\circ$，$B=90^\\circ-A\\approx70.637070^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$A\\approx19.4^\\circ,\\ B\\approx70.6^\\circ,\\ C=90^\\circ;\\ a\\approx6.2,\\ b\\approx17.6,\\ c\\approx18.7$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Solve each right triangle; angle $C$ is the right angle. $a=6.2, c=18.7$. Round to the nearest tenth where necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Pythagorean Theorem gives $b=\\sqrt{18.7^2-6.2^2}\\approx 17.642279$; take the positive root because length s are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=\\tan^{-1}(a/b)=\\tan^{-1}(6.200000/17.642279)\\approx19.362930^\\circ$, and $B=90^\\circ-A\\approx70.637070^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$A\\approx19.4^\\circ,\\ B\\approx70.6^\\circ,\\ C=90^\\circ;\\ a\\approx6.2,\\ b\\approx17.6,\\ c\\approx18.7$"
+        },
+        "number": 40
+      },
+      {
+        "prompt": "如图，$a=8,b=10$。求 $c$,$\\sin\\theta$,$\\tan\\theta$，答案取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理：$c=\\sqrt{8^2+10^2}=\\sqrt{164}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sin\\theta=8/\\sqrt{164},\\ \\cos\\theta=10/\\sqrt{164},\\ \\tan\\theta=8/10$。最后舍入得到 $c\\approx12.806, \\sin\\theta\\approx0.625, \\tan\\theta\\approx0.800$。"
+          }
+        ],
+        "answer": "$c\\approx12.806, \\sin\\theta\\approx0.625, \\tan\\theta\\approx0.800$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $a=8,b=10$. Find $c$, $\\sin\\theta$, $\\tan\\theta$. Round your answer to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Pythagorean Theorem: $c=\\sqrt{8^2+10^2}=\\sqrt{164}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin\\theta=8/\\sqrt{164},\\ \\cos\\theta=10/\\sqrt{164},\\ \\tan\\theta=8/10$. Rounding at the end gives $c\\approx12.806, \\sin\\theta\\approx0.625, \\tan\\theta\\approx0.800$."
+            }
+          ],
+          "answer": "$c\\approx12.806, \\sin\\theta\\approx0.625, \\tan\\theta\\approx0.800$"
+        },
+        "number": 41
+      },
+      {
+        "prompt": "如图，$a=18,b=3$。求 $c$,$\\sin\\theta$,$\\cos\\theta$，答案取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理：$c=\\sqrt{18^2+3^2}=\\sqrt{333}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sin\\theta=18/\\sqrt{333},\\ \\cos\\theta=3/\\sqrt{333},\\ \\tan\\theta=18/3$。最后舍入得到 $c\\approx18.248, \\sin\\theta\\approx0.986, \\cos\\theta\\approx0.164$。"
+          }
+        ],
+        "answer": "$c\\approx18.248, \\sin\\theta\\approx0.986, \\cos\\theta\\approx0.164$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $a=18,b=3$. Find $c$, $\\sin\\theta$, $\\cos\\theta$. Round your answer to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Pythagorean Theorem: $c=\\sqrt{18^2+3^2}=\\sqrt{333}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin\\theta=18/\\sqrt{333},\\ \\cos\\theta=3/\\sqrt{333},\\ \\tan\\theta=18/3$. Rounding at the end gives $c\\approx18.248, \\sin\\theta\\approx0.986, \\cos\\theta\\approx0.164$."
+            }
+          ],
+          "answer": "$c\\approx18.248, \\sin\\theta\\approx0.986, \\cos\\theta\\approx0.164$"
+        },
+        "number": 42
+      },
+      {
+        "prompt": "如图，$a=23,b=7$。求 $\\cos\\theta$,$\\tan\\theta$，答案取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理：$c=\\sqrt{23^2+7^2}=\\sqrt{578}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sin\\theta=23/\\sqrt{578},\\ \\cos\\theta=7/\\sqrt{578},\\ \\tan\\theta=23/7$。最后舍入得到 $\\cos\\theta\\approx0.291, \\tan\\theta\\approx3.286$。"
+          }
+        ],
+        "answer": "$\\cos\\theta\\approx0.291, \\tan\\theta\\approx3.286$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $a=23,b=7$. Find $\\cos\\theta$, $\\tan\\theta$. Round your answer to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Pythagorean Theorem: $c=\\sqrt{23^2+7^2}=\\sqrt{578}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin\\theta=23/\\sqrt{578},\\ \\cos\\theta=7/\\sqrt{578},\\ \\tan\\theta=23/7$. Rounding at the end gives $\\cos\\theta\\approx0.291, \\tan\\theta\\approx3.286$."
+            }
+          ],
+          "answer": "$\\cos\\theta\\approx0.291, \\tan\\theta\\approx3.286$"
+        },
+        "number": 43
+      },
+      {
+        "prompt": "如图，$a=19,b=27$。求 $c$,$\\cos\\theta$,$\\tan\\theta$，答案取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "勾股定理：$c=\\sqrt{19^2+27^2}=\\sqrt{1090}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sin\\theta=19/\\sqrt{1090},\\ \\cos\\theta=27/\\sqrt{1090},\\ \\tan\\theta=19/27$。最后舍入得到 $c\\approx33.015, \\cos\\theta\\approx0.818, \\tan\\theta\\approx0.704$。"
+          }
+        ],
+        "answer": "$c\\approx33.015, \\cos\\theta\\approx0.818, \\tan\\theta\\approx0.704$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $a=19,b=27$. Find $c$, $\\cos\\theta$, $\\tan\\theta$. Round your answer to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Pythagorean Theorem: $c=\\sqrt{19^2+27^2}=\\sqrt{1090}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin\\theta=19/\\sqrt{1090},\\ \\cos\\theta=27/\\sqrt{1090},\\ \\tan\\theta=19/27$. Rounding at the end gives $c\\approx33.015, \\cos\\theta\\approx0.818, \\tan\\theta\\approx0.704$."
+            }
+          ],
+          "answer": "$c\\approx33.015, \\cos\\theta\\approx0.818, \\tan\\theta\\approx0.704$"
+        },
+        "number": 44
+      },
+      {
+        "prompt": "如图，$\\theta=30^\\circ,a=9$。求 $\\sin\\theta$, $b$, $c$，取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-30^\\circ=60.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$b=9/\\tan 30.000000^\\circ=15.588457,\\quad c=9/\\sin 30.000000^\\circ=18.000000$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$\\sin\\theta\\approx0.500,\\ b\\approx15.588,\\ c\\approx18.000$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $\\theta=30^\\circ,a=9$. Find $\\sin\\theta$, $b$, $c$. Round to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-30^\\circ=60.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $b=9/\\tan 30.000000^\\circ=15.588457,\\quad c=9/\\sin 30.000000^\\circ=18.000000$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$\\sin\\theta\\approx0.500,\\ b\\approx15.588,\\ c\\approx18.000$"
+        },
+        "number": 45
+      },
+      {
+        "prompt": "如图，$\\theta=30^\\circ,a=5$。求 $b$, $c$，取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-30^\\circ=60.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$b=5/\\tan 30.000000^\\circ=8.660254,\\quad c=5/\\sin 30.000000^\\circ=10.000000$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$b\\approx8.660,\\ c\\approx10.000$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $\\theta=30^\\circ,a=5$. Find $b$, $c$. Round to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-30^\\circ=60.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $b=5/\\tan 30.000000^\\circ=8.660254,\\quad c=5/\\sin 30.000000^\\circ=10.000000$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$b\\approx8.660,\\ c\\approx10.000$"
+        },
+        "number": 46
+      },
+      {
+        "prompt": "如图，$\\theta=60^\\circ,b=7$。求 $\\alpha$, $a$, $c$，取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-60^\\circ=30.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=7\\tan 60.000000^\\circ=12.124356,\\quad c=7/\\cos 60.000000^\\circ=14.000000$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$\\alpha\\approx30.000^\\circ,\\ a\\approx12.124,\\ c\\approx14.000$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $\\theta=60^\\circ,b=7$. Find $\\alpha$, $a$, $c$. Round to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-60^\\circ=30.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=7\\tan 60.000000^\\circ=12.124356,\\quad c=7/\\cos 60.000000^\\circ=14.000000$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$\\alpha\\approx30.000^\\circ,\\ a\\approx12.124,\\ c\\approx14.000$"
+        },
+        "number": 47
+      },
+      {
+        "prompt": "如图，$\\theta=60^\\circ,b=10$。求 $\\alpha$, $a$, $c$，取三位小数。",
+        "concept": "solve",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "直角为 $C=90^\\circ$，所以 $B=90^\\circ-60^\\circ=30.0^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "使用正弦、余弦或正切并保留计算精度：$a=10\\tan 60.000000^\\circ=17.320508,\\quad c=10/\\cos 60.000000^\\circ=20.000000$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：三边均正，$a^2+b^2=c^2$，且 $A+B+C=180^\\circ$。最后才四舍五入。"
+          }
+        ],
+        "answer": "$\\alpha\\approx30.000^\\circ,\\ a\\approx17.321,\\ c\\approx20.000$",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "As shown, $\\theta=60^\\circ,b=10$. Find $\\alpha$, $a$, $c$. Round to three decimal places.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The right angle is $C=90^\\circ$, so $B=90^\\circ-60^\\circ=30.0^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use sine, cosine or tangent and retain working precision: $a=10\\tan 60.000000^\\circ=17.320508,\\quad c=10/\\cos 60.000000^\\circ=20.000000$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that all side s are positive, $a^2+b^2=c^2$, and $A+B+C=180^\\circ$. Round only at the end."
+            }
+          ],
+          "answer": "$\\alpha\\approx30.000^\\circ,\\ a\\approx17.321,\\ c\\approx20.000$"
+        },
+        "number": 48
+      },
+      {
+        "prompt": "一架18英尺长的梯子靠墙，梯子顶端离地14英尺。梯脚距墙脚多远？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$x^2+14^2=18^2,\\ x=\\sqrt{18^2-14^2}=8\\sqrt2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $11.313708$；按要求舍入为 $11.31$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$11.31$ ft",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "An 18-foot ladder rests against a wall so that the top is 14 feet above the ground. How far is its foot from the base of the building?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $x^2+14^2=18^2,\\ x=\\sqrt{18^2-14^2}=8\\sqrt2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $11.313708$; round as requested to $11.31$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$11.31$ ft"
+        },
+        "number": 49
+      },
+      {
+        "prompt": "第49题的梯脚改在距墙脚7英尺处。18英尺长的梯子顶端能达到多高？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h^2+7^2=18^2,\\ h=\\sqrt{18^2-7^2}=5\\sqrt{11}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $16.583124$；按要求舍入为 $16.58$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$16.58$ ft",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "The ladder from Exercise 49 is placed so that its foot is 7 feet from the base of the wall. How high up the wall will the ladder reach?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h^2+7^2=18^2,\\ h=\\sqrt{18^2-7^2}=5\\sqrt{11}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $16.583124$; round as requested to $16.58$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$16.58$ ft"
+        },
+        "number": 50
+      },
+      {
+        "prompt": "滑雪缆车垂直上升295米，斜长1070米。乘客的水平移动距离是多少？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$x^2+295^2=1070^2,\\ x=\\sqrt{1070^2-295^2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $1028.530505$；按要求舍入为 $1028.5$ m。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$1028.5$ m",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Find the horizontal distance a ski lift car passes over if the vertical rise is 295 meters and the slope length is 1070 meters.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $x^2+295^2=1070^2,\\ x=\\sqrt{1070^2-295^2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $1028.530505$; round as requested to $1028.5$ m."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$1028.5$ m"
+        },
+        "number": 51
+      },
+      {
+        "prompt": "滑雪缆车斜长2050英尺，与水平夹角16°。求垂直上升高度，精确到英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=2050\\sin16^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $565.056579$；按要求舍入为 $565$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$565$ ft",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "Find the vertical rise (to the nearest foot) of a ski lift with slope length 2050 feet and lift angle 16°.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=2050\\sin16^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $565.056579$; round as requested to $565$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$565$ ft"
+        },
+        "number": 52
+      },
+      {
+        "prompt": "滑雪者沿倾角30°的缆车上行5000英尺。比起点升高多少？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=5000\\sin30^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $2500.000000$；按要求舍入为 $2500$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$2500$ ft",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "A skier travels 5000 feet up a ski lift whose angle of inclination is 30°. How high above his starting level is he?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=5000\\sin30^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $2500.000000$; round as requested to $2500$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$2500$ ft"
+        },
+        "number": 53
+      },
+      {
+        "prompt": "太阳光与水平面成50°时，站在平地上的6英尺高男子影子多长？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan50^\\circ=6/x,\\ x=6/\\tan50^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $5.034598$；按要求舍入为 $5.03$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$5.03$ ft",
+        "pdfPage": 568,
+        "printedPage": 544,
+        "en": {
+          "prompt": "At a time when the sun’s rays make a 50° angle with the horizontal, how long is the shadow cast by a 6-foot man standing on flat ground?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan50^\\circ=6/x,\\ x=6/\\tan50^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $5.034598$; round as requested to $5.03$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$5.03$ ft"
+        },
+        "number": 54
+      },
+      {
+        "prompt": "从树脚沿平地110英尺处望树顶，与水平面的夹角15°。求树高，精确到英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=110\\tan15^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $29.474411$；按要求舍入为 $29$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$29$ ft",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "The angle relative to the horizontal from the top of a tree to a point 110 feet from its base (on flat ground) is 15°. Find the height of the tree to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=110\\tan15^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $29.474411$; round as requested to $29$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$29$ ft"
+        },
+        "number": 55
+      },
+      {
+        "prompt": "划艇距悬崖75英尺，从船看崖顶的仰角73.8°。求崖高，精确到英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=75\\tan73.8^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $258.151693$；按要求舍入为 $258$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$258$ ft",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "The angle of elevation from a rowboat moored 75 feet from a cliff is 73.8°. Find the height of the cliff to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=75\\tan73.8^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $258.151693$; round as requested to $258$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$258$ ft"
+        },
+        "number": 56
+      },
+      {
+        "prompt": "旗杆上的30英尺拉线连到平地木桩，拉线与地面夹角40°。连接点距地面多高？取最近英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=30\\sin40^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $19.283628$；按要求舍入为 $19$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$19$ ft",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "A flagpole is supported by a 30-foot tension wire attached to the flagpole and a stake in flat ground. The wire makes an angle 40° with the ground. How high up the flagpole is it attached? Round to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=30\\sin40^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $19.283628$; round as requested to $19$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$19$ ft"
+        },
+        "number": 57
+      },
+      {
+        "prompt": "女孩放风筝，手离地5英尺。线与地面成28°，若风筝须升至离地200英尺，线要多长？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$L\\sin28^\\circ=200-5,\\ L=195/\\sin28^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $415.360621$；按要求舍入为 $415.36$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$415.36$ ft",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "A girl 5 feet tall is flying a kite. How long must the string be for her to raise the kite 200 feet above the ground if the string makes a 28° angle with the ground?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $L\\sin28^\\circ=200-5,\\ L=195/\\sin28^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $415.360621$; round as requested to $415.36$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$415.36$ ft"
+        },
+        "number": 58
+      },
+      {
+        "prompt": "Sal和朋友在河两岸各打木桩，两桩间距离近似河宽。Sal沿岸离自己的木桩走10英尺，新位置到朋友木桩的视线与到自己木桩的视线夹75°。求河宽。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$w=10\\tan75^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $37.320508$；按要求舍入为 $37.32$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$37.32$ ft",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "Sal and his friend stand on opposite riverbanks and hammer stakes so the distance between the stakes approximates the river width. Sal walks 10 feet from his stake along the river. The lines of sight from his new position to the two stakes make 75°. How wide is the river?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $w=10\\tan75^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $37.320508$; round as requested to $37.32$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$37.32$ ft"
+        },
+        "number": 59,
+        "sourceImage": "assets/6-1-exercise-59.png"
+      },
+      {
+        "prompt": "从邻楼离地128米的13层窗口看帝国大厦，仰角59.4°、到其楼脚俯角40.2°。求两楼距离及帝国大厦高度。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$d=128/\\tan40.2^\\circ,\\ H=128+d\\tan59.4^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $384.117632$；按要求舍入为 $384.12$ m。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "楼间距离约 $151.47$ m；帝国大厦高约 $384.12$ m。",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "From a neighboring building’s 13th-floor window 128 meters above ground, the angle of elevation of the Empire State Building top is 59.4° and the angle of depression of its base is 40.2°. How far away is the neighboring building and how tall is the Empire State Building?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $d=128/\\tan40.2^\\circ,\\ H=128+d\\tan59.4^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $384.117632$; round as requested to $384.12$ m."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "Distance between buildings $\\approx151.47$ m; Empire State Building height $\\approx384.12$ m."
+        },
+        "number": 60
+      },
+      {
+        "prompt": "直升机在己方迫击炮阵地正上方3000英尺处，观测敌方补给站的俯角13°。补给站距迫击炮阵地多远？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$d=3000/\\tan13^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $12994.427623$；按要求舍入为 $12994.43$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$12994.43$ ft",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "The angle of depression from a helicopter 3000 feet directly above an allied mortar station to an enemy supply depot is 13°. How far is the depot from the mortar station?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $d=3000/\\tan13^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $12994.427623$; round as requested to $12994.43$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$12994.43$ ft"
+        },
+        "number": 61
+      },
+      {
+        "prompt": "地球半径3960英里，图中C的纬度为89.05°。求地心A到月球中心B的距离AB（C处为直角）。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\cos89.05^\\circ=3960/AB,\\ AB=3960/\\cos89.05^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $238843.877115$；按要求舍入为 $238844$ mi。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$238844$ mi",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "If Earth’s radius is 3960 miles and the latitude of C is 89.05°, find the distance AB between the centers of Earth and the moon, as shown (angle C is a right angle).",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\cos89.05^\\circ=3960/AB,\\ AB=3960/\\cos89.05^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $238843.877115$; round as requested to $238844$ mi."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$238844$ mi"
+        },
+        "number": 62,
+        "sourceImage": "assets/6-1-exercise-62.png"
+      },
+      {
+        "prompt": "喷头来回转动角度θ。距喷头5英尺处，角的两边相距6英尺。求θ。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan(\\theta/2)=3/5,\\ \\theta=2\\tan^{-1}(3/5)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $61.927513$；按要求舍入为 $61.93$ degrees。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$61.93$ degrees",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "A sprinkler rotates back and forth through angleθ. At a distance 5 feet from the sprinkler, the rays forming the angle are 6 feet apart. Findθ.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan(\\theta/2)=3/5,\\ \\theta=2\\tan^{-1}(3/5)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $61.927513$; round as requested to $61.93$ degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$61.93$ degrees"
+        },
+        "number": 63,
+        "sourceImage": "assets/6-1-exercise-63.png"
+      },
+      {
+        "prompt": "旋转灯照射长8英尺的花盘，灯距盘中心2英尺。灯应转过多少角才能覆盖全盘？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\tan(\\theta/2)=4/2,\\ \\theta=2\\tan^{-1}(2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $126.869898$；按要求舍入为 $126.87$ degrees。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$126.87$ degrees",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "A rotating lamp irradiates a tray of flowers 8 feet long. The lamp is 2 feet from the tray center. Through what angle should it rotate to irradiate the full length?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\tan(\\theta/2)=4/2,\\ \\theta=2\\tan^{-1}(2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $126.869898$; round as requested to $126.87$ degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$126.87$ degrees"
+        },
+        "number": 64,
+        "sourceImage": "assets/6-1-exercise-64.png"
+      },
+      {
+        "prompt": "用地球半径3960英里，求北纬50°纬圈的半径r。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$r=3960\\cos50^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $2545.438934$；按要求舍入为 $2545.44$ mi。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$2545.44$ mi",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "Using 3960 miles as Earth’s radius, find the radiusr of the 50th parallel of latitude.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $r=3960\\cos50^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $2545.438934$; round as requested to $2545.44$ mi."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$2545.44$ mi"
+        },
+        "number": 65,
+        "sourceImage": "assets/6-1-exercise-65.png"
+      },
+      {
+        "prompt": "用地球半径3960英里，求北纬53°纬圈的半径r。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$r=3960\\cos53^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $2383.187492$；按要求舍入为 $2383.19$ mi。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$2383.19$ mi",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "Using 3960 miles as Earth’s radius, find the radiusr of the 53rd parallel of latitude.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $r=3960\\cos53^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $2383.187492$; round as requested to $2383.19$ mi."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$2383.19$ mi"
+        },
+        "number": 66,
+        "sourceImage": "assets/6-1-exercise-66.png"
+      },
+      {
+        "prompt": "摄像机在直线四分之一英里赛道旁，与赛道垂直距离110英尺；垂足距左方起点440英尺、右方终点880英尺。摄像机须转过多少度才能拍摄全程？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\theta=\\tan^{-1}(440/110)+\\tan^{-1}(880/110)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $158.838740$；按要求舍入为 $158.84$ degrees。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$158.84$ degrees",
+        "pdfPage": 569,
+        "printedPage": 545,
+        "en": {
+          "prompt": "A video camera is set 110 feet at right angle s to a straight quarter-mile racetrack. As shown, the starting line is 440 feet to the left of the foot of the perpendicular and the finish line 880 feet to the right. Through what angle must the camera rotate to film the entire race?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\theta=\\tan^{-1}(440/110)+\\tan^{-1}(880/110)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $158.838740$; round as requested to $158.84$ degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$158.84$ degrees"
+        },
+        "number": 67,
+        "sourceImage": "assets/6-1-exercise-67.png"
+      },
+      {
+        "prompt": "电影银幕高50英尺，底边比眼高20英尺。人在银幕前水平距离100英尺处，求视角θ。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$\\theta=\\tan^{-1}(70/100)-\\tan^{-1}(20/100)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $23.682088$；按要求舍入为 $23.68$ degrees。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$23.68$ degrees",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "The bottom of a 50-foot movie screen is 20 feet above eye level. Find viewing angleθ from a distance 100 feet from the screen.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $\\theta=\\tan^{-1}(70/100)-\\tan^{-1}(20/100)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $23.682088$; round as requested to $23.68$ degrees."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$23.68$ degrees"
+        },
+        "number": 68,
+        "sourceImage": "assets/6-1-exercise-68.png"
+      },
+      {
+        "prompt": "从150英尺高塔顶看位于其影子正上方的飞机，仰角67.4°、到影子俯角8.1°。求飞机离地高度。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$x=150/\\tan8.1^\\circ,\\ H=150+x\\tan67.4^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $2681.964108$；按要求舍入为 $2681.96$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$2681.96$ ft",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "From a tower 150 feet high with the sun directly overhead, an airplane and its shadow have elevation and depression angle s 67.4° and 8.1°, respectively. Find the airplane’s height.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $x=150/\\tan8.1^\\circ,\\ H=150+x\\tan67.4^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $2681.964108$; round as requested to $2681.96$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$2681.96$ ft"
+        },
+        "number": 69,
+        "sourceImage": "assets/6-1-exercise-69.png"
+      },
+      {
+        "prompt": "Raphael距墙上画作12英尺，摄像机离地5英尺6英寸；画底离地4英尺。摄像机至画顶仰角50°。求画高，取0.1英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$H=12\\tan50^\\circ+5.5-4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $15.801043$；按要求舍入为 $15.8$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$15.8$ ft",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "Raphael stands 12 feet from a painting and sets his camera 5 feet 6 inches above the floor. The bottom of the painting is 4 feet above the floor and its top is at elevation angle 50° from the camera. Find its height to the nearest tenth of a foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $H=12\\tan50^\\circ+5.5-4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $15.801043$; round as requested to $15.8$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$15.8$ ft"
+        },
+        "number": 70
+      },
+      {
+        "prompt": "北卡罗来纳州达拉斯的WCNC-TV塔高600米。楼脚与塔脚在同一水平面，楼顶看塔顶仰角15.24°、看塔脚俯角60.05°。求楼高。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$H=d\\tan60.05^\\circ,\\ 600-H=d\\tan15.24^\\circ;\\ H=600\\tan60.05^\\circ/(\\tan60.05^\\circ+\\tan15.24^\\circ)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $518.592108$；按要求舍入为 $518.59$ m。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$518.59$ m",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "The WCNC-TV Tower in Dallas, North Carolina, is 600 meters high. Suppose a building is erected such that it and the tower are on the same plane; the angle of elevation from the top of the building to the top of the tower is 15.24°, and the angle of depression from the top of the building to the foot of the tower is 60.05°. How high would the building have to be?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $H=d\\tan60.05^\\circ,\\ 600-H=d\\tan15.24^\\circ;\\ H=600\\tan60.05^\\circ/(\\tan60.05^\\circ+\\tan15.24^\\circ)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $518.592108$; round as requested to $518.59$ m."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$518.59$ m"
+        },
+        "number": 71
+      },
+      {
+        "prompt": "从1250英尺高的帝国大厦顶端看第二栋楼顶俯角55.8°，看第二栋楼脚俯角67.7°。求第二栋楼高。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$d=1250/\\tan67.7^\\circ,\\ H=1250-d\\tan55.8^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $495.640242$；按要求舍入为 $495.64$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$495.64$ ft",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "From the top of the Empire State Building (about 1250 feet high), the angle of depression to the top of a second building is 55.8° and to its foot is 67.7°. Find the height of the second building.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $d=1250/\\tan67.7^\\circ,\\ H=1250-d\\tan55.8^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $495.640242$; round as requested to $495.64$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$495.64$ ft"
+        },
+        "number": 72
+      },
+      {
+        "prompt": "如图，证明 $h=d/(\\cot\\alpha-\\cot\\beta)$。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "设近观测点到垂足的水平距离为 $x$。两直角三角形给出 $\\cot\\alpha=(x+d)/h$、$\\cot\\beta=x/h$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减得 $\\cot\\alpha-\\cot\\beta=d/h$，所以 $h=d/(\\cot\\alpha-\\cot\\beta)$。图中 $0<\\alpha<\\beta<90^\\circ$，分母为正。"
+          }
+        ],
+        "answer": "$h=d/(\\cot\\alpha-\\cot\\beta)$",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "In the figure, show that $h=d/(\\cot\\alpha-\\cot\\beta)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Let $x$ be the distance from the closer observation point to the foot of the perpendicular. Then $\\cot\\alpha=(x+d)/h$ and $\\cot\\beta=x/h$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Subtract to get $\\cot\\alpha-\\cot\\beta=d/h$, hence $h=d/(\\cot\\alpha-\\cot\\beta)$. In the figure $0<\\alpha<\\beta<90^\\circ$, so the denominator is positive."
+            }
+          ],
+          "answer": "$h=d/(\\cot\\alpha-\\cot\\beta)$"
+        },
+        "number": 73,
+        "sourceImage": "assets/6-1-exercise-73.png"
+      },
+      {
+        "prompt": "飞机飞过平地相距500米的观测站A、B，方向从A到B。飞机已过B时，B处仰角38.9°，同一时刻A处仰角36.9°。求飞行高度。[提示：用习题73。]",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h\\cot36.9^\\circ-h\\cot38.9^\\circ=500,\\ h=500/(\\cot36.9^\\circ-\\cot38.9^\\circ)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $5401.821748$；按要求舍入为 $5401.82$ m。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$5401.82$ m",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "A plane flies directly over tracking station s A and B 500 meters apart on level ground, from A to B. After it passes B, the elevation angle s at B and A are 38.9° and 36.9°, respectively. Find its altitude. [Hint: Use Exercise 73.]",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h\\cot36.9^\\circ-h\\cot38.9^\\circ=500,\\ h=500/(\\cot36.9^\\circ-\\cot38.9^\\circ)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $5401.821748$; round as requested to $5401.82$ m."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$5401.82$ m"
+        },
+        "number": 74
+      },
+      {
+        "prompt": "船驶向自由女神像。某点看火炬顶仰角25°，继续驶近100米后仰角41.8°。求女神像高度。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h\\cot25^\\circ-h\\cot41.8^\\circ=100,\\ h=100/(\\cot25^\\circ-\\cot41.8^\\circ)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $97.459448$；按要求舍入为 $97.46$ m。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$97.46$ m",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "While sailing toward the Statue of Liberty, a sailor observes the top of the torch at elevation angle 25°. After sailing another 100 meters toward it, the angle is 41.8°. How tall is the Statue of Liberty?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h\\cot25^\\circ-h\\cot41.8^\\circ=100,\\ h=100/(\\cot25^\\circ-\\cot41.8^\\circ)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $97.459448$; round as requested to $97.46$ m."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$97.46$ m"
+        },
+        "number": 75
+      },
+      {
+        "prompt": "飞机在12000英尺高度飞行，前方楼的俯角10.4°；两分钟后楼仍在前方，俯角25.6°。求飞机相对地面速度，单位英尺/分钟。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$v=12000(\\cot10.4^\\circ-\\cot25.6^\\circ)/2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $20168.462987$；按要求舍入为 $20168.46$ ft/min。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$20168.46$ ft/min",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "A plane at altitude 12000 feet find s the depression angle of a building ahead 10.4°. With the building still straight ahead, two minutes later the angle is 25.6°. Find its speed relative to the ground in feet per minute.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $v=12000(\\cot10.4^\\circ-\\cot25.6^\\circ)/2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $20168.462987$; round as requested to $20168.46$ ft/min."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$20168.46$ ft/min"
+        },
+        "number": 76,
+        "sourceImage": "assets/6-1-exercise-76.png"
+      },
+      {
+        "prompt": "距楼脚200英尺处看楼顶仰角70°，从同一点看楼顶旗杆顶仰角71°。求旗杆高，精确到英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$h=200(\\tan71^\\circ-\\tan70^\\circ)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $31.346692$；按要求舍入为 $31$ ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$31$ ft",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "The elevation angle of a building top from a point 200 feet from its base is 70°, and the elevation angle of a flagpole top on the building is 71°. Find the flagpole height to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $h=200(\\tan71^\\circ-\\tan70^\\circ)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $31.346692$; round as requested to $31$ ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$31$ ft"
+        },
+        "number": 77
+      },
+      {
+        "prompt": "离地3000英尺的飞机正从直升机正上方飞过。两者看同一地面点的俯角分别为60°和48°。求直升机高度，精确到100英尺。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$x=3000/\\tan60^\\circ,\\ H=x\\tan48^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保留中间精度得到 $H=3000\\tan48^\\circ/\\tan60^\\circ\\approx1923.637124$ ft。题目要求精确到100英尺，所以答案为1900 ft。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$1900$ ft",
+        "pdfPage": 570,
+        "printedPage": 546,
+        "en": {
+          "prompt": "A plane flying 3000 feet above ground passes vertically above a helicopter when their depression angle s to a point on the ground are 60° and 48°, respectively. Find the helicopter height to the nearest 100 feet.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $x=3000/\\tan60^\\circ,\\ H=x\\tan48^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Retaining precision gives $H=3000\\tan48^\\circ/\\tan60^\\circ\\approx1923.637124$ ft. The requested rounding is to the nearest 100 feet, so the answer is 1900 ft."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$1900$ ft"
+        },
+        "number": 78
+      },
+      {
+        "prompt": "如图，证明 $h=d/(\\cot\\alpha+\\cot\\beta)$。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "高的垂足将底边分成 $x,y$，其中 $x+y=d$。由两直角三角形，$x=h\\cot\\alpha$、$y=h\\cot\\beta$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $d=h(\\cot\\alpha+\\cot\\beta)$，除以正数 $\\cot\\alpha+\\cot\\beta$ 得所证结论。"
+          }
+        ],
+        "answer": "$h=d/(\\cot\\alpha+\\cot\\beta)$",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "In the figure, show that $h=d/(\\cot\\alpha+\\cot\\beta)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The altitude divides the base into $x,y$ with $x+y=d$. The two right triangle s give $x=h\\cot\\alpha$ and $y=h\\cot\\beta$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Thus $d=h(\\cot\\alpha+\\cot\\beta)$. Divide by the positive sum of cotangents to obtain the result."
+            }
+          ],
+          "answer": "$h=d/(\\cot\\alpha+\\cot\\beta)$"
+        },
+        "number": 79,
+        "sourceImage": "assets/6-1-exercise-79.png"
+      },
+      {
+        "prompt": "求图示直角三角形面积：斜边9，一个锐角40°。[提示：用习题79。]",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$K=\\tfrac12(9\\sin40^\\circ)(9\\cos40^\\circ)=\\tfrac{81}{4}\\sin80^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $19.942357$；按要求舍入为 $19.942$ square units。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$19.942$ square units",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "Find the area of the triangle in the figure: hypotenuse 9 and an acute angle 40°. [Hint: Use Exercise 79.]",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $K=\\tfrac12(9\\sin40^\\circ)(9\\cos40^\\circ)=\\tfrac{81}{4}\\sin80^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $19.942357$; round as requested to $19.942$ square units."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$19.942$ square units"
+        },
+        "number": 80,
+        "sourceImage": "assets/6-1-exercise-80.png"
+      },
+      {
+        "prompt": "图中A为圆心，半径10，∠BAC=75°。求三角形ABC面积。[提示：证明∠ACB=52.5°。]",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$AB=AC=10,\\ \\angle ACB=(180^\\circ-75^\\circ)/2=52.5^\\circ;\\ K=\\tfrac12(10)(10)\\sin75^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $48.296291$；按要求舍入为 $48.296$ square units。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$48.296$ square units",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "Find the area of triangle ABC in the figure. A is the circle center, the radius is 10, and angle BAC is 75°. [Hint: Show angle ACB=52.5°.]",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $AB=AC=10,\\ \\angle ACB=(180^\\circ-75^\\circ)/2=52.5^\\circ;\\ K=\\tfrac12(10)(10)\\sin75^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $48.296291$; round as requested to $48.296$ square units."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$48.296$ square units"
+        },
+        "number": 81,
+        "sourceImage": "assets/6-1-exercise-81.png"
+      },
+      {
+        "prompt": "求图中阴影圆弓形面积：半径10，圆心角60°。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "由图中的直角三角形及三角比建立关系：$K=\\tfrac{60}{360}\\pi(10)^2-\\tfrac12(10)^2\\sin60^\\circ=\\tfrac{50\\pi}{3}-25\\sqrt3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "保持中间精度计算，得到 $9.058607$；按要求舍入为 $9.059$ square units。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "检验：所用距离和高度均为正；角度从水平线量起。保留题目所要求的长度或角度单位。"
+          }
+        ],
+        "answer": "$50\\pi/3-25\\sqrt3\\approx9.059$ square units",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "Find the area of the segment (the shaded region in the figure) of a circle of radius 10 with central angle 60°.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use the right triangle s in the figure and trigonometric ratios: $K=\\tfrac{60}{360}\\pi(10)^2-\\tfrac12(10)^2\\sin60^\\circ=\\tfrac{50\\pi}{3}-25\\sqrt3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Compute without rounding intermediate values to obtain $9.058607$; round as requested to $9.059$ square units."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Check that the modeled distances and heights are positive and angle s are measured from a horizontal. Retain the requested length or angle unit."
+            }
+          ],
+          "answer": "$50\\pi/3-25\\sqrt3\\approx9.059$ square units"
+        },
+        "number": 82,
+        "sourceImage": "assets/6-1-exercise-82.png"
+      },
+      {
+        "prompt": "画一个锐角为 $\\theta$ 的直角三角形，用正弦和余弦定义以及勾股定理证明 $\\sin^2\\theta+\\cos^2\\theta=1$。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "设对边为 $a$、邻边为 $b$、斜边为 $c>0$；$a^2+b^2=c^2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sin^2\\theta+\\cos^2\\theta=(a/c)^2+(b/c)^2=(a^2+b^2)/c^2=c^2/c^2=1$。"
+          }
+        ],
+        "answer": "$\\sin^2\\theta+\\cos^2\\theta=1$",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "Draw a right triangle with acute angle $\\theta$. Use the definitions of $\\sin\\theta$ and $\\cos\\theta$ and the Pythagorean Theorem to show $\\sin^2\\theta+\\cos^2\\theta=1$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Let opposite, adjacent and hypotenuse length s be $a,b,c>0$. Then $a^2+b^2=c^2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin^2\\theta+\\cos^2\\theta=(a/c)^2+(b/c)^2=(a^2+b^2)/c^2=c^2/c^2=1$."
+            }
+          ],
+          "answer": "$\\sin^2\\theta+\\cos^2\\theta=1$"
+        },
+        "number": 83
+      },
+      {
+        "prompt": "直角三角形锐角为 $\\theta$。若对边长度表示 $\\tan\\theta$，邻边必须多长？",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\tan\\theta=o/a$。若要对边数值 $o=\\tan\\theta$，则 $o=o/a$。锐角的对边 $o>0$，故 $a=1$。"
+          }
+        ],
+        "answer": "邻边长为1。",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "In a right triangle with acute angle $\\theta$, what value must the adjacent side have for the length of the opposite side to represent $\\tan\\theta$?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$\\tan\\theta=o/a$. To have the opposite length $o=\\tan\\theta$, require $o=o/a$. Since $o>0$ for an acute angle, $a=1$."
+            }
+          ],
+          "answer": "The adjacent leg must have length 1."
+        },
+        "number": 84
+      },
+      {
+        "prompt": "用习题84的结果比较 $\\tan\\alpha$ 和 $\\tan\\beta$，其中 $\\alpha,\\beta$ 为锐角且 $\\alpha<\\beta$。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将两个角都画在长为1的水平邻边上。射线与竖线 $x=1$ 的交点高度分别为 $\\tan\\alpha$ 与 $\\tan\\beta$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "因为 $0<\\alpha<\\beta<90^\\circ$，后一射线在前一射线上方，所以 $\\tan\\alpha<\\tan\\beta$。"
+          }
+        ],
+        "answer": "$\\tan\\alpha<\\tan\\beta$",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "Use the result of Exercise 84 to compare $\\tan\\alpha$ and $\\tan\\beta$ if they are acute and $\\alpha<\\beta$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Draw both angle s with the same horizontal adjacent leg of length 1. Their rays meet the vertical line $x=1$ at heights $\\tan\\alpha$ and $\\tan\\beta$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Since $0<\\alpha<\\beta<90^\\circ$, the latter ray lies above the former; therefore $\\tan\\alpha<\\tan\\beta$."
+            }
+          ],
+          "answer": "$\\tan\\alpha<\\tan\\beta$"
+        },
+        "number": 85
+      },
+      {
+        "prompt": "$\\triangle ABC$ 在C处为直角。斜边AB长是C到AB的垂线长的 $2\\sqrt2$ 倍。求另外两个角的度数。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "设 $c=AB$、高为 $h$、两直角边为 $a,b$。面积给出 $ab=ch$，又 $h=c/(2\\sqrt2)$，所以 $ab/c^2=1/(2\\sqrt2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\sin A\\cos A=ab/c^2=1/(2\\sqrt2)$，因此 $\\sin2A=1/\\sqrt2$。因 $0<2A<180^\\circ$，$2A=45^\\circ$ 或 $135^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$A=22.5^\\circ$ 或 $67.5^\\circ$，且 $B=90^\\circ-A$。两个值只交换顶点，得到同一对角度。"
+          }
+        ],
+        "answer": "$22.5^\\circ,67.5^\\circ$",
+        "pdfPage": 571,
+        "printedPage": 547,
+        "en": {
+          "prompt": "Let ABC be a triangle with right angle at C. The hypotenuse AB is $2\\sqrt2$ times the perpendicular from C to AB. Find the degree measures of the other two angle s.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Let $c=AB$, altitude $h$, and legs $a,b$. Equal area expressions give $ab=ch$. Since $h=c/(2\\sqrt2)$, $ab/c^2=1/(2\\sqrt2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\sin A\\cos A=ab/c^2=1/(2\\sqrt2)$, hence $\\sin2A=1/\\sqrt2$. With $0<2A<180^\\circ$, $2A=45^\\circ$ or $135^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$A=22.5^\\circ$ or $67.5^\\circ$ and $B=90^\\circ-A$. These choices exchange the labels of the same two acute angle s."
+            }
+          ],
+          "answer": "$22.5^\\circ,67.5^\\circ$"
+        },
+        "number": 86
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4",
+      "example-5",
+      "example-6",
+      "example-7",
+      "example-8",
+      "example-9"
+    ],
+    "expectedPractice": [
+      "practice-1",
+      "practice-2",
+      "practice-3",
+      "practice-4",
+      "practice-5",
+      "practice-6",
+      "practice-7",
+      "practice-8",
+      "practice-9"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86
+    ],
+    "expectedGettingReady": [
+      "GR1",
+      "GR2",
+      "GR3",
+      "GR4",
+      "GR5",
+      "GR6",
+      "GR7",
+      "GR8"
+    ],
+    "expectedSubparts": {
+      "example-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "practice-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-15": [
+        "a",
+        "b"
+      ],
+      "exercise-16": [
+        "a",
+        "b"
+      ],
+      "exercise-17": [
+        "a",
+        "b"
+      ],
+      "exercise-18": [
+        "a",
+        "b"
+      ],
+      "exercise-19": [
+        "a",
+        "b"
+      ],
+      "exercise-20": [
+        "a",
+        "b"
+      ],
+      "exercise-21": [
+        "a",
+        "b"
+      ],
+      "exercise-22": [
+        "a",
+        "b"
+      ],
+      "exercise-23": [
+        "a",
+        "b"
+      ],
+      "exercise-24": [
+        "a",
+        "b"
+      ],
+      "exercise-25": [
+        "a",
+        "b"
+      ],
+      "exercise-26": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true
+  }
+}

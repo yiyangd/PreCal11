@@ -461,6 +461,180 @@
           }
         }
       ]
+    },
+    {
+      "number": 6,
+      "title": "三角函数的应用",
+      "en": {
+        "title": "Applications of Trigonometric Functions"
+      },
+      "sections": [
+        {
+          "slug": "6-1",
+          "section": "6.1",
+          "title": "直角三角形三角学",
+          "en": {
+            "title": "Right-Triangle Trigonometry"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 9,
+            "practice": 9,
+            "exercises": 86,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "6-2",
+          "section": "6.2",
+          "title": "正弦定理",
+          "en": {
+            "title": "The Law of Sines"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 9,
+            "practice": 9,
+            "exercises": 127,
+            "gettingReady": 12
+          }
+        },
+        {
+          "slug": "6-3",
+          "section": "6.3",
+          "title": "余弦定理",
+          "en": {
+            "title": "The Law of Cosines"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 11,
+            "practice": 11,
+            "exercises": 107,
+            "gettingReady": 16
+          }
+        },
+        {
+          "slug": "6-4",
+          "section": "6.4",
+          "title": "向量",
+          "en": {
+            "title": "Vectors"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 10,
+            "practice": 10,
+            "exercises": 100,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "6-5",
+          "section": "6.5",
+          "title": "点积",
+          "en": {
+            "title": "The Dot Product"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 10,
+            "practice": 10,
+            "exercises": 105,
+            "gettingReady": 12
+          }
+        },
+        {
+          "slug": "6-6",
+          "section": "6.6",
+          "title": "极坐标",
+          "en": {
+            "title": "Polar Coordinates"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 11,
+            "practice": 11,
+            "exercises": 127,
+            "gettingReady": 16
+          }
+        },
+        {
+          "slug": "6-7",
+          "section": "6.7",
+          "title": "复数的极形式；DeMoivre定理",
+          "en": {
+            "title": "Polar Form of Complex Numbers; DeMoivre’s Theorem"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 9,
+            "practice": 9,
+            "exercises": 111,
+            "gettingReady": 20
+          }
+        },
+        {
+          "slug": "6-key-ideas",
+          "section": "6",
+          "title": "知识要点与三角形综合问答",
+          "en": {
+            "title": "Key Ideas At a Glance and Questions"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 6,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "6-review",
+          "section": "6",
+          "title": "第6章综合复习",
+          "en": {
+            "title": "Chapter 6 Review and Review Exercises"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 15,
+            "practice": 0,
+            "exercises": 100,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "6-test-a",
+          "section": "6",
+          "title": "第6章测试A",
+          "en": {
+            "title": "Chapter 6 Practice Test A"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "6-cumulative",
+          "section": "6",
+          "title": "第1–6章累积复习",
+          "en": {
+            "title": "Cumulative Review Exercises: Chapters 1–6"
+          },
+          "counts": {
+            "concepts": 3,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        }
+      ]
     }
   ]
 }

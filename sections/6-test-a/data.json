@@ -1,0 +1,768 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch6-local",
+    "title": "第6章：三角函数的应用",
+    "en": {
+      "title": "Chapter 6: Applications of Trigonometric Functions"
+    }
+  },
+  "lesson": {
+    "id": "6-test-a",
+    "section": "6",
+    "title": "第6章测试A",
+    "en": {
+      "title": "Chapter 6 Practice Test A"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        658,
+        659
+      ],
+      "printedPages": [
+        634,
+        635
+      ]
+    },
+    "concepts": [
+      {
+        "id": "triangles",
+        "title": "三角形：选公式与判多解",
+        "summary": "边与其对角对应，先判断资料类型。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "直角三角形用 $a^2+b^2=c^2$ 和六个三角比。一般三角形：$A+B+C=180^\\circ$，$a/\\sin A=b/\\sin B=c/\\sin C$，$c^2=a^2+b^2-2ab\\cos C$。SSA 用反正弦后还须检查补角是否使角和小于 $180^\\circ$。面积 $K=ab\\sin C/2=\\sqrt{s(s-a)(s-b)(s-c)}$，$s=(a+b+c)/2$。"
+          }
+        ],
+        "pitfalls": [
+          "外角不是三角形内角；边长须正，三边须满足严格三角不等式。"
+        ],
+        "en": {
+          "title": "Triangles: formulas and ambiguity",
+          "summary": "Match sides with opposite angles and classify the given data.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "For a right triangle use $a^2+b^2=c^2$ and the six ratios. In any triangle, $A+B+C=180^\\circ$, $a/\\sin A=b/\\sin B=c/\\sin C$, and $c^2=a^2+b^2-2ab\\cos C$. For SSA, also test the supplementary inverse-sine angle against the angle sum. Area: $K=ab\\sin C/2=\\sqrt{s(s-a)(s-b)(s-c)}$, $s=(a+b+c)/2$."
+            }
+          ],
+          "pitfalls": [
+            "An exterior angle is not an interior angle. Side lengths must be positive and satisfy strict triangle inequalities."
+          ]
+        }
+      },
+      {
+        "id": "vectors",
+        "title": "向量、点积、投影与功",
+        "summary": "分量分别相加，长度与方向另算。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$\\overrightarrow{PQ}=\\langle x_Q-x_P,y_Q-y_P\\rangle$，$\\|v\\|=\\sqrt{v_x^2+v_y^2}$，方向为 $\\langle r\\cos\\theta,r\\sin\\theta\\rangle$。$v\\cdot w=v_xw_x+v_yw_y=\\|v\\|\\|w\\|\\cos\\theta$；非零向量的夹角在 $[0,\\pi]$。$\\operatorname{proj}_w v=(v\\cdot w)w/\\|w\\|^2$，要求 $w\\ne0$。功 $W=F\\cdot d$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Vectors, dot products, projections, and work",
+          "summary": "Add components separately; calculate magnitude and direction afterward.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$\\overrightarrow{PQ}=\\langle x_Q-x_P,y_Q-y_P\\rangle$, $\\|v\\|=\\sqrt{v_x^2+v_y^2}$, and a vector of magnitude $r$ and direction $\\theta$ is $\\langle r\\cos\\theta,r\\sin\\theta\\rangle$. $v\\cdot w=v_xw_x+v_yw_y=\\|v\\|\\|w\\|\\cos\\theta$; the angle between nonzero vectors lies in $[0,\\pi]$. $\\operatorname{proj}_w v=(v\\cdot w)w/\\|w\\|^2$ requires $w\\ne0$. Work is $W=F\\cdot d$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "polar",
+        "title": "极坐标与直角坐标",
+        "summary": "负半径沿指定射线的反方向取点。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$x=r\\cos\\theta,y=r\\sin\\theta,r^2=x^2+y^2$。若指定 $r>0$，取 $r=\\sqrt{x^2+y^2}$，角按象限选到指定区间。极坐标可用负半径；方程转换须核对原点、除数与平方引入的分支。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Polar and rectangular coordinates",
+          "summary": "A negative radius locates a point opposite the specified ray.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$x=r\\cos\\theta$, $y=r\\sin\\theta$, $r^2=x^2+y^2$. When $r>0$ is required, take $r=\\sqrt{x^2+y^2}$ and select the angle by quadrant in the requested interval. Polar coordinates allow negative radii; equation conversions must check the pole, divisors, and branches introduced by squaring."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "complex",
+        "title": "复数极形式与全部复根",
+        "summary": "模相乘除，辐角相加减；根须枚举不同辐角。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$z=r(\\cos\\theta+i\\sin\\theta)$，$r\\ge0$。DeMoivre 定理：$z^n=r^n(\\cos n\\theta+i\\sin n\\theta)$；负整数次幂须 $z\\ne0$。非零 $z$ 的 $n$ 次根为 $r^{1/n}[\\cos((\\theta+360^\\circ k)/n)+i\\sin((\\theta+360^\\circ k)/n)]$，$k=0,\\ldots,n-1$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Polar complex numbers and all roots",
+          "summary": "Multiply or divide moduli and add or subtract arguments; enumerate distinct root arguments.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$z=r(\\cos\\theta+i\\sin\\theta)$, $r\\ge0$. DeMoivre: $z^n=r^n(\\cos n\\theta+i\\sin n\\theta)$; negative integer powers require $z\\ne0$. The $n$th roots of nonzero $z$ are $r^{1/n}[\\cos((\\theta+360^\\circ k)/n)+i\\sin((\\theta+360^\\circ k)/n)]$, $k=0,\\ldots,n-1$."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "gettingReady": [],
+    "kind": "chapter-end"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "解三角形 $ABC$：$A=115^\\circ,\\ C=35^\\circ,\\ c=15$，必要时四舍五入到十分位。",
+        "concept": "triangles",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$B=180^\\circ-115.0^\\circ-35.0^\\circ=30.0000^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$a=15.0\\sin(115.0000^\\circ)/\\sin(35.0000^\\circ)=23.70149$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$b=15.0\\sin(30.0000^\\circ)/\\sin(35.0000^\\circ)=13.07585$。"
+          }
+        ],
+        "answer": "$A=115.0^\\circ,\\ B=30.0^\\circ,\\ C=35.0^\\circ,\\ a=23.7,\\ b=13.1,\\ c=15.0$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "Solve triangle $ABC$: $A=115^\\circ,\\ C=35^\\circ,\\ c=15$. Round to the nearest tenth if necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$B=180^\\circ-115.0^\\circ-35.0^\\circ=30.0000^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$a=15.0\\sin(115.0000^\\circ)/\\sin(35.0000^\\circ)=23.70149$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$b=15.0\\sin(30.0000^\\circ)/\\sin(35.0000^\\circ)=13.07585$."
+            }
+          ],
+          "answer": "$A=115.0^\\circ,\\ B=30.0^\\circ,\\ C=35.0^\\circ,\\ a=23.7,\\ b=13.1,\\ c=15.0$."
+        },
+        "number": 1,
+        "sourceImage": "assets/6-test-a-1-source.png"
+      },
+      {
+        "prompt": "解三角形 $ABC$：$A=42^\\circ,\\ B=37^\\circ,\\ a=50\\ \\mathrm{m}$，必要时四舍五入到十分位。",
+        "concept": "triangles",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$C=180^\\circ-42.0^\\circ-37.0^\\circ=101.0000^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$b=50.0\\sin(37.0000^\\circ)/\\sin(42.0000^\\circ)=44.96992$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$c=50.0\\sin(101.0000^\\circ)/\\sin(42.0000^\\circ)=73.35094$。"
+          }
+        ],
+        "answer": "$A=42.0^\\circ,\\ B=37.0^\\circ,\\ C=101.0^\\circ,\\ a=50.0\\ \\mathrm{m},\\ b=45.0\\ \\mathrm{m},\\ c=73.4\\ \\mathrm{m}$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "Solve triangle $ABC$: $A=42^\\circ,\\ B=37^\\circ,\\ a=50\\ \\mathrm{m}$. Round to the nearest tenth if necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$C=180^\\circ-42.0^\\circ-37.0^\\circ=101.0000^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$b=50.0\\sin(37.0000^\\circ)/\\sin(42.0000^\\circ)=44.96992$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$c=50.0\\sin(101.0000^\\circ)/\\sin(42.0000^\\circ)=73.35094$."
+            }
+          ],
+          "answer": "$A=42.0^\\circ,\\ B=37.0^\\circ,\\ C=101.0^\\circ,\\ a=50.0\\ \\mathrm{m},\\ b=45.0\\ \\mathrm{m},\\ c=73.4\\ \\mathrm{m}$."
+        },
+        "number": 2
+      },
+      {
+        "prompt": "解三角形 $ABC$：$B=106^\\circ,\\ c=53,\\ a=35$，必要时四舍五入到十分位。",
+        "concept": "triangles",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$b=\\sqrt{35.0^2+53.0^2-2(35.0)(53.0)\\cos 106.0^\\circ}=71.109877$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\cos A=(71.10987688135219^2+53.0^2-35.0^2)/(2\\cdot71.10987688135219\\cdot53.0)=0.880993$，$A=28.23761^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\cos B=(35.0^2+53.0^2-71.10987688135219^2)/(2\\cdot35.0\\cdot53.0)=-0.275637$，$B=106.00000^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$C=180^\\circ-A-B=45.76239^\\circ$。"
+          }
+        ],
+        "answer": "$A=28.2^\\circ,\\ B=106.0^\\circ,\\ C=45.8^\\circ,\\ a=35.0,\\ b=71.1,\\ c=53.0$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "Solve triangle $ABC$: $B=106^\\circ,\\ c=53,\\ a=35$. Round to the nearest tenth if necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$b=\\sqrt{35.0^2+53.0^2-2(35.0)(53.0)\\cos 106.0^\\circ}=71.109877$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos A=(71.10987688135219^2+53.0^2-35.0^2)/(2\\cdot71.10987688135219\\cdot53.0)=0.880993$, $A=28.23761^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos B=(35.0^2+53.0^2-71.10987688135219^2)/(2\\cdot35.0\\cdot53.0)=-0.275637$, $B=106.00000^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$C=180^\\circ-A-B=45.76239^\\circ$."
+            }
+          ],
+          "answer": "$A=28.2^\\circ,\\ B=106.0^\\circ,\\ C=45.8^\\circ,\\ a=35.0,\\ b=71.1,\\ c=53.0$."
+        },
+        "number": 3,
+        "sourceImage": "assets/6-test-a-3-source.png"
+      },
+      {
+        "prompt": "解三角形 $ABC$：$a=30\\ \\mathrm{ft},\\ b=20\\ \\mathrm{ft},\\ c=25\\ \\mathrm{ft}$，必要时四舍五入到十分位。",
+        "concept": "triangles",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$\\cos A=(20.0^2+25.0^2-30.0^2)/(2\\cdot20.0\\cdot25.0)=0.125000$，$A=82.81924^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\cos B=(30.0^2+25.0^2-20.0^2)/(2\\cdot30.0\\cdot25.0)=0.750000$，$B=41.40962^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$C=180^\\circ-A-B=55.77113^\\circ$。"
+          }
+        ],
+        "answer": "$A=82.8^\\circ,\\ B=41.4^\\circ,\\ C=55.8^\\circ,\\ a=30.0\\ \\mathrm{ft},\\ b=20.0\\ \\mathrm{ft},\\ c=25.0\\ \\mathrm{ft}$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "Solve triangle $ABC$: $a=30\\ \\mathrm{ft},\\ b=20\\ \\mathrm{ft},\\ c=25\\ \\mathrm{ft}$. Round to the nearest tenth if necessary.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos A=(20.0^2+25.0^2-30.0^2)/(2\\cdot20.0\\cdot25.0)=0.125000$, $A=82.81924^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos B=(30.0^2+25.0^2-20.0^2)/(2\\cdot30.0\\cdot25.0)=0.750000$, $B=41.40962^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$C=180^\\circ-A-B=55.77113^\\circ$."
+            }
+          ],
+          "answer": "$A=82.8^\\circ,\\ B=41.4^\\circ,\\ C=55.8^\\circ,\\ a=30.0\\ \\mathrm{ft},\\ b=20.0\\ \\mathrm{ft},\\ c=25.0\\ \\mathrm{ft}$."
+        },
+        "number": 4
+      },
+      {
+        "prompt": "解直角三角形 $ABC$，其中 $C=90^\\circ,a=5.6,b=4.1$，取十分位。",
+        "concept": "triangles",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$c=\\sqrt{5.6^2+4.1^2}=\\sqrt{48.17}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\cos A=(4.1^2+6.940461079784253^2-5.6^2)/(2\\cdot4.1\\cdot6.940461079784253)=0.590739$，$A=53.79054^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$\\cos B=(5.6^2+6.940461079784253^2-4.1^2)/(2\\cdot5.6\\cdot6.940461079784253)=0.806863$，$B=36.20946^\\circ$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$C=180^\\circ-A-B=90.00000^\\circ$。"
+          }
+        ],
+        "answer": "$A=53.8^\\circ,\\ B=36.2^\\circ,\\ C=90.0^\\circ,\\ a=5.6,\\ b=4.1,\\ c=6.9$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "Solve right triangle $ABC$, where $C=90^\\circ,a=5.6,b=4.1$, to the nearest tenth.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$c=\\sqrt{5.6^2+4.1^2}=\\sqrt{48.17}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos A=(4.1^2+6.940461079784253^2-5.6^2)/(2\\cdot4.1\\cdot6.940461079784253)=0.590739$, $A=53.79054^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$\\cos B=(5.6^2+6.940461079784253^2-4.1^2)/(2\\cdot5.6\\cdot6.940461079784253)=0.806863$, $B=36.20946^\\circ$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$C=180^\\circ-A-B=90.00000^\\circ$."
+            }
+          ],
+          "answer": "$A=53.8^\\circ,\\ B=36.2^\\circ,\\ C=90.0^\\circ,\\ a=5.6,\\ b=4.1,\\ c=6.9$."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "半径8英尺的圆有长4.5英尺的弦。求该弦所对的（较小）圆心角，取十分之一度。",
+        "concept": "triangles",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$\\sin(\\theta/2)=(4.5/2)/8=4.5/16,\\quad\\theta=2\\arcsin(4.5/16)$。"
+          }
+        ],
+        "answer": "$\\theta\\approx32.7^\\circ$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "A circle of radius 8 ft has a chord 4.5 ft long. Find its minor central angle, to the nearest tenth of a degree.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $\\sin(\\theta/2)=(4.5/2)/8=4.5/16,\\quad\\theta=2\\arcsin(4.5/16)$."
+            }
+          ],
+          "answer": "$\\theta\\approx32.7^\\circ$."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "测量员从起点沿N70.0°E走580英尺，再沿N35.0°W走725英尺。终点离起点多远？取最接近的英尺。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$x=580\\sin70^\\circ-725\\sin35^\\circ,\\quad y=580\\cos70^\\circ+725\\cos35^\\circ,\\quad d=\\sqrt{(129.178804)^2+(792.256915)^2}=802.719243$。"
+          }
+        ],
+        "answer": "$d\\approx803\\ \\mathrm{ft}$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "A surveyor walks 580 ft N70.0°E and then 725 ft N35.0°W. How far is the endpoint from the starting point? Round to the nearest foot.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $x=580\\sin70^\\circ-725\\sin35^\\circ,\\quad y=580\\cos70^\\circ+725\\cos35^\\circ,\\quad d=\\sqrt{(129.178804)^2+(792.256915)^2}=802.719243$."
+            }
+          ],
+          "answer": "$d\\approx803\\ \\mathrm{ft}$."
+        },
+        "number": 7
+      },
+      {
+        "prompt": "求从 $P(3,5)$ 到 $Q(2,-7)$ 的向量的等价位置向量。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$v=\\langle2-3,-7-5\\rangle$。"
+          }
+        ],
+        "answer": "$v=\\langle-1,-12\\rangle$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "Find the equivalent position vector for the vector from $P(3,5)$ to $Q(2,-7)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $v=\\langle2-3,-7-5\\rangle$."
+            }
+          ],
+          "answer": "$v=\\langle-1,-12\\rangle$."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "设 $v=\\langle-2,3\\rangle,w=\\langle1,5\\rangle$，求 $v-w$。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$v-w=\\langle-2-1,3-5\\rangle$。"
+          }
+        ],
+        "answer": "$\\langle-3,-2\\rangle$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "For $v=\\langle-2,3\\rangle,w=\\langle1,5\\rangle$, find $v-w$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $v-w=\\langle-2-1,3-5\\rangle$."
+            }
+          ],
+          "answer": "$\\langle-3,-2\\rangle$."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "设 $v=-2i+3j,w=i+5j$，求 $2v-3w$。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$2v-3w=(-4i+6j)-(3i+15j)$。"
+          }
+        ],
+        "answer": "$-7i-9j$。",
+        "pdfPage": 658,
+        "printedPage": 634,
+        "en": {
+          "prompt": "For $v=-2i+3j,w=i+5j$, find $2v-3w$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $2v-3w=(-4i+6j)-(3i+15j)$."
+            }
+          ],
+          "answer": "$-7i-9j$."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "向量 $v$ 长度为3，与x正半轴成 $-30^\\circ$，写成 $v_1i+v_2j$。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$v=3\\cos(-30^\\circ)i+3\\sin(-30^\\circ)j$。"
+          }
+        ],
+        "answer": "$v=\\frac{3\\sqrt3}{2}i-\\frac32j$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "A vector v has magnitude 3 and direction $-30^\\circ$ from the positive x-axis. Write it as $v_1i+v_2j$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $v=3\\cos(-30^\\circ)i+3\\sin(-30^\\circ)j$."
+            }
+          ],
+          "answer": "$v=\\frac{3\\sqrt3}{2}i-\\frac32j$."
+        },
+        "number": 11
+      },
+      {
+        "prompt": "求 $v=4i+3j,w=-i+7j$ 的点积。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$v\\cdot w=4(-1)+3(7)$。"
+          }
+        ],
+        "answer": "$v\\cdot w=17$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Find the dot product for $v=4i+3j,w=-i+7j$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $v\\cdot w=4(-1)+3(7)$."
+            }
+          ],
+          "answer": "$v\\cdot w=17$."
+        },
+        "number": 12
+      },
+      {
+        "prompt": "求$\\mathbf v=3\\mathbf i-4\\mathbf j,\\mathbf w=-2\\mathbf i+5\\mathbf j$的夹角$0\\le\\theta\\le180^\\circ$，四舍五入到0.1°。",
+        "concept": "vectors",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$v\\cdot w=-26,\\quad\\|v\\|=5,\\quad\\|w\\|=\\sqrt{29},\\quad\\theta=\\arccos\\left(- \\frac{26 \\sqrt{29}}{145}\\right)\\approx 164.9^\\circ$。用 $[0,180^\\circ]$ 内的反余弦值。"
+          }
+        ],
+        "answer": "$\\theta\\approx 164.9^\\circ$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Find the angle $0\\le\\theta\\le180^\\circ$ between $\\mathbf v=3\\mathbf i-4\\mathbf j$ and $\\mathbf w=-2\\mathbf i+5\\mathbf j$, to the nearest tenth of a degree.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$v\\cdot w=-26,\\quad\\|v\\|=5,\\quad\\|w\\|=\\sqrt{29},\\quad\\theta=\\arccos\\left(- \\frac{26 \\sqrt{29}}{145}\\right)\\approx 164.9^\\circ$. Use the inverse-cosine value in $[0,180^\\circ]$."
+            }
+          ],
+          "answer": "$\\theta\\approx 164.9^\\circ$."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "把极坐标 $(-2,-45^\\circ)$ 转为直角坐标。",
+        "concept": "polar",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$x=-2\\cos(-45^\\circ)=-\\sqrt2,\\quad y=-2\\sin(-45^\\circ)=\\sqrt2$。"
+          }
+        ],
+        "answer": "$(x,y)=(-\\sqrt2,\\sqrt2)$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Convert $(-2,-45^\\circ)$ to rectangular coordinates.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $x=-2\\cos(-45^\\circ)=-\\sqrt2,\\quad y=-2\\sin(-45^\\circ)=\\sqrt2$."
+            }
+          ],
+          "answer": "$(x,y)=(-\\sqrt2,\\sqrt2)$."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "把 $(-\\sqrt3,-1)$ 转为极坐标，$r>0,0\\le\\theta<2\\pi$。",
+        "concept": "polar",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$r=\\sqrt{3+1}=2,\\quad\\cos\\theta=-\\sqrt3/2,\\quad\\sin\\theta=-1/2$。"
+          }
+        ],
+        "answer": "$(r,\\theta)=(2,7\\pi/6)$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Convert $(-\\sqrt3,-1)$ to polar coordinates, with $r>0,0\\le\\theta<2\\pi$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $r=\\sqrt{3+1}=2,\\quad\\cos\\theta=-\\sqrt3/2,\\quad\\sin\\theta=-1/2$."
+            }
+          ],
+          "answer": "$(r,\\theta)=(2,7\\pi/6)$."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "把 $r=-3$ 转为直角坐标方程并识别曲线。",
+        "concept": "polar",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$r^2=9=x^2+y^2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "以原点为圆心、半径3的圆。负半径使点沿角度的反方向，仍遍历整圆。"
+          }
+        ],
+        "answer": "$x^2+y^2=9$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Convert $r=-3$ to rectangular form and identify the curve.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $r^2=9=x^2+y^2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "A circle centered at the origin with radius 3. Negative radii reverse each angular direction and still traverse the whole circle."
+            }
+          ],
+          "answer": "$x^2+y^2=9$."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "把 $3(\\cos(2\\pi/3)+i\\sin(2\\pi/3))$ 写成直角形式。",
+        "concept": "complex",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$3(-1/2+i\\sqrt3/2)$。"
+          }
+        ],
+        "answer": "$-3/2+(3\\sqrt3/2)i$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Write $3(\\cos(2\\pi/3)+i\\sin(2\\pi/3))$ in rectangular form.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $3(-1/2+i\\sqrt3/2)$."
+            }
+          ],
+          "answer": "$-3/2+(3\\sqrt3/2)i$."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "设 $z_1=1-\\sqrt3i,z_2=-1+i$，求 $z_1/z_2$ 的极形式，辐角用度。",
+        "concept": "complex",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$|z_1|=2,\\arg z_1=300^\\circ,\\quad|z_2|=\\sqrt2,\\arg z_2=135^\\circ,\\quad300^\\circ-135^\\circ=165^\\circ$。"
+          }
+        ],
+        "answer": "$\\sqrt2\\left(\\cos(165^\\circ)+i\\sin(165^\\circ)\\right)$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "For $z_1=1-\\sqrt3i,z_2=-1+i$, find $z_1/z_2$ in polar form with its argument in degrees.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $|z_1|=2,\\arg z_1=300^\\circ,\\quad|z_2|=\\sqrt2,\\arg z_2=135^\\circ,\\quad300^\\circ-135^\\circ=165^\\circ$."
+            }
+          ],
+          "answer": "$\\sqrt2\\left(\\cos(165^\\circ)+i\\sin(165^\\circ)\\right)$."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "用 DeMoivre 定理求 $[\\sqrt5(\\cos(\\pi/4)+i\\sin(\\pi/4))]^{-6}$，写成直角形式。",
+        "concept": "complex",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$(\\sqrt5)^{-6}=1/125,\\quad -6(\\pi/4)=-3\\pi/2,\\quad\\cos(-3\\pi/2)=0,\\ \\sin(-3\\pi/2)=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "底数模为√5，不为零，所以负整数次幂有定义。"
+          }
+        ],
+        "answer": "$i/125$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Use DeMoivre’s Theorem to evaluate $[\\sqrt5(\\cos(\\pi/4)+i\\sin(\\pi/4))]^{-6}$ in rectangular form.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $(\\sqrt5)^{-6}=1/125,\\quad -6(\\pi/4)=-3\\pi/2,\\quad\\cos(-3\\pi/2)=0,\\ \\sin(-3\\pi/2)=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The base has nonzero modulus √5, so its negative integer power exists."
+            }
+          ],
+          "answer": "$i/125$."
+        },
+        "number": 19
+      },
+      {
+        "prompt": "求 $1+i$ 的全部 4 次复根，用辐角为度的极形式表示。",
+        "concept": "complex",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "代入并计算：$z=\\sqrt{2}\\left(\\cos(45^\\circ)+i\\sin(45^\\circ)\\right),\\quad |w|=\\sqrt[8]{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "把辐角 $45^\\circ+360^\\circ k$ 除以 4，得到互异辐角 $\\frac{45}{4}^\\circ, \\frac{405}{4}^\\circ, \\frac{765}{4}^\\circ, \\frac{1125}{4}^\\circ$。共 4 个；各根的 4 次方均还原原数。"
+          }
+        ],
+        "answer": "$\\sqrt[8]{2}\\left[\\cos\\left((\\frac{45}{4}+90k)^\\circ\\right)+i\\sin\\left((\\frac{45}{4}+90k)^\\circ\\right)\\right],\\quad k=0,\\ldots,3$。",
+        "pdfPage": 659,
+        "printedPage": 635,
+        "en": {
+          "prompt": "Find all 4th roots of $1+i$ in polar form, with arguments in degrees.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Substitute and calculate: $z=\\sqrt{2}\\left(\\cos(45^\\circ)+i\\sin(45^\\circ)\\right),\\quad |w|=\\sqrt[8]{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Divide the arguments $45^\\circ+360^\\circ k$ by 4, obtaining the distinct arguments $\\frac{45}{4}^\\circ, \\frac{405}{4}^\\circ, \\frac{765}{4}^\\circ, \\frac{1125}{4}^\\circ$. There are 4 roots, and raising each to the 4th power recovers the original number."
+            }
+          ],
+          "answer": "$\\sqrt[8]{2}\\left[\\cos\\left((\\frac{45}{4}+90k)^\\circ\\right)+i\\sin\\left((\\frac{45}{4}+90k)^\\circ\\right)\\right],\\quad k=0,\\ldots,3$."
+        },
+        "number": 20
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedGettingReady": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true
+  }
+}

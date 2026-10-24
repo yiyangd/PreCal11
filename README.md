@@ -114,3 +114,9 @@ Exercise 137: the original GeoGebra applet and exact formula were not verified d
 Sections 5.1–5.6, Key Ideas and Questions, 9 worked review examples, all 71 Review Exercises, 20 Practice Test A problems, and 20 Cumulative Review problems (Chapters 1–5) are included: 978 parent problems (62 examples, 53 practice problems, 797 exercises/key questions, and 66 Getting Ready). Every explicitly labeled subpart is retained. / 第5章包含六节、知识问答、9道复习例题、71道复习题、20道测试A及20道累积复习，共978道大题，保留全部显式小问。
 
 [Chapter 5 entry](sections/5-1/) · [第5章中文入口](sections/5-1/?lang=zh) · [Coverage and source corrections / 覆盖与来源修订](chapters/5/audit.html) · [Practice Test B source unavailable / 测试B缺源说明](chapters/5/test-b-unavailable.html). Test B original questions are eText-only and were not reconstructed from manual answers. / 测试B原题仅在eText中，未以手册答案反推。
+
+## Chapter 6 / 第6章
+
+Sections 6.1–6.7, all chapter-end questions and review examples: 1154 parent problems. Every explicit subpart is retained. / 第6章七节及全部章末题，共1154道大题，保留显式小问。
+
+[Study Chapter 6](sections/6-1/) · [第6章中文入口](sections/6-1/?lang=zh) · [Coverage and source limitations / 覆盖与缺源说明](chapters/6/audit.html). Test B originals are absent from the supplied PDF; external activities are explicitly qualified wherever the source cannot be verified.
