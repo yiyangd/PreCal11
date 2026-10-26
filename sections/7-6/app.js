@@ -508,7 +508,8 @@
     const solution=$('.solution',target);if(solution)solution.open=true;
     try{history.pushState(null,'',`#exercise-${slug(number)}`);}catch(_){}
     target.setAttribute('tabindex','-1');target.focus({preventScroll:true});
-    drawGraphs(target);target.scrollIntoView({behavior:'smooth',block:'start'});target.classList.remove('highlight-target');requestAnimationFrame(()=>target.classList.add('highlight-target'));
+    const scrollBehavior=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth';
+    drawGraphs(target);target.scrollIntoView({behavior:scrollBehavior,block:'start'});target.classList.remove('highlight-target');requestAnimationFrame(()=>target.classList.add('highlight-target'));
   }
   let printState;
   function preparePrinting() {
@@ -546,6 +547,11 @@
     document.addEventListener('click', event => {
       const link = event.target.closest('[data-topic-return]');
       if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const destination=document.getElementById(link.hash.slice(1));
+      if(!destination?.matches('.topic'))return;
+      event.preventDefault();
+      if(location.hash!==link.hash)try{history.pushState(null,'',link.hash);}catch(_){location.hash=link.hash;}
+      focusTopicFromHash(true);
       requestAnimationFrame(() => focusTopicFromHash(true));
     });
     window.addEventListener('hashchange',()=>focusTopicFromHash(true));
