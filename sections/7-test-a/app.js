@@ -176,7 +176,9 @@
   // It parses only a fixed set of commands; source text is always escaped.
   function math(source) {
     let input = String(source ?? '').trim().replace(/^\$+|\$+$/g, '').replace(/^\\\(|\\\)$/g, '').replace(/^\\\[|\\\]$/g, '');
-    input = input.replace(/\\(?:begin|end)\{(?:aligned|align\*?|gathered|gather\*?|equation\*?)\}/g, '');
+    input = input.replace(/\\left\\\{\s*\\begin\{aligned\}([\s\S]*?)\\end\{aligned\}\s*\\right\./g,
+      (_, rows) => '\\begin{cases}' + rows + '\\end{cases}');
+    input = input.replace(/\\(?:begin|end)\{equation\*?\}/g, '');
     let cursor = 0;
     const commands = {sigma:'σ',Sigma:'Σ',omega:'ω',varphi:'φ',phi:'φ',arg:'arg',Re:'Re',Im:'Im',gtrless:'≷',lessgtr:'≶',gt:'>',lt:'<',supset:'⊃',subset:'⊂',supseteq:'⊇',subseteq:'⊆',infty:'∞',infinity:'∞',cdot:'·',times:'×',div:'÷',pm:'±',mp:'∓',le:'≤',leq:'≤',ge:'≥',geq:'≥',ne:'≠',neq:'≠',equiv:'≡',neg:'¬',approx:'≈',sim:'∼',to:'→',rightarrow:'→',leftarrow:'←',gets:'←',Rightarrow:'⇒',Longrightarrow:'⇒',implies:'⇒',Leftrightarrow:'⇔',leftrightarrow:'↔',therefore:'∴',because:'∵',in:'∈',notin:'∉',cup:'∪',cap:'∩',setminus:'∖',emptyset:'∅',varnothing:'∅',mathbb:'',pi:'π',theta:'θ',alpha:'α',beta:'β',gamma:'γ',Delta:'Δ',delta:'δ',Omega:'Ω',epsilon:'ε',varepsilon:'ε',ell:'ℓ',degree:'°',deg:'deg',prod:'∏',ldots:'…',cdots:'⋯',dots:'…',vert:'|',lvert:'|',rvert:'|',quad:' ',qquad:' ',sin:'sin',cos:'cos',tan:'tan',lim:'lim',log:'log',ln:'ln',max:'max',min:'min'};
     function group() {
@@ -192,6 +194,14 @@
       while (cursor < input.length && depth) { const c = input[cursor++]; if (c === '{') depth++; if (c === '}') depth--; if (depth) result += c; }
       return result;
     }
+    function delimiter(symbol) {
+      if (!symbol) return '';
+      const paths = {'{':'M10 0 C4 0 4 10 4 25 C4 40 4 47 0 50 C4 53 4 60 4 75 C4 90 4 100 10 100',
+        '}':'M0 0 C6 0 6 10 6 25 C6 40 6 47 10 50 C6 53 6 60 6 75 C6 90 6 100 0 100',
+        '[':'M9 1 H1 V99 H9',']':'M1 1 H9 V99 H1','(':'M9 1 C0 18 0 82 9 99',')':'M1 1 C10 18 10 82 1 99',
+        '|':'M5 1 V99','‖':'M2 1 V99 M8 1 V99'};
+      return '<span class="math-delimiter"><span class="sr-only">' + escape(symbol) + '</span><svg aria-hidden="true" focusable="false" viewBox="0 0 10 100" preserveAspectRatio="none"><path d="' + paths[symbol] + '" fill="none" stroke="currentColor" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg></span>';
+    }
     function command() {
       cursor++;
       if (input[cursor] === '\\') { cursor++; return '<br>'; }
@@ -203,7 +213,7 @@
       if (name === 'prime') return '′';
       if (name === 'begin') {
         const kind = rawGroup();
-        const delimiters = {cases:['{',''],pmatrix:['(',')'],bmatrix:['[',']'],vmatrix:['|','|'],Vmatrix:['‖','‖'],matrix:['',''],array:['','']}[kind];
+        const delimiters = {cases:['{',''],pmatrix:['(',')'],bmatrix:['[',']'],vmatrix:['|','|'],Vmatrix:['‖','‖'],matrix:['',''],array:['',''],aligned:['',''],align:['',''],'align*':['',''],gathered:['',''],gather:['',''],'gather*':['','']}[kind];
         if (delimiters) {
           if (kind === 'array' && input[cursor] === '{') rawGroup();
           const start = cursor, marker = '\\end{' + kind + '}', finish = input.indexOf(marker, start);
@@ -212,7 +222,7 @@
             cursor = finish + marker.length;
             const rows = body.split(/\\\\(?:\[[^\]]*\])?/).filter(row => row.trim());
             const table = '<span class="math-table">' + rows.map(row => '<span class="math-row">' + row.split(/(?<!\\)&/).map(cell => '<span>' + math(cell) + '</span>').join('') + '</span>').join('') + '</span>';
-            return '<span class="math-environment"><span class="math-delimiter">' + escape(delimiters[0]) + '</span>' + table + '<span class="math-delimiter">' + escape(delimiters[1]) + '</span></span>';
+            return '<span class="math-environment">' + delimiter(delimiters[0]) + table + delimiter(delimiters[1]) + '</span>';
           }
         }
         unsupportedCommands.add('begin{' + kind + '}');
@@ -492,7 +502,8 @@
   }
 
   function jumpToExercise(number) {
-    $('#exercise-topic').value='all';$('#exercise-search').value='';filterExercises();
+    const shownTarget=document.getElementById('exercise-'+slug(number));
+    if(shownTarget?.hidden){$('#exercise-topic').value='all';$('#exercise-search').value='';filterExercises();}
     const target=document.getElementById(`exercise-${slug(number)}`);if(!target)return;
     const solution=$('.solution',target);if(solution)solution.open=true;
     try{history.pushState(null,'',`#exercise-${slug(number)}`);}catch(_){}
@@ -515,7 +526,7 @@
     if (!location.hash.startsWith('#topic-')) return;
     const topic = document.getElementById(location.hash.slice(1));
     if (!topic || !topic.matches('.topic')) return;
-    if (scroll) topic.scrollIntoView({behavior:'auto', block:'start'});
+    if (scroll) topic.scrollIntoView({behavior:'instant', block:'start'});
     const heading = $('h2', topic);
     if (heading) heading.focus({preventScroll:true});
   }

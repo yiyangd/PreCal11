@@ -62,3 +62,8 @@ html[lang="en"] .hero h1{font-size:39px;letter-spacing:-.035em}html[lang="en"] .
 
 /* Honor semantic hidden states even on navigation elements with an explicit display rule. */
 [hidden]{display:none!important}
+
+/* Delimiters cover every row without changing the mathematical text. */
+.math-delimiter{font-size:1em;display:inline-block;position:relative;align-self:stretch;flex:0 0 .45em;min-width:.45em;min-height:1.2em}
+.math-delimiter>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.highlight-target{animation:none}}
