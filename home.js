@@ -60,11 +60,13 @@
   translations.zh.jump4 = '第 4 章';
   translations.zh.jump5 = '第 5 章';
   translations.zh.jump6 = '第 6 章';
+  translations.zh.jump7 = '第 7 章';
   translations.en.jump2 = 'Chapter 2';
   translations.en.jump3 = 'Chapter 3';
   translations.en.jump4 = 'Chapter 4';
   translations.en.jump5 = 'Chapter 5';
   translations.en.jump6 = 'Chapter 6';
+  translations.en.jump7 = 'Chapter 7';
 
   const catalog = JSON.parse(document.getElementById('chapter-catalog')?.textContent || '{"chapters":[]}');
   const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));

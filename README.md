@@ -120,3 +120,9 @@ Sections 5.1–5.6, Key Ideas and Questions, 9 worked review examples, all 71 Re
 Sections 6.1–6.7, all chapter-end questions and review examples: 1154 parent problems. Every explicit subpart is retained. / 第6章七节及全部章末题，共1154道大题，保留显式小问。
 
 [Study Chapter 6](sections/6-1/) · [第6章中文入口](sections/6-1/?lang=zh) · [Coverage and source limitations / 覆盖与缺源说明](chapters/6/audit.html). Test B originals are absent from the supplied PDF; external activities are explicitly qualified wherever the source cannot be verified.
+
+## Chapter 7 / 第7章
+
+Sections 7.1–7.8 and four chapter-end pages: 1202 parent problems, 1414 items counting explicit subparts. / 第7章八节及四个章末页面，共1202道大题、1414个显式小问项。
+
+[Study Chapter 7](sections/7-1/) · [第7章中文入口](sections/7-1/?lang=zh) · [Coverage and source notes / 覆盖与来源说明](chapters/7/audit.html). Test B originals are absent from the supplied PDF; three external interactive activities return 404. Incomplete original notation and conditional readings are explicitly disclosed. Existing lessons and progress identities are preserved.

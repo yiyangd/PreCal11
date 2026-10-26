@@ -635,6 +635,195 @@
           }
         }
       ]
+    },
+    {
+      "number": 7,
+      "title": "方程组与不等式组",
+      "en": {
+        "title": "Systems of Equations and Inequalities"
+      },
+      "sections": [
+        {
+          "slug": "7-1",
+          "section": "7.1",
+          "title": "二元方程组",
+          "en": {
+            "title": "Systems of Equations in Two Variables"
+          },
+          "counts": {
+            "concepts": 8,
+            "examples": 11,
+            "practice": 11,
+            "exercises": 144,
+            "gettingReady": 13
+          }
+        },
+        {
+          "slug": "7-2",
+          "section": "7.2",
+          "title": "三元一次方程组",
+          "en": {
+            "title": "Systems of Linear Equations in Three Variables"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 6,
+            "practice": 6,
+            "exercises": 78,
+            "gettingReady": 6
+          }
+        },
+        {
+          "slug": "7-3",
+          "section": "7.3",
+          "title": "不等式组",
+          "en": {
+            "title": "Systems of Inequalities"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 10,
+            "practice": 10,
+            "exercises": 128,
+            "gettingReady": 16
+          }
+        },
+        {
+          "slug": "7-4",
+          "section": "7.4",
+          "title": "矩阵与方程组",
+          "en": {
+            "title": "Matrices and Systems of Equations"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 10,
+            "practice": 10,
+            "exercises": 112,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "7-5",
+          "section": "7.5",
+          "title": "行列式与克拉默法则",
+          "en": {
+            "title": "Determinants and Cramer’s Rule"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 6,
+            "practice": 6,
+            "exercises": 100,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "7-6",
+          "section": "7.6",
+          "title": "部分分式分解",
+          "en": {
+            "title": "Partial-Fraction Decomposition"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 8,
+            "practice": 8,
+            "exercises": 88,
+            "gettingReady": 12
+          }
+        },
+        {
+          "slug": "7-7",
+          "section": "7.7",
+          "title": "矩阵代数",
+          "en": {
+            "title": "Matrix Algebra"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 10,
+            "practice": 10,
+            "exercises": 87,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "7-8",
+          "section": "7.8",
+          "title": "逆矩阵",
+          "en": {
+            "title": "The Matrix Inverse"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 8,
+            "practice": 8,
+            "exercises": 85,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "7-key-ideas",
+          "section": "7",
+          "title": "知识要点与综合问答",
+          "en": {
+            "title": "Key Ideas At a Glance and Questions"
+          },
+          "counts": {
+            "concepts": 3,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 10,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "7-review",
+          "section": "7",
+          "title": "第7章综合复习",
+          "en": {
+            "title": "Chapter 7 Review and Review Exercises"
+          },
+          "counts": {
+            "concepts": 8,
+            "examples": 19,
+            "practice": 0,
+            "exercises": 94,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "7-test-a",
+          "section": "7",
+          "title": "第7章测试A",
+          "en": {
+            "title": "Chapter 7 Practice Test A"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "7-cumulative",
+          "section": "7",
+          "title": "第1–7章累积复习",
+          "en": {
+            "title": "Cumulative Review Exercises: Chapters 1–7"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        }
+      ]
     }
   ]
 }
