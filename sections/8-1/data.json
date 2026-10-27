@@ -11,7 +11,8 @@
     "section": "8.1",
     "title": "圆锥曲线概览",
     "en": {
-      "title": "Conic Sections: Overview"
+      "title": "Conic Sections: Overview",
+      "description": "Study the original conic-section overview and diagrams. This source section has no numbered examples, practice problems or exercises."
     },
     "source": {
       "title": "Precalculus: A Unit Circle Approach, 4th edition",
@@ -125,7 +126,8 @@
       }
     ],
     "questions": [],
-    "gettingReady": []
+    "gettingReady": [],
+    "description": "本节是原书的圆锥曲线概览，包含原图与知识点，没有编号例题、配套练习或节后习题。"
   },
   "textbook": {
     "exercises": []
