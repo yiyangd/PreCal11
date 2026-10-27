@@ -1,0 +1,3188 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch8-local",
+    "title": "第8章：解析几何",
+    "en": {
+      "title": "Chapter 8: Analytic Geometry"
+    }
+  },
+  "lesson": {
+    "id": "8-6",
+    "section": "8.6",
+    "title": "圆锥曲线的极坐标方程",
+    "en": {
+      "title": "Polar Equations of Conics"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        846,
+        855
+      ],
+      "printedPages": [
+        822,
+        831
+      ]
+    },
+    "concepts": [
+      {
+        "id": "eccentricity",
+        "title": "焦点—准线与离心率",
+        "summary": "距离比 $PF/PL=e>0$ 统一定义圆锥曲线。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先将分母常数化为 1；$0<e<1$ 为椭圆，$e=1$ 为抛物线，$e>1$ 为双曲线。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Focus, directrix, and eccentricity",
+          "summary": "The distance ratio $PF/PL=e>0$ defines a conic.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Normalize the denominator constant to 1. Classify by $0<e<1$, $e=1$, or $e>1$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "polar-form",
+        "title": "极坐标标准式与准线",
+        "summary": "$r=ep/(1\\pm e\\cos\\theta)$ 对应竖直准线；正弦对应水平准线。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "准线在正轴方向用加号，在负轴方向用减号，$p$ 是正距离。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Polar forms and directrices",
+          "summary": "$r=ep/(1\\pm e\\cos\\theta)$ has a vertical directrix; a sine form has a horizontal directrix.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "A directrix in the positive-axis direction uses a plus sign; one in the negative direction uses a minus sign. The distance $p$ is positive."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "polar-graph",
+        "title": "完整圆锥曲线的描绘",
+        "summary": "求顶点、中心、轴和准线，保留负半径描出的分支。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "将主轴角代入；用 $x=r\\cos\\theta,y=r\\sin\\theta$ 检查直角坐标式。"
+          }
+        ],
+        "pitfalls": [
+          "不能把双曲线只画成一支；分母为零的角须排除。"
+        ],
+        "en": {
+          "title": "Graph the complete conic",
+          "summary": "Find vertices, center, axis, and directrix, retaining branches traced by negative radii.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Substitute axis angles; verify with $x=r\\cos\\theta,y=r\\sin\\theta$."
+            }
+          ],
+          "pitfalls": [
+            "Do not omit a hyperbola branch; denominator-zero angles are excluded."
+          ]
+        }
+      },
+      {
+        "id": "vertices-model",
+        "title": "由顶点构造极方程",
+        "summary": "使用顶点的实际直角坐标，负半径须先换向。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "设 $r=L/(1+q\\cos\\theta)$ 或正弦形式，代入顶点求系数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Construct a polar equation from vertices",
+          "summary": "Use actual Cartesian vertex positions, reversing direction for negative radii.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Set $r=L/(1+q\\cos\\theta)$ or its sine analogue and solve using the vertices."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "orbits",
+        "title": "轨道距离模型",
+        "summary": "近日点、远日点满足 $d_{min}=a(1-e)$、$d_{max}=a(1+e)$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "求 $e=(d_{max}-d_{min})/(d_{max}+d_{min})$、$L=2d_{max}d_{min}/(d_{max}+d_{min})$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Orbital distance models",
+          "summary": "Perihelion and aphelion satisfy $d_{min}=a(1-e)$ and $d_{max}=a(1+e)$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Compute $e=(d_{max}-d_{min})/(d_{max}+d_{min})$ and $L=2d_{max}d_{min}/(d_{max}+d_{min})$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "identities-proofs",
+        "title": "半角、焦弦与旋转证明",
+        "summary": "以坐标代换、三角恒等式和实际线段长度完成证明。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "区分有符号半径与正距离；旋转用旧角 $\\theta-\\alpha$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Half-angle, focal-chord, and rotation proofs",
+          "summary": "Use coordinate substitutions, trigonometric identities, and actual segment lengths.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Distinguish signed radii from positive distances; rotation uses the old angle $\\theta-\\alpha$."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{6}{2+\\cos\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $2$，得 $r=\\frac{3}{1+\\frac{1}{2}\\cos\\theta}$。比较标准式，$e=\\frac{1}{2}$，$ep=3$，所以 $p=6$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $x=6$，焦点在原点，对称轴是 $x$ 轴。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{1}{2}$；准线 $x=6$；顶点 $(2,0)$, $(-6,0)$。",
+        "pdfPage": 849,
+        "printedPage": 825,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{6}{2+\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $2$: $r=\\frac{3}{1+\\frac{1}{2}\\cos\\theta}$. Thus $e=\\frac{1}{2}$, $ep=3$, and $p=6$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $x=6$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{1}{2}$; directrix $x=6$; vertices $(2,0)$, $(-6,0)$.",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1"
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{3}{3+3\\sin\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{1}{1+\\sin\\theta}$。比较标准式，$e=1$，$ep=1$，所以 $p=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $y=1$，焦点在原点，对称轴是 $y$ 轴。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $y=1$；顶点 $(0,\\frac{1}{2})$。",
+        "pdfPage": 849,
+        "printedPage": 825,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{3}{3+3\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{1}{1+\\sin\\theta}$. Thus $e=1$, $ep=1$, and $p=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $y=1$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $y=1$; vertices $(0,\\frac{1}{2})$.",
+          "label": "Practice Problem 1"
+        },
+        "id": "practice-1",
+        "type": "practice",
+        "label": "配套练习 1"
+      },
+      {
+        "prompt": "求焦点在极点的圆锥曲线的方程并识别：(a) $e=\\frac{4}{5}$，准线 $x=3$；(b) $e=1$，准线 $y=-2$。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) 极点到准线距离为 $3$，故 $ep=\\frac{12}{5}$。按准线方向取符号，得 $r=\\frac{\\frac{12}{5}}{1+\\frac{4}{5}\\cos\\theta}$，为椭圆。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 极点到准线距离为 $2$，故 $ep=2$。按准线方向取符号，得 $r=\\frac{2}{1-\\sin\\theta}$，为抛物线。"
+          }
+        ],
+        "answer": "(a) $r=\\frac{\\frac{12}{5}}{1+\\frac{4}{5}\\cos\\theta}$，椭圆；(b) $r=\\frac{2}{1-\\sin\\theta}$，抛物线",
+        "pdfPage": 849,
+        "printedPage": 825,
+        "en": {
+          "prompt": "Write a polar equation and identify each conic with focus at the pole: (a) $e=\\frac{4}{5}$, directrix $x=3$; (b) $e=1$, directrix $y=-2$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) The directrix distance is $3$, so $ep=\\frac{12}{5}$. Choose the sign from the directrix: $r=\\frac{\\frac{12}{5}}{1+\\frac{4}{5}\\cos\\theta}$, a ellipse."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) The directrix distance is $2$, so $ep=2$. Choose the sign from the directrix: $r=\\frac{2}{1-\\sin\\theta}$, a parabola."
+            }
+          ],
+          "answer": "(a) $r=\\frac{\\frac{12}{5}}{1+\\frac{4}{5}\\cos\\theta}$, ellipse; (b) $r=\\frac{2}{1-\\sin\\theta}$, parabola",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "求焦点在极点的圆锥曲线的方程并识别：(a) $e=\\frac{3}{4}$，准线 $y=-3$；(b) $e=\\frac{3}{2}$，准线 $y=-4$。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) 极点到准线距离为 $3$，故 $ep=\\frac{9}{4}$。按准线方向取符号，得 $r=\\frac{\\frac{9}{4}}{1-\\frac{3}{4}\\sin\\theta}$，为椭圆。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 极点到准线距离为 $4$，故 $ep=6$。按准线方向取符号，得 $r=\\frac{6}{1-\\frac{3}{2}\\sin\\theta}$，为双曲线。"
+          }
+        ],
+        "answer": "(a) $r=\\frac{\\frac{9}{4}}{1-\\frac{3}{4}\\sin\\theta}$，椭圆；(b) $r=\\frac{6}{1-\\frac{3}{2}\\sin\\theta}$，双曲线",
+        "pdfPage": 849,
+        "printedPage": 825,
+        "en": {
+          "prompt": "Write a polar equation and identify each conic with focus at the pole: (a) $e=\\frac{3}{4}$, directrix $y=-3$; (b) $e=\\frac{3}{2}$, directrix $y=-4$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) The directrix distance is $3$, so $ep=\\frac{9}{4}$. Choose the sign from the directrix: $r=\\frac{\\frac{9}{4}}{1-\\frac{3}{4}\\sin\\theta}$, a ellipse."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) The directrix distance is $4$, so $ep=6$. Choose the sign from the directrix: $r=\\frac{6}{1-\\frac{3}{2}\\sin\\theta}$, a hyperbola."
+            }
+          ],
+          "answer": "(a) $r=\\frac{\\frac{9}{4}}{1-\\frac{3}{4}\\sin\\theta}$, ellipse; (b) $r=\\frac{6}{1-\\frac{3}{2}\\sin\\theta}$, hyperbola",
+          "label": "Practice Problem 2"
+        },
+        "id": "practice-2",
+        "type": "practice",
+        "label": "配套练习 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "描绘圆锥曲线 $r=\\frac{5}{3+2\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{\\frac{5}{3}}{1+\\frac{2}{3}\\cos\\theta}$。比较标准式，$e=\\frac{2}{3}$，$ep=\\frac{5}{3}$，所以 $p=\\frac{5}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $x=\\frac{5}{2}$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(1,0)$, $(-5,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $5 x^{2} + 20 x + 9 y^{2} - 25=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{2}{3}$；准线 $x=\\frac{5}{2}$；顶点 $(1,0)$, $(-5,0)$。",
+        "pdfPage": 850,
+        "printedPage": 826,
+        "en": {
+          "prompt": "Sketch the conic $r=\\frac{5}{3+2\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{\\frac{5}{3}}{1+\\frac{2}{3}\\cos\\theta}$. Thus $e=\\frac{2}{3}$, $ep=\\frac{5}{3}$, and $p=\\frac{5}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $x=\\frac{5}{2}$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(1,0)$, $(-5,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $5 x^{2} + 20 x + 9 y^{2} - 25=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{2}{3}$; directrix $x=\\frac{5}{2}$; vertices $(1,0)$, $(-5,0)$.",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3",
+        "solutionImage": "assets/8-6-example-3.png"
+      },
+      {
+        "prompt": "描绘圆锥曲线 $r=\\frac{5}{3+2\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{\\frac{5}{3}}{1+\\frac{2}{3}\\sin\\theta}$。比较标准式，$e=\\frac{2}{3}$，$ep=\\frac{5}{3}$，所以 $p=\\frac{5}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=\\frac{5}{2}$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,1)$, $(0,-5)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $9 x^{2} + 5 y^{2} + 20 y - 25=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{2}{3}$；准线 $y=\\frac{5}{2}$；顶点 $(0,1)$, $(0,-5)$。",
+        "pdfPage": 851,
+        "printedPage": 827,
+        "en": {
+          "prompt": "Sketch the conic $r=\\frac{5}{3+2\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{\\frac{5}{3}}{1+\\frac{2}{3}\\sin\\theta}$. Thus $e=\\frac{2}{3}$, $ep=\\frac{5}{3}$, and $p=\\frac{5}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=\\frac{5}{2}$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,1)$, $(0,-5)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $9 x^{2} + 5 y^{2} + 20 y - 25=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{2}{3}$; directrix $y=\\frac{5}{2}$; vertices $(0,1)$, $(0,-5)$.",
+          "label": "Practice Problem 3"
+        },
+        "id": "practice-3",
+        "type": "practice",
+        "label": "配套练习 3",
+        "solutionImage": "assets/8-6-practice-3.png"
+      },
+      {
+        "prompt": "描绘圆锥曲线 $r=\\frac{12}{2-4\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $2$，得 $r=\\frac{6}{1-2\\cos\\theta}$。比较标准式，$e=2$，$ep=6$，所以 $p=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $x=-3$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(-6,0)$, $(-2,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $- 12 x^{2} - 96 x + 4 y^{2} - 144=0$。图中保留完整曲线。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分母为零的角须排除；分母为负时的负半径描出另一支，不能删去。"
+          }
+        ],
+        "answer": "双曲线；$e=2$；准线 $x=-3$；顶点 $(-6,0)$, $(-2,0)$。",
+        "pdfPage": 851,
+        "printedPage": 827,
+        "en": {
+          "prompt": "Sketch the conic $r=\\frac{12}{2-4\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $2$: $r=\\frac{6}{1-2\\cos\\theta}$. Thus $e=2$, $ep=6$, and $p=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $x=-3$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(-6,0)$, $(-2,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $- 12 x^{2} - 96 x + 4 y^{2} - 144=0$. The graph retains the complete curve."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Exclude denominator-zero angles. Negative radii where the denominator is negative trace the other branch and must be retained."
+            }
+          ],
+          "answer": "Hyperbola; $e=2$; directrix $x=-3$; vertices $(-6,0)$, $(-2,0)$.",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4",
+        "solutionImage": "assets/8-6-example-4.png"
+      },
+      {
+        "prompt": "描绘圆锥曲线 $r=\\frac{6}{2+2\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $2$，得 $r=\\frac{3}{1+\\sin\\theta}$。比较标准式，$e=1$，$ep=3$，所以 $p=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $y=3$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,\\frac{3}{2})$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $4 x^{2} + 24 y - 36=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $y=3$；顶点 $(0,\\frac{3}{2})$。",
+        "pdfPage": 852,
+        "printedPage": 828,
+        "en": {
+          "prompt": "Sketch the conic $r=\\frac{6}{2+2\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $2$: $r=\\frac{3}{1+\\sin\\theta}$. Thus $e=1$, $ep=3$, and $p=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $y=3$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,\\frac{3}{2})$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $4 x^{2} + 24 y - 36=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $y=3$; vertices $(0,\\frac{3}{2})$.",
+          "label": "Practice Problem 4"
+        },
+        "id": "practice-4",
+        "type": "practice",
+        "label": "配套练习 4",
+        "solutionImage": "assets/8-6-practice-4.png"
+      },
+      {
+        "prompt": "双曲线焦点在极点，顶点为 $(1,\\pi/2)$ 和 $(-3,3\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,1),(0,3)$。第二点半径为负，不能读作 $(0,-3)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "设 $r=L/(1+e\\sin\\theta)$，则 $L/(1+e)=1$，$L/(1-e)=-3$。由 $1+e=-3(1-e)$ 得 $e=2,L=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$p=L/e=3/2$，准线 $y=3/2$；代入两角核对原顶点。"
+          }
+        ],
+        "answer": "$r=3/(1+2\\sin\\theta)$。",
+        "pdfPage": 852,
+        "printedPage": 828,
+        "en": {
+          "prompt": "Find a polar equation of the hyperbola with focus at the pole and vertices $(1,\\pi/2)$ and $(-3,3\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The Cartesian vertices are $(0,1),(0,3)$. The second radius is negative, so it is not $(0,-3)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Set $r=L/(1+e\\sin\\theta)$. Then $L/(1+e)=1$ and $L/(1-e)=-3$. Solving $1+e=-3(1-e)$ gives $e=2,L=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$p=L/e=3/2$, with directrix $y=3/2$; substitution at both angles verifies the vertices."
+            }
+          ],
+          "answer": "$r=3/(1+2\\sin\\theta)$.",
+          "label": "Example 5"
+        },
+        "id": "example-5",
+        "type": "example",
+        "label": "例题 5"
+      },
+      {
+        "prompt": "双曲线焦点在极点，顶点为 $(2,\\pi)$ 和 $(5,\\pi)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点 $(-2,0),(-5,0)$，中心 $(-7/2,0)$，$a=3/2,c=7/2$，所以 $e=7/3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "设 $r=L/(1-e\\cos\\theta)$。由 $L/(1+e)=2$ 得 $L=20/3$。$\\theta=0$ 时 $r=-5$ 也表示 $(5,\\pi)$。"
+          }
+        ],
+        "answer": "$r=20/(3-7\\cos\\theta)$。",
+        "pdfPage": 853,
+        "printedPage": 829,
+        "en": {
+          "prompt": "Find a polar equation of the hyperbola with focus at the pole and vertices $(2,\\pi)$ and $(5,\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(-2,0),(-5,0)$, center $(-7/2,0)$, with $a=3/2,c=7/2$, hence $e=7/3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Set $r=L/(1-e\\cos\\theta)$. From $L/(1+e)=2$ obtain $L=20/3$. At $\\theta=0$, $r=-5$ also represents $(5,\\pi)$."
+            }
+          ],
+          "answer": "$r=20/(3-7\\cos\\theta)$.",
+          "label": "Practice Problem 5"
+        },
+        "id": "practice-5",
+        "type": "practice",
+        "label": "配套练习 5"
+      },
+      {
+        "prompt": "Sputnik I 的最高、最低离地高度分别为 560、145 英里；地球半径 3960 英里。以地心为极点，求椭圆轨道方程。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "先将高度转为距地心距离：$3960+560=4520$，$3960+145=4105$ 英里。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将远日点放在极轴正向。取 $r=L/(1-e\\cos\\theta)$；$L/(1-e)=4520$，$L/(1+e)=4105$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减与相加得 $e=\\frac{83}{1725}\\approx 0.04811594$，$a=\\frac{8625}{2}$，$L=\\frac{1484368}{345}\\approx 4302.51594203$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $r=\\frac{\\frac{1484368}{345}}{1-\\frac{83}{1725}\\cos\\theta}$。代入 $\\theta=0,\\pi$ 返回原最大、最小距离；单位与原题一致。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "教材先把 $e$ 舍入为 0.048，再得到近似式 $r=4303/(1-0.048\\cos\\theta)$。本解保留原数据的精确比值，避免过早舍入。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{1484368}{345}}{1-\\frac{83}{1725}\\cos\\theta}$。",
+        "pdfPage": 853,
+        "printedPage": 829,
+        "en": {
+          "prompt": "Sputnik I reached maximum and minimum heights of 560 and 145 miles above Earth. Assume Earth’s radius is 3960 miles. Find a polar equation of its orbit with pole at Earth’s center.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Convert heights to focus distances: $3960+560=4520$ and $3960+145=4105$ miles."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Place aphelion on the positive polar axis. Set $r=L/(1-e\\cos\\theta)$; $L/(1-e)=4520$ and $L/(1+e)=4105$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding and subtracting gives $e=\\frac{83}{1725}\\approx 0.04811594$, $a=\\frac{8625}{2}$, and $L=\\frac{1484368}{345}\\approx 4302.51594203$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Hence $r=\\frac{\\frac{1484368}{345}}{1-\\frac{83}{1725}\\cos\\theta}$. At $\\theta=0,\\pi$ it returns the original maximum and minimum distances, in the source unit."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The textbook first rounds $e$ to 0.048 and gives $r=4303/(1-0.048\\cos\\theta)$. The exact expression above avoids early rounding and preserves both data values."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{1484368}{345}}{1-\\frac{83}{1725}\\cos\\theta}$.",
+          "label": "Example 6"
+        },
+        "id": "example-6",
+        "type": "example",
+        "label": "例题 6"
+      },
+      {
+        "prompt": "冥王星距日心最大、最小距离分别为 4582.61、2749.57 百万英里。以日心为极点，求椭圆轨道方程。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将远日点放在极轴正向。取 $r=L/(1-e\\cos\\theta)$；$L/(1-e)=\\frac{458261}{100}$，$L/(1+e)=\\frac{274957}{100}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减与相加得 $e=\\frac{91652}{366609}\\approx 0.24999932$，$a=\\frac{366609}{100}$，$L=\\frac{126002069777}{36660900}\\approx 3436.96062500$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $r=\\frac{\\frac{126002069777}{36660900}}{1-\\frac{91652}{366609}\\cos\\theta}$。代入 $\\theta=0,\\pi$ 返回原最大、最小距离；单位与原题一致。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{126002069777}{36660900}}{1-\\frac{91652}{366609}\\cos\\theta}$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Pluto has an elliptical orbit with maximum and minimum distances of 4582.61 and 2749.57 million miles from the Sun’s center. Find a polar equation with the pole at the Sun’s center.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Place aphelion on the positive polar axis. Set $r=L/(1-e\\cos\\theta)$; $L/(1-e)=\\frac{458261}{100}$ and $L/(1+e)=\\frac{274957}{100}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding and subtracting gives $e=\\frac{91652}{366609}\\approx 0.24999932$, $a=\\frac{366609}{100}$, and $L=\\frac{126002069777}{36660900}\\approx 3436.96062500$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Hence $r=\\frac{\\frac{126002069777}{36660900}}{1-\\frac{91652}{366609}\\cos\\theta}$. At $\\theta=0,\\pi$ it returns the original maximum and minimum distances, in the source unit."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{126002069777}{36660900}}{1-\\frac{91652}{366609}\\cos\\theta}$.",
+          "label": "Practice Problem 6"
+        },
+        "id": "practice-6",
+        "type": "practice",
+        "label": "配套练习 6"
+      }
+    ],
+    "gettingReady": [
+      {
+        "prompt": "求端点为 $(1,3)$ 与 $(5,-3)$ 的线段中点。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "坐标分别取平均：$((1+5)/2,(3-3)/2)=(3,0)$。"
+          }
+        ],
+        "answer": "$(3,0)$",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Find the midpoint of the segment with endpoints $(1,3)$ and $(5,-3)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Average coordinates: $((1+5)/2,(3-3)/2)=(3,0)$."
+            }
+          ],
+          "answer": "$(3,0)$"
+        },
+        "number": "GR1"
+      },
+      {
+        "prompt": "将直角坐标转换为极坐标：(a) $(-2,2\\sqrt3)$；(b) $(-4\\sqrt3,-4)$。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) $r=\\sqrt{4+12}=4$；第二象限参考角 $\\pi/3$，故 $\\theta=2\\pi/3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) $r=\\sqrt{48+16}=8$；第三象限参考角 $\\pi/6$，故 $\\theta=7\\pi/6$。"
+          }
+        ],
+        "answer": "(a) $(4,2\\pi/3)$；(b) $(8,7\\pi/6)$。",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Convert to polar coordinates: (a) $(-2,2\\sqrt3)$; (b) $(-4\\sqrt3,-4)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) $r=\\sqrt{4+12}=4$. The quadrant-II reference angle is $\\pi/3$, hence $\\theta=2\\pi/3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) $r=\\sqrt{48+16}=8$. The quadrant-III reference angle is $\\pi/6$, hence $\\theta=7\\pi/6$."
+            }
+          ],
+          "answer": "(a) $(4,2\\pi/3)$; (b) $(8,7\\pi/6)$."
+        },
+        "number": "GR2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "将极坐标转换为直角坐标：(a) $(6,120^\\circ)$；(b) $(-3,315^\\circ)$。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "用 $x=r\\cos\\theta,y=r\\sin\\theta$：(a) $x=-3,y=3\\sqrt3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) $x=-3\\sqrt2/2,y=3\\sqrt2/2$；负半径将点放在第二象限。"
+          }
+        ],
+        "answer": "(a) $(-3,3\\sqrt3)$；(b) $(-3\\sqrt2/2,3\\sqrt2/2)$。",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Convert to rectangular coordinates: (a) $(6,120^\\circ)$; (b) $(-3,315^\\circ)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Use $x=r\\cos\\theta,y=r\\sin\\theta$: (a) $x=-3,y=3\\sqrt3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) $x=-3\\sqrt2/2,y=3\\sqrt2/2$; the negative radius puts the point in quadrant II."
+            }
+          ],
+          "answer": "(a) $(-3,3\\sqrt3)$; (b) $(-3\\sqrt2/2,3\\sqrt2/2)$."
+        },
+        "number": "GR3",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "将 $r=6/(3+\\sin\\theta)$ 的分子、分母同除以 3。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$6/3=2$，$(3+\\sin\\theta)/3=1+\\frac13\\sin\\theta$。"
+          }
+        ],
+        "answer": "$r=2/(1+\\frac13\\sin\\theta)$。",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Rewrite $r=6/(3+\\sin\\theta)$ by dividing numerator and denominator by 3.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$6/3=2$ and $(3+\\sin\\theta)/3=1+\\frac13\\sin\\theta$."
+            }
+          ],
+          "answer": "$r=2/(1+\\frac13\\sin\\theta)$。"
+        },
+        "number": "GR4"
+      },
+      {
+        "prompt": "解 $1-2\\cos\\theta=0$，$-\\pi/2\\le\\theta\\le\\pi/2$。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "移项得 $\\cos\\theta=1/2$。区间内符合的角是 $\\pm\\pi/3$。"
+          }
+        ],
+        "answer": "$\\theta=-\\pi/3,\\pi/3$。",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Solve $1-2\\cos\\theta=0$ for $-\\pi/2\\le\\theta\\le\\pi/2$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Rearrange to $\\cos\\theta=1/2$. The angles in the interval are $\\pm\\pi/3$."
+            }
+          ],
+          "answer": "$\\theta=-\\pi/3,\\pi/3$。"
+        },
+        "number": "GR5"
+      },
+      {
+        "prompt": "将 $r=3\\sec\\theta$ 转换为直角坐标形式并识别图像。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "乘 $\\cos\\theta$ 得 $r\\cos\\theta=3$，所以 $x=3$。"
+          }
+        ],
+        "answer": "竖直直线 $x=3$。",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Convert $r=3\\sec\\theta$ to rectangular form and identify its graph.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Multiply by $\\cos\\theta$: $r\\cos\\theta=3$, hence $x=3$."
+            }
+          ],
+          "answer": "The vertical line $x=3$."
+        },
+        "number": "GR6"
+      },
+      {
+        "prompt": "将 $r=2/(1-\\sin\\theta)$ 转换为直角坐标形式并识别图像。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$r-r\\sin\\theta=2$，故 $r=y+2$。平方得 $x^2+y^2=(y+2)^2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$x^2=4(y+1)$；顶点 $(0,-1)$，焦点原点，准线 $y=-2$，开口向上。"
+          }
+        ],
+        "answer": "抛物线 $x^2=4(y+1)$。",
+        "pdfPage": 846,
+        "printedPage": 822,
+        "en": {
+          "prompt": "Convert $r=2/(1-\\sin\\theta)$ to rectangular form and identify its graph.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$r-r\\sin\\theta=2$, so $r=y+2$. Squaring gives $x^2+y^2=(y+2)^2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$x^2=4(y+1)$: vertex $(0,-1)$, focus at the origin, directrix $y=-2$, opening upward."
+            }
+          ],
+          "answer": "The parabola $x^2=4(y+1)$."
+        },
+        "number": "GR7"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "圆锥曲线上的点 $P$ 到焦点 $F$ 和准线 $l$ 的距离比称为什么？并按其小于、等于、大于 1 分类。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "离心率 $e$；$0<e<1$ 为椭圆，$e=1$ 为抛物线，$e>1$ 为双曲线。"
+          }
+        ],
+        "answer": "离心率 $e$；$0<e<1$ 为椭圆，$e=1$ 为抛物线，$e>1$ 为双曲线。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Name the ratio $d(P,F)/d(P,l)$ and classify the conic when it is less than, equal to, or greater than 1.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Eccentricity $e$; ellipse for $0<e<1$, parabola for $e=1$, hyperbola for $e>1$."
+            }
+          ],
+          "answer": "Eccentricity $e$; ellipse for $0<e<1$, parabola for $e=1$, hyperbola for $e>1$."
+        },
+        "number": 1
+      },
+      {
+        "prompt": "焦点在极点、离心率 $e$、准线在极点左侧距离 $p$ 处。写出极坐标标准式。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$r=ep/(1-e\\cos\\theta)$；准线 $x=-p$。"
+          }
+        ],
+        "answer": "$r=ep/(1-e\\cos\\theta)$；准线 $x=-p$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Write the polar form for focus at the pole, eccentricity $e$, and a vertical directrix $p$ units left of the pole.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$r=ep/(1-e\\cos\\theta)$; directrix $x=-p$."
+            }
+          ],
+          "answer": "$r=ep/(1-e\\cos\\theta)$; directrix $x=-p$."
+        },
+        "number": 2
+      },
+      {
+        "prompt": "焦点在极点、离心率 $e$、准线在极点上方距离 $p$ 处。写出极坐标标准式。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$r=ep/(1+e\\sin\\theta)$；准线 $y=p$。"
+          }
+        ],
+        "answer": "$r=ep/(1+e\\sin\\theta)$；准线 $y=p$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Write the polar form for focus at the pole, eccentricity $e$, and a horizontal directrix $p$ units above the pole.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$r=ep/(1+e\\sin\\theta)$; directrix $y=p$."
+            }
+          ],
+          "answer": "$r=ep/(1+e\\sin\\theta)$; directrix $y=p$."
+        },
+        "number": 3
+      },
+      {
+        "prompt": "$r=ep/(1\\pm e\\cos\\theta)$ 关于哪条轴对称？$r=ep/(1\\pm e\\sin\\theta)$ 呢？",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "余弦形式关于 $x$ 轴；正弦形式关于 $y$ 轴。"
+          }
+        ],
+        "answer": "余弦形式关于 $x$ 轴；正弦形式关于 $y$ 轴。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Which axis is a symmetry axis for $r=ep/(1\\pm e\\cos\\theta)$ and for $r=ep/(1\\pm e\\sin\\theta)$?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Cosine form: the $x$-axis; sine form: the $y$-axis."
+            }
+          ],
+          "answer": "Cosine form: the $x$-axis; sine form: the $y$-axis."
+        },
+        "number": 4
+      },
+      {
+        "prompt": "判断：所有极坐标标准式的圆锥曲线的一个焦点都在极点。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "正确；标准式以焦点为极点建立。"
+          }
+        ],
+        "answer": "正确；标准式以焦点为极点建立。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "True or false: In all standard polar forms of conics, a focus is at the pole.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "True; the standard forms are constructed with a focus at the pole."
+            }
+          ],
+          "answer": "True; the standard forms are constructed with a focus at the pole."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "判断：$r=3/(1-\\sin\\theta)$ 的图像是椭圆。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "错误；$e=1$，是抛物线。"
+          }
+        ],
+        "answer": "错误；$e=1$，是抛物线。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "True or false: $r=3/(1-\\sin\\theta)$ is an ellipse.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "False; $e=1$, so it is a parabola."
+            }
+          ],
+          "answer": "False; $e=1$, so it is a parabola."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "判断：$r=6/(5+2\\cos\\theta)$ 不是标准式，因为分母常数项为 5 而非 1。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "正确；同除以 5 得 $r=(6/5)/(1+(2/5)\\cos\\theta)$，直接显示 $e=2/5$。"
+          }
+        ],
+        "answer": "正确；同除以 5 得 $r=(6/5)/(1+(2/5)\\cos\\theta)$，直接显示 $e=2/5$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "True or false: $r=6/(5+2\\cos\\theta)$ is not in standard form because its denominator constant is 5 rather than 1.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "True; division by 5 gives $r=(6/5)/(1+(2/5)\\cos\\theta)$, displaying $e=2/5$."
+            }
+          ],
+          "answer": "True; division by 5 gives $r=(6/5)/(1+(2/5)\\cos\\theta)$, displaying $e=2/5$."
+        },
+        "number": 7
+      },
+      {
+        "prompt": "判断：$r=3/(1-\\sin\\theta)$ 的准线在极点左侧。",
+        "concept": "polar-form",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "错误；正弦减号给准线 $y=-3$，在极点下方。"
+          }
+        ],
+        "answer": "错误；正弦减号给准线 $y=-3$，在极点下方。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "True or false: The directrix of $r=3/(1-\\sin\\theta)$ is left of the pole.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "False; the sine-minus form gives directrix $y=-3$, below the pole."
+            }
+          ],
+          "answer": "False; the sine-minus form gives directrix $y=-3$, below the pole."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{4}{1-\\cos\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{4}{1-\\cos\\theta}$。比较标准式，$e=1$，$ep=4$，所以 $p=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $x=-4$，焦点在原点，对称轴是 $x$ 轴。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $x=-4$；顶点 $(-2,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{4}{1-\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{4}{1-\\cos\\theta}$. Thus $e=1$, $ep=4$, and $p=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $x=-4$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $x=-4$; vertices $(-2,0)$."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{5}{4+6\\cos\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $4$，得 $r=\\frac{\\frac{5}{4}}{1+\\frac{3}{2}\\cos\\theta}$。比较标准式，$e=\\frac{3}{2}$，$ep=\\frac{5}{4}$，所以 $p=\\frac{5}{6}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $x=\\frac{5}{6}$，焦点在原点，对称轴是 $x$ 轴。"
+          }
+        ],
+        "answer": "双曲线；$e=\\frac{3}{2}$；准线 $x=\\frac{5}{6}$；顶点 $(\\frac{1}{2},0)$, $(\\frac{5}{2},0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{5}{4+6\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $4$: $r=\\frac{\\frac{5}{4}}{1+\\frac{3}{2}\\cos\\theta}$. Thus $e=\\frac{3}{2}$, $ep=\\frac{5}{4}$, and $p=\\frac{5}{6}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $x=\\frac{5}{6}$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            }
+          ],
+          "answer": "Hyperbola; $e=\\frac{3}{2}$; directrix $x=\\frac{5}{6}$; vertices $(\\frac{1}{2},0)$, $(\\frac{5}{2},0)$."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{5}{4-\\sin\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $4$，得 $r=\\frac{\\frac{5}{4}}{1-\\frac{1}{4}\\sin\\theta}$。比较标准式，$e=\\frac{1}{4}$，$ep=\\frac{5}{4}$，所以 $p=5$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=-5$，焦点在原点，对称轴是 $y$ 轴。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{1}{4}$；准线 $y=-5$；顶点 $(0,\\frac{5}{3})$, $(0,-1)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{5}{4-\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $4$: $r=\\frac{\\frac{5}{4}}{1-\\frac{1}{4}\\sin\\theta}$. Thus $e=\\frac{1}{4}$, $ep=\\frac{5}{4}$, and $p=5$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=-5$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{1}{4}$; directrix $y=-5$; vertices $(0,\\frac{5}{3})$, $(0,-1)$."
+        },
+        "number": 11
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{1}{1+\\sin\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{1}{1+\\sin\\theta}$。比较标准式，$e=1$，$ep=1$，所以 $p=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $y=1$，焦点在原点，对称轴是 $y$ 轴。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $y=1$；顶点 $(0,\\frac{1}{2})$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{1}{1+\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{1}{1+\\sin\\theta}$. Thus $e=1$, $ep=1$, and $p=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $y=1$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $y=1$; vertices $(0,\\frac{1}{2})$."
+        },
+        "number": 12
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{3}{2+3\\sin\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $2$，得 $r=\\frac{\\frac{3}{2}}{1+\\frac{3}{2}\\sin\\theta}$。比较标准式，$e=\\frac{3}{2}$，$ep=\\frac{3}{2}$，所以 $p=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $y=1$，焦点在原点，对称轴是 $y$ 轴。"
+          }
+        ],
+        "answer": "双曲线；$e=\\frac{3}{2}$；准线 $y=1$；顶点 $(0,\\frac{3}{5})$, $(0,3)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{3}{2+3\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $2$: $r=\\frac{\\frac{3}{2}}{1+\\frac{3}{2}\\sin\\theta}$. Thus $e=\\frac{3}{2}$, $ep=\\frac{3}{2}$, and $p=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $y=1$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            }
+          ],
+          "answer": "Hyperbola; $e=\\frac{3}{2}$; directrix $y=1$; vertices $(0,\\frac{3}{5})$, $(0,3)$."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{2}{3+\\sin\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{\\frac{2}{3}}{1+\\frac{1}{3}\\sin\\theta}$。比较标准式，$e=\\frac{1}{3}$，$ep=\\frac{2}{3}$，所以 $p=2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=2$，焦点在原点，对称轴是 $y$ 轴。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{1}{3}$；准线 $y=2$；顶点 $(0,\\frac{1}{2})$, $(0,-1)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{2}{3+\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{\\frac{2}{3}}{1+\\frac{1}{3}\\sin\\theta}$. Thus $e=\\frac{1}{3}$, $ep=\\frac{2}{3}$, and $p=2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=2$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{1}{3}$; directrix $y=2$; vertices $(0,\\frac{1}{2})$, $(0,-1)$."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{4}{1+\\sin\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{4}{1+\\sin\\theta}$。比较标准式，$e=1$，$ep=4$，所以 $p=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $y=4$，焦点在原点，对称轴是 $y$ 轴。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $y=4$；顶点 $(0,2)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{4}{1+\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{4}{1+\\sin\\theta}$. Thus $e=1$, $ep=4$, and $p=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $y=4$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $y=4$; vertices $(0,2)$."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "识别焦点在极点的圆锥曲线 $r=\\frac{4}{1-\\cos\\theta}$。",
+        "concept": "eccentricity",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{4}{1-\\cos\\theta}$。比较标准式，$e=1$，$ep=4$，所以 $p=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $x=-4$，焦点在原点，对称轴是 $x$ 轴。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $x=-4$；顶点 $(-2,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify the conic with focus at the pole: $r=\\frac{4}{1-\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{4}{1-\\cos\\theta}$. Thus $e=1$, $ep=4$, and $p=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $x=-4$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $x=-4$; vertices $(-2,0)$."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{2}{1-\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{2}{1-\\cos\\theta}$。比较标准式，$e=1$，$ep=2$，所以 $p=2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $x=-2$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(-1,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $- 4 x + y^{2} - 4=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $x=-2$；顶点 $(-1,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{2}{1-\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{2}{1-\\cos\\theta}$. Thus $e=1$, $ep=2$, and $p=2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $x=-2$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(-1,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $- 4 x + y^{2} - 4=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $x=-2$; vertices $(-1,0)$."
+        },
+        "number": 17,
+        "solutionImage": "assets/8-6-exercise-17.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{4}{1+\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{4}{1+\\cos\\theta}$。比较标准式，$e=1$，$ep=4$，所以 $p=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为抛物线；准线 $x=4$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(2,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $8 x + y^{2} - 16=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "抛物线；$e=1$；准线 $x=4$；顶点 $(2,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{4}{1+\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{4}{1+\\cos\\theta}$. Thus $e=1$, $ep=4$, and $p=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a parabola; its directrix is $x=4$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(2,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $8 x + y^{2} - 16=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Parabola; $e=1$; directrix $x=4$; vertices $(2,0)$."
+        },
+        "number": 18,
+        "solutionImage": "assets/8-6-exercise-18.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{7}{3+4\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{\\frac{7}{3}}{1+\\frac{4}{3}\\cos\\theta}$。比较标准式，$e=\\frac{4}{3}$，$ep=\\frac{7}{3}$，所以 $p=\\frac{7}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $x=\\frac{7}{4}$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(1,0)$, $(7,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $- 7 x^{2} + 56 x + 9 y^{2} - 49=0$。图中保留完整曲线。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分母为零的角须排除；分母为负时的负半径描出另一支，不能删去。"
+          }
+        ],
+        "answer": "双曲线；$e=\\frac{4}{3}$；准线 $x=\\frac{7}{4}$；顶点 $(1,0)$, $(7,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{7}{3+4\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{\\frac{7}{3}}{1+\\frac{4}{3}\\cos\\theta}$. Thus $e=\\frac{4}{3}$, $ep=\\frac{7}{3}$, and $p=\\frac{7}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $x=\\frac{7}{4}$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(1,0)$, $(7,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $- 7 x^{2} + 56 x + 9 y^{2} - 49=0$. The graph retains the complete curve."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Exclude denominator-zero angles. Negative radii where the denominator is negative trace the other branch and must be retained."
+            }
+          ],
+          "answer": "Hyperbola; $e=\\frac{4}{3}$; directrix $x=\\frac{7}{4}$; vertices $(1,0)$, $(7,0)$."
+        },
+        "number": 19,
+        "solutionImage": "assets/8-6-exercise-19.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{9}{4+5\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $4$，得 $r=\\frac{\\frac{9}{4}}{1+\\frac{5}{4}\\cos\\theta}$。比较标准式，$e=\\frac{5}{4}$，$ep=\\frac{9}{4}$，所以 $p=\\frac{9}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $x=\\frac{9}{5}$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(1,0)$, $(9,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $- 9 x^{2} + 90 x + 16 y^{2} - 81=0$。图中保留完整曲线。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分母为零的角须排除；分母为负时的负半径描出另一支，不能删去。"
+          }
+        ],
+        "answer": "双曲线；$e=\\frac{5}{4}$；准线 $x=\\frac{9}{5}$；顶点 $(1,0)$, $(9,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{9}{4+5\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $4$: $r=\\frac{\\frac{9}{4}}{1+\\frac{5}{4}\\cos\\theta}$. Thus $e=\\frac{5}{4}$, $ep=\\frac{9}{4}$, and $p=\\frac{9}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $x=\\frac{9}{5}$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(1,0)$, $(9,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $- 9 x^{2} + 90 x + 16 y^{2} - 81=0$. The graph retains the complete curve."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Exclude denominator-zero angles. Negative radii where the denominator is negative trace the other branch and must be retained."
+            }
+          ],
+          "answer": "Hyperbola; $e=\\frac{5}{4}$; directrix $x=\\frac{9}{5}$; vertices $(1,0)$, $(9,0)$."
+        },
+        "number": 20,
+        "solutionImage": "assets/8-6-exercise-20.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{5}{3+2\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{\\frac{5}{3}}{1+\\frac{2}{3}\\cos\\theta}$。比较标准式，$e=\\frac{2}{3}$，$ep=\\frac{5}{3}$，所以 $p=\\frac{5}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $x=\\frac{5}{2}$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(1,0)$, $(-5,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $5 x^{2} + 20 x + 9 y^{2} - 25=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{2}{3}$；准线 $x=\\frac{5}{2}$；顶点 $(1,0)$, $(-5,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{5}{3+2\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{\\frac{5}{3}}{1+\\frac{2}{3}\\cos\\theta}$. Thus $e=\\frac{2}{3}$, $ep=\\frac{5}{3}$, and $p=\\frac{5}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $x=\\frac{5}{2}$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(1,0)$, $(-5,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $5 x^{2} + 20 x + 9 y^{2} - 25=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{2}{3}$; directrix $x=\\frac{5}{2}$; vertices $(1,0)$, $(-5,0)$."
+        },
+        "number": 21,
+        "solutionImage": "assets/8-6-exercise-21.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{5}{3-2\\cos\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $3$，得 $r=\\frac{\\frac{5}{3}}{1-\\frac{2}{3}\\cos\\theta}$。比较标准式，$e=\\frac{2}{3}$，$ep=\\frac{5}{3}$，所以 $p=\\frac{5}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $x=- \\frac{5}{2}$，焦点在原点，对称轴是 $x$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(5,0)$, $(-1,0)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cx$ 和 $r^2=x^2+y^2$，得 $5 x^{2} - 20 x + 9 y^{2} - 25=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{2}{3}$；准线 $x=- \\frac{5}{2}$；顶点 $(5,0)$, $(-1,0)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{5}{3-2\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $3$: $r=\\frac{\\frac{5}{3}}{1-\\frac{2}{3}\\cos\\theta}$. Thus $e=\\frac{2}{3}$, $ep=\\frac{5}{3}$, and $p=\\frac{5}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $x=- \\frac{5}{2}$, its focus is the origin, and its symmetry axis is the $x$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(5,0)$, $(-1,0)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cx$ and $r^2=x^2+y^2$ to obtain $5 x^{2} - 20 x + 9 y^{2} - 25=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{2}{3}$; directrix $x=- \\frac{5}{2}$; vertices $(5,0)$, $(-1,0)$."
+        },
+        "number": 22,
+        "solutionImage": "assets/8-6-exercise-22.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{6}{2+\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $2$，得 $r=\\frac{3}{1+\\frac{1}{2}\\sin\\theta}$。比较标准式，$e=\\frac{1}{2}$，$ep=3$，所以 $p=6$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=6$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,2)$, $(0,-6)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $4 x^{2} + 3 y^{2} + 12 y - 36=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{1}{2}$；准线 $y=6$；顶点 $(0,2)$, $(0,-6)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{6}{2+\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $2$: $r=\\frac{3}{1+\\frac{1}{2}\\sin\\theta}$. Thus $e=\\frac{1}{2}$, $ep=3$, and $p=6$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=6$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,2)$, $(0,-6)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $4 x^{2} + 3 y^{2} + 12 y - 36=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{1}{2}$; directrix $y=6$; vertices $(0,2)$, $(0,-6)$."
+        },
+        "number": 23,
+        "solutionImage": "assets/8-6-exercise-23.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{6}{2-\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $2$，得 $r=\\frac{3}{1-\\frac{1}{2}\\sin\\theta}$。比较标准式，$e=\\frac{1}{2}$，$ep=3$，所以 $p=6$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=-6$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,6)$, $(0,-2)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $4 x^{2} + 3 y^{2} - 12 y - 36=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{1}{2}$；准线 $y=-6$；顶点 $(0,6)$, $(0,-2)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{6}{2-\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $2$: $r=\\frac{3}{1-\\frac{1}{2}\\sin\\theta}$. Thus $e=\\frac{1}{2}$, $ep=3$, and $p=6$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=-6$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,6)$, $(0,-2)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $4 x^{2} + 3 y^{2} - 12 y - 36=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{1}{2}$; directrix $y=-6$; vertices $(0,6)$, $(0,-2)$."
+        },
+        "number": 24,
+        "solutionImage": "assets/8-6-exercise-24.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{6}{1-2\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{6}{1-2\\sin\\theta}$。比较标准式，$e=2$，$ep=6$，所以 $p=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $y=-3$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,-6)$, $(0,-2)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $x^{2} - 3 y^{2} - 24 y - 36=0$。图中保留完整曲线。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分母为零的角须排除；分母为负时的负半径描出另一支，不能删去。"
+          }
+        ],
+        "answer": "双曲线；$e=2$；准线 $y=-3$；顶点 $(0,-6)$, $(0,-2)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{6}{1-2\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{6}{1-2\\sin\\theta}$. Thus $e=2$, $ep=6$, and $p=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $y=-3$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,-6)$, $(0,-2)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $x^{2} - 3 y^{2} - 24 y - 36=0$. The graph retains the complete curve."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Exclude denominator-zero angles. Negative radii where the denominator is negative trace the other branch and must be retained."
+            }
+          ],
+          "answer": "Hyperbola; $e=2$; directrix $y=-3$; vertices $(0,-6)$, $(0,-2)$."
+        },
+        "number": 25,
+        "solutionImage": "assets/8-6-exercise-25.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{6}{1+2\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $1$，得 $r=\\frac{6}{1+2\\sin\\theta}$。比较标准式，$e=2$，$ep=6$，所以 $p=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为双曲线；准线 $y=3$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,2)$, $(0,6)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $x^{2} - 3 y^{2} + 24 y - 36=0$。图中保留完整曲线。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分母为零的角须排除；分母为负时的负半径描出另一支，不能删去。"
+          }
+        ],
+        "answer": "双曲线；$e=2$；准线 $y=3$；顶点 $(0,2)$, $(0,6)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{6}{1+2\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $1$: $r=\\frac{6}{1+2\\sin\\theta}$. Thus $e=2$, $ep=6$, and $p=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a hyperbola; its directrix is $y=3$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,2)$, $(0,6)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $x^{2} - 3 y^{2} + 24 y - 36=0$. The graph retains the complete curve."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Exclude denominator-zero angles. Negative radii where the denominator is negative trace the other branch and must be retained."
+            }
+          ],
+          "answer": "Hyperbola; $e=2$; directrix $y=3$; vertices $(0,2)$, $(0,6)$."
+        },
+        "number": 26,
+        "solutionImage": "assets/8-6-exercise-26.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{9}{7+2\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $7$，得 $r=\\frac{\\frac{9}{7}}{1+\\frac{2}{7}\\sin\\theta}$。比较标准式，$e=\\frac{2}{7}$，$ep=\\frac{9}{7}$，所以 $p=\\frac{9}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=\\frac{9}{2}$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,1)$, $(0,- \\frac{9}{5})$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $49 x^{2} + 45 y^{2} + 36 y - 81=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{2}{7}$；准线 $y=\\frac{9}{2}$；顶点 $(0,1)$, $(0,- \\frac{9}{5})$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{9}{7+2\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $7$: $r=\\frac{\\frac{9}{7}}{1+\\frac{2}{7}\\sin\\theta}$. Thus $e=\\frac{2}{7}$, $ep=\\frac{9}{7}$, and $p=\\frac{9}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=\\frac{9}{2}$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,1)$, $(0,- \\frac{9}{5})$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $49 x^{2} + 45 y^{2} + 36 y - 81=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{2}{7}$; directrix $y=\\frac{9}{2}$; vertices $(0,1)$, $(0,- \\frac{9}{5})$."
+        },
+        "number": 27,
+        "solutionImage": "assets/8-6-exercise-27.png"
+      },
+      {
+        "prompt": "识别并描绘焦点在极点的圆锥曲线 $r=\\frac{8}{5-3\\sin\\theta}$。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分子分母同除以 $5$，得 $r=\\frac{\\frac{8}{5}}{1-\\frac{3}{5}\\sin\\theta}$。比较标准式，$e=\\frac{3}{5}$，$ep=\\frac{8}{5}$，所以 $p=\\frac{8}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由离心率判定为椭圆；准线 $y=- \\frac{8}{3}$，焦点在原点，对称轴是 $y$ 轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "将主轴方向角代入原式，得到直角坐标顶点 $(0,4)$, $(0,-1)$。负半径必须沿相反方向取点。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由 $Br=A-Cy$ 和 $r^2=x^2+y^2$，得 $25 x^{2} + 16 y^{2} - 48 y - 64=0$。图中保留完整曲线。"
+          }
+        ],
+        "answer": "椭圆；$e=\\frac{3}{5}$；准线 $y=- \\frac{8}{3}$；顶点 $(0,4)$, $(0,-1)$。",
+        "pdfPage": 854,
+        "printedPage": 830,
+        "en": {
+          "prompt": "Identify and sketch the conic with focus at the pole: $r=\\frac{8}{5-3\\sin\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Divide numerator and denominator by $5$: $r=\\frac{\\frac{8}{5}}{1-\\frac{3}{5}\\sin\\theta}$. Thus $e=\\frac{3}{5}$, $ep=\\frac{8}{5}$, and $p=\\frac{8}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "It is a ellipse; its directrix is $y=- \\frac{8}{3}$, its focus is the origin, and its symmetry axis is the $y$-axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substituting principal-axis angles gives Cartesian vertices $(0,4)$, $(0,-1)$. A negative radius places the point in the opposite direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Use $Br=A-Cy$ and $r^2=x^2+y^2$ to obtain $25 x^{2} + 16 y^{2} - 48 y - 64=0$. The graph retains the complete curve."
+            }
+          ],
+          "answer": "Ellipse; $e=\\frac{3}{5}$; directrix $y=- \\frac{8}{3}$; vertices $(0,4)$, $(0,-1)$."
+        },
+        "number": 28,
+        "solutionImage": "assets/8-6-exercise-28.png"
+      },
+      {
+        "prompt": "焦点在极点的抛物线，顶点为 $(6,3\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,-6)$，焦点原点；准线在 $y=-12$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "抛物线 $e=1$，焦点至准线距离 $p=12$；根据准线的方向选符号。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{12}{1-\\sin\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{12}{1-\\sin\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the parabola with focus at the pole and vertices $(6,3\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertex is $(0,-6)$ and the focus is the origin; the directrix is $y=-12$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "For a parabola $e=1$ and the focus-directrix distance is $p=12$; choose the sign from the directrix direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{12}{1-\\sin\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{12}{1-\\sin\\theta}$."
+        },
+        "number": 29
+      },
+      {
+        "prompt": "焦点在极点的抛物线，顶点为 $(4,\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,4)$，焦点原点；准线在 $y=8$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "抛物线 $e=1$，焦点至准线距离 $p=8$；根据准线的方向选符号。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{8}{1+\\sin\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{8}{1+\\sin\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the parabola with focus at the pole and vertices $(4,\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertex is $(0,4)$ and the focus is the origin; the directrix is $y=8$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "For a parabola $e=1$ and the focus-directrix distance is $p=8$; choose the sign from the directrix direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{8}{1+\\sin\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{8}{1+\\sin\\theta}$."
+        },
+        "number": 30
+      },
+      {
+        "prompt": "焦点在极点的抛物线，顶点为 $(3,0)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(3,0)$，焦点原点；准线在 $x=6$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "抛物线 $e=1$，焦点至准线距离 $p=6$；根据准线的方向选符号。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{6}{1+\\cos\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{6}{1+\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the parabola with focus at the pole and vertices $(3,0)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertex is $(3,0)$ and the focus is the origin; the directrix is $x=6$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "For a parabola $e=1$ and the focus-directrix distance is $p=6$; choose the sign from the directrix direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{6}{1+\\cos\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{6}{1+\\cos\\theta}$."
+        },
+        "number": 31
+      },
+      {
+        "prompt": "焦点在极点的抛物线，顶点为 $(4,\\pi)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(-4,0)$，焦点原点；准线在 $x=-8$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "抛物线 $e=1$，焦点至准线距离 $p=8$；根据准线的方向选符号。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{8}{1-\\cos\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{8}{1-\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the parabola with focus at the pole and vertices $(4,\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertex is $(-4,0)$ and the focus is the origin; the directrix is $x=-8$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "For a parabola $e=1$ and the focus-directrix distance is $p=8$; choose the sign from the directrix direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{8}{1-\\cos\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{8}{1-\\cos\\theta}$."
+        },
+        "number": 32
+      },
+      {
+        "prompt": "焦点在极点的椭圆，顶点为 $(4,0)$ 和 $(6,\\pi)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(4,0),(-6,0)$。中心主轴坐标 $h=-1$，半轴 $a=5$，焦距 $c=|h|=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=\\frac{1}{5}$，$L=|a^2-c^2|/a=\\frac{24}{5}$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=\\frac{1}{5}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{\\frac{24}{5}}{1+\\frac{1}{5}\\cos\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{24}{5}}{1+\\frac{1}{5}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the ellipse with focus at the pole and vertices $(4,0)$ and $(6,\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(4,0),(-6,0)$. The center coordinate is $h=-1$, semiaxis $a=5$, and focus distance $c=|h|=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=\\frac{1}{5}$ and $L=|a^2-c^2|/a=\\frac{24}{5}$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=\\frac{1}{5}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{\\frac{24}{5}}{1+\\frac{1}{5}\\cos\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{24}{5}}{1+\\frac{1}{5}\\cos\\theta}$."
+        },
+        "number": 33
+      },
+      {
+        "prompt": "焦点在极点的椭圆，顶点为 $(2,0)$ 和 $(10,\\pi)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(2,0),(-10,0)$。中心主轴坐标 $h=-4$，半轴 $a=6$，焦距 $c=|h|=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=\\frac{2}{3}$，$L=|a^2-c^2|/a=\\frac{10}{3}$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=\\frac{2}{3}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{\\frac{10}{3}}{1+\\frac{2}{3}\\cos\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{10}{3}}{1+\\frac{2}{3}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the ellipse with focus at the pole and vertices $(2,0)$ and $(10,\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(2,0),(-10,0)$. The center coordinate is $h=-4$, semiaxis $a=6$, and focus distance $c=|h|=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=\\frac{2}{3}$ and $L=|a^2-c^2|/a=\\frac{10}{3}$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=\\frac{2}{3}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{\\frac{10}{3}}{1+\\frac{2}{3}\\cos\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{10}{3}}{1+\\frac{2}{3}\\cos\\theta}$."
+        },
+        "number": 34
+      },
+      {
+        "prompt": "焦点在极点的椭圆，顶点为 $(3,\\pi/2)$ 和 $(5,3\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,3),(0,-5)$。中心主轴坐标 $h=-1$，半轴 $a=4$，焦距 $c=|h|=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=\\frac{1}{4}$，$L=|a^2-c^2|/a=\\frac{15}{4}$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=\\frac{1}{4}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{\\frac{15}{4}}{1+\\frac{1}{4}\\sin\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{15}{4}}{1+\\frac{1}{4}\\sin\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the ellipse with focus at the pole and vertices $(3,\\pi/2)$ and $(5,3\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(0,3),(0,-5)$. The center coordinate is $h=-1$, semiaxis $a=4$, and focus distance $c=|h|=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=\\frac{1}{4}$ and $L=|a^2-c^2|/a=\\frac{15}{4}$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=\\frac{1}{4}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{\\frac{15}{4}}{1+\\frac{1}{4}\\sin\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{15}{4}}{1+\\frac{1}{4}\\sin\\theta}$."
+        },
+        "number": 35
+      },
+      {
+        "prompt": "焦点在极点的椭圆，顶点为 $(2,\\pi/2)$ 和 $(6,3\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,2),(0,-6)$。中心主轴坐标 $h=-2$，半轴 $a=4$，焦距 $c=|h|=2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=\\frac{1}{2}$，$L=|a^2-c^2|/a=3$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=\\frac{1}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{3}{1+\\frac{1}{2}\\sin\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{3}{1+\\frac{1}{2}\\sin\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the ellipse with focus at the pole and vertices $(2,\\pi/2)$ and $(6,3\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(0,2),(0,-6)$. The center coordinate is $h=-2$, semiaxis $a=4$, and focus distance $c=|h|=2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=\\frac{1}{2}$ and $L=|a^2-c^2|/a=3$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=\\frac{1}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{3}{1+\\frac{1}{2}\\sin\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{3}{1+\\frac{1}{2}\\sin\\theta}$."
+        },
+        "number": 36
+      },
+      {
+        "prompt": "焦点在极点的双曲线，顶点为 $(2,0)$ 和 $(4,0)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(2,0),(4,0)$。中心主轴坐标 $h=3$，半轴 $a=1$，焦距 $c=|h|=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=3$，$L=|a^2-c^2|/a=8$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{8}{1+3\\cos\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{8}{1+3\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the hyperbola with focus at the pole and vertices $(2,0)$ and $(4,0)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(2,0),(4,0)$. The center coordinate is $h=3$, semiaxis $a=1$, and focus distance $c=|h|=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=3$ and $L=|a^2-c^2|/a=8$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{8}{1+3\\cos\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{8}{1+3\\cos\\theta}$."
+        },
+        "number": 37
+      },
+      {
+        "prompt": "焦点在极点的双曲线，顶点为 $(3,\\pi)$ 和 $(7,\\pi)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(-3,0),(-7,0)$。中心主轴坐标 $h=-5$，半轴 $a=2$，焦距 $c=|h|=5$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=\\frac{5}{2}$，$L=|a^2-c^2|/a=\\frac{21}{2}$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=- \\frac{5}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{\\frac{21}{2}}{1-\\frac{5}{2}\\cos\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{21}{2}}{1-\\frac{5}{2}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the hyperbola with focus at the pole and vertices $(3,\\pi)$ and $(7,\\pi)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(-3,0),(-7,0)$. The center coordinate is $h=-5$, semiaxis $a=2$, and focus distance $c=|h|=5$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=\\frac{5}{2}$ and $L=|a^2-c^2|/a=\\frac{21}{2}$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=- \\frac{5}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{\\frac{21}{2}}{1-\\frac{5}{2}\\cos\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{21}{2}}{1-\\frac{5}{2}\\cos\\theta}$."
+        },
+        "number": 38
+      },
+      {
+        "prompt": "焦点在极点的双曲线，顶点为 $(2,\\pi/2)$ 和 $(6,\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,2),(0,6)$。中心主轴坐标 $h=4$，半轴 $a=2$，焦距 $c=|h|=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=2$，$L=|a^2-c^2|/a=6$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{6}{1+2\\sin\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{6}{1+2\\sin\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the hyperbola with focus at the pole and vertices $(2,\\pi/2)$ and $(6,\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(0,2),(0,6)$. The center coordinate is $h=4$, semiaxis $a=2$, and focus distance $c=|h|=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=2$ and $L=|a^2-c^2|/a=6$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{6}{1+2\\sin\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{6}{1+2\\sin\\theta}$."
+        },
+        "number": 39
+      },
+      {
+        "prompt": "焦点在极点的双曲线，顶点为 $(1,3\\pi/2)$ 和 $(5,3\\pi/2)$。求极坐标方程。",
+        "concept": "vertices-model",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "顶点实际坐标为 $(0,-1),(0,-5)$。中心主轴坐标 $h=-3$，半轴 $a=2$，焦距 $c=|h|=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$e=c/a=\\frac{3}{2}$，$L=|a^2-c^2|/a=\\frac{5}{2}$。由中心关系 $h=-Lq/(1-q^2)$，分母三角项系数选 $q=- \\frac{3}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $r=\\frac{\\frac{5}{2}}{1-\\frac{3}{2}\\sin\\theta}$。代入主轴角并正确解释负半径，即恢复给定顶点。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{5}{2}}{1-\\frac{3}{2}\\sin\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Find a polar equation of the hyperbola with focus at the pole and vertices $(1,3\\pi/2)$ and $(5,3\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertices are $(0,-1),(0,-5)$. The center coordinate is $h=-3$, semiaxis $a=2$, and focus distance $c=|h|=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$e=c/a=\\frac{3}{2}$ and $L=|a^2-c^2|/a=\\frac{5}{2}$. The center relation $h=-Lq/(1-q^2)$ gives coefficient $q=- \\frac{3}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $r=\\frac{\\frac{5}{2}}{1-\\frac{3}{2}\\sin\\theta}$. Substituting axis angles and interpreting negative radii recovers the vertices."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{5}{2}}{1-\\frac{3}{2}\\sin\\theta}$."
+        },
+        "number": 40
+      },
+      {
+        "prompt": "地球轨道的近日点距离为 91.38、远日点距离为 94.54 百万英里。以太阳为极点，长轴沿极轴，求轨道方程。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将远日点放在极轴正向。取 $r=L/(1-e\\cos\\theta)$；$L/(1-e)=\\frac{4727}{50}$，$L/(1+e)=\\frac{4569}{50}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减与相加得 $e=\\frac{79}{4648}\\approx 0.01699656$，$a=\\frac{2324}{25}$，$L=\\frac{21597663}{232400}\\approx 92.93314544$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $r=\\frac{\\frac{21597663}{232400}}{1-\\frac{79}{4648}\\cos\\theta}$。代入 $\\theta=0,\\pi$ 返回原最大、最小距离；单位与原题一致。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{21597663}{232400}}{1-\\frac{79}{4648}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Earth has perihelion distance 91.38 and aphelion distance 94.54 million miles. With the Sun at the pole and the major axis along the polar axis, find a polar equation.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Place aphelion on the positive polar axis. Set $r=L/(1-e\\cos\\theta)$; $L/(1-e)=\\frac{4727}{50}$ and $L/(1+e)=\\frac{4569}{50}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding and subtracting gives $e=\\frac{79}{4648}\\approx 0.01699656$, $a=\\frac{2324}{25}$, and $L=\\frac{21597663}{232400}\\approx 92.93314544$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Hence $r=\\frac{\\frac{21597663}{232400}}{1-\\frac{79}{4648}\\cos\\theta}$. At $\\theta=0,\\pi$ it returns the original maximum and minimum distances, in the source unit."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{21597663}{232400}}{1-\\frac{79}{4648}\\cos\\theta}$."
+        },
+        "number": 41
+      },
+      {
+        "prompt": "火星轨道的近日点距离为 128.49、远日点距离为 154.83 百万英里。以太阳为极点，长轴沿极轴，求轨道方程。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将远日点放在极轴正向。取 $r=L/(1-e\\cos\\theta)$；$L/(1-e)=\\frac{15483}{100}$，$L/(1+e)=\\frac{12849}{100}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减与相加得 $e=\\frac{439}{4722}\\approx 0.09296908$，$a=\\frac{7083}{50}$，$L=\\frac{22104563}{157400}\\approx 140.43559720$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $r=\\frac{\\frac{22104563}{157400}}{1-\\frac{439}{4722}\\cos\\theta}$。代入 $\\theta=0,\\pi$ 返回原最大、最小距离；单位与原题一致。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{22104563}{157400}}{1-\\frac{439}{4722}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Mars has perihelion distance 128.49 and aphelion distance 154.83 million miles. With the Sun at the pole and the major axis along the polar axis, find a polar equation.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Place aphelion on the positive polar axis. Set $r=L/(1-e\\cos\\theta)$; $L/(1-e)=\\frac{15483}{100}$ and $L/(1+e)=\\frac{12849}{100}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding and subtracting gives $e=\\frac{439}{4722}\\approx 0.09296908$, $a=\\frac{7083}{50}$, and $L=\\frac{22104563}{157400}\\approx 140.43559720$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Hence $r=\\frac{\\frac{22104563}{157400}}{1-\\frac{439}{4722}\\cos\\theta}$. At $\\theta=0,\\pi$ it returns the original maximum and minimum distances, in the source unit."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{22104563}{157400}}{1-\\frac{439}{4722}\\cos\\theta}$."
+        },
+        "number": 42
+      },
+      {
+        "prompt": "水星轨道的近日点距离为 28.56、远日点距离为 43.88 百万英里。以太阳为极点，长轴沿极轴，求轨道方程。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将远日点放在极轴正向。取 $r=L/(1-e\\cos\\theta)$；$L/(1-e)=\\frac{1097}{25}$，$L/(1+e)=\\frac{714}{25}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减与相加得 $e=\\frac{383}{1811}\\approx 0.21148537$，$a=\\frac{1811}{50}$，$L=\\frac{1566516}{45275}\\approx 34.60002209$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $r=\\frac{\\frac{1566516}{45275}}{1-\\frac{383}{1811}\\cos\\theta}$。代入 $\\theta=0,\\pi$ 返回原最大、最小距离；单位与原题一致。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{1566516}{45275}}{1-\\frac{383}{1811}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Mercury has perihelion distance 28.56 and aphelion distance 43.88 million miles. With the Sun at the pole and the major axis along the polar axis, find a polar equation.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Place aphelion on the positive polar axis. Set $r=L/(1-e\\cos\\theta)$; $L/(1-e)=\\frac{1097}{25}$ and $L/(1+e)=\\frac{714}{25}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding and subtracting gives $e=\\frac{383}{1811}\\approx 0.21148537$, $a=\\frac{1811}{50}$, and $L=\\frac{1566516}{45275}\\approx 34.60002209$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Hence $r=\\frac{\\frac{1566516}{45275}}{1-\\frac{383}{1811}\\cos\\theta}$. At $\\theta=0,\\pi$ it returns the original maximum and minimum distances, in the source unit."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{1566516}{45275}}{1-\\frac{383}{1811}\\cos\\theta}$."
+        },
+        "number": 43
+      },
+      {
+        "prompt": "土星轨道的近日点距离为 837.05、远日点距离为 936.37 百万英里。以太阳为极点，长轴沿极轴，求轨道方程。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将远日点放在极轴正向。取 $r=L/(1-e\\cos\\theta)$；$L/(1-e)=\\frac{93637}{100}$，$L/(1+e)=\\frac{16741}{20}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相减与相加得 $e=\\frac{4966}{88671}\\approx 0.05600478$，$a=\\frac{88671}{100}$，$L=\\frac{1567577017}{1773420}\\approx 883.92880254$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "故 $r=\\frac{\\frac{1567577017}{1773420}}{1-\\frac{4966}{88671}\\cos\\theta}$。代入 $\\theta=0,\\pi$ 返回原最大、最小距离；单位与原题一致。"
+          }
+        ],
+        "answer": "$r=\\frac{\\frac{1567577017}{1773420}}{1-\\frac{4966}{88671}\\cos\\theta}$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Saturn has perihelion distance 837.05 and aphelion distance 936.37 million miles. With the Sun at the pole and the major axis along the polar axis, find a polar equation.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Place aphelion on the positive polar axis. Set $r=L/(1-e\\cos\\theta)$; $L/(1-e)=\\frac{93637}{100}$ and $L/(1+e)=\\frac{16741}{20}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding and subtracting gives $e=\\frac{4966}{88671}\\approx 0.05600478$, $a=\\frac{88671}{100}$, and $L=\\frac{1567577017}{1773420}\\approx 883.92880254$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Hence $r=\\frac{\\frac{1567577017}{1773420}}{1-\\frac{4966}{88671}\\cos\\theta}$. At $\\theta=0,\\pi$ it returns the original maximum and minimum distances, in the source unit."
+            }
+          ],
+          "answer": "$r=\\frac{\\frac{1567577017}{1773420}}{1-\\frac{4966}{88671}\\cos\\theta}$."
+        },
+        "number": 44
+      },
+      {
+        "prompt": "彗星绕位于焦点的太阳沿抛物线运动。距太阳 60 百万千米时，太阳至彗星连线与轨道轴夹角为 $\\pi/3$。(a) 求极方程；(b) 求最近距离。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) 取开口为极轴正向，并从该有向轴量角。设 $r=L/(1-\\cos\\theta)$。代入得 $60=L/(1-1/2)=2L$，所以 $L=30$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 分母最大为 2（$\\theta=\\pi$），故最近距离 $30/2=15$ 百万千米。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "原文只称“轨道轴”，无有向轴图。若所给 $\\pi/3$ 从朝向近日点的反向轴量起，则相应模型为 $r=90/(1+\\cos\\theta)$、最近距离 45 百万千米。这是另一种数据解释，不能与前者混用。"
+          }
+        ],
+        "answer": "按开口正向角的约定：(a) $r=30/(1-\\cos\\theta)$；(b) 15 百万千米。轴向限制见解析。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "A comet follows a parabolic orbit around the Sun at the focus. At a distance of 60 million kilometers the Sun–comet segment makes angle $\\pi/3$ with the orbital axis. (a) Find a polar equation. (b) How close does it come to the Sun?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Take the positive polar axis in the opening direction and measure the stated angle from it. Set $r=L/(1-\\cos\\theta)$. Then $60=L/(1-1/2)=2L$, so $L=30$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) The denominator has maximum 2 at $\\theta=\\pi$, so the closest distance is $30/2=15$ million kilometers."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The source says only “axis of the orbit” and supplies no directed-axis figure. If $\\pi/3$ is measured instead from the axis pointing toward perihelion, the compatible model is $r=90/(1+\\cos\\theta)$ with closest distance 45 million kilometers. That is a different interpretation of the angle."
+            }
+          ],
+          "answer": "With the angle measured from the opening direction: (a) $r=30/(1-\\cos\\theta)$; (b) 15 million kilometers. See the axis-orientation qualification."
+        },
+        "number": 45,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "彗星绕位于焦点的太阳沿双曲线运动。距太阳分别为 30、150 百万英里时，连线与轨道轴的角分别为 $\\pi/3,4\\pi/3$。(a) 求极方程；(b) 求最近距离。",
+        "concept": "orbits",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "(a) 设观测的正半径分支为 $r=L/(1+e\\cos\\theta)$。两数据给 $30=L/(1+e/2)$，$150=L/(1-e/2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$30+15e=150-75e$，解得 $e=4/3,L=50$，故 $r=150/(3+4\\cos\\theta)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "(b) 在 $\\theta=0$ 最近，距离 $50/(1+4/3)=150/7\\approx21.429$ 百万英里。完整有符号极方程还描出另一支，其轴顶点距极点 150 百万英里，故也不减小全曲线最小值。"
+          }
+        ],
+        "answer": "(a) $r=150/(3+4\\cos\\theta)$；(b) $150/7\\approx21.429$ 百万英里。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "A comet follows a hyperbolic orbit around the Sun at the focus. At distances 30 and 150 million miles, the Sun–comet segment makes angles $\\pi/3$ and $4\\pi/3$, respectively, with the orbital axis. (a) Find a polar equation. (b) How close does it come to the Sun?",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "(a) Use $r=L/(1+e\\cos\\theta)$ on the observed positive-radius branch. The data give $30=L/(1+e/2)$ and $150=L/(1-e/2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$30+15e=150-75e$ gives $e=4/3,L=50$, hence $r=150/(3+4\\cos\\theta)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "(b) The closest point is at $\\theta=0$, with distance $50/(1+4/3)=150/7\\approx21.429$ million miles. The complete signed-radius equation also traces another branch with an axial vertex 150 million miles from the pole, so it does not reduce the global minimum."
+            }
+          ],
+          "answer": "(a) $r=150/(3+4\\cos\\theta)$; (b) $150/7\\approx21.429$ million miles."
+        },
+        "number": 46,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "描绘并解释 $r=6/[2-\\sin(\\theta-\\pi/3)]$。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "令 $\\phi=\\theta-\\pi/3$，得 $r=3/(1-\\frac12\\sin\\phi)$，为 $e=1/2,p=6$ 的椭圆。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "旧坐标 $u=(x+\\sqrt3y)/2,v=(-\\sqrt3x+y)/2$。未旋转时顶点 $(0,6),(0,-2)$，中心 $(0,2)$，准线 $v=-6$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "逆时针旋转 $\\pi/3$ 后，顶点 $(-3\\sqrt3,3),(\\sqrt3,-1)$，中心 $(-\\sqrt3,1)$，准线 $-\\sqrt3x+y=-12$；标准式为 $u^2/12+(v-2)^2/16=1$。"
+          }
+        ],
+        "answer": "椭圆；焦点原点，长轴方向角 $5\\pi/6$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Graph and interpret $r=6/[2-\\sin(\\theta-\\pi/3)]$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Put $\\phi=\\theta-\\pi/3$: $r=3/(1-\\frac12\\sin\\phi)$, an ellipse with $e=1/2,p=6$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The old coordinates are $u=(x+\\sqrt3y)/2,v=(-\\sqrt3x+y)/2$. Before rotation, vertices are $(0,6),(0,-2)$, center $(0,2)$, and directrix $v=-6$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "After a counterclockwise rotation of $\\pi/3$, the vertices are $(-3\\sqrt3,3),(\\sqrt3,-1)$, center $(-\\sqrt3,1)$, and directrix $-\\sqrt3x+y=-12$. The equation is $u^2/12+(v-2)^2/16=1$."
+            }
+          ],
+          "answer": "An ellipse with focus at the origin and major-axis direction $5\\pi/6$."
+        },
+        "number": 47,
+        "solutionImage": "assets/8-6-exercise-47.png"
+      },
+      {
+        "prompt": "证明 $r=2\\sec^2(\\theta/2)$ 表示抛物线并求准线。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "半角公式 $\\cos^2(\\theta/2)=(1+\\cos\\theta)/2$ 给出 $r=\\frac{4}{1+\\cos\\theta}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式显示 $e=1,p=4$，故为抛物线，准线 $x=4$。"
+          }
+        ],
+        "answer": "抛物线；准线 $x=4$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Show that $r=2\\sec^2(\\theta/2)$ is a polar equation of a parabola and find its directrix.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The half-angle identity $\\cos^2(\\theta/2)=(1+\\cos\\theta)/2$ gives $r=\\frac{4}{1+\\cos\\theta}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form has $e=1,p=4$, so it is a parabola with directrix $x=4$."
+            }
+          ],
+          "answer": "Parabola; directrix $x=4$."
+        },
+        "number": 48,
+        "solutionImage": "assets/8-6-exercise-48.png"
+      },
+      {
+        "prompt": "证明 $r=2\\csc^2(\\theta/2)$ 表示抛物线并求准线。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "半角公式 $\\sin^2(\\theta/2)=(1-\\cos\\theta)/2$ 给出 $r=\\frac{4}{1-\\cos\\theta}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式显示 $e=1,p=4$，故为抛物线，准线 $x=-4$。"
+          }
+        ],
+        "answer": "抛物线；准线 $x=-4$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Show that $r=2\\csc^2(\\theta/2)$ is a polar equation of a parabola and find its directrix.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The half-angle identity $\\sin^2(\\theta/2)=(1-\\cos\\theta)/2$ gives $r=\\frac{4}{1-\\cos\\theta}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form has $e=1,p=4$, so it is a parabola with directrix $x=-4$."
+            }
+          ],
+          "answer": "Parabola; directrix $x=-4$."
+        },
+        "number": 49,
+        "solutionImage": "assets/8-6-exercise-49.png"
+      },
+      {
+        "prompt": "焦弦通过圆锥曲线一个焦点，焦点将弦分成长度 $r_1,r_2$ 两段（见图）。证明对固定椭圆或抛物线，$1/r_1+1/r_2$ 是常数。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "取焦点为极点，旋转坐标到 $r=L/(1-e\\cos\\theta)$，$L=ep>0$。两条射线相差 $\\pi$，有效有限交点半径均为正。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$r_1=L/(1-e\\cos\\theta)$，$r_2=L/[1-e\\cos(\\theta+\\pi)]=L/(1+e\\cos\\theta)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "相加倒数得 $(1-e\\cos\\theta)/L+(1+e\\cos\\theta)/L=2/L=2/(ep)$，与方向无关。抛物线中平行主轴的直线没有两个有限弦端点，不适用。"
+          }
+        ],
+        "answer": "常数为 $2/(ep)$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "A focal chord passes through a focus, which divides it into lengths $r_1,r_2$ (see figure). Prove that for a fixed ellipse or parabola, $1/r_1+1/r_2$ is constant.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Place the pole at the focus and rotate to $r=L/(1-e\\cos\\theta)$, $L=ep>0$. The two chord rays differ by $\\pi$ and their finite intersection radii are positive."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$r_1=L/(1-e\\cos\\theta)$ and $r_2=L/[1-e\\cos(\\theta+\\pi)]=L/(1+e\\cos\\theta)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Adding reciprocals gives $(1-e\\cos\\theta)/L+(1+e\\cos\\theta)/L=2/L=2/(ep)$, independent of direction. An axis-parallel line in a parabola has no two finite chord endpoints and is excluded."
+            }
+          ],
+          "answer": "The constant is $2/(ep)$."
+        },
+        "number": 50,
+        "sourceImage": "assets/8-6-exercise-50-source.png"
+      },
+      {
+        "prompt": "说明习题 50 的结论不能不加分支限制地用于双曲线。比较 $r=15/(1-4\\cos\\theta)$ 在 $\\theta=0$ 与 $\\pi/3$ 的焦点直线。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "轴线 $\\theta=0,\\pi$ 的有符号半径为 $-5,3$；实际距离为 5、3，倒数和为 $8/15$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "在 $\\theta=\\pi/3,4\\pi/3$，有符号半径为 $-15,5$；实际距离的倒数和为 $1/15+1/5=4/15$，不同于 $8/15$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "负半径换向，所以有符号倒数的抵消不能当作正长度倒数之和。限定分支时也必须区分端点在焦点同侧所形成的有向关系。"
+          }
+        ],
+        "answer": "两方向分别得到 $8/15$ 和 $4/15$，并非常数。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Show that the result of Exercise 50 fails without branch restrictions for a hyperbola. Compare the focal lines of $r=15/(1-4\\cos\\theta)$ at $\\theta=0$ and $\\pi/3$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "At $\\theta=0,\\pi$ the signed radii are $-5,3$. The actual distances are 5 and 3, whose reciprocal sum is $8/15$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "At $\\theta=\\pi/3,4\\pi/3$ the signed radii are $-15,5$. The reciprocal-distance sum is $1/15+1/5=4/15$, different from $8/15$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Negative radii reverse direction; cancellation of signed reciprocals is not a sum of reciprocals of positive lengths. Any branch restriction must also distinguish the directed relation for endpoints on the same side of the focus."
+            }
+          ],
+          "answer": "The two directions give $8/15$ and $4/15$, so the sum is not constant."
+        },
+        "number": 51
+      },
+      {
+        "prompt": "对于椭圆 $r=ep/(1-e\\cos\\theta)$，$e<1$，利用图中顶点和中心证明 $c=ae$。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "令 $L=ep$。两顶点的有符号横坐标为 $x_1=L/(1-e)$，$x_2=-L/(1+e)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$c=(x_1+x_2)/2=Le/(1-e^2)$；$a=(x_1-x_2)/2=L/(1-e^2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$c/a=e$，所以 $c=ae$。"
+          }
+        ],
+        "answer": "$c=ae$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "For the ellipse $r=ep/(1-e\\cos\\theta)$, $e<1$, use the vertices and center in the figure to prove $c=ae$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Let $L=ep$. The signed vertex coordinates are $x_1=L/(1-e)$ and $x_2=-L/(1+e)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$c=(x_1+x_2)/2=Le/(1-e^2)$ and $a=(x_1-x_2)/2=L/(1-e^2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$c/a=e$, so $c=ae$."
+            }
+          ],
+          "answer": "$c=ae$."
+        },
+        "number": 52,
+        "sourceImage": "assets/8-6-exercise-52-source.png"
+      },
+      {
+        "prompt": "证明习题 52 的椭圆可写为 $r=a(1-e^2)/(1-e\\cos\\theta)$。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "两顶点相距 $2a=L/(1-e)+L/(1+e)=2L/(1-e^2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "所以 $L=a(1-e^2)$；代入 $r=L/(1-e\\cos\\theta)$ 即得所求。"
+          }
+        ],
+        "answer": "$r=a(1-e^2)/(1-e\\cos\\theta)$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Show that the ellipse in Exercise 52 can be written as $r=a(1-e^2)/(1-e\\cos\\theta)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The vertex separation is $2a=L/(1-e)+L/(1+e)=2L/(1-e^2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Therefore $L=a(1-e^2)$; substitute into $r=L/(1-e\\cos\\theta)$."
+            }
+          ],
+          "answer": "$r=a(1-e^2)/(1-e\\cos\\theta)$."
+        },
+        "number": 53
+      },
+      {
+        "prompt": "利用习题 52，将 $r=3.2/(1-0.6\\cos\\theta)$ 写为直角坐标方程。",
+        "concept": "polar-graph",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "$e=3/5,L=16/5$。由 $L=a(1-e^2)$ 得 $a=5$，$c=ae=3$，$b^2=a^2-c^2=16$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "中心 $(3,0)$，长轴水平，故 $(x-3)^2/25+y^2/16=1$。一个焦点为 $(3-c,0)=(0,0)$，符合极点条件。"
+          }
+        ],
+        "answer": "$(x-3)^2/25+y^2/16=1$。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "Use Exercise 52 to write a Cartesian equation of $r=3.2/(1-0.6\\cos\\theta)$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "$e=3/5,L=16/5$. From $L=a(1-e^2)$, obtain $a=5$, $c=ae=3$, and $b^2=a^2-c^2=16$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The center is $(3,0)$ and the major axis is horizontal, giving $(x-3)^2/25+y^2/16=1$. One focus is $(3-c,0)=(0,0)$, agreeing with the pole."
+            }
+          ],
+          "answer": "$(x-3)^2/25+y^2/16=1$."
+        },
+        "number": 54,
+        "solutionImage": "assets/8-6-exercise-54.png"
+      },
+      {
+        "prompt": "判断：$r=ep/(1-e\\sin\\theta)$ 的图像可由 $r=ep/(1-e\\cos\\theta)$ 逆时针旋转 $\\pi/2$ 得到。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "旋转 $\\alpha$ 时将旧角换为 $\\theta-\\alpha$。$\\cos(\\theta-\\pi/2)=\\sin\\theta$，得到目标方程。"
+          }
+        ],
+        "answer": "正确。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "True or false: $r=ep/(1-e\\sin\\theta)$ is obtained by rotating $r=ep/(1-e\\cos\\theta)$ counterclockwise through $\\pi/2$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "A rotation through $\\alpha$ replaces the old angle by $\\theta-\\alpha$. Since $\\cos(\\theta-\\pi/2)=\\sin\\theta$, it yields the stated equation."
+            }
+          ],
+          "answer": "True."
+        },
+        "number": 55
+      },
+      {
+        "prompt": "判断：$r=-4/(2-\\cos\\theta)$ 与 $r=4/(2+\\cos\\theta)$ 的图像相同。",
+        "concept": "identities-proofs",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "第一式半径总为负。令 $\\rho=-r>0,\\phi=\\theta+\\pi$，则 $\\cos\\theta=-\\cos\\phi$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "得到 $\\rho=4/(2+\\cos\\phi)$；两组极坐标表示相同点，故图像相同。"
+          }
+        ],
+        "answer": "正确。",
+        "pdfPage": 855,
+        "printedPage": 831,
+        "en": {
+          "prompt": "True or false: $r=-4/(2-\\cos\\theta)$ and $r=4/(2+\\cos\\theta)$ have the same graph.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "The first radius is always negative. Set $\\rho=-r>0,\\phi=\\theta+\\pi$, so $\\cos\\theta=-\\cos\\phi$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "This gives $\\rho=4/(2+\\cos\\phi)$. The two polar pairs represent identical points, so the graphs coincide."
+            }
+          ],
+          "answer": "True."
+        },
+        "number": 56
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4",
+      "example-5",
+      "example-6"
+    ],
+    "expectedPractice": [
+      "practice-1",
+      "practice-2",
+      "practice-3",
+      "practice-4",
+      "practice-5",
+      "practice-6"
+    ],
+    "expectedGettingReady": [
+      "GR1",
+      "GR2",
+      "GR3",
+      "GR4",
+      "GR5",
+      "GR6",
+      "GR7"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "expectedSubparts": {
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "practice-2": [
+        "a",
+        "b"
+      ],
+      "exercise-45": [
+        "a",
+        "b"
+      ],
+      "exercise-46": [
+        "a",
+        "b"
+      ],
+      "getting-ready-GR2": [
+        "a",
+        "b"
+      ],
+      "getting-ready-GR3": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Every original PDF page 846–855 visually read before writing; exact conic and orbital checks; Exercise 45 axis-orientation ambiguity disclosed.",
+    "independentReview": "Independent source and solution review; see private chapter audit."
+  }
+}

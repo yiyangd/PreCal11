@@ -126,3 +126,9 @@ Sections 6.1–6.7, all chapter-end questions and review examples: 1154 parent p
 Sections 7.1–7.8 and four chapter-end pages: 1202 parent problems, 1414 items counting explicit subparts. / 第7章八节及四个章末页面，共1202道大题、1414个显式小问项。
 
 [Study Chapter 7](sections/7-1/) · [第7章中文入口](sections/7-1/?lang=zh) · [Coverage and source notes / 覆盖与来源说明](chapters/7/audit.html). Test B originals are absent from the supplied PDF; three external interactive activities return 404. Incomplete original notation and conditional readings are explicitly disclosed. Existing lessons and progress identities are preserved.
+
+## Chapter 8 / 第8章
+
+Sections 8.1–8.7 and four chapter-end pages: 821 parent problems, 976 items counting explicit subparts. / 第8章七节及四个章末页面，共821道大题、976个显式小问项。
+
+[Study Chapter 8](sections/8-1/) · [第8章中文入口](sections/8-1/?lang=zh) · [Coverage and source notes / 覆盖与来源说明](chapters/8/audit.html). Test B originals are absent from the supplied PDF; two external interactive activities return 404. Incomplete original notation and conditional readings are explicitly disclosed. Existing lessons and progress identities are preserved.

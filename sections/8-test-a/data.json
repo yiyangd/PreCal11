@@ -1,0 +1,1206 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch8-local",
+    "title": "第8章：解析几何",
+    "en": {
+      "title": "Chapter 8: Analytic Geometry"
+    }
+  },
+  "lesson": {
+    "id": "8-test-a",
+    "section": "8",
+    "title": "第8章测试A",
+    "en": {
+      "title": "Chapter 8 Practice Test A"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        873
+      ],
+      "printedPages": [
+        849
+      ]
+    },
+    "concepts": [
+      {
+        "id": "parabola",
+        "title": "抛物线与焦点准线",
+        "summary": "点到焦点和准线的距离相等。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$(y-k)^2=4p(x-h)$ 的顶点为 $(h,k)$、焦点为 $(h+p,k)$、准线为 $x=h-p$；竖直形式交换变量。$p$ 有正负，焦径长度为 $4|p|$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Parabolas, foci and directrices",
+          "summary": "Every point is equidistant from a focus and a directrix.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "For $(y-k)^2=4p(x-h)$, the vertex is $(h,k)$, focus $(h+p,k)$ and directrix $x=h-p$. Interchange coordinates for a vertical axis. The signed $p$ sets direction; focal diameter is $4|p|$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "ellipse",
+        "title": "椭圆的轴与焦点",
+        "summary": "到两焦点距离之和为 $2a$；$a\\ge b>0$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "配方并把右侧化成1；大分母为 $a^2$，$c^2=a^2-b^2$。中心、顶点与短轴端点都须平移。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Ellipse axes and foci",
+          "summary": "The sum of distances to two foci is $2a$, with $a\\ge b>0$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Complete squares and normalize to 1. The larger denominator is $a^2$; $c^2=a^2-b^2$. Translate the center, vertices and minor-axis endpoints."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "hyperbola",
+        "title": "双曲线与渐近线",
+        "summary": "到两焦点距离差的绝对值为 $2a$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "正项确定实轴，$c^2=a^2+b^2$。$(x-h)^2/a^2-(y-k)^2/b^2=1$ 的渐近线为 $y-k=\\pm(b/a)(x-h)$；竖直形式斜率为 $\\pm a/b$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Hyperbolas and asymptotes",
+          "summary": "The absolute difference of distances to the two foci is $2a$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "The positive term locates the transverse axis, and $c^2=a^2+b^2$. For $(x-h)^2/a^2-(y-k)^2/b^2=1$, asymptotes are $y-k=\\pm(b/a)(x-h)$; the vertical form uses slopes $\\pm a/b$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "rotation",
+        "title": "转轴与退化检查",
+        "summary": "转轴消去混合项后，再配方判断实点集。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$x=X\\cos\\alpha-Y\\sin\\alpha,\\ y=X\\sin\\alpha+Y\\cos\\alpha$，取 $\\cot2\\alpha=(A-C)/B$。$B^2-4AC$ 只在排除退化后确定类型。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Rotation and degeneracy checks",
+          "summary": "Remove the mixed term by rotating axes, then complete squares and check the real locus.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $x=X\\cos\\alpha-Y\\sin\\alpha,\\ y=X\\sin\\alpha+Y\\cos\\alpha$, with $\\cot2\\alpha=(A-C)/B$. The discriminant $B^2-4AC$ classifies only after degenerate cases have been excluded."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "polar",
+        "title": "极坐标圆锥曲线",
+        "summary": "先把分母常数化成1，读出离心率。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$r=ep/(1\\pm e\\cos\\theta)$ 或 $ep/(1\\pm e\\sin\\theta)$，$p>0$。$e<1,=1,>1$ 对应椭圆、抛物线、双曲线；保留 $r$ 符号和原式禁角。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Polar conics",
+          "summary": "Normalize the denominator constant to 1 to read eccentricity.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $r=ep/(1\\pm e\\cos\\theta)$ or $ep/(1\\pm e\\sin\\theta)$, with $p>0$. Values $e<1,=1,>1$ give ellipse, parabola and hyperbola. Keep signed radii and denominator exclusions."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "parametric",
+        "title": "消参、轨迹与方向",
+        "summary": "消参后的整条代数曲线可能大于实际轨迹。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "结合参数范围限制 $x,y$；代入几个递增参数值说明起点、终点、方向与重复次数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Elimination, actual traces and orientation",
+          "summary": "An implicit equation can describe more points than the actual trace.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Apply the parameter domain to restrict $x,y$. Evaluate increasing parameter values to identify endpoints, orientation and repetitions."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "application",
+        "title": "建模、交点与实际限制",
+        "summary": "先选坐标、单位和物理范围，再列式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "交点须满足两式；距离方程平方后仍须检查原来的正负条件。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Models, intersections and contextual restrictions",
+          "summary": "Choose coordinates, units and the physical domain before forming equations.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Intersection points must satisfy both equations. After squaring distance equations, check the original sign condition."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "prior",
+        "title": "前章知识综合",
+        "summary": "保留定义域并检查等价变换。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "对数真数为正；有理式分母不为零；三角符号由象限决定；矩阵结果乘回验证。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Earlier-chapter connections",
+          "summary": "Keep domains and check equivalence.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Logarithm arguments are positive, rational denominators nonzero, trigonometric signs follow quadrants, and matrix answers should be multiplied back."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "gettingReady": [],
+    "kind": "chapter-end"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "求焦点为$(0,12)$、准线为$x=-12$的抛物线标准方程。",
+        "concept": "parabola",
+        "steps": [
+          {
+            "title": "由原条件推导",
+            "body": "焦点 $(0,12)$ 到竖直准线 $x=-12$ 的垂足为 $(-12,12)$；中点是顶点 $(-6,12)$，$p=6$，故轴水平且 $(y-12)^2=24(x+6)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "原文准线是竖直线$x=-12$，不是$y=-12$。焦点向准线的垂足为$(-12,12)$，中点顶点$(-6,12)$，$p=6$，所以$(y-12)^2=24(x+6)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "对二次变量配方，与标准式比较：$\\left(y - 12\\right)^{2} = 24 x + 144$，故有符号参数 $p=6$。顶点 $(-6,12)$；焦点 $(0,12)$；轴 $y=12$；准线 $x=-12$；焦径长度 $24$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\left(y - 12\\right)^{2} = 24 x + 144$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "抛物线：$\\left(y - 12\\right)^{2} = 24 x + 144$。顶点 $(-6,12)$；焦点 $(0,12)$；轴 $y=12$；准线 $x=-12$；焦径长度 $24$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Find the standard equation of the parabola with focus $(0,12)$ and directrix $x=-12$.",
+          "steps": [
+            {
+              "title": "Derive from the original conditions",
+              "body": "The perpendicular foot from focus $(0,12)$ to $x=-12$ is $(-12,12)$. Their midpoint is vertex $(-6,12)$, with $p=6$, giving the horizontal-axis equation $(y-12)^2=24(x+6)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The original directrix is the vertical line $x=-12$, not $y=-12$. The foot from the focus is $(-12,12)$; its midpoint with the focus is vertex $(-6,12)$. Thus $p=6$ and $(y-12)^2=24(x+6)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete the square in the quadratic variable and compare with the standard form: $\\left(y - 12\\right)^{2} = 24 x + 144$, giving the signed parameter $p=6$. Vertex $(-6,12)$; focus $(0,12)$; axis $y=12$; directrix $x=-12$; focal diameter $24$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\left(y - 12\\right)^{2} = 24 x + 144$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Parabola: $\\left(y - 12\\right)^{2} = 24 x + 144$. Vertex $(-6,12)$; focus $(0,12)$; axis $y=12$; directrix $x=-12$; focal diameter $24$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 1,
+        "solutionImage": "assets/8-test-a-1.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$8 x + y^{2} - 2 y + 25 = 0$。",
+        "concept": "parabola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "对二次变量配方，与标准式比较：$\\left(y - 1\\right)^{2} = - 8 x - 24$，故有符号参数 $p=-2$。顶点 $(-3,1)$；焦点 $(-5,1)$；轴 $y=1$；准线 $x=-1$；焦径长度 $8$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\left(y - 1\\right)^{2} = - 8 x - 24$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "抛物线：$\\left(y - 1\\right)^{2} = - 8 x - 24$。顶点 $(-3,1)$；焦点 $(-5,1)$；轴 $y=1$；准线 $x=-1$；焦径长度 $8$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $8 x + y^{2} - 2 y + 25 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete the square in the quadratic variable and compare with the standard form: $\\left(y - 1\\right)^{2} = - 8 x - 24$, giving the signed parameter $p=-2$. Vertex $(-3,1)$; focus $(-5,1)$; axis $y=1$; directrix $x=-1$; focal diameter $8$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\left(y - 1\\right)^{2} = - 8 x - 24$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Parabola: $\\left(y - 1\\right)^{2} = - 8 x - 24$. Vertex $(-3,1)$; focus $(-5,1)$; axis $y=1$; directrix $x=-1$; focal diameter $8$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 2,
+        "solutionImage": "assets/8-test-a-2.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$x^{2} + 4 x + 8 y - 4 = 0$。",
+        "concept": "parabola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "对二次变量配方，与标准式比较：$\\left(x + 2\\right)^{2} = 8 - 8 y$，故有符号参数 $p=-2$。顶点 $(-2,1)$；焦点 $(-2,-1)$；轴 $x=-2$；准线 $y=3$；焦径长度 $8$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\left(x + 2\\right)^{2} = 8 - 8 y$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "抛物线：$\\left(x + 2\\right)^{2} = 8 - 8 y$。顶点 $(-2,1)$；焦点 $(-2,-1)$；轴 $x=-2$；准线 $y=3$；焦径长度 $8$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $x^{2} + 4 x + 8 y - 4 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete the square in the quadratic variable and compare with the standard form: $\\left(x + 2\\right)^{2} = 8 - 8 y$, giving the signed parameter $p=-2$. Vertex $(-2,1)$; focus $(-2,-1)$; axis $x=-2$; directrix $y=3$; focal diameter $8$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\left(x + 2\\right)^{2} = 8 - 8 y$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Parabola: $\\left(x + 2\\right)^{2} = 8 - 8 y$. Vertex $(-2,1)$; focus $(-2,-1)$; axis $x=-2$; directrix $y=3$; focal diameter $8$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 3,
+        "solutionImage": "assets/8-test-a-3.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "水滑梯底部截面为抛物线，宽6英尺、深2英尺。求距中心水平1英尺处滑梯的高度。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "以最低点为原点，设$y=ax^2$；边缘点$(\\pm3,2)$给$a=2/9$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "在$x=\\pm1$处$y=2/9$英尺，是相对于槽底的高度；到2英尺顶缘的竖直差为$16/9$英尺。"
+          }
+        ],
+        "answer": "槽底以上$2/9$英尺（约2.67英寸）。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "The base of a water slide is parabolic,6 ft wide and 2 ft deep. Find the height of the slide 1 ft from its center.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Put the lowest point at the origin and write $y=ax^2$. The rim points $(\\pm3,2)$ give $a=2/9$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "At $x=\\pm1$,$y=2/9$ ft above the bottom. The vertical distance below the 2 ft rim is $16/9$ ft."
+            }
+          ],
+          "answer": "$2/9$ ft above the bottom (about 2.67 in)."
+        },
+        "number": 4,
+        "solutionImage": "assets/8-test-a-4.png"
+      },
+      {
+        "prompt": "求顶点$(3,-1)$、准线$x=-3$的抛物线方程。",
+        "concept": "parabola",
+        "steps": [
+          {
+            "title": "由原条件推导",
+            "body": "顶点到准线的有符号距离 $p=3-(-3)=6$；向右开口，故 $(y+1)^2=24(x-3)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "轴水平，$h-p=-3$且$h=3$，故$p=6$，标准式$(y+1)^2=24(x-3)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "对二次变量配方，与标准式比较：$\\left(y + 1\\right)^{2} = 24 x - 72$，故有符号参数 $p=6$。顶点 $(3,-1)$；焦点 $(9,-1)$；轴 $y=-1$；准线 $x=-3$；焦径长度 $24$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\left(y + 1\\right)^{2} = 24 x - 72$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "抛物线：$\\left(y + 1\\right)^{2} = 24 x - 72$。顶点 $(3,-1)$；焦点 $(9,-1)$；轴 $y=-1$；准线 $x=-3$；焦径长度 $24$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Find the equation of the parabola with vertex $(3,-1)$ and directrix $x=-3$.",
+          "steps": [
+            {
+              "title": "Derive from the original conditions",
+              "body": "The signed vertex-to-directrix distance is $p=3-(-3)=6$. The parabola opens right, so $(y+1)^2=24(x-3)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The axis is horizontal. Since $h-p=-3$ and $h=3$,$p=6$, giving $(y+1)^2=24(x-3)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete the square in the quadratic variable and compare with the standard form: $\\left(y + 1\\right)^{2} = 24 x - 72$, giving the signed parameter $p=6$. Vertex $(3,-1)$; focus $(9,-1)$; axis $y=-1$; directrix $x=-3$; focal diameter $24$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\left(y + 1\\right)^{2} = 24 x - 72$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Parabola: $\\left(y + 1\\right)^{2} = 24 x - 72$. Vertex $(3,-1)$; focus $(9,-1)$; axis $y=-1$; directrix $x=-3$; focal diameter $24$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 5,
+        "solutionImage": "assets/8-test-a-5.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "求焦点$(0,-2),(0,2)$、顶点$(0,-4),(0,4)$的椭圆标准方程。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "由原条件推导",
+            "body": "长轴竖直，$a=4,c=2$，$b^2=a^2-c^2=12$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "长轴竖直，$a=4,c=2$，$b^2=16-4=12$，所以$x^2/12+y^2/16=1$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{12} + \\frac{y^{2}}{16}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=16, b^2=12, c^2=a^2-b^2=4$。顶点 $(0,-4),\\ (0,4)$；焦点 $(0,-2),\\ (0,2)$；短轴端点 $(- 2 \\sqrt{3},0),\\ (2 \\sqrt{3},0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{12}+\\frac{y^{2}}{16}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{12}+\\frac{y^{2}}{16}=1$。顶点 $(0,-4),\\ (0,4)$；焦点 $(0,-2),\\ (0,2)$；短轴端点 $(- 2 \\sqrt{3},0),\\ (2 \\sqrt{3},0)$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Find the standard ellipse equation with foci $(0,-2),(0,2)$ and vertices $(0,-4),(0,4)$.",
+          "steps": [
+            {
+              "title": "Derive from the original conditions",
+              "body": "The major axis is vertical with $a=4,c=2$, hence $b^2=a^2-c^2=12$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The major axis is vertical:$a=4,c=2$, so $b^2=16-4=12$ and $x^2/12+y^2/16=1$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{12} + \\frac{y^{2}}{16}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=16, b^2=12, c^2=a^2-b^2=4$. Vertices $(0,-4),\\ (0,4)$; foci $(0,-2),\\ (0,2)$; minor-axis endpoints $(- 2 \\sqrt{3},0),\\ (2 \\sqrt{3},0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{12}+\\frac{y^{2}}{16}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{12}+\\frac{y^{2}}{16}=1$. Vertices $(0,-4),\\ (0,4)$; foci $(0,-2),\\ (0,2)$; minor-axis endpoints $(- 2 \\sqrt{3},0),\\ (2 \\sqrt{3},0)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 6,
+        "solutionImage": "assets/8-test-a-6.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "求中心$(0,0)$、水平长轴长18、短轴长4的椭圆标准方程。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "由原条件推导",
+            "body": "$a=18/2=9,b=4/2=2$，中心原点、长轴水平。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "半长轴$a=18/2=9$，半短轴$b=4/2=2$，水平长轴对应$x^2$分母81。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{81} + \\frac{y^{2}}{4}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=81, b^2=4, c^2=a^2-b^2=77$。顶点 $(-9,0),\\ (9,0)$；焦点 $(- \\sqrt{77},0),\\ (\\sqrt{77},0)$；短轴端点 $(0,-2),\\ (0,2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{81}+\\frac{y^{2}}{4}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{81}+\\frac{y^{2}}{4}=1$。顶点 $(-9,0),\\ (9,0)$；焦点 $(- \\sqrt{77},0),\\ (\\sqrt{77},0)$；短轴端点 $(0,-2),\\ (0,2)$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Find the standard equation of the ellipse centered at $(0,0)$ with horizontal major-axis length 18 and minor-axis length 4.",
+          "steps": [
+            {
+              "title": "Derive from the original conditions",
+              "body": "$a=18/2=9,b=4/2=2$, with center at the origin and a horizontal major axis."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The semiaxes are $a=18/2=9$ and $b=4/2=2$. The horizontal major axis gives denominator 81 under $x^2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{81} + \\frac{y^{2}}{4}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=81, b^2=4, c^2=a^2-b^2=77$. Vertices $(-9,0),\\ (9,0)$; foci $(- \\sqrt{77},0),\\ (\\sqrt{77},0)$; minor-axis endpoints $(0,-2),\\ (0,2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{81}+\\frac{y^{2}}{4}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{81}+\\frac{y^{2}}{4}=1$. Vertices $(-9,0),\\ (9,0)$; foci $(- \\sqrt{77},0),\\ (\\sqrt{77},0)$; minor-axis endpoints $(0,-2),\\ (0,2)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 7,
+        "solutionImage": "assets/8-test-a-7.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$9 x^{2} + y^{2} - 9 = 0$。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $9 x^{2} + y^{2}=9$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=9, b^2=1, c^2=a^2-b^2=8$。顶点 $(0,-3),\\ (0,3)$；焦点 $(0,- 2 \\sqrt{2}),\\ (0,2 \\sqrt{2})$；短轴端点 $(-1,0),\\ (1,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{1}+\\frac{y^{2}}{9}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{1}+\\frac{y^{2}}{9}=1$。顶点 $(0,-3),\\ (0,3)$；焦点 $(0,- 2 \\sqrt{2}),\\ (0,2 \\sqrt{2})$；短轴端点 $(-1,0),\\ (1,0)$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $9 x^{2} + y^{2} - 9 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $9 x^{2} + y^{2}=9$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=9, b^2=1, c^2=a^2-b^2=8$. Vertices $(0,-3),\\ (0,3)$; foci $(0,- 2 \\sqrt{2}),\\ (0,2 \\sqrt{2})$; minor-axis endpoints $(-1,0),\\ (1,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{1}+\\frac{y^{2}}{9}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{1}+\\frac{y^{2}}{9}=1$. Vertices $(0,-3),\\ (0,3)$; foci $(0,- 2 \\sqrt{2}),\\ (0,2 \\sqrt{2})$; minor-axis endpoints $(-1,0),\\ (1,0)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 8,
+        "solutionImage": "assets/8-test-a-8.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "求焦点$(0,-\\sqrt{45}),(0,\\sqrt{45})$、顶点$(0,-6),(0,6)$的双曲线标准方程。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "由原条件推导",
+            "body": "实轴竖直，$a=6,c=\\sqrt{45}$，$b^2=c^2-a^2=45-36=9$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "实轴竖直，$a=6,c^2=45$，所以$b^2=45-36=9$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $- \\frac{x^{2}}{9} + \\frac{y^{2}}{36}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=36,b^2=9,c^2=a^2+b^2=45$。顶点 $(0,-6),\\ (0,6)$；焦点 $(0,- 3 \\sqrt{5}),\\ (0,3 \\sqrt{5})$；渐近线 $y-(0)=\\pm 2[x-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{y^{2}}{36}-\\frac{x^{2}}{9}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{y^{2}}{36}-\\frac{x^{2}}{9}=1$。顶点 $(0,-6),\\ (0,6)$；焦点 $(0,- 3 \\sqrt{5}),\\ (0,3 \\sqrt{5})$；渐近线 $y-(0)=\\pm 2[x-(0)]$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Find the standard hyperbola equation with foci $(0,-\\sqrt{45}),(0,\\sqrt{45})$ and vertices $(0,-6),(0,6)$.",
+          "steps": [
+            {
+              "title": "Derive from the original conditions",
+              "body": "The transverse axis is vertical with $a=6,c=\\sqrt{45}$, so $b^2=c^2-a^2=45-36=9$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The transverse axis is vertical:$a=6,c^2=45$, so $b^2=45-36=9$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $- \\frac{x^{2}}{9} + \\frac{y^{2}}{36}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=36,b^2=9,c^2=a^2+b^2=45$. Vertices $(0,-6),\\ (0,6)$; foci $(0,- 3 \\sqrt{5}),\\ (0,3 \\sqrt{5})$; asymptotes $y-(0)=\\pm 2[x-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{y^{2}}{36}-\\frac{x^{2}}{9}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{y^{2}}{36}-\\frac{x^{2}}{9}=1$. Vertices $(0,-6),\\ (0,6)$; foci $(0,- 3 \\sqrt{5}),\\ (0,3 \\sqrt{5})$; asymptotes $y-(0)=\\pm 2[x-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 9,
+        "solutionImage": "assets/8-test-a-9.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$- x^{2} + 2 x + y^{2} - 2 = 0$。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $y^{2} - \\left(x - 1\\right)^{2}=1$，中心为 $(1,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=1,b^2=1,c^2=a^2+b^2=2$。顶点 $(1,-1),\\ (1,1)$；焦点 $(1,- \\sqrt{2}),\\ (1,\\sqrt{2})$；渐近线 $y-(0)=\\pm 1[x-(1)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{y^{2}}{1}-\\frac{\\left(x - 1\\right)^{2}}{1}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{y^{2}}{1}-\\frac{\\left(x - 1\\right)^{2}}{1}=1$。顶点 $(1,-1),\\ (1,1)$；焦点 $(1,- \\sqrt{2}),\\ (1,\\sqrt{2})$；渐近线 $y-(0)=\\pm 1[x-(1)]$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $- x^{2} + 2 x + y^{2} - 2 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $y^{2} - \\left(x - 1\\right)^{2}=1$, with center $(1,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=1,b^2=1,c^2=a^2+b^2=2$. Vertices $(1,-1),\\ (1,1)$; foci $(1,- \\sqrt{2}),\\ (1,\\sqrt{2})$; asymptotes $y-(0)=\\pm 1[x-(1)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{y^{2}}{1}-\\frac{\\left(x - 1\\right)^{2}}{1}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{y^{2}}{1}-\\frac{\\left(x - 1\\right)^{2}}{1}=1$. Vertices $(1,-1),\\ (1,1)$; foci $(1,- \\sqrt{2}),\\ (1,\\sqrt{2})$; asymptotes $y-(0)=\\pm 1[x-(1)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 10,
+        "solutionImage": "assets/8-test-a-10.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$x^{2} - 2 x - 4 y^{2} - 16 y - 19 = 0$。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\left(x - 1\\right)^{2} - 4 \\left(y + 2\\right)^{2}=4$，中心为 $(1,-2)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=4,b^2=1,c^2=a^2+b^2=5$。顶点 $(-1,-2),\\ (3,-2)$；焦点 $(1 - \\sqrt{5},-2),\\ (1 + \\sqrt{5},-2)$；渐近线 $y-(-2)=\\pm \\frac{1}{2}[x-(1)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{\\left(x - 1\\right)^{2}}{4}-\\frac{\\left(y + 2\\right)^{2}}{1}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{\\left(x - 1\\right)^{2}}{4}-\\frac{\\left(y + 2\\right)^{2}}{1}=1$。顶点 $(-1,-2),\\ (3,-2)$；焦点 $(1 - \\sqrt{5},-2),\\ (1 + \\sqrt{5},-2)$；渐近线 $y-(-2)=\\pm \\frac{1}{2}[x-(1)]$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $x^{2} - 2 x - 4 y^{2} - 16 y - 19 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\left(x - 1\\right)^{2} - 4 \\left(y + 2\\right)^{2}=4$, with center $(1,-2)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=4,b^2=1,c^2=a^2+b^2=5$. Vertices $(-1,-2),\\ (3,-2)$; foci $(1 - \\sqrt{5},-2),\\ (1 + \\sqrt{5},-2)$; asymptotes $y-(-2)=\\pm \\frac{1}{2}[x-(1)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{\\left(x - 1\\right)^{2}}{4}-\\frac{\\left(y + 2\\right)^{2}}{1}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{\\left(x - 1\\right)^{2}}{4}-\\frac{\\left(y + 2\\right)^{2}}{1}=1$. Vertices $(-1,-2),\\ (3,-2)$; foci $(1 - \\sqrt{5},-2),\\ (1 + \\sqrt{5},-2)$; asymptotes $y-(-2)=\\pm \\frac{1}{2}[x-(1)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 11,
+        "solutionImage": "assets/8-test-a-11.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$x^{2} - 9 y^{2} + 16 = 0$。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $x^{2} - 9 y^{2}=-16$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=\\frac{16}{9},b^2=16,c^2=a^2+b^2=\\frac{160}{9}$。顶点 $(0,- \\frac{4}{3}),\\ (0,\\frac{4}{3})$；焦点 $(0,- \\frac{4 \\sqrt{10}}{3}),\\ (0,\\frac{4 \\sqrt{10}}{3})$；渐近线 $y-(0)=\\pm \\frac{1}{3}[x-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{y^{2}}{\\frac{16}{9}}-\\frac{x^{2}}{16}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{y^{2}}{\\frac{16}{9}}-\\frac{x^{2}}{16}=1$。顶点 $(0,- \\frac{4}{3}),\\ (0,\\frac{4}{3})$；焦点 $(0,- \\frac{4 \\sqrt{10}}{3}),\\ (0,\\frac{4 \\sqrt{10}}{3})$；渐近线 $y-(0)=\\pm \\frac{1}{3}[x-(0)]$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $x^{2} - 9 y^{2} + 16 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $x^{2} - 9 y^{2}=-16$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=\\frac{16}{9},b^2=16,c^2=a^2+b^2=\\frac{160}{9}$. Vertices $(0,- \\frac{4}{3}),\\ (0,\\frac{4}{3})$; foci $(0,- \\frac{4 \\sqrt{10}}{3}),\\ (0,\\frac{4 \\sqrt{10}}{3})$; asymptotes $y-(0)=\\pm \\frac{1}{3}[x-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{y^{2}}{\\frac{16}{9}}-\\frac{x^{2}}{16}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{y^{2}}{\\frac{16}{9}}-\\frac{x^{2}}{16}=1$. Vertices $(0,- \\frac{4}{3}),\\ (0,\\frac{4}{3})$; foci $(0,- \\frac{4 \\sqrt{10}}{3}),\\ (0,\\frac{4 \\sqrt{10}}{3})$; asymptotes $y-(0)=\\pm \\frac{1}{3}[x-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 12,
+        "solutionImage": "assets/8-test-a-12.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$x^{2} + 2 y + 1 = 0$。",
+        "concept": "parabola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "对二次变量配方，与标准式比较：$x^{2} = - 2 y - 1$，故有符号参数 $p=- \\frac{1}{2}$。顶点 $(0,- \\frac{1}{2})$；焦点 $(0,-1)$；轴 $x=0$；准线 $y=0$；焦径长度 $2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $x^{2} = - 2 y - 1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "抛物线：$x^{2} = - 2 y - 1$。顶点 $(0,- \\frac{1}{2})$；焦点 $(0,-1)$；轴 $x=0$；准线 $y=0$；焦径长度 $2$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $x^{2} + 2 y + 1 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete the square in the quadratic variable and compare with the standard form: $x^{2} = - 2 y - 1$, giving the signed parameter $p=- \\frac{1}{2}$. Vertex $(0,- \\frac{1}{2})$; focus $(0,-1)$; axis $x=0$; directrix $y=0$; focal diameter $2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $x^{2} = - 2 y - 1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Parabola: $x^{2} = - 2 y - 1$. Vertex $(0,- \\frac{1}{2})$; focus $(0,-1)$; axis $x=0$; directrix $y=0$; focal diameter $2$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 13,
+        "solutionImage": "assets/8-test-a-13.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$x^{2} + 2 x + y^{2} - 6 y - 3 = 0$。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\left(x + 1\\right)^{2} + \\left(y - 3\\right)^{2}=13$，中心为 $(-1,3)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=13, b^2=13, c^2=a^2-b^2=0$。圆心 $(-1,3)$；半径 $\\sqrt{13}$。圆没有区别于其他直径的长轴。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{\\left(x + 1\\right)^{2}}{13}+\\frac{\\left(y - 3\\right)^{2}}{13}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "圆：$\\frac{\\left(x + 1\\right)^{2}}{13}+\\frac{\\left(y - 3\\right)^{2}}{13}=1$。圆心 $(-1,3)$；半径 $\\sqrt{13}$。圆没有区别于其他直径的长轴。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $x^{2} + 2 x + y^{2} - 6 y - 3 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\left(x + 1\\right)^{2} + \\left(y - 3\\right)^{2}=13$, with center $(-1,3)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=13, b^2=13, c^2=a^2-b^2=0$. Center $(-1,3)$; radius $\\sqrt{13}$. A circle has no distinguished major-axis direction."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{\\left(x + 1\\right)^{2}}{13}+\\frac{\\left(y - 3\\right)^{2}}{13}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Circle: $\\frac{\\left(x + 1\\right)^{2}}{13}+\\frac{\\left(y - 3\\right)^{2}}{13}=1$. Center $(-1,3)$; radius $\\sqrt{13}$. A circle has no distinguished major-axis direction.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 14,
+        "solutionImage": "assets/8-test-a-14.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$25 x^{2} + 4 y^{2} - 100 = 0$。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $25 x^{2} + 4 y^{2}=100$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=25, b^2=4, c^2=a^2-b^2=21$。顶点 $(0,-5),\\ (0,5)$；焦点 $(0,- \\sqrt{21}),\\ (0,\\sqrt{21})$；短轴端点 $(-2,0),\\ (2,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{4}+\\frac{y^{2}}{25}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{4}+\\frac{y^{2}}{25}=1$。顶点 $(0,-5),\\ (0,5)$；焦点 $(0,- \\sqrt{21}),\\ (0,\\sqrt{21})$；短轴端点 $(-2,0),\\ (2,0)$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $25 x^{2} + 4 y^{2} - 100 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $25 x^{2} + 4 y^{2}=100$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=25, b^2=4, c^2=a^2-b^2=21$. Vertices $(0,-5),\\ (0,5)$; foci $(0,- \\sqrt{21}),\\ (0,\\sqrt{21})$; minor-axis endpoints $(-2,0),\\ (2,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{4}+\\frac{y^{2}}{25}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{4}+\\frac{y^{2}}{25}=1$. Vertices $(0,-5),\\ (0,5)$; foci $(0,- \\sqrt{21}),\\ (0,\\sqrt{21})$; minor-axis endpoints $(-2,0),\\ (2,0)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 15,
+        "solutionImage": "assets/8-test-a-15.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$x y - 1 = 0$。",
+        "concept": "rotation",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将坐标轴逆时针旋转 $\\alpha=\\frac{\\pi}{4}$，代入 $x=\\frac{\\sqrt{2}}{2}X-(\\frac{\\sqrt{2}}{2})Y,\\quad y=\\frac{\\sqrt{2}}{2}X+(\\frac{\\sqrt{2}}{2})Y$，原式化为 $\\frac{X^{2}}{2} - \\frac{Y^{2}}{2} - 1 = 0$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{X^{2}}{2} - \\frac{Y^{2}}{2}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=2,b^2=2,c^2=a^2+b^2=4$。顶点 $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$；焦点 $(-2,0),\\ (2,0)$；渐近线 $Y-(0)=\\pm 1[X-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{X^{2}}{2}-\\frac{Y^{2}}{2}=1$；以下几何坐标以新轴 $(X,Y)$ 表示。图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{X^{2}}{2}-\\frac{Y^{2}}{2}=1$。以下几何坐标以新轴 $(X,Y)$ 表示。顶点 $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$；焦点 $(-2,0),\\ (2,0)$；渐近线 $Y-(0)=\\pm 1[X-(0)]$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $x y - 1 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Rotate axes counterclockwise by $\\alpha=\\frac{\\pi}{4}$ and substitute $x=\\frac{\\sqrt{2}}{2}X-(\\frac{\\sqrt{2}}{2})Y,\\quad y=\\frac{\\sqrt{2}}{2}X+(\\frac{\\sqrt{2}}{2})Y$. The equation becomes $\\frac{X^{2}}{2} - \\frac{Y^{2}}{2} - 1 = 0$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{X^{2}}{2} - \\frac{Y^{2}}{2}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=2,b^2=2,c^2=a^2+b^2=4$. Vertices $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$; foci $(-2,0),\\ (2,0)$; asymptotes $Y-(0)=\\pm 1[X-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{X^{2}}{2}-\\frac{Y^{2}}{2}=1$. The following geometry uses the rotated coordinates $(X,Y)$.The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{X^{2}}{2}-\\frac{Y^{2}}{2}=1$. The following geometry uses the rotated coordinates $(X,Y)$.Vertices $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$; foci $(-2,0),\\ (2,0)$; asymptotes $Y-(0)=\\pm 1[X-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 16,
+        "solutionImage": "assets/8-test-a-16.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出圆锥曲线，求相关顶点、焦点、轴和准线或渐近线：$2 x^{2} + 3 x y + 2 y^{2} - 7 = 0$。",
+        "concept": "rotation",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "将坐标轴逆时针旋转 $\\alpha=\\frac{\\pi}{4}$，代入 $x=\\frac{\\sqrt{2}}{2}X-(\\frac{\\sqrt{2}}{2})Y,\\quad y=\\frac{\\sqrt{2}}{2}X+(\\frac{\\sqrt{2}}{2})Y$，原式化为 $\\frac{7 X^{2}}{2} + \\frac{Y^{2}}{2} - 7 = 0$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{7 X^{2}}{2} + \\frac{Y^{2}}{2}=7$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=14, b^2=2, c^2=a^2-b^2=12$。顶点 $(0,- \\sqrt{14}),\\ (0,\\sqrt{14})$；焦点 $(0,- 2 \\sqrt{3}),\\ (0,2 \\sqrt{3})$；短轴端点 $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{X^{2}}{2}+\\frac{Y^{2}}{14}=1$；以下几何坐标以新轴 $(X,Y)$ 表示。图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{X^{2}}{2}+\\frac{Y^{2}}{14}=1$。以下几何坐标以新轴 $(X,Y)$ 表示。顶点 $(0,- \\sqrt{14}),\\ (0,\\sqrt{14})$；焦点 $(0,- 2 \\sqrt{3}),\\ (0,2 \\sqrt{3})$；短轴端点 $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the conic; find its relevant vertices, foci, axes and directrix or asymptotes: $2 x^{2} + 3 x y + 2 y^{2} - 7 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Rotate axes counterclockwise by $\\alpha=\\frac{\\pi}{4}$ and substitute $x=\\frac{\\sqrt{2}}{2}X-(\\frac{\\sqrt{2}}{2})Y,\\quad y=\\frac{\\sqrt{2}}{2}X+(\\frac{\\sqrt{2}}{2})Y$. The equation becomes $\\frac{7 X^{2}}{2} + \\frac{Y^{2}}{2} - 7 = 0$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{7 X^{2}}{2} + \\frac{Y^{2}}{2}=7$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=14, b^2=2, c^2=a^2-b^2=12$. Vertices $(0,- \\sqrt{14}),\\ (0,\\sqrt{14})$; foci $(0,- 2 \\sqrt{3}),\\ (0,2 \\sqrt{3})$; minor-axis endpoints $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{X^{2}}{2}+\\frac{Y^{2}}{14}=1$. The following geometry uses the rotated coordinates $(X,Y)$.The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{X^{2}}{2}+\\frac{Y^{2}}{14}=1$. The following geometry uses the rotated coordinates $(X,Y)$.Vertices $(0,- \\sqrt{14}),\\ (0,\\sqrt{14})$; foci $(0,- 2 \\sqrt{3}),\\ (0,2 \\sqrt{3})$; minor-axis endpoints $(- \\sqrt{2},0),\\ (\\sqrt{2},0)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 17,
+        "solutionImage": "assets/8-test-a-17.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出极坐标圆锥曲线：$\\displaystyle r=\\frac{6}{4-3\\cos\\theta}$。",
+        "concept": "polar",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分母常数归一化：$r=\\frac{\\frac{3}{2}}{1-\\frac{3}{4}\\cos\\theta}$，得到$e=\\frac{3}{4},p=2$；准线为$x=-2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$4r=3 x + 6$；两边平方并用$r^2=x^2+y^2$得到$7 x^{2} - 36 x + 16 y^{2} - 36 = 0$。原极式分母不可为零，允许负$r$以覆盖双曲线另一支。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $16 y^{2} + 7 \\left(x - \\frac{18}{7}\\right)^{2}=\\frac{576}{7}$，中心为 $(\\frac{18}{7},0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=\\frac{576}{49}, b^2=\\frac{36}{7}, c^2=a^2-b^2=\\frac{324}{49}$。顶点 $(- \\frac{6}{7},0),\\ (6,0)$；焦点 $(0,0),\\ (\\frac{36}{7},0)$；短轴端点 $(\\frac{18}{7},- \\frac{6 \\sqrt{7}}{7}),\\ (\\frac{18}{7},\\frac{6 \\sqrt{7}}{7})$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{\\left(x - \\frac{18}{7}\\right)^{2}}{\\frac{576}{49}}+\\frac{y^{2}}{\\frac{36}{7}}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{\\left(x - \\frac{18}{7}\\right)^{2}}{\\frac{576}{49}}+\\frac{y^{2}}{\\frac{36}{7}}=1$。顶点 $(- \\frac{6}{7},0),\\ (6,0)$；焦点 $(0,0),\\ (\\frac{36}{7},0)$；短轴端点 $(\\frac{18}{7},- \\frac{6 \\sqrt{7}}{7}),\\ (\\frac{18}{7},\\frac{6 \\sqrt{7}}{7})$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the polar conic: $\\displaystyle r=\\frac{6}{4-3\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Normalize the denominator constant: $r=\\frac{\\frac{3}{2}}{1-\\frac{3}{4}\\cos\\theta}$, so $e=\\frac{3}{4},p=2$, with directrix $x=-2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$4r=3 x + 6$. Square and use $r^2=x^2+y^2$ to obtain $7 x^{2} - 36 x + 16 y^{2} - 36 = 0$. Exclude zero denominators in the original polar equation; signed $r$ covers the other hyperbola branch."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $16 y^{2} + 7 \\left(x - \\frac{18}{7}\\right)^{2}=\\frac{576}{7}$, with center $(\\frac{18}{7},0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=\\frac{576}{49}, b^2=\\frac{36}{7}, c^2=a^2-b^2=\\frac{324}{49}$. Vertices $(- \\frac{6}{7},0),\\ (6,0)$; foci $(0,0),\\ (\\frac{36}{7},0)$; minor-axis endpoints $(\\frac{18}{7},- \\frac{6 \\sqrt{7}}{7}),\\ (\\frac{18}{7},\\frac{6 \\sqrt{7}}{7})$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{\\left(x - \\frac{18}{7}\\right)^{2}}{\\frac{576}{49}}+\\frac{y^{2}}{\\frac{36}{7}}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{\\left(x - \\frac{18}{7}\\right)^{2}}{\\frac{576}{49}}+\\frac{y^{2}}{\\frac{36}{7}}=1$. Vertices $(- \\frac{6}{7},0),\\ (6,0)$; foci $(0,0),\\ (\\frac{36}{7},0)$; minor-axis endpoints $(\\frac{18}{7},- \\frac{6 \\sqrt{7}}{7}),\\ (\\frac{18}{7},\\frac{6 \\sqrt{7}}{7})$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 18,
+        "solutionImage": "assets/8-test-a-18.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "识别并画出极坐标圆锥曲线：$\\displaystyle r=\\frac{6}{3+4\\cos\\theta}$。",
+        "concept": "polar",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分母常数归一化：$r=\\frac{2}{1+\\frac{4}{3}\\cos\\theta}$，得到$e=\\frac{4}{3},p=\\frac{3}{2}$；准线为$x=\\frac{3}{2}$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$3r=6 - 4 x$；两边平方并用$r^2=x^2+y^2$得到$- 7 x^{2} + 48 x + 9 y^{2} - 36 = 0$。原极式分母不可为零，允许负$r$以覆盖双曲线另一支。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $9 y^{2} - 7 \\left(x - \\frac{24}{7}\\right)^{2}=- \\frac{324}{7}$，中心为 $(\\frac{24}{7},0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=\\frac{324}{49},b^2=\\frac{36}{7},c^2=a^2+b^2=\\frac{576}{49}$。顶点 $(\\frac{6}{7},0),\\ (6,0)$；焦点 $(0,0),\\ (\\frac{48}{7},0)$；渐近线 $y-(0)=\\pm \\frac{\\sqrt{7}}{3}[x-(\\frac{24}{7})]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{\\left(x - \\frac{24}{7}\\right)^{2}}{\\frac{324}{49}}-\\frac{y^{2}}{\\frac{36}{7}}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{\\left(x - \\frac{24}{7}\\right)^{2}}{\\frac{324}{49}}-\\frac{y^{2}}{\\frac{36}{7}}=1$。顶点 $(\\frac{6}{7},0),\\ (6,0)$；焦点 $(0,0),\\ (\\frac{48}{7},0)$；渐近线 $y-(0)=\\pm \\frac{\\sqrt{7}}{3}[x-(\\frac{24}{7})]$。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Identify and sketch the polar conic: $\\displaystyle r=\\frac{6}{3+4\\cos\\theta}$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Normalize the denominator constant: $r=\\frac{2}{1+\\frac{4}{3}\\cos\\theta}$, so $e=\\frac{4}{3},p=\\frac{3}{2}$, with directrix $x=\\frac{3}{2}$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "$3r=6 - 4 x$. Square and use $r^2=x^2+y^2$ to obtain $- 7 x^{2} + 48 x + 9 y^{2} - 36 = 0$. Exclude zero denominators in the original polar equation; signed $r$ covers the other hyperbola branch."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $9 y^{2} - 7 \\left(x - \\frac{24}{7}\\right)^{2}=- \\frac{324}{7}$, with center $(\\frac{24}{7},0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=\\frac{324}{49},b^2=\\frac{36}{7},c^2=a^2+b^2=\\frac{576}{49}$. Vertices $(\\frac{6}{7},0),\\ (6,0)$; foci $(0,0),\\ (\\frac{48}{7},0)$; asymptotes $y-(0)=\\pm \\frac{\\sqrt{7}}{3}[x-(\\frac{24}{7})]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{\\left(x - \\frac{24}{7}\\right)^{2}}{\\frac{324}{49}}-\\frac{y^{2}}{\\frac{36}{7}}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{\\left(x - \\frac{24}{7}\\right)^{2}}{\\frac{324}{49}}-\\frac{y^{2}}{\\frac{36}{7}}=1$. Vertices $(\\frac{6}{7},0),\\ (6,0)$; foci $(0,0),\\ (\\frac{48}{7},0)$; asymptotes $y-(0)=\\pm \\frac{\\sqrt{7}}{3}[x-(\\frac{24}{7})]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 19,
+        "solutionImage": "assets/8-test-a-19.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "消去参数，画出轨迹并指出方向：$x=4 - t,\\ y=t^{2}$，$t\\in\\mathbb R$。",
+        "concept": "parametric",
+        "steps": [
+          {
+            "title": "由原条件推导",
+            "body": "$x=4-t$ 给 $t=4-x$；代入 $y=t^2$，得 $y=(4-x)^2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "由$x=4-t$解得$t=4-x$，代入$y=t^2$得到$y=(x-4)^2$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "把参数表达式代入消参后的方程：$- x^{2} + 8 x + y - 16 = 0$；左边恒等于0，验证消参关系。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "参数范围给出实际轨迹限制：整条抛物线，$x$遍历所有实数。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "$t<0$时从右上方靠近顶点$(4,0)$，$t>0$时向左上方离开；$x=4-t$严格递减。"
+          }
+        ],
+        "answer": "$- x^{2} + 8 x + y - 16 = 0$；整条抛物线，$x$遍历所有实数。$t<0$时从右上方靠近顶点$(4,0)$，$t>0$时向左上方离开；$x=4-t$严格递减。",
+        "pdfPage": 873,
+        "printedPage": 849,
+        "en": {
+          "prompt": "Eliminate the parameter, graph the actual curve and indicate its orientation: $x=4 - t,\\ y=t^{2}$, $t\\in\\mathbb R$.",
+          "steps": [
+            {
+              "title": "Derive from the original conditions",
+              "body": "$x=4-t$ gives $t=4-x$; substitute into $y=t^2$ to obtain $y=(4-x)^2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Solve $x=4-t$ for $t=4-x$ and substitute into $y=t^2$: $y=(x-4)^2$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Substitution of the parameter expressions into $- x^{2} + 8 x + y - 16 = 0$ gives identically zero, verifying the Cartesian relation."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The parameter domain gives the actual trace restriction: the entire parabola, with all real $x$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "For $t<0$ the point approaches $(4,0)$ from the upper right; for $t>0$ it moves toward the upper left. The coordinate $x=4-t$ strictly decreases."
+            }
+          ],
+          "answer": "$- x^{2} + 8 x + y - 16 = 0$; the entire parabola, with all real $x$. For $t<0$ the point approaches $(4,0)$ from the upper right; for $t>0$ it moves toward the upper left. The coordinate $x=4-t$ strictly decreases."
+        },
+        "number": 20,
+        "solutionImage": "assets/8-test-a-param-20.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedGettingReady": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "independentReview": "Independent reviewer visually compared PDF 790–791 and 865–873; all 138 chapter-end records and every explicit subpart reviewed, with separate exact source calculations. Rotated-variable notation, derivation detail, and cost-diagram readability were corrected.",
+    "independentReviewed": true
+  }
+}

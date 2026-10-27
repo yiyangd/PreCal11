@@ -824,6 +824,180 @@
           }
         }
       ]
+    },
+    {
+      "number": 8,
+      "title": "解析几何",
+      "en": {
+        "title": "Analytic Geometry"
+      },
+      "sections": [
+        {
+          "slug": "8-1",
+          "section": "8.1",
+          "title": "圆锥曲线概览",
+          "en": {
+            "title": "Conic Sections: Overview"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 0,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "8-2",
+          "section": "8.2",
+          "title": "抛物线",
+          "en": {
+            "title": "The Parabola"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 7,
+            "practice": 7,
+            "exercises": 101,
+            "gettingReady": 10
+          }
+        },
+        {
+          "slug": "8-3",
+          "section": "8.3",
+          "title": "椭圆",
+          "en": {
+            "title": "The Ellipse"
+          },
+          "counts": {
+            "concepts": 4,
+            "examples": 6,
+            "practice": 6,
+            "exercises": 114,
+            "gettingReady": 9
+          }
+        },
+        {
+          "slug": "8-4",
+          "section": "8.4",
+          "title": "双曲线",
+          "en": {
+            "title": "The Hyperbola"
+          },
+          "counts": {
+            "concepts": 3,
+            "examples": 9,
+            "practice": 9,
+            "exercises": 117,
+            "gettingReady": 10
+          }
+        },
+        {
+          "slug": "8-5",
+          "section": "8.5",
+          "title": "坐标轴的旋转",
+          "en": {
+            "title": "Rotation of Axes"
+          },
+          "counts": {
+            "concepts": 3,
+            "examples": 7,
+            "practice": 7,
+            "exercises": 83,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "8-6",
+          "section": "8.6",
+          "title": "圆锥曲线的极坐标方程",
+          "en": {
+            "title": "Polar Equations of Conics"
+          },
+          "counts": {
+            "concepts": 6,
+            "examples": 6,
+            "practice": 6,
+            "exercises": 56,
+            "gettingReady": 7
+          }
+        },
+        {
+          "slug": "8-7",
+          "section": "8.7",
+          "title": "参数方程",
+          "en": {
+            "title": "Parametric Equations"
+          },
+          "counts": {
+            "concepts": 7,
+            "examples": 5,
+            "practice": 5,
+            "exercises": 80,
+            "gettingReady": 8
+          }
+        },
+        {
+          "slug": "8-key-ideas",
+          "section": "8",
+          "title": "知识要点与综合问答",
+          "en": {
+            "title": "Key Ideas At a Glance and Questions"
+          },
+          "counts": {
+            "concepts": 2,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 8,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "8-review",
+          "section": "8",
+          "title": "第8章综合复习",
+          "en": {
+            "title": "Chapter 8 Review and Review Exercises"
+          },
+          "counts": {
+            "concepts": 8,
+            "examples": 12,
+            "practice": 0,
+            "exercises": 78,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "8-test-a",
+          "section": "8",
+          "title": "第8章测试A",
+          "en": {
+            "title": "Chapter 8 Practice Test A"
+          },
+          "counts": {
+            "concepts": 8,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        },
+        {
+          "slug": "8-cumulative",
+          "section": "8",
+          "title": "第1–8章累积复习",
+          "en": {
+            "title": "Cumulative Review Exercises: Chapters 1–8"
+          },
+          "counts": {
+            "concepts": 5,
+            "examples": 0,
+            "practice": 0,
+            "exercises": 20,
+            "gettingReady": 0
+          }
+        }
+      ]
     }
   ]
 }

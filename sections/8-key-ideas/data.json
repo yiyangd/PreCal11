@@ -1,0 +1,486 @@
+{
+  "course": {
+    "id": "precalculus-ratti4-ch8-local",
+    "title": "第8章：解析几何",
+    "en": {
+      "title": "Chapter 8: Analytic Geometry"
+    }
+  },
+  "lesson": {
+    "id": "8-key-ideas",
+    "section": "8",
+    "title": "知识要点与综合问答",
+    "en": {
+      "title": "Key Ideas At a Glance and Questions"
+    },
+    "source": {
+      "title": "Precalculus: A Unit Circle Approach, 4th edition",
+      "kind": "pdf",
+      "pdfPages": [
+        865,
+        866
+      ],
+      "printedPages": [
+        841,
+        842
+      ]
+    },
+    "concepts": [
+      {
+        "id": "ellipse",
+        "title": "椭圆的轴与焦点",
+        "summary": "到两焦点距离之和为 $2a$；$a\\ge b>0$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "配方并把右侧化成1；大分母为 $a^2$，$c^2=a^2-b^2$。中心、顶点与短轴端点都须平移。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Ellipse axes and foci",
+          "summary": "The sum of distances to two foci is $2a$, with $a\\ge b>0$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Complete squares and normalize to 1. The larger denominator is $a^2$; $c^2=a^2-b^2$. Translate the center, vertices and minor-axis endpoints."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "hyperbola",
+        "title": "双曲线与渐近线",
+        "summary": "到两焦点距离差的绝对值为 $2a$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "正项确定实轴，$c^2=a^2+b^2$。$(x-h)^2/a^2-(y-k)^2/b^2=1$ 的渐近线为 $y-k=\\pm(b/a)(x-h)$；竖直形式斜率为 $\\pm a/b$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Hyperbolas and asymptotes",
+          "summary": "The absolute difference of distances to the two foci is $2a$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "The positive term locates the transverse axis, and $c^2=a^2+b^2$. For $(x-h)^2/a^2-(y-k)^2/b^2=1$, asymptotes are $y-k=\\pm(b/a)(x-h)$; the vertical form uses slopes $\\pm a/b$."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "gettingReady": [],
+    "kind": "chapter-end"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "K1：识别原图所示顶点V和焦点F确定的圆锥曲线，并求方程。坐标网格单位间隔为1。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从原图读出中心为原点，水平轴上顶点距中心 $a=5$，焦距 $c=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{25} + \\frac{y^{2}}{16}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=25, b^2=16, c^2=a^2-b^2=9$。顶点 $(-5,0),\\ (5,0)$；焦点 $(-3,0),\\ (3,0)$；短轴端点 $(0,-4),\\ (0,4)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{25}+\\frac{y^{2}}{16}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{25}+\\frac{y^{2}}{16}=1$。顶点 $(-5,0),\\ (5,0)$；焦点 $(-3,0),\\ (3,0)$；短轴端点 $(0,-4),\\ (0,4)$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 1: Identify and find the equation of the conic with vertices V and foci F shown in the original diagram. The axes are marked in one-unit intervals.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Read the original diagram: center at the origin, a horizontal axis with $a=5$ and $c=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{25} + \\frac{y^{2}}{16}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=25, b^2=16, c^2=a^2-b^2=9$. Vertices $(-5,0),\\ (5,0)$; foci $(-3,0),\\ (3,0)$; minor-axis endpoints $(0,-4),\\ (0,4)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{25}+\\frac{y^{2}}{16}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{25}+\\frac{y^{2}}{16}=1$. Vertices $(-5,0),\\ (5,0)$; foci $(-3,0),\\ (3,0)$; minor-axis endpoints $(0,-4),\\ (0,4)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 1,
+        "solutionImage": "assets/8-key-ideas-1.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像",
+        "sourceImage": "assets/8-key-ideas-source-1.png"
+      },
+      {
+        "prompt": "K2：识别原图所示顶点V和焦点F确定的圆锥曲线，并求方程。坐标网格单位间隔为1。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从原图读出中心为原点，水平轴上顶点距中心 $a=3$，焦距 $c=5$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{9} - \\frac{y^{2}}{16}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=9,b^2=16,c^2=a^2+b^2=25$。顶点 $(-3,0),\\ (3,0)$；焦点 $(-5,0),\\ (5,0)$；渐近线 $y-(0)=\\pm \\frac{4}{3}[x-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}9-\\frac{y^{2}}{16}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{x^{2}}9-\\frac{y^{2}}{16}=1$。顶点 $(-3,0),\\ (3,0)$；焦点 $(-5,0),\\ (5,0)$；渐近线 $y-(0)=\\pm \\frac{4}{3}[x-(0)]$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 2: Identify and find the equation of the conic with vertices V and foci F shown in the original diagram. The axes are marked in one-unit intervals.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Read the original diagram: center at the origin, a horizontal axis with $a=3$ and $c=5$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{9} - \\frac{y^{2}}{16}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=9,b^2=16,c^2=a^2+b^2=25$. Vertices $(-3,0),\\ (3,0)$; foci $(-5,0),\\ (5,0)$; asymptotes $y-(0)=\\pm \\frac{4}{3}[x-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}9-\\frac{y^{2}}{16}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{x^{2}}9-\\frac{y^{2}}{16}=1$. Vertices $(-3,0),\\ (3,0)$; foci $(-5,0),\\ (5,0)$; asymptotes $y-(0)=\\pm \\frac{4}{3}[x-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 2,
+        "solutionImage": "assets/8-key-ideas-2.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像",
+        "sourceImage": "assets/8-key-ideas-source-2.png"
+      },
+      {
+        "prompt": "K3：识别原图所示顶点V和焦点F确定的圆锥曲线，并求方程。坐标网格单位间隔为1。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从原图读出中心为原点，竖直轴上顶点距中心 $a=3$，焦距 $c=4$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $- \\frac{x^{2}}{7} + \\frac{y^{2}}{9}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=9,b^2=7,c^2=a^2+b^2=16$。顶点 $(0,-3),\\ (0,3)$；焦点 $(0,-4),\\ (0,4)$；渐近线 $y-(0)=\\pm \\frac{3 \\sqrt{7}}{7}[x-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{y^{2}}9-\\frac{x^{2}}7=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{y^{2}}9-\\frac{x^{2}}7=1$。顶点 $(0,-3),\\ (0,3)$；焦点 $(0,-4),\\ (0,4)$；渐近线 $y-(0)=\\pm \\frac{3 \\sqrt{7}}{7}[x-(0)]$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 3: Identify and find the equation of the conic with vertices V and foci F shown in the original diagram. The axes are marked in one-unit intervals.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Read the original diagram: center at the origin, a vertical axis with $a=3$ and $c=4$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $- \\frac{x^{2}}{7} + \\frac{y^{2}}{9}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=9,b^2=7,c^2=a^2+b^2=16$. Vertices $(0,-3),\\ (0,3)$; foci $(0,-4),\\ (0,4)$; asymptotes $y-(0)=\\pm \\frac{3 \\sqrt{7}}{7}[x-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{y^{2}}9-\\frac{x^{2}}7=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{y^{2}}9-\\frac{x^{2}}7=1$. Vertices $(0,-3),\\ (0,3)$; foci $(0,-4),\\ (0,4)$; asymptotes $y-(0)=\\pm \\frac{3 \\sqrt{7}}{7}[x-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 3,
+        "solutionImage": "assets/8-key-ideas-3.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像",
+        "sourceImage": "assets/8-key-ideas-source-3.png"
+      },
+      {
+        "prompt": "K4：识别原图所示顶点V和焦点F确定的圆锥曲线，并求方程。坐标网格单位间隔为1。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "从原图读出中心为原点，竖直轴上顶点距中心 $a=4$，焦距 $c=3$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{7} + \\frac{y^{2}}{16}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=16, b^2=7, c^2=a^2-b^2=9$。顶点 $(0,-4),\\ (0,4)$；焦点 $(0,-3),\\ (0,3)$；短轴端点 $(- \\sqrt{7},0),\\ (\\sqrt{7},0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{7}+\\frac{y^{2}}{16}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{7}+\\frac{y^{2}}{16}=1$。顶点 $(0,-4),\\ (0,4)$；焦点 $(0,-3),\\ (0,3)$；短轴端点 $(- \\sqrt{7},0),\\ (\\sqrt{7},0)$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 4: Identify and find the equation of the conic with vertices V and foci F shown in the original diagram. The axes are marked in one-unit intervals.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Read the original diagram: center at the origin, a vertical axis with $a=4$ and $c=3$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{7} + \\frac{y^{2}}{16}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=16, b^2=7, c^2=a^2-b^2=9$. Vertices $(0,-4),\\ (0,4)$; foci $(0,-3),\\ (0,3)$; minor-axis endpoints $(- \\sqrt{7},0),\\ (\\sqrt{7},0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{7}+\\frac{y^{2}}{16}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{7}+\\frac{y^{2}}{16}=1$. Vertices $(0,-4),\\ (0,4)$; foci $(0,-3),\\ (0,3)$; minor-axis endpoints $(- \\sqrt{7},0),\\ (\\sqrt{7},0)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 4,
+        "solutionImage": "assets/8-key-ideas-4.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像",
+        "sourceImage": "assets/8-key-ideas-source-4.png"
+      },
+      {
+        "prompt": "K5：识别下列圆锥曲线，求顶点与焦点：$- \\frac{x^{2}}{49} + \\frac{y^{2}}{16} - 1 = 0$。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $- \\frac{x^{2}}{49} + \\frac{y^{2}}{16}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=16,b^2=49,c^2=a^2+b^2=65$。顶点 $(0,-4),\\ (0,4)$；焦点 $(0,- \\sqrt{65}),\\ (0,\\sqrt{65})$；渐近线 $y-(0)=\\pm \\frac{4}{7}[x-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{y^{2}}{16}-\\frac{x^{2}}{49}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{y^{2}}{16}-\\frac{x^{2}}{49}=1$。顶点 $(0,-4),\\ (0,4)$；焦点 $(0,- \\sqrt{65}),\\ (0,\\sqrt{65})$；渐近线 $y-(0)=\\pm \\frac{4}{7}[x-(0)]$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 5: Identify the conic and find its vertices and foci: $- \\frac{x^{2}}{49} + \\frac{y^{2}}{16} - 1 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $- \\frac{x^{2}}{49} + \\frac{y^{2}}{16}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=16,b^2=49,c^2=a^2+b^2=65$. Vertices $(0,-4),\\ (0,4)$; foci $(0,- \\sqrt{65}),\\ (0,\\sqrt{65})$; asymptotes $y-(0)=\\pm \\frac{4}{7}[x-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{y^{2}}{16}-\\frac{x^{2}}{49}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{y^{2}}{16}-\\frac{x^{2}}{49}=1$. Vertices $(0,-4),\\ (0,4)$; foci $(0,- \\sqrt{65}),\\ (0,\\sqrt{65})$; asymptotes $y-(0)=\\pm \\frac{4}{7}[x-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 5,
+        "solutionImage": "assets/8-key-ideas-5.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "K6：识别下列圆锥曲线，求顶点与焦点：$\\frac{x^{2}}{16} + \\frac{y^{2}}{49} - 1 = 0$。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{16} + \\frac{y^{2}}{49}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=49, b^2=16, c^2=a^2-b^2=33$。顶点 $(0,-7),\\ (0,7)$；焦点 $(0,- \\sqrt{33}),\\ (0,\\sqrt{33})$；短轴端点 $(-4,0),\\ (4,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{16}+\\frac{y^{2}}{49}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{16}+\\frac{y^{2}}{49}=1$。顶点 $(0,-7),\\ (0,7)$；焦点 $(0,- \\sqrt{33}),\\ (0,\\sqrt{33})$；短轴端点 $(-4,0),\\ (4,0)$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 6: Identify the conic and find its vertices and foci: $\\frac{x^{2}}{16} + \\frac{y^{2}}{49} - 1 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{16} + \\frac{y^{2}}{49}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=49, b^2=16, c^2=a^2-b^2=33$. Vertices $(0,-7),\\ (0,7)$; foci $(0,- \\sqrt{33}),\\ (0,\\sqrt{33})$; minor-axis endpoints $(-4,0),\\ (4,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{16}+\\frac{y^{2}}{49}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{16}+\\frac{y^{2}}{49}=1$. Vertices $(0,-7),\\ (0,7)$; foci $(0,- \\sqrt{33}),\\ (0,\\sqrt{33})$; minor-axis endpoints $(-4,0),\\ (4,0)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 6,
+        "solutionImage": "assets/8-key-ideas-6.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "K7：识别下列圆锥曲线，求顶点与焦点：$\\frac{x^{2}}{36} + \\frac{y^{2}}{25} - 1 = 0$。",
+        "concept": "ellipse",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{36} + \\frac{y^{2}}{25}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正分母给出 $a^2=36, b^2=25, c^2=a^2-b^2=11$。顶点 $(-6,0),\\ (6,0)$；焦点 $(- \\sqrt{11},0),\\ (\\sqrt{11},0)$；短轴端点 $(0,-5),\\ (0,5)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{36}+\\frac{y^{2}}{25}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "椭圆：$\\frac{x^{2}}{36}+\\frac{y^{2}}{25}=1$。顶点 $(-6,0),\\ (6,0)$；焦点 $(- \\sqrt{11},0),\\ (\\sqrt{11},0)$；短轴端点 $(0,-5),\\ (0,5)$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 7: Identify the conic and find its vertices and foci: $\\frac{x^{2}}{36} + \\frac{y^{2}}{25} - 1 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{36} + \\frac{y^{2}}{25}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive denominators give $a^2=36, b^2=25, c^2=a^2-b^2=11$. Vertices $(-6,0),\\ (6,0)$; foci $(- \\sqrt{11},0),\\ (\\sqrt{11},0)$; minor-axis endpoints $(0,-5),\\ (0,5)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{36}+\\frac{y^{2}}{25}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Ellipse: $\\frac{x^{2}}{36}+\\frac{y^{2}}{25}=1$. Vertices $(-6,0),\\ (6,0)$; foci $(- \\sqrt{11},0),\\ (\\sqrt{11},0)$; minor-axis endpoints $(0,-5),\\ (0,5)$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 7,
+        "solutionImage": "assets/8-key-ideas-7.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      },
+      {
+        "prompt": "K8：识别下列圆锥曲线，求顶点与焦点：$\\frac{x^{2}}{36} - \\frac{y^{2}}{25} - 1 = 0$。",
+        "concept": "hyperbola",
+        "steps": [
+          {
+            "title": "计算与推导",
+            "body": "分别配方得 $\\frac{x^{2}}{36} - \\frac{y^{2}}{25}=1$，中心为 $(0,0)$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "正项确定实轴；$a^2=36,b^2=25,c^2=a^2+b^2=61$。顶点 $(-6,0),\\ (6,0)$；焦点 $(- \\sqrt{61},0),\\ (\\sqrt{61},0)$；渐近线 $y-(0)=\\pm \\frac{5}{6}[x-(0)]$。"
+          },
+          {
+            "title": "计算与推导",
+            "body": "标准式为 $\\frac{x^{2}}{36}-\\frac{y^{2}}{25}=1$；图中画出原坐标下的实点集。"
+          }
+        ],
+        "answer": "双曲线：$\\frac{x^{2}}{36}-\\frac{y^{2}}{25}=1$。顶点 $(-6,0),\\ (6,0)$；焦点 $(- \\sqrt{61},0),\\ (\\sqrt{61},0)$；渐近线 $y-(0)=\\pm \\frac{5}{6}[x-(0)]$。",
+        "pdfPage": 866,
+        "printedPage": 842,
+        "en": {
+          "prompt": "K 8: Identify the conic and find its vertices and foci: $\\frac{x^{2}}{36} - \\frac{y^{2}}{25} - 1 = 0$.",
+          "steps": [
+            {
+              "title": "Calculate and reason",
+              "body": "Complete both squares: $\\frac{x^{2}}{36} - \\frac{y^{2}}{25}=1$, with center $(0,0)$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The positive term locates the transverse axis. $a^2=36,b^2=25,c^2=a^2+b^2=61$. Vertices $(-6,0),\\ (6,0)$; foci $(- \\sqrt{61},0),\\ (\\sqrt{61},0)$; asymptotes $y-(0)=\\pm \\frac{5}{6}[x-(0)]$."
+            },
+            {
+              "title": "Calculate and reason",
+              "body": "The standard form is $\\frac{x^{2}}{36}-\\frac{y^{2}}{25}=1$. The graph shows the real locus in the original coordinates."
+            }
+          ],
+          "answer": "Hyperbola: $\\frac{x^{2}}{36}-\\frac{y^{2}}{25}=1$. Vertices $(-6,0),\\ (6,0)$; foci $(- \\sqrt{61},0),\\ (\\sqrt{61},0)$; asymptotes $y-(0)=\\pm \\frac{5}{6}[x-(0)]$.",
+          "solutionImageAlt": "Cartesian graph of the conic in the original coordinates"
+        },
+        "number": 8,
+        "solutionImage": "assets/8-key-ideas-8.png",
+        "solutionImageAlt": "圆锥曲线在原坐标中的图像"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedGettingReady": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "independentReview": "Independent reviewer visually compared PDF 790–791 and 865–873; all 138 chapter-end records and every explicit subpart reviewed, with separate exact source calculations. Rotated-variable notation, derivation detail, and cost-diagram readability were corrected.",
+    "independentReviewed": true
+  }
+}

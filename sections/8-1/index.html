@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174d53">
+  <meta name="description" content="Bilingual textbook study notes with concepts, examples, practice, and step-by-step solutions.">
+  <title>Study Notes</title>
+  <link rel="stylesheet" href="styles.css?v=chapter8-20261026">
+  <script id="lesson-data" type="application/json">{"course":{"id":"precalculus-ratti4-ch8-local","title":"第8章：解析几何","en":{"title":"Chapter 8: Analytic Geometry"}},"lesson":{"id":"8-1","section":"8.1","title":"圆锥曲线概览","en":{"title":"Conic Sections: Overview"},"source":{"title":"Precalculus: A Unit Circle Approach, 4th edition","kind":"pdf","pdfPages":[790,791],"printedPages":[766,767]},"concepts":[{"id":"cone","title":"圆锥面、轴与顶点","summary":"直圆锥面由穿过固定顶点和底圆各点的所有直线组成，包含上下两个锥叶。","method":[{"title":"方法","body":"底圆所在平面的垂线为轴，顶点在轴上；平面的位置决定交线。"}],"pitfalls":[],"en":{"title":"The cone, its axis and vertex","summary":"A right circular cone consists of all lines through a fixed vertex and a base circle; the full surface has two nappes.","method":[{"title":"Method","body":"The axis is perpendicular to the base-circle plane, and the vertex lies on the axis. The slicing plane determines the intersection."}],"pitfalls":[],"note":"This source section is an overview with no numbered examples, practice problems or exercises. The next-page Getting Ready prepares Section 8.2."},"sourceImage":"assets/8-1-cone.png","note":"原书本节是概览，没有编号例题、配套练习或节后题。下一页Getting Ready属于8.2。"},{"id":"sections","title":"四种非退化截线","summary":"不经过顶点的平面可截出圆、椭圆、抛物线或双曲线。","method":[{"title":"方法","body":"垂直轴的平面截圆；斜截单个锥叶得到椭圆；平行某条母线得到抛物线；穿过两个锥叶得到双曲线。"}],"pitfalls":[],"en":{"title":"Four nondegenerate sections","summary":"A plane avoiding the vertex can produce a circle, ellipse, parabola or hyperbola.","method":[{"title":"Method","body":"A plane perpendicular to the axis gives a circle; a tilted cut through one nappe gives an ellipse; a cut parallel to a generator gives a parabola; a cut through both nappes gives a hyperbola."}],"pitfalls":[]},"sourceImage":"assets/8-1-sections.png"},{"id":"degenerate","title":"退化截线与代数检查","summary":"经过顶点的平面可以截出一点、一条直线或两条相交直线。","method":[{"title":"方法","body":"后续二次方程也可能表示空集或平行线；不能仅按二次项符号断言非退化曲线。无混合项的一般形式为 $Ax^2+Cy^2+Dx+Ey+F=0$。"}],"pitfalls":[],"en":{"title":"Degenerate sections and algebraic checks","summary":"A plane through the vertex can give a point, a line or two intersecting lines.","method":[{"title":"Method","body":"A quadratic equation may also have an empty locus or parallel lines. Signs of quadratic terms alone do not guarantee a nondegenerate conic. Without a mixed term the general form is $Ax^2+Cy^2+Dx+Ey+F=0$."}],"pitfalls":[]},"sourceImage":"assets/8-1-degenerate.png"},{"id":"locus","title":"平面轨迹与应用","summary":"后续各节用距离定义在平面中研究圆锥曲线。","method":[{"title":"方法","body":"椭圆的焦点距离和、双曲线的焦点距离差、抛物线的焦点准线等距定义，连接几何与方程。反射器和轨道模型需满足对应几何假设。"}],"pitfalls":[],"en":{"title":"Plane loci and applications","summary":"The following sections study conics as distance-defined loci in a plane.","method":[{"title":"Method","body":"The ellipse distance sum, hyperbola distance difference and parabola focus–directrix equality connect geometry with equations. Reflector and orbit applications require their geometric assumptions."}],"pitfalls":[]}}],"questions":[],"gettingReady":[]},"textbook":{"exercises":[]},"coverage":{"expectedExamples":[],"expectedPractice":[],"expectedGettingReady":[],"expectedExercises":[],"expectedSubparts":{}},"audit":{"sourceReviewed":true,"solutionsReviewed":true,"independentReview":"Independent reviewer visually compared PDF 790–791 and 865–873; all 138 chapter-end records and every explicit subpart reviewed, with separate exact source calculations. Rotated-variable notation, derivation detail, and cost-diagram readability were corrected.","independentReviewed":true}}</script>
+<script src="app.js?v=chapter8-20261026" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to lesson</a>
+  <header class="topbar">
+    <a class="brand" href="../../index.html" aria-label="Back to course home"><span class="brand-mark">f<span>(x)</span></span><span>Study notes <small>Study notes</small></span></a>
+    <div class="topbar-actions"><div class="language-switch" role="group" aria-label="Page language"><button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button><button type="button" data-lang="en" lang="en" class="is-active" aria-pressed="true">English</button></div><span class="save-note">Progress saved in this browser</span><button class="button button-quiet" id="print-button" type="button"><span aria-hidden="true">↗</span> Print / PDF</button></div>
+  </header>
+  <div class="page-layout" id="top">
+    <aside class="sidebar" aria-label="Lesson contents">
+      <div class="sidebar-inner">
+        <div class="chapter-label">COURSE</div>
+        <div class="sidebar-title">Lesson<span>Section</span></div>
+        <div class="progress-box"><div><span>Lesson progress</span><strong id="progress-label">0 / 0</strong></div><progress id="lesson-progress" max="1" value="0" aria-label="Lesson progress"></progress></div>
+        <nav id="topic-nav" class="topic-nav" aria-label="Concepts"></nav>
+        <a id="getting-ready-nav" class="exercise-nav" href="#getting-ready" hidden>Getting Ready</a>
+        <a id="exercise-nav" class="exercise-nav" href="#textbook-exercises"><span aria-hidden="true">▦</span> Textbook Exercises <span aria-hidden="true">↗</span></a>
+        <div class="sidebar-foot">For each concept<br>Method → Example → Practice → Textbook</div>
+      </div>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <nav class="lesson-breadcrumb" aria-label="Breadcrumb"><a id="home-link" href="../../index.html">← Back to home</a><span aria-hidden="true">/</span><span></span></nav>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy"><div class="eyebrow">SECTION <span>TEXTBOOK STUDY</span></div><h1 id="page-title">Lesson</h1><p>Study concepts, examples, and practice with step-by-step solutions.</p><div class="hero-meta"><span>Textbook study</span><span>Concepts · Examples · Practice</span></div></div>
+        <div class="hero-note"><span class="note-index"></span><p>Understand the concept<br>Follow the example<br>Practise independently</p><div class="note-line"></div><small>Understand the method, one step at a time</small></div>
+      </section>
+      <div class="reading-toolbar"><p><span class="status-dot" aria-hidden="true"></span>Examples explained; try practice questions first</p><div><button class="text-button" id="expand-all" type="button">Expand all solutions</button><span class="toolbar-divider" aria-hidden="true"></span><button class="text-button" id="collapse-all" type="button">Collapse all solutions</button></div></div>
+      <div id="loading" class="loading" role="status">Loading lesson content…</div>
+      <p id="math-warning" class="math-warning" role="status" hidden></p>
+      <section id="getting-ready" class="getting-ready-section" aria-labelledby="getting-ready-title" hidden><div class="section-heading"><div><div class="eyebrow">PREPARATION</div><h2 id="getting-ready-title">Getting Ready</h2><p id="getting-ready-intro">Review the prerequisite skills before studying this section.</p></div><span class="count-pill" id="getting-ready-count"></span></div><div id="getting-ready-list"></div></section>
+      <div id="lesson-content"></div>
+      <section id="textbook-exercises" class="exercise-section" aria-labelledby="exercise-title" hidden>
+        <div class="section-heading"><div><div class="eyebrow">TEXTBOOK · SECTION</div><h2 id="exercise-title">Textbook Exercises</h2><p id="exercise-intro">Find exercises by concept and put the method into practice.</p></div><span class="count-pill" id="exercise-count"></span></div>
+        <div class="exercise-filters"><label for="exercise-topic"><span data-ui="filter-topic">Concept</span><select id="exercise-topic"><option value="all">All concepts</option></select></label><label class="search-label" for="exercise-search"><span data-ui="filter-search">Exercise number or keyword</span><input id="exercise-search" type="search" placeholder="e.g. 23, 1-10, GR1, keyword" autocomplete="off"></label><button class="button button-quiet" id="clear-filters" type="button">Reset</button></div>
+        <div id="exercise-list"></div><p id="exercise-empty" class="empty-message" hidden>No matching exercises. Try another number, keyword or concept.</p>
+      </section>
+      <footer class="page-footer"><span>Study notes · Section</span><span id="source-note"></span><a href="#top">Back to top ↑</a></footer>
+    </main>
+  </div>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+</body>
+</html>
